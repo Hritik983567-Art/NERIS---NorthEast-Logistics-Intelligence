@@ -33,12 +33,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r backend/requirements.txt
 
-      - name: Execute Full System Automated Test Matrix
+      - name: Install AWS SAM CLI & Validate Infrastructure Template
+        run: |
+          pip install aws-sam-cli
+          sam validate -t template.yaml
+
+      - name: Execute Pytest Suite & E2E Test Matrix
         env:
           ENVIRONMENT: development
-          AWS_REGION: ap-south-1
+          AWS_REGION: us-east-1
           PYTHONPATH: ./backend
         run: |
+          pytest
           python scratch/test_all_7_tabs_e2e.py
 
       - name: Install Frontend Node Dependencies & Verify Production Build
