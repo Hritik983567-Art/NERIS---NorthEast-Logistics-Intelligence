@@ -1,0 +1,30 @@
+{
+  "dataset_name": "Historical Landslide and Flood Event Catalog for India & North-East Region (2000–2023)",
+  "source_organization": "NASA Global Landslide Catalog / Kaggle (sahilrajverma/landslide)",
+  "kaggle_source_url": "https://www.kaggle.com/datasets/sahilrajverma/landslide",
+  "license": "LICENSE VERIFICATION REQUIRED: Research & Educational License — Internal dataset for baseline risk analysis only. Raw dataset must NOT be publicly redistributed.",
+  "retrieval_date": "2026-09-13",
+  "coverage_period": "2000–2023",
+  "source_type": "historical_dataset",
+  "data_type": "historical",
+  "neris_operational_scope": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Sikkim",
+    "Tripura"
+  ],
+  "preprocessing_steps": [
+    "1. Extracted historical landslide, mudslide, rockfall, flash flood, and riverine flood events for North-East India transit corridors.",
+    "2. Validated column definitions (event_id, title, source_event_type, normalized_event_type, state, district, latitude, longitude, event_date, year, severity, trigger, fatalities).",
+    "3. Normalized event classification into FLOOD, LANDSLIDE, and OTHER_UNKNOWN while preserving original source_event_type.",
+    "4. Tagged all records strictly with source_type = 'historical_dataset' and data_type = 'historical' to prevent confusion with live verified incidents.",
+    "5. Computed deterministic historical environmental risk scores per state (0-100 scale).",
+    "6. Derived regional event distribution and temporal trends for Impact Analytics."
+  ],
+  "disclaimer": "HISTORICAL FLOOD/LANDSLIDE RISK (source_type = 'historical_dataset', data_type = 'historical') — NOT LIVE DISASTER MONITORING. Represents historical research data compiled from disaster catalogs.",
+  "status": "VALIDATED_AND_DERIVED"
+}

@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Sub-divisional Monthly Rainfall Data for India (1901–2017)",
+  "source_organization": "India Meteorological Department (IMD), Ministry of Earth Sciences, Government of India",
+  "original_upstream_url": "https://data.gov.in/catalog/rainfall-india",
+  "kaggle_source_url": "https://www.kaggle.com/datasets/saisaran2/rainfall-data-from-1901-to-2017-for-india",
+  "license": "Open Government Data License (OGDL) India",
+  "retrieval_date": "2026-09-13",
+  "coverage_period": "1901–2017 (117 Years)",
+  "neris_operational_scope": [
+    "ASSAM & MEGHALAYA",
+    "ARUNACHAL PRADESH",
+    "NAGA MANI MIZO TRIPURA",
+    "SUB HIMALAYAN WEST BENGAL & SIKKIM"
+  ],
+  "mapped_hubs_count": 15,
+  "preprocessing_steps": [
+    "1. Extracted sub-divisional monthly records for North-East Indian meteorological zones (1901-2017).",
+    "2. Validated column structure (SUBDIVISION, YEAR, JAN..DEC, ANNUAL, Jan-Feb, Mar-May, Jun-Sep, Oct-Dec).",
+    "3. Handled missing/NA numeric fields using 117-year sub-divisional monthly mean interpolation.",
+    "4. Normalized subdivision strings and mapped to standard NER logistics hubs (Guwahati, Shillong, Silchar, Agartala, Imphal, Aizawl, Kohima, Gangtok, Itanagar).",
+    "5. Computed 117-year baseline monthly means, monsoon totals (Jun-Sep), seasonal percentages, and multi-decade annual trends.",
+    "6. Generated normalized monthly historical environmental risk index scores (0.0 to 1.0) for route planner and GIS map overlays."
+  ],
+  "disclaimer": "HISTORICAL RAINFALL — NOT LIVE WEATHER. Represents multi-decade statistical rainfall baselines (1901–2017) compiled from official IMD records. This dataset powers historical risk weighting and trend analysis; it does NOT represent live or current weather measurements.",
+  "status": "VALIDATED_AND_DERIVED"
+}

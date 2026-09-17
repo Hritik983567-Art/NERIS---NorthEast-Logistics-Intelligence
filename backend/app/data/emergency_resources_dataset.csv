@@ -1,0 +1,11 @@
+resource_id,name,type,state,district,latitude,longitude,capacity_bed_or_sqm,available_capacity,operational_status,source_organization,contact_phone,last_updated
+RES-HOSP-01,Guwahati Super Specialty Emergency Hospital,HOSPITAL,Assam,Kamrup Metropolitan,26.1433,91.7898,550,380,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-HOSP-02,Silchar Medical College Emergency Wing,HOSPITAL,Assam,Cachar,24.8333,92.7789,350,190,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-HOSP-03,NEIGRIHMS Shillong Trauma Center,HOSPITAL,Meghalaya,East Khasi Hills,25.5788,91.8933,450,280,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-HOSP-04,Gangtok STNM Central Hospital,HOSPITAL,Sikkim,East Sikkim,27.3312,88.6134,300,140,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-WH-01,NER Guwahati Central Disaster Relief Depot,WAREHOUSE,Assam,Kamrup Metropolitan,26.1800,91.7500,12000,8500,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-WH-02,Bongaigaon Strategic Grain & Fuel Warehouse,WAREHOUSE,Assam,Bongaigaon,26.5012,90.5589,8000,5200,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-SHEL-01,Sonapur Tunnel Disaster Shelter & Relief Camp,SHELTER,Meghalaya,East Jaintia Hills,25.1245,92.4589,1500,1200,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-SHEL-02,Dima Hasao Hill Community Relief Shelter,SHELTER,Assam,Dima Hasao,25.1823,93.0145,1000,750,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-TRANS-01,BRO Heavy Dozer & Machinery Depot Guwahati,TRANSPORT,Assam,Kamrup Metropolitan,26.1200,91.8100,80,60,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13
+RES-TRANS-02,Sikkim Swastik Emergency Excavator Hub,TRANSPORT,Sikkim,East Sikkim,27.3200,88.6000,45,30,OPERATIONAL,Emergency Resource Allocation Intelligence Data,,2026-09-13

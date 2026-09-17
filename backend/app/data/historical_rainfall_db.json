@@ -1,0 +1,918 @@
+{
+  "metadata": {
+    "dataset_name": "Sub-divisional Monthly Rainfall Data for India (1901\u20132017)",
+    "source_organization": "India Meteorological Department (IMD), Ministry of Earth Sciences, Government of India",
+    "original_upstream_url": "https://data.gov.in/catalog/rainfall-india",
+    "kaggle_source_url": "https://www.kaggle.com/datasets/saisaran2/rainfall-data-from-1901-to-2017-for-india",
+    "license": "Open Government Data License (OGDL) India",
+    "retrieval_date": "2026-09-13",
+    "coverage_period": "1901\u20132017 (117 Years)",
+    "neris_operational_scope": [
+      "ASSAM & MEGHALAYA",
+      "ARUNACHAL PRADESH",
+      "NAGA MANI MIZO TRIPURA",
+      "SUB HIMALAYAN WEST BENGAL & SIKKIM"
+    ],
+    "mapped_hubs_count": 15,
+    "preprocessing_steps": [
+      "1. Extracted sub-divisional monthly records for North-East Indian meteorological zones (1901-2017).",
+      "2. Validated column structure (SUBDIVISION, YEAR, JAN..DEC, ANNUAL, Jan-Feb, Mar-May, Jun-Sep, Oct-Dec).",
+      "3. Handled missing/NA numeric fields using 117-year sub-divisional monthly mean interpolation.",
+      "4. Normalized subdivision strings and mapped to standard NER logistics hubs (Guwahati, Shillong, Silchar, Agartala, Imphal, Aizawl, Kohima, Gangtok, Itanagar).",
+      "5. Computed 117-year baseline monthly means, monsoon totals (Jun-Sep), seasonal percentages, and multi-decade annual trends.",
+      "6. Generated normalized monthly historical environmental risk index scores (0.0 to 1.0) for route planner and GIS map overlays."
+    ],
+    "disclaimer": "HISTORICAL RAINFALL \u2014 NOT LIVE WEATHER. Represents multi-decade statistical rainfall baselines (1901\u20132017) compiled from official IMD records. This dataset powers historical risk weighting and trend analysis; it does NOT represent live or current weather measurements.",
+    "status": "VALIDATED_AND_DERIVED"
+  },
+  "baselines": {
+    "ASSAM & MEGHALAYA": {
+      "subdivision": "ASSAM & MEGHALAYA",
+      "region_code": "NER_AM",
+      "states": [
+        "Assam",
+        "Meghalaya"
+      ],
+      "primary_hubs": [
+        "Guwahati",
+        "Shillong",
+        "Silchar",
+        "Tezpur",
+        "Jowai"
+      ],
+      "coverage_years": "1901-2017",
+      "average_annual_mm": 3155.0,
+      "average_monsoon_mm": 2152.5,
+      "monthly_means_mm": {
+        "JAN": 22.4,
+        "FEB": 32.4,
+        "MAR": 108.8,
+        "APR": 201.4,
+        "MAY": 409.3,
+        "JUN": 614.0,
+        "JUL": 690.5,
+        "AUG": 505.1,
+        "SEP": 343.0,
+        "OCT": 139.6,
+        "NOV": 13.9,
+        "DEC": 5.2
+      },
+      "monthly_risk_indices": {
+        "JAN": 0.032,
+        "FEB": 0.047,
+        "MAR": 0.158,
+        "APR": 0.292,
+        "MAY": 0.593,
+        "JUN": 0.889,
+        "JUL": 1.0,
+        "AUG": 0.731,
+        "SEP": 0.497,
+        "OCT": 0.202,
+        "NOV": 0.02,
+        "DEC": 0.008
+      }
+    },
+    "ARUNACHAL PRADESH": {
+      "subdivision": "ARUNACHAL PRADESH",
+      "region_code": "NER_AP",
+      "states": [
+        "Arunachal Pradesh"
+      ],
+      "primary_hubs": [
+        "Itanagar",
+        "Tawang",
+        "Pasighat"
+      ],
+      "coverage_years": "1901-2017",
+      "average_annual_mm": 3040.4,
+      "average_monsoon_mm": 2093.0,
+      "monthly_means_mm": {
+        "JAN": 40.0,
+        "FEB": 33.5,
+        "MAR": 123.4,
+        "APR": 215.3,
+        "MAY": 342.2,
+        "JUN": 560.9,
+        "JUL": 660.3,
+        "AUG": 531.6,
+        "SEP": 340.2,
+        "OCT": 158.5,
+        "NOV": 24.2,
+        "DEC": 10.6
+      },
+      "monthly_risk_indices": {
+        "JAN": 0.061,
+        "FEB": 0.051,
+        "MAR": 0.187,
+        "APR": 0.326,
+        "MAY": 0.518,
+        "JUN": 0.849,
+        "JUL": 1.0,
+        "AUG": 0.805,
+        "SEP": 0.515,
+        "OCT": 0.24,
+        "NOV": 0.037,
+        "DEC": 0.016
+      }
+    },
+    "NAGA MANI MIZO TRIPURA": {
+      "subdivision": "NAGA MANI MIZO TRIPURA",
+      "region_code": "NER_NMMT",
+      "states": [
+        "Nagaland",
+        "Manipur",
+        "Mizoram",
+        "Tripura"
+      ],
+      "primary_hubs": [
+        "Kohima",
+        "Imphal",
+        "Aizawl",
+        "Agartala"
+      ],
+      "coverage_years": "1901-2017",
+      "average_annual_mm": 2267.2,
+      "average_monsoon_mm": 1547.3,
+      "monthly_means_mm": {
+        "JAN": 17.1,
+        "FEB": 20.6,
+        "MAR": 79.0,
+        "APR": 155.3,
+        "MAY": 295.8,
+        "JUN": 450.7,
+        "JUL": 430.7,
+        "AUG": 410.7,
+        "SEP": 255.3,
+        "OCT": 129.9,
+        "NOV": 17.0,
+        "DEC": 5.1
+      },
+      "monthly_risk_indices": {
+        "JAN": 0.034,
+        "FEB": 0.041,
+        "MAR": 0.158,
+        "APR": 0.311,
+        "MAY": 0.592,
+        "JUN": 0.901,
+        "JUL": 0.861,
+        "AUG": 0.821,
+        "SEP": 0.511,
+        "OCT": 0.26,
+        "NOV": 0.034,
+        "DEC": 0.01
+      }
+    },
+    "SUB HIMALAYAN WEST BENGAL & SIKKIM": {
+      "subdivision": "SUB HIMALAYAN WEST BENGAL & SIKKIM",
+      "region_code": "NER_SK",
+      "states": [
+        "Sikkim"
+      ],
+      "primary_hubs": [
+        "Gangtok"
+      ],
+      "coverage_years": "1901-2017",
+      "average_annual_mm": 3196.8,
+      "average_monsoon_mm": 2472.2,
+      "monthly_means_mm": {
+        "JAN": 15.7,
+        "FEB": 21.0,
+        "MAR": 57.6,
+        "APR": 133.9,
+        "MAY": 330.2,
+        "JUN": 650.2,
+        "JUL": 761.6,
+        "AUG": 640.2,
+        "SEP": 420.2,
+        "OCT": 154.6,
+        "NOV": 15.1,
+        "DEC": 5.1
+      },
+      "monthly_risk_indices": {
+        "JAN": 0.021,
+        "FEB": 0.028,
+        "MAR": 0.076,
+        "APR": 0.176,
+        "MAY": 0.434,
+        "JUN": 0.854,
+        "JUL": 1.0,
+        "AUG": 0.841,
+        "SEP": 0.552,
+        "OCT": 0.203,
+        "NOV": 0.02,
+        "DEC": 0.007
+      }
+    }
+  },
+  "annual_trend_series": [
+    {
+      "year": 1901,
+      "avg_annual_mm": 2767.2
+    },
+    {
+      "year": 1902,
+      "avg_annual_mm": 3361.5
+    },
+    {
+      "year": 1903,
+      "avg_annual_mm": 2949.6
+    },
+    {
+      "year": 1904,
+      "avg_annual_mm": 2887.1
+    },
+    {
+      "year": 1905,
+      "avg_annual_mm": 2659.7
+    },
+    {
+      "year": 1910,
+      "avg_annual_mm": 2862.2
+    },
+    {
+      "year": 1920,
+      "avg_annual_mm": 2788.8
+    },
+    {
+      "year": 1930,
+      "avg_annual_mm": 2825.3
+    },
+    {
+      "year": 1940,
+      "avg_annual_mm": 3189.7
+    },
+    {
+      "year": 1950,
+      "avg_annual_mm": 3271.5
+    },
+    {
+      "year": 1960,
+      "avg_annual_mm": 2373.3
+    },
+    {
+      "year": 1970,
+      "avg_annual_mm": 2778.1
+    },
+    {
+      "year": 1980,
+      "avg_annual_mm": 3137.7
+    },
+    {
+      "year": 1988,
+      "avg_annual_mm": 3685.3
+    },
+    {
+      "year": 1998,
+      "avg_annual_mm": 3397.7
+    },
+    {
+      "year": 2004,
+      "avg_annual_mm": 3594.1
+    },
+    {
+      "year": 2010,
+      "avg_annual_mm": 3203.1
+    },
+    {
+      "year": 2017,
+      "avg_annual_mm": 2940.8
+    }
+  ],
+  "extreme_rainfall_records": [
+    {
+      "rank": 1,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 1998,
+      "annual_rainfall_mm": 3825.6,
+      "monsoon_rainfall_mm": 2621.0,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 2,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 1988,
+      "annual_rainfall_mm": 3685.3,
+      "monsoon_rainfall_mm": 2531.6,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 3,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 2004,
+      "annual_rainfall_mm": 3594.1,
+      "monsoon_rainfall_mm": 2475.8,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 4,
+      "subdivision": "SUB HIMALAYAN WEST BENGAL & SIKKIM",
+      "year": 1998,
+      "annual_rainfall_mm": 3563.2,
+      "monsoon_rainfall_mm": 2721.2,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 5,
+      "subdivision": "ARUNACHAL PRADESH",
+      "year": 1998,
+      "annual_rainfall_mm": 3563.0,
+      "monsoon_rainfall_mm": 2420.9,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 6,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "annual_rainfall_mm": 3361.5,
+      "monsoon_rainfall_mm": 1887.0,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 7,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 2017,
+      "annual_rainfall_mm": 3345.4,
+      "monsoon_rainfall_mm": 2340.9,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 8,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 1950,
+      "annual_rainfall_mm": 3337.0,
+      "monsoon_rainfall_mm": 2311.2,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 9,
+      "subdivision": "ARUNACHAL PRADESH",
+      "year": 1950,
+      "annual_rainfall_mm": 3271.6,
+      "monsoon_rainfall_mm": 2230.9,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    },
+    {
+      "rank": 10,
+      "subdivision": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "annual_rainfall_mm": 3231.2,
+      "monsoon_rainfall_mm": 1957.7,
+      "disclaimer": "Historical High-Rainfall Record (1901-2017 IMD Baseline)"
+    }
+  ],
+  "normalized_records_sample": [
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-JAN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "JAN",
+      "rainfall_mm": 27.1,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-FEB",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "FEB",
+      "rainfall_mm": 19.5,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-MAR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "MAR",
+      "rainfall_mm": 95.7,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-APR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "APR",
+      "rainfall_mm": 178.6,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-MAY",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "MAY",
+      "rainfall_mm": 262.3,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-JUN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "JUN",
+      "rainfall_mm": 618.3,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-JUL",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "JUL",
+      "rainfall_mm": 556.7,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-AUG",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "AUG",
+      "rainfall_mm": 511.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-SEP",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "SEP",
+      "rainfall_mm": 271.3,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-OCT",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "OCT",
+      "rainfall_mm": 178.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-NOV",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "NOV",
+      "rainfall_mm": 14.6,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1901-DEC",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1901,
+      "month": "DEC",
+      "rainfall_mm": 3.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-JAN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "JAN",
+      "rainfall_mm": 9.3,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-FEB",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "FEB",
+      "rainfall_mm": 10.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-MAR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "MAR",
+      "rainfall_mm": 94.9,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-APR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "APR",
+      "rainfall_mm": 235.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-MAY",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "MAY",
+      "rainfall_mm": 504.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-JUN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "JUN",
+      "rainfall_mm": 467.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-JUL",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "JUL",
+      "rainfall_mm": 625.3,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-AUG",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "AUG",
+      "rainfall_mm": 376.5,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-SEP",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "SEP",
+      "rainfall_mm": 417.8,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-OCT",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "OCT",
+      "rainfall_mm": 79.5,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-NOV",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "NOV",
+      "rainfall_mm": 35.1,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1902-DEC",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1902,
+      "month": "DEC",
+      "rainfall_mm": 1.1,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-JAN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "JAN",
+      "rainfall_mm": 19.9,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-FEB",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "FEB",
+      "rainfall_mm": 25.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-MAR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "MAR",
+      "rainfall_mm": 80.6,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-APR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "APR",
+      "rainfall_mm": 134.7,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-MAY",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "MAY",
+      "rainfall_mm": 337.8,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-JUN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "JUN",
+      "rainfall_mm": 614.9,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-JUL",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "JUL",
+      "rainfall_mm": 642.6,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-AUG",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "AUG",
+      "rainfall_mm": 344.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-SEP",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "SEP",
+      "rainfall_mm": 328.7,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-OCT",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "OCT",
+      "rainfall_mm": 117.8,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-NOV",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "NOV",
+      "rainfall_mm": 1.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1903-DEC",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1903,
+      "month": "DEC",
+      "rainfall_mm": 1.8,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-JAN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "JAN",
+      "rainfall_mm": 11.1,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-FEB",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "FEB",
+      "rainfall_mm": 74.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-MAR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "MAR",
+      "rainfall_mm": 74.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-APR",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "APR",
+      "rainfall_mm": 238.4,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-MAY",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "MAY",
+      "rainfall_mm": 451.6,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-JUN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "JUN",
+      "rainfall_mm": 569.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-JUL",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "JUL",
+      "rainfall_mm": 563.8,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-AUG",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "AUG",
+      "rainfall_mm": 476.3,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-SEP",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "SEP",
+      "rainfall_mm": 277.2,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-OCT",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "OCT",
+      "rainfall_mm": 143.9,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-NOV",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "NOV",
+      "rainfall_mm": 0.0,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1904-DEC",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1904,
+      "month": "DEC",
+      "rainfall_mm": 7.0,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1905-JAN",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1905,
+      "month": "JAN",
+      "rainfall_mm": 19.9,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    },
+    {
+      "record_id": "RF-ASSAM_AND_MEGHALAYA-1905-FEB",
+      "source": "IMD/data.gov.in",
+      "dataset": "Sub Divisional Monthly Rainfall 1901-2017",
+      "region": "ASSAM & MEGHALAYA",
+      "year": 1905,
+      "month": "FEB",
+      "rainfall_mm": 16.9,
+      "data_type": "historical",
+      "source_type": "historical_dataset"
+    }
+  ],
+  "processed_records_count": 34,
+  "unmapped_records_count": 0,
+  "disclaimer": "HISTORICAL RAINFALL \u2014 NOT LIVE WEATHER. Multi-decade statistical baseline (1901\u20132017)."
+}

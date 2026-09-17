@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "dataset_name": "Indian Road Accident Statistical Dataset (2022\u20132025)",
+    "source_organization": "Kaggle (sehaj1104/indian-road-accident-dataset-20222025)",
+    "kaggle_source_url": "https://www.kaggle.com/datasets/sehaj1104/indian-road-accident-dataset-20222025",
+    "license": "CC0: Public Domain / Open Research Dataset",
+    "retrieval_date": "2026-09-13",
+    "coverage_period": "2022\u20132025",
+    "source_type": "historical_synthetic_dataset",
+    "neris_operational_scope": [
+      "Meghalaya",
+      "Assam",
+      "Arunachal Pradesh",
+      "Nagaland",
+      "Manipur",
+      "Mizoram",
+      "Tripura",
+      "Sikkim"
+    ],
+    "synthetic_data_limitations": "WARNING: Dataset documentation explicitly states that individual coordinates and contextual attributes are synthetically generated for statistical modeling. Individual records must NEVER be displayed as verified live emergency incidents.",
+    "preprocessing_steps": [
+      "1. Filtered records across North-East India transit corridors.",
+      "2. Validated column schema and enum types (severity, road_type, weather, visibility, traffic_density, time_of_day).",
+      "3. Aggregated risk indices by state, corridor, road_type, weather_condition, visibility, traffic_density, and time_of_day.",
+      "4. Computed deterministic NetworkX Dijkstra road accident penalty weights (1.0x to 1.35x).",
+      "5. Tagged all derived records with source_type = 'historical_synthetic_dataset'."
+    ],
+    "fields_used": [
+      "accident_id",
+      "year",
+      "time_of_day",
+      "state",
+      "district",
+      "road_type",
+      "severity",
+      "weather_condition",
+      "visibility",
+      "traffic_density",
+      "casualties_count"
+    ],
+    "fields_ignored": [
+      "latitude",
+      "longitude (Ignored for direct marker pin rendering due to synthetic coordinate limitation; aggregated into regional hotspot polygons/corridors)"
+    ],
+    "disclaimer": "HISTORICAL SYNTHETIC ROAD-ACCIDENT DATASET (source_type = 'historical_synthetic_dataset') \u2014 NOT VERIFIED LIVE INCIDENTS. Coordinates in source dataset are synthetically generated.",
+    "status": "VALIDATED_AND_AGGREGATED"
+  },
+  "state_baselines": {
+    "Assam": {
+      "state": "Assam",
+      "total_accidents": 2,
+      "fatal_accidents": 2,
+      "severe_injuries": 0,
+      "total_casualties": 3,
+      "average_event_risk_score": 10.28,
+      "risk_level": "CRITICAL",
+      "route_risk_multiplier": 1.35,
+      "severity_breakdown": {
+        "Fatal": 2
+      },
+      "road_type_breakdown": {
+        "National Highway (NH-27)": 1,
+        "Urban Highway (NH-27)": 1
+      },
+      "weather_breakdown": {
+        "Heavy Rain": 1,
+        "Clear": 1
+      },
+      "time_of_day_breakdown": {
+        "Night": 1,
+        "Evening": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Meghalaya": {
+      "state": "Meghalaya",
+      "total_accidents": 2,
+      "fatal_accidents": 1,
+      "severe_injuries": 1,
+      "total_casualties": 3,
+      "average_event_risk_score": 9.09,
+      "risk_level": "CRITICAL",
+      "route_risk_multiplier": 1.318,
+      "severity_breakdown": {
+        "Severe Injury": 1,
+        "Fatal": 1
+      },
+      "road_type_breakdown": {
+        "National Highway (NH-6)": 1,
+        "National Highway (NH-40)": 1
+      },
+      "weather_breakdown": {
+        "Fog/Mist": 1,
+        "Heavy Rain": 1
+      },
+      "time_of_day_breakdown": {
+        "Afternoon": 2
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Arunachal Pradesh": {
+      "state": "Arunachal Pradesh",
+      "total_accidents": 1,
+      "fatal_accidents": 0,
+      "severe_injuries": 1,
+      "total_casualties": 1,
+      "average_event_risk_score": 8.5,
+      "risk_level": "CRITICAL",
+      "route_risk_multiplier": 1.297,
+      "severity_breakdown": {
+        "Severe Injury": 1
+      },
+      "road_type_breakdown": {
+        "State Highway": 1
+      },
+      "weather_breakdown": {
+        "Heavy Rain": 1
+      },
+      "time_of_day_breakdown": {
+        "Evening": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Nagaland": {
+      "state": "Nagaland",
+      "total_accidents": 1,
+      "fatal_accidents": 1,
+      "severe_injuries": 0,
+      "total_casualties": 2,
+      "average_event_risk_score": 9.8,
+      "risk_level": "CRITICAL",
+      "route_risk_multiplier": 1.343,
+      "severity_breakdown": {
+        "Fatal": 1
+      },
+      "road_type_breakdown": {
+        "National Highway (NH-29)": 1
+      },
+      "weather_breakdown": {
+        "Clear": 1
+      },
+      "time_of_day_breakdown": {
+        "Morning": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Manipur": {
+      "state": "Manipur",
+      "total_accidents": 1,
+      "fatal_accidents": 0,
+      "severe_injuries": 0,
+      "total_casualties": 0,
+      "average_event_risk_score": 4.8,
+      "risk_level": "MODERATE",
+      "route_risk_multiplier": 1.168,
+      "severity_breakdown": {
+        "Minor Injury": 1
+      },
+      "road_type_breakdown": {
+        "National Highway (NH-2)": 1
+      },
+      "weather_breakdown": {
+        "Clear": 1
+      },
+      "time_of_day_breakdown": {
+        "Night": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Mizoram": {
+      "state": "Mizoram",
+      "total_accidents": 1,
+      "fatal_accidents": 0,
+      "severe_injuries": 0,
+      "total_casualties": 0,
+      "average_event_risk_score": 5.53,
+      "risk_level": "HIGH",
+      "route_risk_multiplier": 1.194,
+      "severity_breakdown": {
+        "Minor Injury": 1
+      },
+      "road_type_breakdown": {
+        "State Highway": 1
+      },
+      "weather_breakdown": {
+        "Fog/Mist": 1
+      },
+      "time_of_day_breakdown": {
+        "Night": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Tripura": {
+      "state": "Tripura",
+      "total_accidents": 1,
+      "fatal_accidents": 0,
+      "severe_injuries": 1,
+      "total_casualties": 1,
+      "average_event_risk_score": 8.38,
+      "risk_level": "CRITICAL",
+      "route_risk_multiplier": 1.293,
+      "severity_breakdown": {
+        "Severe Injury": 1
+      },
+      "road_type_breakdown": {
+        "National Highway (NH-8)": 1
+      },
+      "weather_breakdown": {
+        "Fog/Mist": 1
+      },
+      "time_of_day_breakdown": {
+        "Morning": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    },
+    "Sikkim": {
+      "state": "Sikkim",
+      "total_accidents": 1,
+      "fatal_accidents": 1,
+      "severe_injuries": 0,
+      "total_casualties": 3,
+      "average_event_risk_score": 10.18,
+      "risk_level": "CRITICAL",
+      "route_risk_multiplier": 1.35,
+      "severity_breakdown": {
+        "Fatal": 1
+      },
+      "road_type_breakdown": {
+        "National Highway (NH-10)": 1
+      },
+      "weather_breakdown": {
+        "Rain": 1
+      },
+      "time_of_day_breakdown": {
+        "Morning": 1
+      },
+      "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA"
+    }
+  },
+  "annual_trend_series": [
+    {
+      "year": 2022,
+      "accident_count": 2
+    },
+    {
+      "year": 2023,
+      "accident_count": 2
+    },
+    {
+      "year": 2024,
+      "accident_count": 3
+    },
+    {
+      "year": 2025,
+      "accident_count": 3
+    }
+  ],
+  "severity_distribution": {
+    "Fatal": 5,
+    "Severe Injury": 3,
+    "Minor Injury": 2
+  },
+  "weather_distribution": {
+    "Heavy Rain": 3,
+    "Fog/Mist": 3,
+    "Rain": 1,
+    "Clear": 3
+  },
+  "road_type_distribution": {
+    "National Highway (NH-27)": 1,
+    "National Highway (NH-6)": 1,
+    "National Highway (NH-10)": 1,
+    "National Highway (NH-2)": 1,
+    "State Highway": 2,
+    "National Highway (NH-29)": 1,
+    "National Highway (NH-8)": 1,
+    "Urban Highway (NH-27)": 1,
+    "National Highway (NH-40)": 1
+  },
+  "time_of_day_distribution": {
+    "Night": 3,
+    "Afternoon": 2,
+    "Morning": 3,
+    "Evening": 2
+  },
+  "processed_records_count": 10,
+  "unmapped_records_count": 0,
+  "disclaimer": "HISTORICAL ROAD RISK \u2014 NOT LIVE ACCIDENT DATA. Multi-year statistical baseline (2022\u20132025)."
+}

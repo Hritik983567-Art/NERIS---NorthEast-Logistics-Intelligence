@@ -1,0 +1,11 @@
+accident_id,date_time,year,time_of_day,state,district,road_type,severity,weather_condition,visibility,traffic_density,speed_limit_kmh,vehicles_involved,casualties_count,latitude,longitude,is_synthetic
+ACC-2022-NE-001,2022-06-15T22:30:00,2022,Night,Assam,Dima Hasao,National Highway (NH-27),Fatal,Heavy Rain,Poor,High,60,3,2,25.1823,93.0145,True
+ACC-2022-NE-002,2022-08-20T14:15:00,2022,Afternoon,Meghalaya,East Jaintia Hills,National Highway (NH-6),Severe Injury,Fog/Mist,Reduced,Medium,50,2,1,25.1245,92.4589,True
+ACC-2023-NE-003,2023-07-04T08:45:00,2023,Morning,Sikkim,East Sikkim,National Highway (NH-10),Fatal,Rain,Reduced,High,40,2,3,27.3211,88.6123,True
+ACC-2023-NE-004,2023-11-12T20:10:00,2023,Night,Manipur,Senapati,National Highway (NH-2),Minor Injury,Clear,Normal,Medium,60,1,0,24.9812,93.9234,True
+ACC-2024-NE-005,2024-05-18T18:00:00,2024,Evening,Arunachal Pradesh,Papum Pare,State Highway,Severe Injury,Heavy Rain,Poor,High,50,2,1,27.1023,93.6189,True
+ACC-2024-NE-006,2024-09-25T11:30:00,2024,Morning,Nagaland,Dimapur,National Highway (NH-29),Fatal,Clear,Normal,Congested,40,4,2,25.9012,93.7289,True
+ACC-2024-NE-007,2024-10-30T23:45:00,2024,Night,Mizoram,Aizawl,State Highway,Minor Injury,Fog/Mist,Poor,Low,40,1,0,23.7289,92.7182,True
+ACC-2025-NE-008,2025-01-14T07:20:00,2025,Morning,Tripura,West Tripura,National Highway (NH-8),Severe Injury,Fog/Mist,Poor,High,50,2,1,23.8312,91.2812,True
+ACC-2025-NE-009,2025-03-08T19:15:00,2025,Evening,Assam,Kamrup Metropolitan,Urban Highway (NH-27),Fatal,Clear,Normal,Congested,60,3,1,26.1433,91.7898,True
+ACC-2025-NE-010,2025-06-22T15:50:00,2025,Afternoon,Meghalaya,East Khasi Hills,National Highway (NH-40),Fatal,Heavy Rain,Reduced,High,50,2,2,25.5788,91.8933,True

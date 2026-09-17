@@ -1,0 +1,13 @@
+event_id,title,event_type,state,district,latitude,longitude,event_date,year,severity,trigger,fatalities,source_type,source
+LS-2004-01,Major Landslide on Sonapur Tunnel Highway,LANDSLIDE,Meghalaya,East Jaintia Hills,25.1234,92.4567,2004-07-14,2004,CRITICAL,Heavy Rainfall,12,historical_dataset,NASA Global Landslide Catalog / Kaggle
+LS-2008-02,NH-54 Mudslide near Aizawl Pass,LANDSLIDE,Mizoram,Aizawl,23.7271,92.7176,2008-06-22,2008,HIGH,Monsoon Rain,4,historical_dataset,NASA Global Landslide Catalog / Kaggle
+FL-2010-03,Flash Flood at Teesta River Basin,FLASH_FLOOD,Sikkim,North Sikkim,27.5330,88.5122,2010-09-18,2010,CRITICAL,Cloudburst,18,historical_dataset,India Disaster Catalog / Kaggle
+LS-2012-04,Jowai-Ratacherra Highway Rockfall,LANDSLIDE,Meghalaya,West Jaintia Hills,25.4484,92.2033,2012-08-05,2012,HIGH,Torrential Rain,2,historical_dataset,NASA Global Landslide Catalog / Kaggle
+LS-2015-05,Imphal-Moreh Highway Blockade,LANDSLIDE,Manipur,Tengnoupal,24.2341,94.3012,2015-07-30,2015,CRITICAL,Cyclone Komen,21,historical_dataset,India Disaster Catalog / Kaggle
+FL-2017-06,Brahmaputra Basin Inundation at Kaziranga Stretch,RIVERINE_FLOOD,Assam,Nagaon,26.5775,93.1711,2017-07-12,2017,HIGH,Monsoon Overflow,8,historical_dataset,India Disaster Catalog / Kaggle
+LS-2018-07,Kohima-Dimapur Bypass Hillside Washout,LANDSLIDE,Nagaland,Kohima,25.6751,94.1086,2018-08-02,2018,CRITICAL,Heavy Monsoon Rain,6,historical_dataset,NASA Global Landslide Catalog / Kaggle
+FL-2019-08,Barak Valley Inundation at Silchar Sub-basin,FLASH_FLOOD,Assam,Cachar,24.8333,92.7789,2019-07-21,2019,CRITICAL,Monsoon Overflow,15,historical_dataset,India Disaster Catalog / Kaggle
+LS-2020-09,Itanagar Capital Complex Slope Failure,LANDSLIDE,Arunachal Pradesh,Papum Pare,27.1004,93.6166,2020-07-10,2020,HIGH,Monsoon Storm,5,historical_dataset,NASA Global Landslide Catalog / Kaggle
+LS-2021-10,Tawang Highway Snow-Slide & Debris Flow,LANDSLIDE,Arunachal Pradesh,Tawang,27.5860,91.8594,2021-05-19,2021,MODERATE,Snowmelt & Heavy Rain,0,historical_dataset,NASA Global Landslide Catalog / Kaggle
+FL-2022-11,Teesta River Highway Flash Surge at Rangpo,FLASH_FLOOD,Sikkim,East Sikkim,27.1763,88.5339,2022-06-18,2022,CRITICAL,Cloudburst Surge,14,historical_dataset,India Disaster Catalog / Kaggle
+LS-2023-12,NH-6 Jowai Pass Slump & Slope Disruption,LANDSLIDE,Meghalaya,East Jaintia Hills,25.3211,92.3104,2023-06-25,2023,CRITICAL,Monsoon Deluge,3,historical_dataset,NASA Global Landslide Catalog / Kaggle

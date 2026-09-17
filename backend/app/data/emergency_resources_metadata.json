@@ -1,0 +1,56 @@
+{
+  "dataset_name": "Emergency Resource Allocation Intelligence Data",
+  "source": "Kaggle",
+  "source_url": "https://www.kaggle.com/datasets/programmer3/emergency-resource-allocation-intelligence-data/data",
+  "source_organization": "Kaggle (programmer3/emergency-resource-allocation-intelligence-data)",
+  "kaggle_source_url": "https://www.kaggle.com/datasets/programmer3/emergency-resource-allocation-intelligence-data/data",
+  "license": "CC0: Public Domain / Open Research Dataset",
+  "license_verified": true,
+  "retrieval_date": "2026-09-13",
+  "ingested_at": "2026-09-13T18:43:39.962039+00:00",
+  "coverage_period": "2022–2026",
+  "source_type": "historical_dataset",
+  "data_type": "historical",
+  "processing_version": "1.0.0",
+  "total_rows": 10,
+  "valid_rows": 10,
+  "invalid_rows": 0,
+  "duplicate_rows": 0,
+  "northeast_states": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Sikkim",
+    "Tripura"
+  ],
+  "neris_operational_scope": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Sikkim",
+    "Tripura"
+  ],
+  "resource_categories": [
+    "OTHER",
+    "WAREHOUSE",
+    "MEDICAL",
+    "SHELTER",
+    "TRANSPORT",
+    "AMBULANCE",
+    "HOSPITAL"
+  ],
+  "preprocessing_steps": [
+    "1. Validated columns (resource_id, name, type, state, district, latitude, longitude, capacity_bed_or_sqm, available_capacity).",
+    "2. Tagged records strictly with source_type = 'historical_dataset' and data_type = 'historical'.",
+    "3. Calculated deterministic state historical resource coverage scores (0-100 scale).",
+    "4. Enforced non-live disclaimers across all resource intelligence outputs."
+  ],
+  "disclaimer": "HISTORICAL RESOURCE DATA (source_type = 'historical_dataset', data_type = 'historical') — NOT LIVE AVAILABILITY",
+  "status": "VALIDATED_AND_DERIVED"
+}

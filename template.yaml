@@ -1,0 +1,303 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  NERIS — North-East Regional Emergency Transit System
+  AWS Serverless Infrastructure Stack for AWS First Commit Hackathon
+  Note: NERIS is an independent student project and is not affiliated with the U.S. NERIS framework.
+
+Parameters:
+  Environment:
+    Type: String
+    Default: production
+    Description: Deployment environment mode (production, staging, development)
+  FrontendOrigin:
+    Type: String
+    Default: https://neris.app
+    Description: Production frontend origin URL for CORS configuration
+  EvidenceBucketName:
+    Type: String
+    Default: neris-evidence-photos-ap-south-1
+    Description: Amazon S3 Evidence Media Bucket Name
+  BedrockModelId:
+    Type: String
+    Default: anthropic.claude-3-haiku-20240307-v1:0
+    Description: Amazon Bedrock Model ID for AI Incident Intelligence
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 512
+    Runtime: python3.10
+    Environment:
+      Variables:
+        AWS_REGION_NAME: ap-south-1
+        DYNAMODB_INCIDENTS_TABLE: !Ref NerisIncidentsTable
+        S3_BUCKET_EVIDENCE: !Ref NerisEvidenceBucket
+        COGNITO_USER_POOL_ID: !Ref NerisUserPool
+        COGNITO_CLIENT_ID: !Ref NerisUserPoolClient
+        BEDROCK_MODEL_ID: !Ref BedrockModelId
+
+Resources:
+  # 1. DynamoDB Table for Incidents Persistence
+  NerisIncidentsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_incidents
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+
+  # 1b. DynamoDB Table for Alerts
+  NerisAlertsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_alerts
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 1c. DynamoDB Table for Disaster News Articles
+  NerisNewsArticlesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_news_articles
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 1d. DynamoDB Table for Fleet Telemetry
+  NerisFleetTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_fleet_telemetry
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 1e. DynamoDB Table for Historical Rainfall Dataset (1901-2017 IMD Baseline)
+  NerisHistoricalRainfallTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_historical_rainfall
+      AttributeDefinitions:
+        - AttributeName: subdivision
+          AttributeType: S
+      KeySchema:
+        - AttributeName: subdivision
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 1f. DynamoDB Table for Historical Landslide & Flood Research Dataset (Kaggle/NASA Historical Dataset)
+  NerisHistoricalLandslidesFloodsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_historical_landslides_floods
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 1g. DynamoDB Table for Historical Road Accident Risk Dataset (MORTH Baseline)
+  NerisHistoricalRoadAccidentsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_historical_road_accidents
+      AttributeDefinitions:
+        - AttributeName: state
+          AttributeType: S
+      KeySchema:
+        - AttributeName: state
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 1h. DynamoDB Table for Historical Emergency Resource Intelligence (Dataset 4)
+  NerisEmergencyResourcesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ner_emergency_resources
+      AttributeDefinitions:
+        - AttributeName: resource_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: resource_id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # 2. Amazon S3 Bucket for Field Evidence Photos (Hardened Security)
+  NerisEvidenceBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref EvidenceBucketName
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders: ['Content-Type', 'Authorization', 'X-Amz-Date']
+            AllowedMethods: ['GET', 'PUT', 'POST', 'HEAD']
+            AllowedOrigins:
+              - !Ref FrontendOrigin
+              - 'http://localhost:5173'
+              - 'http://127.0.0.1:5173'
+            MaxAge: 3000
+
+  # 3. Amazon Cognito User Pool for Commander & Officer Authentication
+  NerisUserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: NerisCommandUserPool
+      AutoVerifiedAttributes:
+        - email
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: false
+          RequireUppercase: true
+
+  NerisUserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: NerisWebClient
+      UserPoolId: !Ref NerisUserPool
+      GenerateSecret: false
+      ExplicitAuthFlows:
+        - ALLOW_USER_PASSWORD_AUTH
+        - ALLOW_REFRESH_TOKEN_AUTH
+
+  # 4. Amazon API Gateway HTTP API
+  NerisApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      Cors:
+        AllowMethods: "'GET,POST,PUT,PATCH,DELETE,OPTIONS'"
+        AllowHeaders: "'Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token'"
+        AllowOrigin: "'http://localhost:5173'"
+
+  # 5. AWS Lambda API Server Function (FastAPI Handler with Least-Privilege Policies)
+  NerisApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./backend
+      Handler: app.main.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisIncidentsTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisAlertsTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisNewsArticlesTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisFleetTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisHistoricalRainfallTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisHistoricalLandslidesFloodsTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisHistoricalRoadAccidentsTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisEmergencyResourcesTable
+        - S3CrudPolicy:
+            BucketName: !Ref NerisEvidenceBucket
+        - Statement:
+            - Effect: Allow
+              Action:
+                - bedrock:InvokeModel
+              Resource: !Sub "arn:aws:bedrock:${AWS::Region}::foundation-model/${BedrockModelId}"
+            - Effect: Allow
+              Action:
+                - secretsmanager:GetSecretValue
+              Resource: !Sub "arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:neris/*"
+      Events:
+        HealthApi:
+          Type: Api
+          Properties:
+            Path: /health
+            Method: get
+            RestApiId: !Ref NerisApi
+        IncidentsApiGet:
+          Type: Api
+          Properties:
+            Path: /incidents
+            Method: get
+            RestApiId: !Ref NerisApi
+        IncidentsApiPost:
+          Type: Api
+          Properties:
+            Path: /incidents
+            Method: post
+            RestApiId: !Ref NerisApi
+        ProxyApiGreedy:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: any
+            RestApiId: !Ref NerisApi
+
+  # 6. AWS Lambda Function for Amazon EventBridge Scheduled News Ingestion Pipeline
+  NerisNewsIngestionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./backend
+      Handler: app.handlers.news_ingestion.handler
+      Description: "Amazon EventBridge Scheduled Lambda Target: Fetches, normalizes, deduplicates, and persists disaster news to DynamoDB ('ner_news_articles')."
+      Timeout: 60
+      MemorySize: 512
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref NerisNewsArticlesTable
+      Events:
+        HourlyIngestionSchedule:
+          Type: Schedule
+          Properties:
+            Schedule: 'rate(1 hour)'
+            Name: NerisHourlyNewsIngestionRule
+            Description: "EventBridge cron rule triggering news ingestion Lambda every hour."
+            Enabled: true
+
+Outputs:
+  NerisApiUrl:
+    Description: "API Gateway Endpoint URL for Prod Stage"
+    Value: !Sub "https://${NerisApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+  NerisIncidentsTableName:
+    Description: "DynamoDB Table Name"
+    Value: !Ref NerisIncidentsTable
+  NerisEvidenceBucketName:
+    Description: "S3 Bucket Name for Field Evidence"
+    Value: !Ref NerisEvidenceBucket
+  NerisUserPoolId:
+    Description: "Cognito User Pool ID"
+    Value: !Ref NerisUserPool
+  NerisUserPoolClientId:
+    Description: "Cognito User Pool Web Client ID"
+    Value: !Ref NerisUserPoolClient
+

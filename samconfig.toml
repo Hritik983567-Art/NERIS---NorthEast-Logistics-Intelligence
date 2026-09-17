@@ -1,0 +1,46 @@
+# SAM CLI Configuration File — NERIS Stack Deployment
+version = 0.1
+
+[default]
+[default.global]
+[default.global.parameters]
+stack_name = "neris-stack"
+
+[default.build]
+[default.build.parameters]
+cached = true
+parallel = true
+
+[default.validate]
+[default.validate.parameters]
+lint = true
+
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "neris-stack"
+region = "ap-south-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = [
+  "Environment=\"production\"",
+  "FrontendOrigin=\"https://neris.app\"",
+  "EvidenceBucketName=\"neris-evidence-photos-ap-south-1\"",
+  "BedrockModelId=\"anthropic.claude-3-haiku-20240307-v1:0\""
+]
+image_repositories = []
+
+[default.package]
+[default.package.parameters]
+resolve_s3 = true
+
+[default.sync]
+[default.sync.parameters]
+watch = true
+
+[default.local_start_api]
+[default.local_start_api.parameters]
+warm_containers = "EAGER"
+
+[default.local_start_lambda]
+[default.local_start_lambda.parameters]
+warm_containers = "EAGER"

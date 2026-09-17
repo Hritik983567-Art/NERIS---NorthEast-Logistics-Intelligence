@@ -1,0 +1,46 @@
+{
+  "dataset_name": "Indian Road Accident Statistical Dataset (2022–2025)",
+  "source_organization": "Kaggle (sehaj1104/indian-road-accident-dataset-20222025)",
+  "kaggle_source_url": "https://www.kaggle.com/datasets/sehaj1104/indian-road-accident-dataset-20222025",
+  "license": "CC0: Public Domain / Open Research Dataset",
+  "retrieval_date": "2026-09-13",
+  "coverage_period": "2022–2025",
+  "source_type": "historical_synthetic_dataset",
+  "neris_operational_scope": [
+    "Meghalaya",
+    "Assam",
+    "Arunachal Pradesh",
+    "Nagaland",
+    "Manipur",
+    "Mizoram",
+    "Tripura",
+    "Sikkim"
+  ],
+  "synthetic_data_limitations": "WARNING: Dataset documentation explicitly states that individual coordinates and contextual attributes are synthetically generated for statistical modeling. Individual records must NEVER be displayed as verified live emergency incidents.",
+  "preprocessing_steps": [
+    "1. Filtered records across North-East India transit corridors.",
+    "2. Validated column schema and enum types (severity, road_type, weather, visibility, traffic_density, time_of_day).",
+    "3. Aggregated risk indices by state, corridor, road_type, weather_condition, visibility, traffic_density, and time_of_day.",
+    "4. Computed deterministic NetworkX Dijkstra road accident penalty weights (1.0x to 1.35x).",
+    "5. Tagged all derived records with source_type = 'historical_synthetic_dataset'."
+  ],
+  "fields_used": [
+    "accident_id",
+    "year",
+    "time_of_day",
+    "state",
+    "district",
+    "road_type",
+    "severity",
+    "weather_condition",
+    "visibility",
+    "traffic_density",
+    "casualties_count"
+  ],
+  "fields_ignored": [
+    "latitude",
+    "longitude (Ignored for direct marker pin rendering due to synthetic coordinate limitation; aggregated into regional hotspot polygons/corridors)"
+  ],
+  "disclaimer": "HISTORICAL SYNTHETIC ROAD-ACCIDENT DATASET (source_type = 'historical_synthetic_dataset') — NOT VERIFIED LIVE INCIDENTS. Coordinates in source dataset are synthetically generated.",
+  "status": "VALIDATED_AND_AGGREGATED"
+}

@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Production Builds
+dist/
+frontend/dist/
+build/
+
+# Local & IDE
+.DS_Store
+*.local
+.vscode/
+.idea/
+
+# Python & AWS SAM
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.aws-sam/
+
+# Environment / Secrets
+.env
+*.env
+
+# Scratch & temporary uploads
+scratch/
+backend/app/data/uploads/*
+!backend/app/data/uploads/.gitkeep
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
