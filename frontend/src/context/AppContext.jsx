@@ -671,45 +671,33 @@ export const AppProvider = ({ children }) => {
 
   const acknowledgeCommandAlert = async (alertId) => {
     const actorName = user?.name || "Cmdr. R. Gogoi";
-    const res = await api.acknowledgeAlert(alertId, actorName);
-    const updatedObj = res?.alert || (res?.id ? res : null);
-    if (updatedObj) {
-      setAlerts((prev) => prev.map((a) => (a.id === alertId ? updatedObj : a)));
-    } else {
-      setAlerts((prev) =>
-        prev.map((a) =>
-          a.id === alertId
-            ? {
-                ...a,
-                status: 'ACKNOWLEDGED',
-                acknowledged_by: actorName,
-                acknowledged_at: new Date().toISOString()
-              }
-            : a
-        )
-      );
+    try {
+      const res = await api.acknowledgeAlert(alertId, actorName);
+      const updatedObj = res?.alert || (res?.id ? res : null);
+      if (updatedObj) {
+        setAlerts((prev) => prev.map((a) => (a.id === alertId ? updatedObj : a)));
+        return updatedObj;
+      }
+      throw new Error(res?.error || "Failed to acknowledge alert on backend server.");
+    } catch (err) {
+      console.error("Alert acknowledgment failed:", err);
+      throw err;
     }
   };
 
   const resolveCommandAlert = async (alertId) => {
     const actorName = user?.name || "Cmdr. R. Gogoi";
-    const res = await api.resolveAlert(alertId, actorName);
-    const updatedObj = res?.alert || (res?.id ? res : null);
-    if (updatedObj) {
-      setAlerts((prev) => prev.map((a) => (a.id === alertId ? updatedObj : a)));
-    } else {
-      setAlerts((prev) =>
-        prev.map((a) =>
-          a.id === alertId
-            ? {
-                ...a,
-                status: 'RESOLVED',
-                resolved_by: actorName,
-                resolved_at: new Date().toISOString()
-              }
-            : a
-        )
-      );
+    try {
+      const res = await api.resolveAlert(alertId, actorName);
+      const updatedObj = res?.alert || (res?.id ? res : null);
+      if (updatedObj) {
+        setAlerts((prev) => prev.map((a) => (a.id === alertId ? updatedObj : a)));
+        return updatedObj;
+      }
+      throw new Error(res?.error || "Failed to resolve alert on backend server.");
+    } catch (err) {
+      console.error("Alert resolution failed:", err);
+      throw err;
     }
   };
 

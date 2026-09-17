@@ -36,7 +36,7 @@ export const FieldReporter = () => {
   const [reporter, setReporter] = useState('Inspector R. Gogoi (BRO Division)');
   const [description, setDescription] = useState('');
 
-  const [photoPreview, setPhotoPreview] = useState("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80");
+  const [photoPreview, setPhotoPreview] = useState(null);
   const [photoFile, setPhotoFile] = useState(null);
   const [fileError, setFileError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -340,11 +340,17 @@ export const FieldReporter = () => {
             />
 
             <div style={{ display: 'flex', gap: '14px', alignItems: 'center', flexWrap: 'wrap' }}>
-              <img
-                src={photoPreview}
-                alt="Incident Preview"
-                style={{ width: '90px', height: '55px', borderRadius: '8px', objectFit: 'cover', border: '1px solid var(--color-border)' }}
-              />
+              {photoPreview ? (
+                <img
+                  src={photoPreview}
+                  alt="Incident Preview"
+                  style={{ width: '90px', height: '55px', borderRadius: '8px', objectFit: 'cover', border: '1px solid var(--color-border)' }}
+                />
+              ) : (
+                <div style={{ width: '90px', height: '55px', borderRadius: '8px', background: 'var(--color-surface)', border: '1px dashed var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.65rem', color: 'var(--color-muted)', textAlign: 'center', padding: '4px' }}>
+                  No evidence attached
+                </div>
+              )}
               <button
                 type="button"
                 onClick={handlePhotoClick}

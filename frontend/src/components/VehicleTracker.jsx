@@ -342,8 +342,8 @@ export const VehicleTracker = () => {
                     <strong style={{ fontFamily: 'var(--font-mono)' }}>TX-{selectedFleet.id}</strong>
                   </div>
                   <div>
-                    <span style={{ color: 'var(--color-muted)', fontSize: '0.66rem', display: 'block' }}>GPS Fix & Satellites:</span>
-                    <strong style={{ color: '#059669' }}>12 Satellites (NavIC)</strong>
+                    <span style={{ color: 'var(--color-muted)', fontSize: '0.66rem', display: 'block' }}>GPS Fix & Telemetry:</span>
+                    <strong style={{ color: '#059669' }}>GPS: SIMULATED (Client Loop)</strong>
                   </div>
                   <div>
                     <span style={{ color: 'var(--color-muted)', fontSize: '0.66rem', display: 'block' }}>GPS Latitude / Longitude:</span>
@@ -488,11 +488,11 @@ export const VehicleTracker = () => {
                     gap: '6px'
                   }}
                 >
-                  <Phone size={14} /> {callingDriver ? (t.radioLinked || 'Radio Linked...') : t.radioCall}
+                  <Phone size={14} /> {callingDriver ? 'Simulated Radio Connected...' : 'Simulated Radio Link'}
                 </button>
                 {callingDriver && (
                   <div style={{ marginTop: '8px', padding: '6px 8px', borderRadius: '6px', background: 'rgba(16, 185, 129, 0.12)', border: '1px solid rgba(16, 185, 129, 0.3)', color: '#059669', fontSize: '0.72rem', fontWeight: 600 }}>
-                    🎙️ {t.connectingSatellite || "Connecting satellite channel to"} {selectedFleet.driver}...
+                    🎙️ Simulated Radio Channel active with {selectedFleet.driver}...
                   </div>
                 )}
               </div>

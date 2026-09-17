@@ -144,11 +144,27 @@ export const AlertCenter = () => {
   const [sosFeedback, setSosFeedback] = useState(false);
   const [statusFilter, setStatusFilter] = useState('ALL');
 
+  const [sosSubmitting, setSosSubmitting] = useState(false);
+  const [sosError, setSosError] = useState(null);
+
   const handleManualSOS = async (e) => {
     e.preventDefault();
-    await triggerSOSAlert(selectedFleetId, sosReason);
-    setSosFeedback(true);
-    setTimeout(() => setSosFeedback(false), 4500);
+    if (sosSubmitting) return;
+    setSosSubmitting(true);
+    setSosError(null);
+    try {
+      const result = await triggerSOSAlert(selectedFleetId, sosReason);
+      if (result) {
+        setSosFeedback(true);
+        setTimeout(() => setSosFeedback(false), 4500);
+      } else {
+        setSosError("SOS Dispatch Failed: Server error.");
+      }
+    } catch (err) {
+      setSosError(`SOS Dispatch Failed: ${err.message || 'Server connection error.'}`);
+    } finally {
+      setSosSubmitting(false);
+    }
   };
 
   const currentStatement = fleetStatements[selectedFleetId] || {
@@ -672,9 +688,26 @@ export const AlertCenter = () => {
               </div>
             )}
 
-            <button type="submit" className="btn-primary sos-pulse-btn" style={{ padding: '12px', marginTop: 'auto', minHeight: '44px' }}>
+            {sosError && (
+              <div style={{ padding: '8px 12px', borderRadius: '6px', background: 'rgba(239, 68, 68, 0.15)', border: '1px solid #EF4444', color: '#F87171', fontSize: '0.76rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <AlertTriangle size={15} color="#EF4444" /> {sosError}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={sosSubmitting}
+              className="btn-primary sos-pulse-btn"
+              style={{
+                padding: '12px',
+                marginTop: 'auto',
+                minHeight: '44px',
+                opacity: sosSubmitting ? 0.7 : 1,
+                cursor: sosSubmitting ? 'not-allowed' : 'pointer'
+              }}
+            >
               <ShieldAlert size={16} />
-              {t.sosDispatch}
+              {sosSubmitting ? "DISPATCHING..." : t.sosDispatch}
             </button>
           </form>
         </div>

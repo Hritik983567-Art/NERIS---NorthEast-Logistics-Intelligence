@@ -525,7 +525,7 @@ export const GISMap = () => {
               const lng = Number(inc?.lng ?? inc?.longitude);
               return Number.isFinite(lat) && Number.isFinite(lng);
             })
-            .map((inc) => {
+            .map((inc, idx) => {
               const lat = Number(inc.lat ?? inc.latitude);
               const lng = Number(inc.lng ?? inc.longitude);
               const isLive = Boolean(inc.is_live || inc.dynamodb_confirmed || inc.status === 'SYNCED' || inc.status === 'SUBMITTED');
@@ -533,7 +533,7 @@ export const GISMap = () => {
 
               return (
                 <Marker
-                  key={inc.id || `inc-${Math.random()}`}
+                  key={inc.id || `inc-marker-${idx}`}
                   position={[lat, lng]}
                   icon={String(inc.type || '').toLowerCase() === 'flood' ? floodIcon : landslideIcon}
                   eventHandlers={{
@@ -583,13 +583,13 @@ export const GISMap = () => {
               const lng = Number(ev?.lng ?? ev?.longitude);
               return Number.isFinite(lat) && Number.isFinite(lng);
             })
-            .map((ev) => {
+            .map((ev, idx) => {
               const lat = Number(ev.lat ?? ev.latitude);
               const lng = Number(ev.lng ?? ev.longitude);
 
               return (
                 <Marker
-                  key={ev.id || `hist-${ev.event_name || Math.random()}`}
+                  key={ev.id || `hist-marker-${idx}`}
                   position={[lat, lng]}
                   icon={historicalMarkerIcon}
                 >
@@ -753,13 +753,13 @@ export const GISMap = () => {
               const lng = Number(f?.lng ?? f?.longitude);
               return Number.isFinite(lat) && Number.isFinite(lng);
             })
-            .map((f) => {
+            .map((f, idx) => {
               const lat = Number(f.lat ?? f.latitude);
               const lng = Number(f.lng ?? f.longitude);
 
               return (
                 <Marker
-                  key={f.id || `fleet-${Math.random()}`}
+                  key={f.id || `fleet-marker-${idx}`}
                   position={[lat, lng]}
                   icon={truckIcon}
                   eventHandlers={{
@@ -840,8 +840,12 @@ export const GISMap = () => {
                   </span>
 
                   {selectedItem.type === 'incident' && (
-                    <span className={`pill ${(selectedItem.data.is_live || selectedItem.data.dynamodb_confirmed || selectedItem.data.status === 'SYNCED' || selectedItem.data.status === 'SUBMITTED') ? 'blocked' : 'clear'}`} style={{ fontSize: '0.64rem', fontWeight: 800 }}>
-                      {(selectedItem.data.is_live || selectedItem.data.dynamodb_confirmed || selectedItem.data.status === 'SYNCED' || selectedItem.data.status === 'SUBMITTED') ? '🔴 ACTIVE VERIFIED INCIDENT' : 'REGISTERED INCIDENT'}
+                    <span className={`pill ${selectedItem.data.source_type === 'historical_dataset' ? 'caution' : (selectedItem.data.is_verified || selectedItem.data.verificationStatus === 'VERIFIED') ? 'blocked' : 'clear'}`} style={{ fontSize: '0.64rem', fontWeight: 800 }}>
+                      {selectedItem.data.source_type === 'historical_dataset'
+                        ? '📜 HISTORICAL RISK EVENT'
+                        : (selectedItem.data.is_verified || selectedItem.data.verificationStatus === 'VERIFIED')
+                          ? '🔴 VERIFIED INCIDENT'
+                          : '🟡 UNVERIFIED REPORT'}
                     </span>
                   )}
                 </div>

@@ -814,7 +814,12 @@ export const NewsCenter = () => {
                   <span style={{ fontSize: '0.76rem', fontWeight: 800, color: 'var(--color-muted)' }}>
                     📍 {getLocalizedLocation(activeArticleModal.location, lang)}
                   </span>
-                  <span className="pill clear" style={{ fontSize: '0.64rem' }}>LIVE EXTERNAL FEED</span>
+                  <span className="pill warning" style={{ fontSize: '0.64rem', padding: '2px 6px' }}>
+                    APPROXIMATE LOCATION — REQUIRES VERIFICATION
+                  </span>
+                  <span className={`pill ${providerStatus === 'LOCAL_FALLBACK' ? 'warning' : 'clear'}`} style={{ fontSize: '0.64rem' }}>
+                    {providerStatus === 'LOCAL_FALLBACK' ? 'LOCAL FALLBACK — NOT LIVE EXTERNAL FEED' : 'LIVE EXTERNAL FEED'}
+                  </span>
                 </div>
 
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginTop: '8px', color: 'var(--color-text)', lineHeight: 1.35 }}>

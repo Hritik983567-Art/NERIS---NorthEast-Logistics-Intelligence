@@ -177,6 +177,7 @@ class NERRoutingEngine:
         road_svc = get_road_accident_service()
         road_risk_factor = road_svc.get_route_road_risk_weight(u, v)
         if road_risk_factor > 1.1:
+            edge_risk_factors.append(f"Historical Road Accident Risk ({road_risk_factor}x)")
             edge_risk_factors.append(f"Road Incident Blackspot Exposure ({road_risk_factor}x)")
 
         # 2e. Historical Emergency Resource Accessibility Factor

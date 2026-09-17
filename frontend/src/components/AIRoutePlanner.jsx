@@ -112,27 +112,49 @@ export const AIRoutePlanner = () => {
 
   const [dispatchedInfo, setDispatchedInfo] = useState(null);
 
-  const handleDispatchConvoy = (type = 'primary') => {
+  const handleDispatchConvoy = async (type = 'primary') => {
     setSelectedRouteType(type);
+    let chosenRoute = null;
+
     if (type === 'alternate' && routeResult.alternate_route) {
-      setDispatchedInfo({
+      chosenRoute = {
         name: routeResult.alternate_route.route_name || "Secondary Alternate Corridor",
         distance: routeResult.alternate_route.distance,
         time: routeResult.alternate_route.estimated_time,
         type: "Alternate Secondary Corridor"
-      });
+      };
     } else {
-      setDispatchedInfo({
+      chosenRoute = {
         name: `Primary Corridor (${routeResult.path_nodes.join(' ➔ ')})`,
         distance: routeResult.distance,
         time: routeResult.estimated_time,
         type: "Primary Recommended Vector"
-      });
+      };
     }
-    setDispatchSuccess(true);
-    setTimeout(() => {
-      setDispatchSuccess(false);
-    }, 5000);
+
+    try {
+      const res = await api.dispatchRouteConvoy({
+        route_id: routeResult.routeId,
+        origin,
+        destination,
+        vehicle_type: "HEAVY_CONVOY",
+        selected_route: chosenRoute
+      });
+
+      if (res && res.status === 'DISPATCH_CONFIRMED') {
+        setDispatchedInfo({
+          ...chosenRoute,
+          dispatch_id: res.dispatch?.dispatch_id,
+          backend_confirmed: true
+        });
+        setDispatchSuccess(true);
+        setTimeout(() => setDispatchSuccess(false), 5000);
+      } else {
+        setRouteError(res?.error || "Route dispatch failed to receive backend confirmation.");
+      }
+    } catch (err) {
+      setRouteError("Route dispatch error: " + err.message);
+    }
   };
 
   const getLocName = (name) => localizedLocations[name]?.[lang] || name;
@@ -235,7 +257,7 @@ export const AIRoutePlanner = () => {
             style={{ marginTop: '10px' }}
           >
             {loading ? (
-              <span>Computing Optimal Route Vector...</span>
+              <span>CALCULATING ROUTE...</span>
             ) : (
               <>
                 <Route size={18} />

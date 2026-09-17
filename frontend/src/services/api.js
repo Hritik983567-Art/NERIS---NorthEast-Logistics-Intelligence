@@ -301,6 +301,37 @@ export const api = {
     }
   },
 
+  dispatchRouteConvoy: async (dispatchPayload) => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/routes/dispatch`, {
+        method: 'POST',
+        headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
+        body: JSON.stringify(dispatchPayload)
+      });
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({ detail: 'Route dispatch failed' }));
+        return { status: 'FAILED', error: errData.detail || 'Route dispatch failed' };
+      }
+      return await res.json();
+    } catch (err) {
+      console.warn('Backend route dispatch error:', err.message);
+      return { status: 'FAILED', error: err.message };
+    }
+  },
+
+  getAnalyticsOverview: async () => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/analytics/overview`, {
+        headers: getAuthHeaders()
+      });
+      if (!res.ok) throw new Error('Failed to fetch analytics overview');
+      return await res.json();
+    } catch (err) {
+      console.warn('Backend analytics overview unavailable:', err.message);
+      return null;
+    }
+  },
+
   // Real-Time Web Intelligence & Weather
   getLiveNews: async (state = null, refresh = false) => {
     try {

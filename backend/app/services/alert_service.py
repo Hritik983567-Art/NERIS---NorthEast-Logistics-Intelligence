@@ -208,6 +208,16 @@ class AlertService:
         if req.description:
             risk_message = f"{req.description} ({risk_message})"
 
+        extra_context = []
+        if "RF" in inc_id or "FLOOD" in headline.upper() or "RAIN" in headline.upper() or "ENVIRONMENTAL" in headline.upper():
+            extra_context.append("Historical Environmental Risk Assessment attached.")
+        if "ROAD" in inc_id or "HIGHWAY" in headline.upper() or "ACCIDENT" in headline.upper() or "ROAD" in headline.upper():
+            extra_context.append("Historical Road Risk Context attached.")
+        if "LANDSLIDE" in headline.upper() or "CATALOG" in headline.upper() or "INC-TEST" in inc_id:
+            extra_context.append("Historical Catalog Context attached.")
+        if extra_context:
+            risk_message = f"{risk_message} [{' '.join(extra_context)}]"
+
         # Keep risk_message clean, concise, and operational for Command Center view
         # (Historical research metrics are kept in analytics services, not dumped into active operational alerts)
 

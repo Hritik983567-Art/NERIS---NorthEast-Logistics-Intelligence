@@ -113,6 +113,8 @@ async def add_security_headers(request: Request, call_next):
     response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
     return response
 
+from app.routers import analytics_router
+
 # Attach Tab & AWS Resource Routers
 app.include_router(auth_router.router)
 app.include_router(incidents_router.router)
@@ -127,6 +129,7 @@ app.include_router(rainfall_router.router)
 app.include_router(landslide_flood_router.router)
 app.include_router(road_risk_router.router)
 app.include_router(emergency_resource_router.router)
+app.include_router(analytics_router.router)
 
 import json
 
