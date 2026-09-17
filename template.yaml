@@ -193,22 +193,38 @@ Resources:
         - ALLOW_USER_PASSWORD_AUTH
         - ALLOW_REFRESH_TOKEN_AUTH
 
-  # 4. Amazon API Gateway HTTP API
+  # 4. Amazon API Gateway HTTP API (v2)
   NerisApi:
-    Type: AWS::Serverless::Api
+    Type: AWS::Serverless::HttpApi
     Properties:
       StageName: Prod
-      Cors:
-        AllowMethods: "'GET,POST,PUT,PATCH,DELETE,OPTIONS'"
-        AllowHeaders: "'Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token'"
-        AllowOrigin: "'http://localhost:5173'"
+      CorsConfiguration:
+        AllowMethods:
+          - GET
+          - POST
+          - PUT
+          - PATCH
+          - DELETE
+          - OPTIONS
+        AllowHeaders:
+          - Content-Type
+          - Authorization
+          - X-Amz-Date
+          - X-Api-Key
+          - X-Amz-Security-Token
+        AllowOrigins:
+          - !Ref FrontendOrigin
+          - "http://localhost:5173"
+          - "http://localhost:3000"
       Auth:
         DefaultAuthorizer: CognitoAuthorizer
         Authorizers:
           CognitoAuthorizer:
-            UserPoolArn: !GetAtt NerisUserPool.Arn
-            Identity:
-              Header: Authorization
+            JwtConfiguration:
+              issuer: !Sub "https://cognito-idp.${AWS::Region}.amazonaws.com/${NerisUserPool}"
+              audience:
+                - !Ref NerisUserPoolClient
+            IdentitySource: "$request.header.Authorization"
 
   # 5. AWS Lambda API Server Function (FastAPI Handler with Least-Privilege Policies)
   NerisApiFunction:
@@ -246,55 +262,55 @@ Resources:
               Resource: !Sub "arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:neris/*"
       Events:
         HealthApi:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /health
             Method: get
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
             Auth:
               Authorizer: NONE
         AuthLoginApi:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /api/v1/auth/login
             Method: post
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
             Auth:
               Authorizer: NONE
         AuthRegisterApi:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /api/v1/auth/register
             Method: post
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
             Auth:
               Authorizer: NONE
         AuthRefreshApi:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /api/v1/auth/refresh
             Method: post
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
             Auth:
               Authorizer: NONE
         IncidentsApiGet:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /incidents
             Method: get
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
         IncidentsApiPost:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /incidents
             Method: post
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
         ProxyApiGreedy:
-          Type: Api
+          Type: HttpApi
           Properties:
             Path: /{proxy+}
             Method: any
-            RestApiId: !Ref NerisApi
+            ApiId: !Ref NerisApi
 
   # 6. AWS Lambda Function for Amazon EventBridge Scheduled News Ingestion Pipeline
   NerisNewsIngestionFunction:

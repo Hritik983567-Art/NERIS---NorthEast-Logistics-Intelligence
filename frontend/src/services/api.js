@@ -521,7 +521,7 @@ export const api = {
       return data;
     } catch (err) {
       console.warn('Backend alert creation error:', err.message);
-      return null;
+      throw err;
     }
   },
 

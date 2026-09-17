@@ -614,24 +614,20 @@ export const AppProvider = ({ children }) => {
   const triggerSOSAlert = async (fleetId, message) => {
     const targetFleet = fleets.find(f => f.id === fleetId);
     const fleetName = targetFleet ? `${targetFleet.id} (${targetFleet.category})` : fleetId;
-    
-    let serverAlert = null;
-    try {
-      const serverRes = await api.dispatchSOS({
-        vehicle_id: fleetId,
-        reason: message || 'Urgent Escort Requested',
-        location: targetFleet?.currentLocationName || 'NER Emergency Corridor'
-      });
-      if (serverRes && serverRes.alert) {
-        serverAlert = serverRes.alert;
-      }
-    } catch (err) {
-      console.warn("Backend API SOS dispatch failed, falling back to local optimistic item:", err.message);
+
+    const serverRes = await api.dispatchSOS({
+      vehicle_id: fleetId,
+      reason: message || 'Urgent Escort Requested',
+      location: targetFleet?.currentLocationName || 'NER Emergency Corridor'
+    });
+
+    if (!serverRes || (!serverRes.alert && serverRes.status !== 'CREATED' && !serverRes.alert_id)) {
+      throw new Error(serverRes?.error || 'Emergency SOS Dispatch failed on backend server.');
     }
 
-    const alertToPush = serverAlert || {
-      id: `sos-${Date.now()}`,
-      alertId: `sos-${Date.now()}`,
+    const serverAlert = serverRes.alert || {
+      id: serverRes.alert_id || `ALT-SOS-${Date.now()}`,
+      alertId: serverRes.alert_id || `ALT-SOS-${Date.now()}`,
       title: `🚨 EMERGENCY SOS DISPATCHED: Convoy ${fleetName}`,
       type: "sos",
       timestamp: "JUST NOW",
@@ -639,12 +635,12 @@ export const AppProvider = ({ children }) => {
       message: `Disaster Cell Vectoring | ${message || 'Urgent Escort Requested'}`,
       description: `Disaster Cell Vectoring | ${message || 'Urgent Escort Requested'}`,
       status: "ACTIVE",
-      district: "ASSAM",
+      district: targetFleet?.state || "ASSAM",
       source: "NERIS Emergency Vectoring Engine"
     };
 
-    setBroadcastAlerts((prev) => [alertToPush, ...prev]);
-    setAlerts((prev) => [alertToPush, ...prev]);
+    setBroadcastAlerts((prev) => [serverAlert, ...prev]);
+    setAlerts((prev) => [serverAlert, ...prev]);
 
     if (targetFleet) {
       setFleets(prev => prev.map(f => f.id === fleetId ? { ...f, status: 'emergency' } : f));
@@ -660,14 +656,7 @@ export const AppProvider = ({ children }) => {
         if (parsed) return parsed;
       } catch (e) {}
     }
-    return {
-      id: "NER-CMD-8041",
-      name: "Cmdr. R. Gogoi",
-      role: "Disaster Logistics Commander",
-      hub: "Guwahati Central Depot (Assam)",
-      isPublic: false,
-      loginTime: "08:00 AM"
-    };
+    return null; // Require authentic login, no default logged-in commander
   });
 
   const isAuthenticated = !!user;
@@ -727,15 +716,19 @@ export const AppProvider = ({ children }) => {
   const login = async (officerId, password, role, hub) => {
     const cognitoRes = await api.loginCognito(officerId, password, role);
 
+    if (!cognitoRes || cognitoRes.status === 'FAILED' || cognitoRes.error || (!cognitoRes.access_token && !cognitoRes.user)) {
+      throw new Error(cognitoRes?.error || 'Authentication failed: Invalid credentials or unauthorized token.');
+    }
+
     const userRole = cognitoRes?.user?.role || role || "COMMANDER";
     const newUser = {
-      id: officerId || "NER-CMD-8041",
-      name: officerId ? `Officer ${officerId.toUpperCase()}` : "Cmdr. R. Gogoi",
+      id: cognitoRes?.user?.id || officerId || "NER-CMD-8041",
+      name: cognitoRes?.user?.name || (officerId ? `Officer ${officerId.toUpperCase()}` : "Cmdr. R. Gogoi"),
       role: userRole,
       hub: hub || "Guwahati Central Depot",
       isPublic: false,
-      authProvider: cognitoRes?.user?.auth_provider || "Development Fallback Mode (Demo)",
-      cognitoConfirmed: cognitoRes?.user?.cognito_confirmed || false,
+      authProvider: cognitoRes?.user?.auth_provider || "Amazon Cognito User Pool",
+      cognitoConfirmed: cognitoRes?.user?.cognito_confirmed || true,
       loginTime: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     };
     setUser(newUser);

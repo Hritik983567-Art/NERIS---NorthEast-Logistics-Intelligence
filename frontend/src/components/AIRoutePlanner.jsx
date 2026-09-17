@@ -27,32 +27,7 @@ export const AIRoutePlanner = () => {
   const [commodity, setCommodity] = useState("Life-Saving Vaccines & Insulin (Cold-Chain)");
   const [convoyWeight, setConvoyWeight] = useState(15.0);
 
-  const [routeResult, setRouteResult] = useState(() => {
-    return {
-      route_id: "route-init",
-      origin: "Guwahati Central Depot (Assam)",
-      destination: "Silchar FCI Hub (Assam)",
-      path_nodes: ["Guwahati", "Nongpoh", "Shillong", "Jowai", "Silchar"],
-      distance: 312.5,
-      estimated_time: 7.8,
-      risk_score: 22.4,
-      risk_factors: [
-        "Monsoon heavy rain warning penalty (1.3x) applied on Shillong-Jowai ghat stretch",
-        "Moderate terrain incline vulnerability index (0.35)"
-      ],
-      blocked_segments: [],
-      alternate_route: {
-        route_name: "Secondary Detour via Haflong / Umrangso Corridor",
-        path_nodes: ["Guwahati", "Nagaon", "Lumding", "Haflong", "Silchar"],
-        distance: 368.0,
-        estimated_time: 9.5,
-        risk_score: 38.0,
-        rationale: "Secondary state highway fallback bypasses Shillong plateau during extreme rainfall."
-      },
-      decision_explanation: "Primary Route via NH-27/NH-6 selected using multi-criteria disaster risk engine. This path provides optimal travel time (7.8 hrs) over 312.5 km while bypassing active landslide blockades.",
-      data_source_mode: "DEMO/SIMULATION"
-    };
-  });
+  const [routeResult, setRouteResult] = useState(null);
 
   const [loading, setLoading] = useState(false);
   const [routeError, setRouteError] = useState(null);
@@ -96,11 +71,7 @@ export const AIRoutePlanner = () => {
 
     if (apiResponse && apiResponse.error) {
       setRouteError(apiResponse.error);
-      setRouteResult(prev => ({
-        ...prev,
-        origin: targetOrigin,
-        destination: targetDest
-      }));
+      setRouteResult(null);
     } else if (apiResponse && (apiResponse.path_nodes || apiResponse.geometry)) {
       setRouteResult({
         routeId: apiResponse.routeId || apiResponse.route_id || `route-${Date.now()}`,
@@ -125,6 +96,7 @@ export const AIRoutePlanner = () => {
       });
     } else {
       setRouteError("Failed to calculate route from backend risk engine.");
+      setRouteResult(null);
     }
     setLoading(false);
   };
@@ -296,12 +268,14 @@ export const AIRoutePlanner = () => {
               Operational Route Results
             </h2>
             <p style={{ fontSize: '0.78rem', color: 'var(--color-muted)', marginTop: '2px' }}>
-              {t.origin}: <strong style={{ color: 'var(--color-text)' }}>{getLocName(routeResult.origin)}</strong> ➔ {t.destination}: <strong style={{ color: 'var(--color-text)' }}>{getLocName(routeResult.destination)}</strong>
+              {t.origin}: <strong style={{ color: 'var(--color-text)' }}>{routeResult ? getLocName(routeResult.origin) : getLocName(origin)}</strong> ➔ {t.destination}: <strong style={{ color: 'var(--color-text)' }}>{routeResult ? getLocName(routeResult.destination) : getLocName(destination)}</strong>
             </p>
           </div>
-          <span className={`pill ${routeResult.risk_score > 40 ? 'caution' : 'clear'}`} style={{ fontSize: '0.8rem', padding: '4px 10px' }}>
-            Risk Index: {routeResult.risk_score}/100
-          </span>
+          {routeResult && (
+            <span className={`pill ${routeResult.risk_score > 40 ? 'caution' : 'clear'}`} style={{ fontSize: '0.8rem', padding: '4px 10px' }}>
+              Risk Index: {routeResult.risk_score}/100
+            </span>
+          )}
         </div>
 
         {/* Route Error Alert */}
@@ -313,14 +287,16 @@ export const AIRoutePlanner = () => {
         )}
 
         {/* --- EXPLICIT ROUTE DECISION RATIONALE PANEL --- */}
-        <div style={{ padding: '12px 16px', borderRadius: '10px', background: 'rgba(2, 132, 199, 0.08)', border: '1px solid rgba(2, 132, 199, 0.3)', marginBottom: '14px', flexShrink: 0 }}>
-          <h4 style={{ fontSize: '0.84rem', fontWeight: 800, color: '#0284C7', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Info size={16} /> Route Decision Rationale (Why Selected)
-          </h4>
-          <p style={{ fontSize: '0.78rem', color: 'var(--color-text)', lineHeight: 1.45, margin: 0 }}>
-            {routeResult.decision_explanation}
-          </p>
-        </div>
+        {routeResult && (
+          <div style={{ padding: '12px 16px', borderRadius: '10px', background: 'rgba(2, 132, 199, 0.08)', border: '1px solid rgba(2, 132, 199, 0.3)', marginBottom: '14px', flexShrink: 0 }}>
+            <h4 style={{ fontSize: '0.84rem', fontWeight: 800, color: '#0284C7', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <Info size={16} /> Route Decision Rationale (Why Selected)
+            </h4>
+            <p style={{ fontSize: '0.78rem', color: 'var(--color-text)', lineHeight: 1.45, margin: 0 }}>
+              {routeResult.decision_explanation}
+            </p>
+          </div>
+        )}
 
         {/* Live Weather Indicator */}
         <div style={{ padding: '8px 12px', borderRadius: '8px', background: 'var(--color-surface)', border: '1px solid var(--color-border)', marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.76rem', color: 'var(--color-muted)', flexShrink: 0 }}>
@@ -334,7 +310,7 @@ export const AIRoutePlanner = () => {
             <div className="skeleton-card" style={{ height: '110px' }} />
             <div className="skeleton-card" style={{ height: '110px' }} />
           </div>
-        ) : (
+        ) : routeResult ? (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '12px', overflowY: 'auto' }}>
             {/* --- PRIMARY ROUTE CARD --- */}
             <div
@@ -478,6 +454,12 @@ export const AIRoutePlanner = () => {
                 </div>
               </div>
             )}
+          </div>
+        ) : (
+          <div style={{ padding: '36px 20px', textAlign: 'center', color: 'var(--color-muted)', background: 'var(--color-surface)', borderRadius: '12px', border: '1px border-dashed var(--color-border)' }}>
+            <Navigation size={32} color="var(--color-muted)" style={{ opacity: 0.5, marginBottom: '8px' }} />
+            <p style={{ fontSize: '0.88rem', fontWeight: 600, margin: '0 0 4px 0', color: 'var(--color-text)' }}>No Active Route Calculation</p>
+            <p style={{ fontSize: '0.76rem', margin: 0 }}>Select your origin, destination, cargo type & convoy weight, then click <strong>Calculate Route</strong>.</p>
           </div>
         )}
 

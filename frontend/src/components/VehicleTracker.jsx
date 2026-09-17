@@ -75,12 +75,15 @@ export const VehicleTracker = () => {
           <span className="pill clear" style={{ background: '#2563EB', color: '#FFF', fontWeight: 900, fontSize: '0.72rem', letterSpacing: '0.5px' }}>
             ⚡ LIVE TELEMETRY TRACKER
           </span>
+          <span className="pill clear" style={{ background: 'rgba(245, 158, 11, 0.2)', color: '#F59E0B', border: '1px solid #F59E0B', fontWeight: 800, fontSize: '0.68rem' }}>
+            SIMULATED TELEMETRY (DEMO/CLIENT LOOP)
+          </span>
           <span style={{ fontSize: '0.76rem', color: 'var(--color-muted)', fontWeight: 600 }}>
-            <em>Real-time fleet tracking & route trajectory monitoring active across high-vulnerability transit corridors.</em>
+            <em>Fleet trajectory updates active across high-vulnerability transit corridors.</em>
           </span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.72rem', color: '#2563EB', fontWeight: 800 }}>
-          <Cpu size={14} /> Telemetry Engine: Active
+          <Cpu size={14} /> Source: Client Telemetry Loop / Fallback API
         </div>
       </div>
 

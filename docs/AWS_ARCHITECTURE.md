@@ -5,6 +5,8 @@
 **AWS First Commit Track**: **Ship It Track**  
 *Disclaimer: NERIS is an independent student project and is not affiliated with the U.S. NERIS framework.*
 
+> [!NOTE]
+> **AWS Infrastructure Deployment Status**: The AWS SAM infrastructure stack (`template.yaml`) is packaged with `AWS::Serverless::HttpApi` and `python3.11` runtime specs. Live backend execution seamlessly uses local fallback cache adapters when running without active AWS IAM credentials.
 
 ---
 

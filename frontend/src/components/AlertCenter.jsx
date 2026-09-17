@@ -163,11 +163,14 @@ export const AlertCenter = () => {
     }
   };
 
+  const [broadcastError, setBroadcastError] = useState(null);
+
   const handleCustomBroadcast = async (e) => {
     e.preventDefault();
     if (!broadcastMessage) return;
+    setBroadcastError(null);
     try {
-      await api.createAlert({
+      const res = await api.createAlert({
         title: "Operational Command Advisory",
         message: broadcastMessage,
         type: "OPERATIONAL_ADVISORY",
@@ -175,14 +178,19 @@ export const AlertCenter = () => {
         recipientScope: "ALL_COMMANDERS",
         district: "ASSAM"
       });
+      if (res && (res.id || res.alert_id || res.status === 'CREATED')) {
+        setSentBroadcastFeedback(true);
+        setTimeout(() => {
+          setSentBroadcastFeedback(false);
+          setBroadcastMessage("");
+        }, 3000);
+      } else {
+        setBroadcastError("Broadcast Failed: Server error.");
+      }
     } catch (err) {
       console.warn("Failed to persist broadcast alert to DynamoDB:", err);
+      setBroadcastError(`Broadcast Failed: ${err.message || 'Server connection error.'}`);
     }
-    setSentBroadcastFeedback(true);
-    setTimeout(() => {
-      setSentBroadcastFeedback(false);
-      setBroadcastMessage("");
-    }, 3000);
   };
 
   const filteredAlerts = alerts.filter((alert) => {
@@ -553,6 +561,12 @@ export const AlertCenter = () => {
           {sentBroadcastFeedback && (
             <div style={{ padding: '8px 12px', borderRadius: '6px', background: 'rgba(16, 185, 129, 0.15)', border: '1px solid #10B981', color: '#065F46', fontSize: '0.76rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <CheckCircle2 size={15} /> Operational Advisory Logged!
+            </div>
+          )}
+
+          {broadcastError && (
+            <div style={{ padding: '8px 12px', borderRadius: '6px', background: 'rgba(239, 68, 68, 0.15)', border: '1px solid #EF4444', color: '#F87171', fontSize: '0.76rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <AlertTriangle size={15} color="#EF4444" /> {broadcastError}
             </div>
           )}
 

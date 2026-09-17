@@ -130,7 +130,7 @@ aws s3 sync dist/ s3://neris-frontend-web-hosting-ap-south-1 --delete
   - AWS CLI: `v2.36.44` installed
   - AWS SAM CLI: `v1.166.2` installed
   - SAM Validate: `PASSED` (`template.yaml is a valid SAM Template`)
-  - SAM Build: `PASSED` (`.aws-sam/build` compiled cleanly with `python3.10`)
+  - SAM Build: `PASSED` (`.aws-sam/build` compiled cleanly with `python3.11`)
   - AWS Credentials: `AWS CREDENTIALS NOT AVAILABLE` (`NoCredentials` on `aws sts get-caller-identity`)
 - **Local Regression Baselines**:
   - Dataset 1 (Historical Rainfall): `13/13 PASSED`

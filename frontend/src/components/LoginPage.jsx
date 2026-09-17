@@ -37,14 +37,17 @@ export const LoginPage = () => {
   const [officerRole, setOfficerRole] = useState('Disaster Logistics Commander');
   const [hub, setHub] = useState('Guwahati Central Depot (Assam)');
   const [isAuthenticating, setIsAuthenticating] = useState(false);
+  const [authError, setAuthError] = useState(null);
 
   const handleOfficerSubmit = async (e) => {
     e.preventDefault();
     setIsAuthenticating(true);
+    setAuthError(null);
     try {
       await login(officerId, password, officerRole, hub);
     } catch (err) {
       console.warn("Auth error:", err);
+      setAuthError(err.message || 'Authentication Failed: Invalid Cognito Credentials.');
     } finally {
       setIsAuthenticating(false);
     }
@@ -363,6 +366,13 @@ export const LoginPage = () => {
                   <span>Encrypted Auth</span>
                 </div>
               </div>
+
+              {authError && (
+                <div style={{ padding: '10px 14px', borderRadius: '8px', background: 'rgba(239, 68, 68, 0.12)', border: '1px solid #EF4444', color: '#F87171', fontSize: '0.8rem', fontWeight: 600, marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <ShieldAlert size={16} color="#EF4444" />
+                  <span>{authError}</span>
+                </div>
+              )}
 
               {/* Quick Officer Role Selector */}
               <div className="login-role-tabs">
