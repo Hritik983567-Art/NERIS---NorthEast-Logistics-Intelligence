@@ -4,6 +4,8 @@ import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 import asyncio
+import re
+import html
 from datetime import datetime, timezone
 from typing import List, Optional, Dict, Any, Tuple
 

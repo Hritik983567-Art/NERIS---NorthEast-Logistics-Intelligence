@@ -29,6 +29,8 @@ venv/
 
 # Scratch & temporary uploads
 scratch/
+!scratch/test_all_7_tabs_e2e.py
+!scratch/verify_disaster_news_feed.py
 backend/app/data/uploads/*
 !backend/app/data/uploads/.gitkeep
 
