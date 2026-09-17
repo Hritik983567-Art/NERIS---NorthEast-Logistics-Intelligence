@@ -10,11 +10,13 @@ router = APIRouter(tags=["AWS DynamoDB & S3 Incidents API"])
 @router.get("/api/v1/incidents", status_code=status.HTTP_200_OK)
 @router.get("/api/v1/incidents/live", status_code=status.HTTP_200_OK)
 async def get_all_incidents(
-    include_historical: bool = Query(False, description="Whether to append historical dataset events tagged with source_type = 'historical_dataset'")
+    include_historical: bool = Query(False, description="Whether to append historical dataset events tagged with source_type = 'historical_dataset'"),
+    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "DISPATCHER", "ADMIN"]))
 ):
     """
     Retrieves all field incidents directly from AWS DynamoDB ('ner_incidents' table).
     Live reported incidents are strictly tagged with source_type = 'live_verified_incident'.
+    Requires authenticated session.
     """
     service = get_incidents_service()
     incidents = service.get_live_incidents()
@@ -287,11 +289,15 @@ async def generate_presigned_upload_url(
 @router.get("/api/v1/incidents/presigned-download-url", status_code=status.HTTP_200_OK)
 async def generate_presigned_download_url(
     s3_key: str,
-    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "ADMIN"]))
+    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "DISPATCHER", "ADMIN"]))
 ):
     """
     Generates an Amazon S3 presigned GET URL for authorized access to private evidence photos.
+    Applies resource-level path traversal and authorization checks.
     """
+    if ".." in s3_key or s3_key.startswith("/"):
+        raise HTTPException(status_code=400, detail="Resource Access Denied: Invalid S3 key structure.")
+
     from app.adapters.aws_s3 import get_s3_adapter
     s3_adapter = get_s3_adapter()
     url = s3_adapter.generate_presigned_download_url(s3_key)
@@ -302,7 +308,10 @@ async def generate_presigned_download_url(
 @router.get("/incidents/{incident_id}", status_code=status.HTTP_200_OK)
 @router.get("/api/incidents/{incident_id}", status_code=status.HTTP_200_OK)
 @router.get("/api/v1/incidents/{incident_id}", status_code=status.HTTP_200_OK)
-async def get_incident_by_id_endpoint(incident_id: str):
+async def get_incident_by_id_endpoint(
+    incident_id: str,
+    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "DISPATCHER", "ADMIN"]))
+):
     """
     Retrieves a single incident by ID from AWS DynamoDB ('ner_incidents' table).
     """
@@ -333,13 +342,25 @@ async def update_incident_by_id_endpoint(
         )
 
     service = get_incidents_service()
-    updated = service.update_incident(incident_id, payload)
-    if not updated:
+    existing = service.get_incident_by_id(incident_id)
+    if not existing:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"Incident '{incident_id}' not found."
         )
 
+    # BOLA Ownership Check: FIELD_OFFICER can only update incidents they reported
+    user_role = str(user.get("role", "FIELD_OFFICER")).upper()
+    if "COMMANDER" not in user_role and "ADMIN" not in user_role:
+        reporter_id = existing.get("reported_by_user_id") or existing.get("reported_by") or existing.get("reporter")
+        user_id = user.get("sub") or user.get("username")
+        if reporter_id and user_id and str(reporter_id).lower() != str(user_id).lower():
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail=f"BOLA Access Denied: Role '{user_role}' is not authorized to modify incident '{incident_id}' created by another user."
+            )
+
+    updated = service.update_incident(incident_id, payload)
     return {
         "status": "UPDATED",
         "message": f"Incident '{incident_id}' successfully updated in AWS DynamoDB.",
@@ -469,6 +490,11 @@ async def batch_sync_incidents(
             if not (-90.0 <= lat_val <= 90.0) or not (-180.0 <= lng_val <= 180.0):
                 raise ValueError(f"Validation Error: GPS coordinates ({lat_val}, {lng_val}) out of bounds.")
 
+            # Extract authenticated user identity (NEVER trust client batch payload for identity)
+            auth_username = user.get("username") or user.get("sub") or "field_officer"
+            auth_user_id = user.get("sub") or f"USR-{auth_username.upper()}"
+            auth_role = user.get("role", "FIELD_OFFICER")
+
             # Map incident fields for DynamoDB
             inc_data = {
                 "id": str(item.get("id") or f"INC-{op_id.replace('OP-', '')}"),
@@ -481,13 +507,15 @@ async def batch_sync_incidents(
                 "location_name": str(item.get("location_name") or item.get("locationName") or "NER Corridor"),
                 "latitude": lat_val,
                 "longitude": lng_val,
-                "reporter": str(item.get("reporter", "Field Officer")),
+                "reporter": auth_username,
+                "reported_by": auth_username,
+                "reported_by_user_id": auth_user_id,
+                "reported_by_role": auth_role,
                 "description": str(item.get("description", "Offline synced incident report.")),
                 "evidence_url": evidence_url,
                 "evidence_status": "UPLOADED" if (s3_confirmed or evidence_url.startswith("http") or evidence_url.startswith("/uploads")) else "NONE",
                 "timestamp": str(item.get("created_at") or item.get("timestamp") or "")
             }
-
 
             db_res = service.create_incident(inc_data)
             

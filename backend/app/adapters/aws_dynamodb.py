@@ -158,12 +158,25 @@ class DynamoDBAdapter:
 
         # Try saving to live DynamoDB table
         saved_to_aws = False
+        duplicate_prevented = False
         if self.table:
             try:
                 db_item = _convert_floats_to_decimals(item)
-                self.table.put_item(Item=db_item)
-                logger.info(f"Successfully persisted incident '{inc_id}' to DynamoDB table '{self.table_name}'.")
-                saved_to_aws = True
+                # Conditional write to prevent overwriting existing record with same ID
+                try:
+                    self.table.put_item(
+                        Item=db_item,
+                        ConditionExpression="attribute_not_exists(id)"
+                    )
+                    logger.info(f"Successfully persisted incident '{inc_id}' to DynamoDB table '{self.table_name}'.")
+                    saved_to_aws = True
+                except ClientError as ce:
+                    if ce.response.get("Error", {}).get("Code") == "ConditionalCheckFailedException":
+                        logger.info(f"DynamoDB conditional check prevented duplicate overwrite for incident '{inc_id}'.")
+                        duplicate_prevented = True
+                        saved_to_aws = True
+                    else:
+                        raise
             except (BotoCoreError, ClientError) as err:
                 if settings.is_production:
                     logger.error(f"DynamoDB put_item failed in PRODUCTION mode: {err}")

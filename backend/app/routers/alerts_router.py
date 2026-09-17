@@ -13,7 +13,8 @@ router = APIRouter(tags=["Command Center Alert Hub API"])
 @router.get("/api/v1/alerts", response_model=List[NERISAlert], status_code=status.HTTP_200_OK)
 async def get_command_center_alerts(
     status_filter: Optional[str] = Query(None, alias="status", description="Filter alerts by status: ACTIVE, ACKNOWLEDGED, RESOLVED"),
-    severity: Optional[str] = Query(None, description="Filter alerts by severity: CRITICAL, HIGH, MODERATE, LOW")
+    severity: Optional[str] = Query(None, description="Filter alerts by severity: CRITICAL, HIGH, MODERATE, LOW"),
+    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "DISPATCHER", "ADMIN"]))
 ):
     """
     Retrieves all persistent Command Center alerts from AWS DynamoDB ('ner_alerts').
@@ -81,7 +82,10 @@ async def update_alert_status(
 @router.post("/alerts/evaluate-incident", status_code=status.HTTP_200_OK)
 @router.post("/api/alerts/evaluate-incident", status_code=status.HTTP_200_OK)
 @router.post("/api/v1/alerts/evaluate-incident", status_code=status.HTTP_200_OK)
-async def evaluate_incident_risk(req: IncidentEvaluationRequest):
+async def evaluate_incident_risk(
+    req: IncidentEvaluationRequest,
+    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "DISPATCHER", "ADMIN"]))
+):
     """
     Incident Workflow Step 2 & 3:
     Evaluates incident risk parameters and generates a Command Center alert if critical/high risk.

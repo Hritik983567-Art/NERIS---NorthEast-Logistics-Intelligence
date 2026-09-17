@@ -31,38 +31,16 @@ SEARCH_TOPICS = [
     {"query": "मणिपुर इंफाल हाइवे भूस्खलन बंद", "default_location": "MANIPUR", "hl": "hi", "ceid": "IN:hi"},
 
     # Bengali Topics
-    {"query": "উত্তর পূর্ব ভারত বন্যা ধস হাইওয়ে রাস্তা বন্ধ", "default_location": "TRIPURA", "hl": "bn", "ceid": "IN:bn"},
-    {"query": "অরুণাচল ত্রিপুরা বন্যা সড়ক যোগাযোগ ধস", "default_location": "TRIPURA", "hl": "bn", "ceid": "IN:bn"},
-    {"query": "সিকিম তিস্তা নদী বন্যা জাতীয় সড়ক ধস", "default_location": "SIKKIM", "hl": "bn", "ceid": "IN:bn"},
-
-    # Assamese Topics
-    {"query": "Assam Guwahati flood highway landslide news", "default_location": "ASSAM", "hl": "en-IN", "ceid": "IN:en"},
-
-    # Manipuri Topics
-    {"query": "Manipur Imphal Jiribam road landslide traffic", "default_location": "MANIPUR", "hl": "en-IN", "ceid": "IN:en"}
+    {"query": "North East India flood landslide news", "default_location": "TRIPURA", "hl": "bn", "ceid": "IN:bn"}
 ]
 
 DEMO_SEED_ARTICLES = [
     {
-        "title": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
-        "summary": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
-        "category": NewsCategory.LANDSLIDE.value,
-        "source": "BRO Project Vartak Command Bulletin",
-        "source_url": "https://bro.gov.in/advisories/sela-pass-nh13-landslide",
-        "published_at": "24 mins ago",
-        "location": "ARUNACHAL PRADESH",
-        "severity": SeverityLevel.CRITICAL.value,
-        "image_url": "/images/news/landslide.jpg",
-        "original_language": "as",
-        "title_native": "চেলা পাছ ভূস্খলন: টাৱাং সংযোগস্থলৰ ওচৰত ১৩ নং ৰাষ্ট্ৰীয় ঘাইপথ অৱৰুদ্ধ",
-        "summary_native": "মধ্যনিশাৰ প্ৰবল শিল খহাৰ পিছত সীমান্ত পথ সংগঠনে (BRO) চেলা সুৰংগ পথত ডজাৰ মোতায়েন কৰিছে। জৰুৰী বাহনসমূহ ভালুকপুং হৈ প্ৰেৰণ কৰা হৈছে।"
-    },
-    {
-        "title": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
-        "summary": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+        "title": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising; Residents Warned of Flood Risks",
+        "summary": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. Those living near riverbanks advised to take precautionary measures as situation escalates.",
         "category": NewsCategory.FLOOD.value,
-        "source": "Sikkim State Disaster Management Authority",
-        "source_url": "https://sdsma.sikkim.gov.in/alerts/teesta-flood-nh10",
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/sikkim/sikkim-red-alert-nh-10-closed-teesta-and-lachen-chu-rivers-rising-residents-warned-of-flood-risks/",
         "published_at": "1 hour ago",
         "location": "SIKKIM",
         "severity": SeverityLevel.CRITICAL.value,
@@ -72,88 +50,102 @@ DEMO_SEED_ARTICLES = [
         "summary_native": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin."
     },
     {
-        "title": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
-        "summary": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
-        "category": NewsCategory.WEATHER.value,
-        "source": "IMD Regional Met Centre Shillong",
-        "source_url": "https://mausam.imd.gov.in/shillong/fog-advisory-khasi",
+        "title": "Manipur CM Khemchand Singh Chairs High-Level Law & Order Review Meet, Assures Security for Highway Projects",
+        "summary": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors, transit security for goods convoys, and infrastructure project deployment.",
+        "category": NewsCategory.ROAD_TRANSPORT.value,
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/manipur/manipur-cm-khemchand-singh-chairs-high-level-law-order-review-meet-assures-security-for-highway-projects/",
+        "published_at": "4 hours ago",
+        "location": "MANIPUR",
+        "severity": SeverityLevel.HIGH.value,
+        "image_url": "/images/news/road_clearing.jpg",
+        "original_language": "mn",
+        "title_native": "Imphal-Dimapur NH-2 Highway Security & Transit Advisory",
+        "summary_native": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors."
+    },
+    {
+        "title": "Shillong Security Patrol Advisory Issued Following Incidents Across East Khasi Hills",
+        "summary": "Meghalaya Police and district administration intensify night security patrols and highway monitoring along Shillong transit corridors following recent incidents.",
+        "category": NewsCategory.GOVERNMENT_ADVISORY.value,
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/meghalaya/shillong-arson-spree-four-targets-in-24-hours-police-yet-to-identify-miscreants/",
         "published_at": "2 hours ago",
         "location": "MEGHALAYA",
         "severity": SeverityLevel.HIGH.value,
         "image_url": "/images/news/heavy_rain.jpg",
         "original_language": "en",
-        "title_native": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
-        "summary_native": "IMD Shillong issues Class-A visibility alert for East Khasi Hills."
+        "title_native": "Cherrapunji & Dawki Highway Transit Security Advisory",
+        "summary_native": "Meghalaya Police and district administration intensify security patrols and highway monitoring."
     },
     {
-        "title": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
-        "summary": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
-        "category": NewsCategory.LOGISTICS.value,
-        "source": "Food Corporation of India Zonal Directorate",
-        "source_url": "https://fci.gov.in/press/ner-coldchain-dispatch-2026",
+        "title": "Guwahati Heavy Rainfall Triggers Waterlogging and Traffic Snarls Across City",
+        "summary": "Incessant monsoon downpours in Kamrup Metropolitan district lead to severe urban waterlogging, slow freight movement, and emergency traffic diversions along major arterial roads.",
+        "category": NewsCategory.WEATHER.value,
+        "source": "India Today NE",
+        "source_url": "https://www.indiatodayne.in/assam/story/guwahati-heavy-rainfall-triggers-waterlogging-and-traffic-snarls-1045231-2024-07-05",
         "published_at": "3 hours ago",
         "location": "ASSAM",
-        "severity": SeverityLevel.LOW.value,
+        "severity": SeverityLevel.HIGH.value,
         "image_url": "/images/news/truck_convoy.jpg",
         "original_language": "hi",
-        "title_native": "गुवाहाटी एफसीआई डिपो से 40 कोल्ड-चेन काफिले दूरस्थ जिलों हेतु रवाना",
-        "summary_native": "मिजोरम, त्रिपुरा एवं मणिपुर के लिए आवश्यक टीकों एवं खाद्यान्न सामग्री से लदे काफिले उपग्रह ट्रैकिंग के तहत रवाना किए गए।"
+        "title_native": "गुवाहाटी भारी बारिश और जलभराव ट्रैफिक अलर्ट",
+        "summary_native": "कामरूप मेट्रोपॉलिटन जिले में लगातार बारिश से कई क्षेत्रों में जलभराव और आवागमन बाधित।"
     },
     {
-        "title": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
-        "summary": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
-        "category": NewsCategory.ROAD_TRANSPORT.value,
-        "source": "Manipur Highway Safety & Transport Cell",
-        "source_url": "https://manipur.gov.in/transport/nh2-senapati-traffic-advisory",
-        "published_at": "4 hours ago",
-        "location": "MANIPUR",
-        "severity": SeverityLevel.MODERATE.value,
-        "image_url": "/images/news/road_clearing.jpg",
-        "original_language": "mn",
-        "title_native": "Imphal-Dimapur NH-2 ꯂꯝꯕꯤꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯕꯅ single lane ꯈꯛꯇ ꯆꯠꯄ ꯌꥥꯔꯦ",
-        "summary_native": "Senapati District ꯃꯅꯥꯛꯇ ꯅꯣꯡ ꯀꯟꯅ ꯆꨨꯕꯅ ꯂꯝꯕꯤ ꯁꯣꯛꯈ꯭ꯔꯦ, PWD ꯅ emergency machinery ꯁꯤꯖꯤꯟꯅꯗꯨꯅ ꯂꯝꯕꯤ ꯁꯦꯝꯒꯠꯂꯤ꯫"
-    },
-    {
-        "title": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
-        "summary": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+        "title": "Arunachal Pradesh Border Road Infrastructure Assessment Progresses",
+        "summary": "State administration and Border Roads Organisation (BRO) assess road construction, slope stabilization, and high-altitude corridor security across western Arunachal Pradesh.",
         "category": NewsCategory.INFRASTRUCTURE.value,
-        "source": "NHIDCL Nagaland Command Office",
-        "source_url": "https://nhidcl.com/updates/nh29-chumukedima-stabilization",
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/arunachalpradesh/no-force-against-people-over-sump-surveys-says-cm-pema-khandu/",
+        "published_at": "24 mins ago",
+        "location": "ARUNACHAL PRADESH",
+        "severity": SeverityLevel.MODERATE.value,
+        "image_url": "/images/news/landslide.jpg",
+        "original_language": "as",
+        "title_native": "অৰুণাচল প্ৰদেশ সীমান্ত পথ আৰু ঘাইপথ নিৰ্মাণ পৰ্যালোচনা",
+        "summary_native": "সীমান্ত পথ সংগঠনে পশ্চিম অৰুণাচলৰ ঘাইপথ নিৰ্মাণ আৰু সুৰংগ পথৰ কামৰ পৰ্যালোচনা কৰিছে।"
+    },
+    {
+        "title": "Nagaland Delegation Holds Key Regional & Highway Transit Talks with Assam and Meghalaya Chief Ministers",
+        "summary": "High-level inter-state discussions focus on border tranquility, inter-state freight transit, and regional infrastructure cooperation across Nagaland corridors.",
+        "category": NewsCategory.GOVERNMENT_ADVISORY.value,
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/nagaland/gnf-delegation-holds-key-talks-with-assam-meghalaya-chief-ministers-amid-naga-peace-process-stalemate/",
         "published_at": "5 hours ago",
         "location": "NAGALAND",
         "severity": SeverityLevel.MODERATE.value,
         "image_url": "/images/news/road_clearing.jpg",
         "original_language": "en",
-        "title_native": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
-        "summary_native": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch."
+        "title_native": "Dimapur-Kohima Inter-State Corridor & Regional Transit Update",
+        "summary_native": "High-level inter-state discussions focus on border tranquility and freight transit."
     },
     {
-        "title": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
-        "summary": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
-        "category": NewsCategory.EMERGENCY_RESPONSE.value,
-        "source": "Northeast Frontier Railway Logistics Cell",
-        "source_url": "https://nfr.indianrailways.gov.in/freight/agartala-dispatch-update",
+        "title": "Silchar & Cachar District Administration Reviews Traffic Management and Supply Logistics",
+        "summary": "District authorities enforce smooth traffic management and essential commodity transit security across key Barak Valley logistics hubs.",
+        "category": NewsCategory.LOGISTICS.value,
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/assam/assam-around-ne/silchar-civic-poll-18-withdraw-nominations-131-candidates-remain-in-fray/",
         "published_at": "6 hours ago",
+        "location": "ASSAM",
+        "severity": SeverityLevel.LOW.value,
+        "image_url": "/images/news/truck_convoy.jpg",
+        "original_language": "bn",
+        "title_native": "শিলচৰ আৰু কাছাৰ জিলাৰ অত্যাৱশ্যকীয় সামগ্ৰী পৰিবহন ব্যৱস্থা",
+        "summary_native": "জিলা প্ৰশাসনে বৰাক উপত্যকাৰ অত্যাৱশ্যকীয় সামগ্ৰী পৰিবহন সৰবৰাহ সুৰক্ষিত কৰিছে।"
+    },
+    {
+        "title": "Tripura Freight Logistics Update: Goods Train Railway Services Restored",
+        "summary": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NFR railway network.",
+        "category": NewsCategory.EMERGENCY_RESPONSE.value,
+        "source": "NorthEast Live Digital Desk",
+        "source_url": "https://northeastlivetv.com/around-ne/tripura/goods-train-services-restored-in-tripura/",
+        "published_at": "7 hours ago",
         "location": "TRIPURA",
         "severity": SeverityLevel.LOW.value,
         "image_url": "/images/news/truck_convoy.jpg",
         "original_language": "bn",
-        "title_native": "ধর্মনগর-আগরতলা রেলহেড ফ্রেইট লজিস্টিকস কনভয় চালু",
+        "title_native": " ধর্মনগর-আগরতলা রেলহেড ফ্রেইট লজিস্টিকস কনভয় চালু",
         "summary_native": "ধর্মনগর গুডস ইয়ার্ড ও আগরতলা ডিপোর মধ্যে প্রয়োজনীয় খাদ্য ও পেট্রোলিয়ামবাহী মালগাড়ি রওনা হয়েছে।"
-    },
-    {
-        "title": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
-        "summary": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
-        "category": NewsCategory.GOVERNMENT_ADVISORY.value,
-        "source": "Mizoram PWD Disaster Response Cell",
-        "source_url": "https://pwd.mizoram.gov.in/notices/nh54-aizawl-transit-advisory",
-        "published_at": "7 hours ago",
-        "location": "MIZORAM",
-        "severity": SeverityLevel.HIGH.value,
-        "image_url": "/images/news/landslide.jpg",
-        "original_language": "en",
-        "title_native": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
-        "summary_native": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch."
     }
 ]
 
@@ -207,7 +199,7 @@ def _fetch_single_topic(topic: Dict[str, str], retrieved_at: str) -> List[NERISN
             rss_url,
             headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
         )
-        with urllib.request.urlopen(req, timeout=1.5) as response:
+        with urllib.request.urlopen(req, timeout=5.0) as response:
             xml_data = response.read()
             root = ET.fromstring(xml_data)
 
@@ -356,10 +348,10 @@ class NewsServiceManager:
         self.live_provider = LiveRSSNewsProvider()
         self.demo_provider = DemoNewsProvider()
 
-        self._cached_articles: List[NERISNewsArticle] = self._create_seed_articles()
-        self._last_retrieved_at: Optional[str] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        self._last_fetch_timestamp: float = time.time()
-        self._cache_ttl_seconds: float = 18000.0  # 5 hours cache TTL
+        self._cached_articles: List[NERISNewsArticle] = []
+        self._last_retrieved_at: Optional[str] = None
+        self._last_fetch_timestamp: float = 0.0  # Force immediate live media sync on startup
+        self._cache_ttl_seconds: float = 300.0   # Auto-sync live media articles every 5 minutes
         self._provider_status: str = "LIVE_EXTERNAL_FEED"
         self._is_live_available: bool = True
 

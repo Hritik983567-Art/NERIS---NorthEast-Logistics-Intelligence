@@ -137,6 +137,16 @@ export const NewsCenter = () => {
     return "/images/news/landslide.jpg";
   };
 
+  // Resolve direct source URL for news articles
+  const resolveSourceUrl = (article) => {
+    if (!article) return 'https://news.google.com';
+    const rawUrl = article.source_url || article.url || '';
+    if (rawUrl && (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) && rawUrl !== '#') {
+      return rawUrl;
+    }
+    return 'https://news.google.com';
+  };
+
   // Fetch news feed from backend API
   const fetchNewsFeed = useCallback(async (forceRefresh = false) => {
     setIsLoading(true);
@@ -146,7 +156,7 @@ export const NewsCenter = () => {
       category: selectedCategory,
       location: selectedLocation,
       severity: selectedSeverity,
-      language: selectedLanguage,
+      language: 'ALL',
       sortBy: sortBy,
       isDemo: isDemoMode,
       refresh: forceRefresh
@@ -196,11 +206,11 @@ export const NewsCenter = () => {
   useEffect(() => {
     fetchNewsFeed(false);
 
-    // Auto-refresh live news feed every 5 hours (18,000,000 ms)
-    const FIVE_HOURS_MS = 5 * 60 * 60 * 1000;
+    // Auto-refresh live news feed every 1 minute (60,000 ms) for automatic media article sync
+    const ONE_MINUTE_MS = 60 * 1000;
     const intervalId = setInterval(() => {
       fetchNewsFeed(true);
-    }, FIVE_HOURS_MS);
+    }, ONE_MINUTE_MS);
 
     return () => clearInterval(intervalId);
   }, [fetchNewsFeed]);
@@ -507,17 +517,20 @@ export const NewsCenter = () => {
                 )}
               </div>
 
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-text)', lineHeight: 1.3, marginBottom: '4px' }}>
-                {featuredArticle.title_native || getLocalizedNewsText(featuredArticle.title, lang)}
+              <h3
+                onClick={() => setActiveArticleModal(featuredArticle)}
+                style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-text)', lineHeight: 1.35, marginBottom: '4px', cursor: 'pointer' }}
+              >
+                {stripHtmlTags(getLocalizedNewsText(featuredArticle.title, lang), featuredArticle.title)}
               </h3>
               {featuredArticle.title_native && featuredArticle.title_native !== featuredArticle.title && (
                 <p style={{ fontSize: '0.78rem', color: 'var(--color-muted)', fontStyle: 'italic', marginBottom: '8px' }}>
-                  EN: {featuredArticle.title}
+                  Original: {stripHtmlTags(featuredArticle.title_native)}
                 </p>
               )}
 
               <p style={{ fontSize: '0.84rem', color: 'var(--color-muted)', lineHeight: 1.5, marginBottom: '14px' }}>
-                {featuredArticle.summary_native || getLocalizedNewsText(featuredArticle.summary, lang)}
+                {stripHtmlTags(getLocalizedNewsText(featuredArticle.summary, lang), featuredArticle.title)}
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
@@ -550,9 +563,12 @@ export const NewsCenter = () => {
                 </button>
 
                 <a
-                  href={featuredArticle.source_url}
+                  href={resolveSourceUrl(featuredArticle)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
                   style={{
                     background: 'transparent',
                     border: '1px solid var(--color-border)',
@@ -564,7 +580,8 @@ export const NewsCenter = () => {
                     textDecoration: 'none',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '4px'
+                    gap: '4px',
+                    cursor: 'pointer'
                   }}
                 >
                   <ExternalLink size={14} /> Read Source
@@ -578,7 +595,10 @@ export const NewsCenter = () => {
               </div>
             </div>
 
-            <div style={{ position: 'relative', height: '190px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
+            <div
+              onClick={() => setActiveArticleModal(featuredArticle)}
+              style={{ position: 'relative', height: '190px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', cursor: 'pointer' }}
+            >
               <img
                 src={resolveNewsImage(featuredArticle.title, featuredArticle.summary, featuredArticle.category, featuredArticle.image_url)}
                 alt="News Feature"
@@ -610,7 +630,6 @@ export const NewsCenter = () => {
               setSelectedCategory('ALL');
               setSelectedLocation('ALL NER');
               setSelectedSeverity('ALL');
-              setSelectedLanguage('ALL');
             }}
             className="btn-primary"
             style={{ width: 'auto', margin: '14px auto 0', padding: '6px 16px', fontSize: '0.76rem' }}
@@ -632,6 +651,7 @@ export const NewsCenter = () => {
               <div
                 key={article.id}
                 className="glass-panel"
+                onClick={() => setActiveArticleModal(article)}
                 style={{
                   padding: '16px',
                   display: 'flex',
@@ -639,7 +659,8 @@ export const NewsCenter = () => {
                   justifyContent: 'space-between',
                   border: '1px solid var(--color-border)',
                   background: 'var(--color-surface)',
-                  borderRadius: '12px'
+                  borderRadius: '12px',
+                  cursor: 'pointer'
                 }}
               >
                 <div>
@@ -678,17 +699,17 @@ export const NewsCenter = () => {
 
                   {/* Article Title */}
                   <h4 style={{ fontSize: '0.94rem', fontWeight: 800, color: 'var(--color-text)', lineHeight: 1.35, marginBottom: '4px', minHeight: '40px' }}>
-                    {stripHtmlTags(article.title_native || getLocalizedNewsText(article.title, lang), article.title)}
+                    {stripHtmlTags(getLocalizedNewsText(article.title, lang), article.title)}
                   </h4>
                   {article.title_native && article.title_native !== article.title && (
                     <p style={{ fontSize: '0.74rem', color: 'var(--color-muted)', fontStyle: 'italic', marginBottom: '8px' }}>
-                      EN: {stripHtmlTags(article.title)}
+                      Original: {stripHtmlTags(article.title_native)}
                     </p>
                   )}
 
                   {/* Article Summary */}
                   <p style={{ fontSize: '0.78rem', color: 'var(--color-muted)', lineHeight: 1.45, marginBottom: '12px' }}>
-                    {stripHtmlTags(article.summary_native || getLocalizedNewsText(article.summary, lang), article.title)}
+                    {stripHtmlTags(getLocalizedNewsText(article.summary, lang), article.title)}
                   </p>
                 </div>
 
@@ -709,7 +730,10 @@ export const NewsCenter = () => {
                   {/* Action Buttons */}
                   <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
                     <button
-                      onClick={() => setActiveArticleModal(article)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveArticleModal(article);
+                      }}
                       className="btn-primary"
                       style={{ flex: 1, minHeight: '34px', fontSize: '0.74rem', padding: '4px 8px' }}
                     >
@@ -717,9 +741,12 @@ export const NewsCenter = () => {
                     </button>
 
                     <a
-                      href={article.source_url}
+                      href={resolveSourceUrl(article)}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
                       style={{
                         background: 'var(--color-surface)',
                         border: '1px solid var(--color-border)',
@@ -732,7 +759,8 @@ export const NewsCenter = () => {
                         alignItems: 'center',
                         gap: '4px',
                         textDecoration: 'none',
-                        height: '34px'
+                        height: '34px',
+                        cursor: 'pointer'
                       }}
                     >
                       <ExternalLink size={14} /> Read Source
@@ -740,7 +768,10 @@ export const NewsCenter = () => {
 
                     {/* Operational Lead Conversion */}
                     <button
-                      onClick={() => handleConvertToOperationalLead(article)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleConvertToOperationalLead(article);
+                      }}
                       title="Convert article to an Unverified External Report in Field Reporter"
                       style={{
                         background: isLeadAdded ? 'rgba(16, 185, 129, 0.15)' : 'rgba(217, 119, 6, 0.1)',
@@ -875,11 +906,14 @@ export const NewsCenter = () => {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '14px', borderTop: '1px solid var(--color-border)', flexWrap: 'wrap', gap: '10px' }}>
               
               <a
-                href={activeArticleModal.source_url}
+                href={resolveSourceUrl(activeArticleModal)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                }}
                 className="btn-primary"
-                style={{ width: 'auto', padding: '8px 16px', fontSize: '0.78rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                style={{ width: 'auto', padding: '8px 16px', fontSize: '0.78rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}
               >
                 <ExternalLink size={15} /> Read Original Source
               </a>

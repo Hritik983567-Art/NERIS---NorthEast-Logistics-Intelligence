@@ -27,7 +27,7 @@ Globals:
   Function:
     Timeout: 30
     MemorySize: 512
-    Runtime: python3.10
+    Runtime: python3.11
     Environment:
       Variables:
         AWS_REGION_NAME: ap-south-1
@@ -202,6 +202,13 @@ Resources:
         AllowMethods: "'GET,POST,PUT,PATCH,DELETE,OPTIONS'"
         AllowHeaders: "'Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token'"
         AllowOrigin: "'http://localhost:5173'"
+      Auth:
+        DefaultAuthorizer: CognitoAuthorizer
+        Authorizers:
+          CognitoAuthorizer:
+            UserPoolArn: !GetAtt NerisUserPool.Arn
+            Identity:
+              Header: Authorization
 
   # 5. AWS Lambda API Server Function (FastAPI Handler with Least-Privilege Policies)
   NerisApiFunction:
@@ -244,6 +251,32 @@ Resources:
             Path: /health
             Method: get
             RestApiId: !Ref NerisApi
+            Auth:
+              Authorizer: NONE
+        AuthLoginApi:
+          Type: Api
+          Properties:
+            Path: /api/v1/auth/login
+            Method: post
+            RestApiId: !Ref NerisApi
+            Auth:
+              Authorizer: NONE
+        AuthRegisterApi:
+          Type: Api
+          Properties:
+            Path: /api/v1/auth/register
+            Method: post
+            RestApiId: !Ref NerisApi
+            Auth:
+              Authorizer: NONE
+        AuthRefreshApi:
+          Type: Api
+          Properties:
+            Path: /api/v1/auth/refresh
+            Method: post
+            RestApiId: !Ref NerisApi
+            Auth:
+              Authorizer: NONE
         IncidentsApiGet:
           Type: Api
           Properties:

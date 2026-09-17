@@ -128,6 +128,8 @@ app.include_router(landslide_flood_router.router)
 app.include_router(road_risk_router.router)
 app.include_router(emergency_resource_router.router)
 
+import json
+
 # AWS Lambda Handler Wrapper for AWS SAM / API Gateway
 class LambdaHandlerWrapper:
     def __call__(self, event, context):
@@ -135,10 +137,16 @@ class LambdaHandlerWrapper:
             from mangum import Mangum
             asgi_handler = Mangum(app)
             return asgi_handler(event, context)
-        except ImportError:
+        except Exception as err:
+            logger.critical(f"Lambda execution failure: ASGI adapter (mangum) failed to load: {err}")
             return {
-                "statusCode": 200,
-                "body": '{"status": "HEALTHY", "notice": "Install mangum for native Lambda invocation"}'
+                "statusCode": 500,
+                "headers": {"Content-Type": "application/json"},
+                "body": json.dumps({
+                    "status": "UNHEALTHY",
+                    "error": "Deployment Integrity Failure: Mangum ASGI adapter failed to load.",
+                    "details": str(err)
+                })
             }
 
 handler = LambdaHandlerWrapper()
@@ -250,17 +258,22 @@ async def generic_exception_handler(request: Request, exc: Exception):
 async def health_check():
     """
     System health check proving frontend communication with AWS backend stack.
-    Returns:
-    {
-      "status": "healthy",
-      "service": "NERIS API",
-      "environment": "production",
-      "timestamp": "2026-09-12T11:52:00Z"
-    }
     """
+    mangum_loaded = False
+    try:
+        import mangum
+        mangum_loaded = True
+    except ImportError:
+        pass
+
     service = get_network_service()
-    return {
-        "status": "healthy",
+    
+    health_status = "healthy"
+    if settings.is_production and not mangum_loaded:
+        health_status = "unhealthy"
+
+    res_body = {
+        "status": health_status,
         "service": "NERIS — North-East Regional Emergency Transit System",
         "disclaimer": "NERIS is an independent student project and is not affiliated with the U.S. NERIS framework.",
         "environment": settings.ENVIRONMENT,
@@ -269,9 +282,15 @@ async def health_check():
         "aws_region": settings.AWS_REGION,
         "dynamodb_table": getattr(settings, "DYNAMODB_INCIDENTS_TABLE", "ner_incidents"),
         "s3_bucket": getattr(settings, "S3_BUCKET_EVIDENCE", "neris-evidence-photos-ap-south-1"),
+        "mangum_adapter_loaded": mangum_loaded,
         "graph_active_nodes": len(service.graph.nodes),
         "graph_active_edges": len(service.graph.edges)
     }
+
+    if health_status == "unhealthy":
+        return JSONResponse(status_code=500, content=res_body)
+
+    return res_body
 
 if __name__ == "__main__":
     import uvicorn

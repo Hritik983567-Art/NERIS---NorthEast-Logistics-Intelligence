@@ -1,6 +1,8 @@
-from fastapi import APIRouter, HTTPException, status
+from typing import Dict, Any
+from fastapi import APIRouter, HTTPException, status, Depends
 from app.models.routing import OptimizeRouteRequest, OptimizedRouteResponse
 from app.services.routing_engine import get_routing_engine
+from app.core.dependencies import require_roles
 
 router = APIRouter(tags=["NERIS Deterministic Route Planner Engine"])
 
@@ -10,7 +12,10 @@ router = APIRouter(tags=["NERIS Deterministic Route Planner Engine"])
 @router.post("/api/routes/plan", response_model=OptimizedRouteResponse, status_code=status.HTTP_200_OK)
 @router.post("/api/v1/routes/plan", response_model=OptimizedRouteResponse, status_code=status.HTTP_200_OK)
 @router.post("/api/v1/routing/optimize-route", response_model=OptimizedRouteResponse, status_code=status.HTTP_200_OK)
-async def compute_disaster_aware_route(request: OptimizeRouteRequest):
+async def compute_disaster_aware_route(
+    request: OptimizeRouteRequest,
+    user: Dict[str, Any] = Depends(require_roles(["FIELD_OFFICER", "COMMANDER", "DISPATCHER", "ADMIN"]))
+):
     """
     Consumes real active NERIS incidents from DynamoDB, evaluates terrain/weather/weight risks, 
     and computes primary & alternate routes with explicit operational rationale using deterministic Risk Engine.
