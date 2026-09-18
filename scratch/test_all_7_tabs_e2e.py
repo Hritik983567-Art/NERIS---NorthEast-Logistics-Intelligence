@@ -203,22 +203,23 @@ def test_negative_security_suite():
 
     return "All 3 Critical Negative Security Findings successfully remediated and verified (401, 403, & session identity overrides enforced)."
 
-print("=== STARTING ALL 7 TABS + SECURITY E2E AUDIT ===")
-run_test("map", test_tab_map)
-run_test("planner", test_tab_planner)
-run_test("fleet", test_tab_fleet)
-run_test("incidents", test_tab_incidents)
-run_test("analytics", test_tab_analytics)
-run_test("alerts", test_tab_alerts)
-run_test("news", test_tab_news)
-run_test("negative_security_suite", test_negative_security_suite)
+if __name__ == "__main__":
+    print("=== STARTING ALL 7 TABS + SECURITY E2E AUDIT ===")
+    run_test("map", test_tab_map)
+    run_test("planner", test_tab_planner)
+    run_test("fleet", test_tab_fleet)
+    run_test("incidents", test_tab_incidents)
+    run_test("analytics", test_tab_analytics)
+    run_test("alerts", test_tab_alerts)
+    run_test("news", test_tab_news)
+    run_test("negative_security_suite", test_negative_security_suite)
 
-print("\n=== FINAL AUDIT RESULT ===")
-passed_count = sum(1 for v in results.values() if v.get("passed"))
-print(f"TOTAL PASSED: {passed_count} / {len(results)}")
-print(json.dumps(results, indent=2))
+    print("\n=== FINAL AUDIT RESULT ===")
+    passed_count = sum(1 for v in results.values() if v.get("passed"))
+    print(f"TOTAL PASSED: {passed_count} / {len(results)}")
+    print(json.dumps(results, indent=2))
 
-if passed_count < len(results):
-    sys.exit(1)
+    if passed_count < len(results):
+        sys.exit(1)
 
 

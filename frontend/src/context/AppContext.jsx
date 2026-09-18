@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 import { translations } from '../data/translations';
 import { incidentMarkers, activeFleets, nerStates } from '../data/nerData';
 import { api } from '../services/api';
@@ -490,118 +490,134 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const isSyncingRef = useRef(false);
+
   const syncOfflineQueue = async (isManual = false) => {
-    const queuedItems = await offlineQueueDB.getAllQueuedIncidents();
-    const pendingItems = queuedItems.filter(item => item.status === 'PENDING SYNC' || item.status === 'FAILED');
+    if (isSyncingRef.current && !isManual) return;
+    isSyncingRef.current = true;
 
-    if (pendingItems.length === 0) {
-      const refreshedAll = await offlineQueueDB.getAllQueuedIncidents();
-      setOfflineQueue(refreshedAll);
-      return;
-    }
+    try {
+      const queuedItems = await offlineQueueDB.getAllQueuedIncidents();
+      // Include all non-SYNCED items (PENDING SYNC, FAILED, or stuck SYNCING ones)
+      const pendingItems = queuedItems.filter(item => item.status !== 'SYNCED');
 
-    for (const item of pendingItems) {
-      const attemptCount = (item.attemptCount || 0) + 1;
-      const lastAttemptAt = new Date().toISOString();
-
-      // Exponential Backoff Delay calculation: only for background auto-syncs, skip on manual button click
-      if (!isManual && attemptCount > 1) {
-        const backoffMs = Math.min(1000 * Math.pow(2, attemptCount - 1), 8000);
-        await new Promise(res => setTimeout(res, backoffMs));
+      if (pendingItems.length === 0) {
+        const refreshedAll = await offlineQueueDB.getAllQueuedIncidents();
+        setOfflineQueue(refreshedAll);
+        return;
       }
 
-      // 1. Mark as SYNCING in IndexedDB & state immediately for responsive feedback
-      await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
-        status: 'SYNCING',
-        attemptCount,
-        lastAttemptAt,
-        error: null
-      });
-      setOfflineQueue(await offlineQueueDB.getAllQueuedIncidents());
+      for (const item of pendingItems) {
+        const attemptCount = (item.attemptCount || 0) + 1;
+        const lastAttemptAt = new Date().toISOString();
 
-      try {
-        // Sanitize payload before sending to backend to ensure non-empty title, description, coordinates, type, severity
-        const p = item.payload || {};
-        const sanitizedPayload = {
-          ...p,
-          title: (p.title || p.locationName || "Field Incident Report").trim(),
-          description: (p.description || p.title || `Field incident reported at ${p.locationName || p.location_name || "NER Corridor"}`).trim(),
-          type: (p.type || p.incidentType || "ROAD_BLOCKAGE").toUpperCase(),
-          incidentType: (p.type || p.incidentType || "ROAD_BLOCKAGE").toUpperCase(),
-          severity: (p.severity || "CRITICAL").toUpperCase(),
-          state: p.state || "assam",
-          district: p.district || p.state || "assam",
-          latitude: parseFloat(p.latitude ?? p.lat ?? 26.1445),
-          longitude: parseFloat(p.longitude ?? p.lng ?? 91.7362),
-          lat: parseFloat(p.lat ?? p.latitude ?? 26.1445),
-          lng: parseFloat(p.lng ?? p.longitude ?? 91.7362)
-        };
-
-        const ddbRes = await api.createIncident(sanitizedPayload);
-        
-        // Handle 401 Unauthorized Token Expiration cleanly without losing queued items
-        if (ddbRes && (ddbRes.status === 401 || ddbRes.error === '401 Unauthorized' || ddbRes.error?.includes('Unauthorized'))) {
-          await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
-            status: 'PENDING SYNC',
-            attemptCount,
-            lastAttemptAt,
-            error: 'Authentication expired (HTTP 401). Please re-authenticate.'
-          });
-          console.warn("Offline sync halted: Authentication expired. Re-authentication required.");
-          break; // Stop loop until user re-authenticates
+        // Exponential Backoff Delay calculation: only for background auto-syncs on retry, skip on manual button click or stuck items
+        if (!isManual && attemptCount > 1 && item.status !== 'SYNCING') {
+          const backoffMs = Math.min(1000 * Math.pow(2, attemptCount - 1), 8000);
+          await new Promise(res => setTimeout(res, backoffMs));
         }
 
-        const isSuccess = Boolean(ddbRes && (ddbRes.dynamodb_confirmed || ddbRes.status === 'CREATED' || ddbRes.status === 'DUPLICATE_REPLAY' || ddbRes.duplicate_prevented));
+        // 1. Mark as SYNCING in IndexedDB & state immediately for responsive feedback
+        await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
+          status: 'SYNCING',
+          attemptCount,
+          lastAttemptAt,
+          error: null
+        });
+        setOfflineQueue(await offlineQueueDB.getAllQueuedIncidents());
 
-        if (isSuccess) {
-          // 2. Mark as SYNCED in IndexedDB
-          await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
-            status: 'SYNCED',
-            attemptCount,
-            lastAttemptAt,
-            error: null
-          });
+        try {
+          // Sanitize payload before sending to backend to ensure non-empty title, description, coordinates, type, severity
+          const p = item.payload || {};
+          const clientIncId = item.clientIncidentId || p.clientIncidentId || p.id || `INC-CLI-${Date.now()}`;
+          const sanitizedPayload = {
+            ...p,
+            id: clientIncId,
+            clientIncidentId: clientIncId,
+            title: (p.title || p.locationName || "Field Incident Report").trim(),
+            description: (p.description || p.title || `Field incident reported at ${p.locationName || p.location_name || "NER Corridor"}`).trim(),
+            type: (p.type || p.incidentType || "ROAD_BLOCKAGE").toUpperCase(),
+            incidentType: (p.type || p.incidentType || "ROAD_BLOCKAGE").toUpperCase(),
+            severity: (p.severity || "CRITICAL").toUpperCase(),
+            state: p.state || "assam",
+            district: p.district || p.state || "assam",
+            latitude: parseFloat(p.latitude ?? p.lat ?? 26.1445),
+            longitude: parseFloat(p.longitude ?? p.lng ?? 91.7362),
+            lat: parseFloat(p.lat ?? p.latitude ?? 26.1445),
+            lng: parseFloat(p.lng ?? p.longitude ?? 91.7362)
+          };
 
-          // Add to live incidents list
-          const syncedInc = item.payload;
-          syncedInc.status = 'SYNCED';
-          syncedInc.dynamodb_confirmed = true;
-          setIncidents((prev) => {
-            const exists = prev.some(i => i.id === syncedInc.id || i.clientIncidentId === syncedInc.clientIncidentId);
-            if (exists) return prev;
-            return [syncedInc, ...prev];
-          });
-        } else {
-          // Mark as FAILED in IndexedDB
+          const ddbRes = await api.createIncident(sanitizedPayload, clientIncId);
+          
+          // Handle 401 Unauthorized Token Expiration cleanly without losing queued items
+          if (ddbRes && (ddbRes.status === 401 || ddbRes.error === '401 Unauthorized' || ddbRes.error?.includes('Unauthorized'))) {
+            await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
+              status: 'PENDING SYNC',
+              attemptCount,
+              lastAttemptAt,
+              error: 'Authentication expired (HTTP 401). Please re-authenticate.'
+            });
+            console.warn("Offline sync halted: Authentication expired. Re-authentication required.");
+            break; // Stop loop until user re-authenticates
+          }
+
+          const isSuccess = Boolean(ddbRes && (ddbRes.dynamodb_confirmed || ddbRes.status === 'CREATED' || ddbRes.status === 'DUPLICATE_REPLAY' || ddbRes.duplicate_prevented));
+
+          if (isSuccess) {
+            // 2. Mark as SYNCED in IndexedDB
+            await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
+              status: 'SYNCED',
+              attemptCount,
+              lastAttemptAt,
+              error: null
+            });
+
+            // Add to live incidents list
+            const syncedInc = {
+              ...sanitizedPayload,
+              status: 'SYNCED',
+              dynamodb_confirmed: true,
+              is_live: true
+            };
+            setIncidents((prev) => {
+              const exists = prev.some(i => i.id === syncedInc.id || i.clientIncidentId === syncedInc.clientIncidentId);
+              if (exists) return prev;
+              return [syncedInc, ...prev];
+            });
+          } else {
+            // Mark as FAILED in IndexedDB
+            await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
+              status: 'FAILED',
+              attemptCount,
+              lastAttemptAt,
+              error: ddbRes?.error || ddbRes?.detail || 'Failed to persist in DynamoDB'
+            });
+          }
+        } catch (err) {
+          if (err?.message?.includes('401') || err?.message?.includes('Unauthorized')) {
+            await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
+              status: 'PENDING SYNC',
+              attemptCount,
+              lastAttemptAt,
+              error: 'Authentication expired (HTTP 401). Please re-authenticate.'
+            });
+            break;
+          }
+
           await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
             status: 'FAILED',
             attemptCount,
             lastAttemptAt,
-            error: ddbRes?.error || ddbRes?.detail || 'Failed to persist in DynamoDB'
+            error: err.message || 'Network error during sync'
           });
         }
-      } catch (err) {
-        if (err?.message?.includes('401') || err?.message?.includes('Unauthorized')) {
-          await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
-            status: 'PENDING SYNC',
-            attemptCount,
-            lastAttemptAt,
-            error: 'Authentication expired (HTTP 401). Please re-authenticate.'
-          });
-          break;
-        }
-
-        await offlineQueueDB.updateQueuedIncident(item.localQueueId, {
-          status: 'FAILED',
-          attemptCount,
-          lastAttemptAt,
-          error: err.message || 'Network error during sync'
-        });
       }
-    }
 
-    const finalQueue = await offlineQueueDB.getAllQueuedIncidents();
-    setOfflineQueue(finalQueue);
+      const finalQueue = await offlineQueueDB.getAllQueuedIncidents();
+      setOfflineQueue(finalQueue);
+    } finally {
+      isSyncingRef.current = false;
+    }
   };
 
   const removeOfflineQueueItem = async (localQueueId) => {
@@ -621,7 +637,7 @@ export const AppProvider = ({ children }) => {
       location: targetFleet?.currentLocationName || 'NER Emergency Corridor'
     });
 
-    if (!serverRes || (!serverRes.alert && serverRes.status !== 'CREATED' && !serverRes.alert_id)) {
+    if (!serverRes || (!serverRes.alert && serverRes.status !== 'CREATED' && serverRes.status !== 'EMERGENCY_DISPATCH' && !serverRes.alert_id)) {
       throw new Error(serverRes?.error || 'Emergency SOS Dispatch failed on backend server.');
     }
 
