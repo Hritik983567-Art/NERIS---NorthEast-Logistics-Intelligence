@@ -45,7 +45,7 @@ It combines:
 1. **Interactive GIS Corridor Hazard Mapping**: Visualizes active blockades, road damage, and hazard severity across all 8 NER states.
 2. **Deterministic Risk Routing Engine**: Calculates terrain-penalized shortest paths and alternate detour corridors based on live DynamoDB incident data.
 3. **Amazon Bedrock AI Incident Intelligence**: Generates structured operational assessments from raw incident text without hallucinating facts.
-4. **Backend-Authoritative Vehicle Telemetry & Proximity Engine**: Computes real-time Haversine distance between convoys and active incidents, automatically dispatching 20 km proximity alerts.
+4. **Backend-Authoritative Vehicle Telemetry & Proximity Engine**: Computes real-time Haversine distance between convoys and active incidents, automatically dispatching 25.0 km proximity alerts.
 5. **Offline-First Field Reporting with Batch Sync**: Enables field officers to record incidents and photo evidence offline, queueing payloads with `operation_id` idempotency for automatic sync when connectivity resumes.
 6. **Disaster & Logistics Intelligence Feed**: Ingests external regional RSS disaster updates into DynamoDB with search, category filtering, and 5-language translation.
 
@@ -99,7 +99,7 @@ For full details, see [ARCHITECTURE.md](file:///c:/Users/Lenovo/OneDrive/Desktop
 1. **🗺️ Interactive GIS Live Map**: Renders active disaster blockades, relief corridors, and regional hazard severity across all 8 NER states with high-contrast day/night tiles.
 2. **⚡ Dynamic Risk Routing Engine**: Calculates shortest path and safer alternate detours using a 15-node regional graph penalized by active DynamoDB incident severities.
 3. **🧠 Amazon Bedrock Incident Intelligence**: Evaluates incident reports to produce structured operational impact assessments and recommended priority levels.
-4. **📡 Convoy Telemetry & Proximity Alerting**: Persists fleet location updates in DynamoDB and triggers distance alerts when supply convoys enter a 20 km incident radius.
+4. **📡 Convoy Telemetry & Proximity Alerting**: Persists fleet location updates in DynamoDB and triggers distance alerts when supply convoys enter a 25.0 km incident radius.
 5. **📵 Offline-First Batch Synchronization**: Queues field report submissions offline with client-side idempotency (`operation_id`), syncing automatically when internet resumes.
 6. **📰 Disaster Intelligence News Feed**: Ingests regional news updates with duplicate SHA256 filtering, category filters, and 5-language parallel translation.
 7. **🔒 Enterprise Security & RBAC**: Enforces Cognito JWT authorization with role restriction across `FIELD_OFFICER`, `DISPATCHER`, `COMMANDER`, and `ADMIN`.
