@@ -19,8 +19,9 @@
 11. [Testing & Verification](#11-testing--verification)
 12. [AI Usage](#12-ai-usage)
 13. [AI Coding Tools Used](#13-ai-coding-tools-used)
-14. [Credits & Licenses](#14-credits--licenses)
-15. [Known Limitations](#15-known-limitations)
+14. [Team & Contributors](#14-team--contributors)
+15. [Credits & Licenses](#15-credits--licenses)
+16. [Known Limitations](#16-known-limitations)
 
 ---
 
@@ -263,7 +264,15 @@ During the development of NERIS for the AWS First Commit Hackathon, the followin
 
 ---
 
-## 14. Credits & Licenses
+## 14. 👥 Team & Contributors
+
+* **Hritik Raj** ([@Hritik983567-Art](https://github.com/Hritik983567-Art)) — *Lead Developer & System Architect*
+* **Baidurya Subhalaxmi** ([@baiduryasubhalaxmi-png](https://github.com/baiduryasubhalaxmi-png)) — *Collaborator & Contributor*
+* **Ranit Mahapatra** ([@Ranit-Mahapatra](https://github.com/Ranit-Mahapatra)) — *Collaborator & Contributor*
+
+---
+
+## 15. Credits & Licenses
 
 * **OpenSource Dependencies**: FastApi, Mangum, Pydantic, Boto3, NetworkX, React, Vite, Leaflet, Recharts, Lucide-React.
 * **GIS Tiles**: OpenStreetMap contributors, CartoDB.
@@ -271,7 +280,7 @@ During the development of NERIS for the AWS First Commit Hackathon, the followin
 
 ---
 
-## 15. Known Limitations
+## 16. Known Limitations
 
 1. **Simulated Convoy Movement**: While fleet telemetry updates are persisted to DynamoDB and trigger proximity alerts in real time, convoy GPS movement in the demo interface is simulated. It is explicitly labeled `"SIMULATED FLEET TELEMETRY"`.
 2. **Offline Local Encryption**: Offline queued items stored in browser `localStorage` / `IndexedDB` rely on browser sandbox origin isolation. Hardware disk encryption is recommended on field officer devices.
