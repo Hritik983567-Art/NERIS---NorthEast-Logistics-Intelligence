@@ -93,6 +93,7 @@ export const NewsCenter = () => {
     category: 'DISASTER',
     severity: 'HIGH',
     source: 'BRO Project Command Desk',
+    source_url: '',
     original_language: 'en',
     image_url: '/images/news/landslide.jpg'
   });
@@ -128,6 +129,7 @@ export const NewsCenter = () => {
       category: uploadForm.category || 'DISASTER',
       severity: uploadForm.severity || 'HIGH',
       source: uploadForm.source || 'BRO Project Command Desk',
+      source_url: uploadForm.source_url ? uploadForm.source_url.trim() : null,
       published_at: 'Just now',
       retrieved_at: new Date().toLocaleTimeString(),
       image_url: uploadForm.image_url || '/images/news/landslide.jpg',
@@ -152,6 +154,7 @@ export const NewsCenter = () => {
       category: 'DISASTER',
       severity: 'HIGH',
       source: 'BRO Project Command Desk',
+      source_url: '',
       original_language: 'en',
       image_url: '/images/news/landslide.jpg'
     });
@@ -1200,6 +1203,20 @@ export const NewsCenter = () => {
                   </select>
                 </div>
               </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                  Exact Article / Direct Publisher Web Link (Optional)
+                </label>
+                <input
+                  type="url"
+                  placeholder="https://northeastlivetv.com/around-ne/arunachalpradesh/sela-pass-landslide-update"
+                  value={uploadForm.source_url}
+                  onChange={(e) => setUploadForm({ ...uploadForm, source_url: e.target.value })}
+                  style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem' }}
+                />
+              </div>
+
 
               <div>
                 <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
