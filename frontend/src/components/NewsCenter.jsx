@@ -97,6 +97,21 @@ export const NewsCenter = () => {
     image_url: '/images/news/landslide.jpg'
   });
 
+  // Helper: Merge user uploaded news from localStorage for static live persistence
+  const getMergedArticles = useCallback((baseList = []) => {
+    try {
+      const savedStr = localStorage.getItem('neris_user_uploaded_news');
+      if (savedStr) {
+        const userNews = JSON.parse(savedStr);
+        if (Array.isArray(userNews) && userNews.length > 0) {
+          const userIds = new Set(userNews.map(u => u.id));
+          return [...userNews, ...baseList.filter(b => !userIds.has(b.id))];
+        }
+      }
+    } catch (e) {}
+    return baseList;
+  }, []);
+
   const handleUploadNewsSubmit = async (e) => {
     e.preventDefault();
     if (!uploadForm.title.trim() || !uploadForm.summary.trim()) return;
@@ -105,23 +120,44 @@ export const NewsCenter = () => {
     const res = await api.uploadNewsArticle(uploadForm);
     setIsSubmittingNews(false);
 
-    if (res && res.article) {
-      setArticlesList(prev => [res.article, ...prev]);
-      setUploadSuccessNotice("✅ Field News Bulletin Uploaded & Published Live to Regional Feed!");
-      setShowUploadModal(false);
-      setUploadForm({
-        title: '',
-        summary: '',
-        location: 'ASSAM',
-        category: 'DISASTER',
-        severity: 'HIGH',
-        source: 'BRO Project Command Desk',
-        original_language: 'en',
-        image_url: '/images/news/landslide.jpg'
-      });
-      setTimeout(() => setUploadSuccessNotice(null), 5000);
-    }
+    const uploadedArticle = (res && res.article) ? res.article : {
+      id: 'USER-PUB-' + Date.now(),
+      title: uploadForm.title,
+      summary: uploadForm.summary,
+      location: uploadForm.location || 'ASSAM',
+      category: uploadForm.category || 'DISASTER',
+      severity: uploadForm.severity || 'HIGH',
+      source: uploadForm.source || 'BRO Project Command Desk',
+      published_at: 'Just now',
+      retrieved_at: new Date().toLocaleTimeString(),
+      image_url: uploadForm.image_url || '/images/news/landslide.jpg',
+      relevance_score: 99
+    };
+
+    // Store in localStorage for permanent client-side persistence on AWS Amplify live link
+    try {
+      const savedStr = localStorage.getItem('neris_user_uploaded_news');
+      const existing = savedStr ? JSON.parse(savedStr) : [];
+      const updated = [uploadedArticle, ...existing.filter(a => a.id !== uploadedArticle.id)];
+      localStorage.setItem('neris_user_uploaded_news', JSON.stringify(updated));
+    } catch (err) {}
+
+    setArticlesList(prev => [uploadedArticle, ...prev.filter(a => a.id !== uploadedArticle.id)]);
+    setUploadSuccessNotice("✅ Field News Bulletin Uploaded & Published Live to Regional Feed!");
+    setShowUploadModal(false);
+    setUploadForm({
+      title: '',
+      summary: '',
+      location: 'ASSAM',
+      category: 'DISASTER',
+      severity: 'HIGH',
+      source: 'BRO Project Command Desk',
+      original_language: 'en',
+      image_url: '/images/news/landslide.jpg'
+    });
+    setTimeout(() => setUploadSuccessNotice(null), 5000);
   };
+
 
 
   // Synchronize global stateFilter with news location filter
@@ -189,11 +225,24 @@ export const NewsCenter = () => {
     if (rawUrl && (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) && rawUrl !== '#' && !rawUrl.includes('example.com')) {
       return rawUrl;
     }
-    const cleanTitle = typeof article.title === 'string' ? article.title : (article.title?.en || article.title || 'Northeast India disaster news');
-    const locationTag = article.state || article.location || 'Northeast India';
-    const query = encodeURIComponent(`${cleanTitle} ${locationTag}`);
+    const cleanTitle = (typeof article.title === 'string' ? article.title : (article.title?.en || article.title || 'Northeast India disaster news'))
+      .replace(/[:\-–—()\[\]"'’`]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    const locationTag = (article.state || article.location || 'Northeast India').replace(/ALL/gi, '').trim();
+
+    // Extract core keywords (filter out stop words and common noise words)
+    const stopWords = new Set(['and', 'or', 'in', 'the', 'near', 'of', 'to', 'for', 'with', 'a', 'an', 'at', 'by', 'on', 'from', 'is', 'are', 'high', 'altitude', 'blocked']);
+    const keywords = cleanTitle.split(' ')
+      .filter(w => w.length > 2 && !stopWords.has(w.toLowerCase()))
+      .slice(0, 4)
+      .join(' ');
+
+    const query = encodeURIComponent(`${keywords} ${locationTag}`.trim());
     return `https://news.google.com/search?q=${query}&hl=en-IN&gl=IN&ceid=IN:en`;
   };
+
 
   // Fetch news feed from backend API
   const fetchNewsFeed = useCallback(async (forceRefresh = false) => {
@@ -213,7 +262,7 @@ export const NewsCenter = () => {
     setIsLoading(false);
 
     if (response && response.articles && response.articles.length > 0) {
-      setArticlesList(response.articles);
+      setArticlesList(getMergedArticles(response.articles));
       setProviderStatus(response.provider_status || 'LIVE_EXTERNAL_FEED');
       setIsCached(response.is_cached || false);
       setLastRetrievedAt(response.retrieved_at || new Date().toLocaleTimeString());
@@ -236,20 +285,21 @@ export const NewsCenter = () => {
           location: item.state ? item.state.toUpperCase() : 'ASSAM',
           severity: item.urgency === 'critical' ? 'CRITICAL' : (item.urgency === 'warning' ? 'HIGH' : 'LOW'),
           source: item.source || 'Regional Command Bulletin',
-          source_url: '#',
+          source_url: item.source_url || '#',
           published_at: item.timestamp || 'Recent',
           retrieved_at: new Date().toLocaleTimeString(),
           image_url: item.image || '/images/news/landslide.jpg',
           relevance_score: 95
         }));
-        setArticlesList(fallbacks);
+        setArticlesList(getMergedArticles(fallbacks));
         setProviderStatus('LOCAL_FALLBACK');
         setLastRetrievedAt(new Date().toLocaleTimeString());
       }).catch(() => {
-        setArticlesList([]);
+        setArticlesList(getMergedArticles([]));
       });
     }
-  }, [selectedCategory, selectedLocation, selectedSeverity, selectedLanguage, sortBy, isDemoMode, lang]);
+  }, [selectedCategory, selectedLocation, selectedSeverity, selectedLanguage, sortBy, isDemoMode, lang, getMergedArticles]);
+
 
   useEffect(() => {
     fetchNewsFeed(false);

@@ -26,6 +26,7 @@ export const regionalNewsArticles = [
       mn: "West Kameng District ꯒꯤ 13,700 ft ꯑꯋꯥꯡꯕ Sela Pass ꯗ ꯅꯣꯡ ꯀꯟꯅ ꯆꯨꯕꯅ ꯂꯩꯃꯥꯏ ꯇꯥꯈ꯭ꯔꯦ, BRO ꯅ ꯂꯝꯕꯤ ꯁꯦꯝꯒꯠꯅꯕ 42 BRTF team ꯊꯥꯈ꯭ꯔꯦ, Emergency medicines ꯄꯨꯕ vehicles ꯁꯤꯡ Bhalukpong route ꯗ ꯆꯠꯍꯜꯂꯦ꯫"
     },
     source: "BRO Project Vartak Command",
+    source_url: "https://news.google.com/search?q=Sela+Pass+Landslide+Tawang+Arunachal&hl=en-IN&gl=IN&ceid=IN:en",
     timestamp: "18 mins ago",
     readTime: "2 min read",
     urgency: "critical",
