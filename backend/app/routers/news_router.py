@@ -223,3 +223,45 @@ async def convert_article_to_unverified_report(article_id: str):
         disclaimer="Unverified External Report — Commander verification required before operational dispatch.",
         created_at=article.retrieved_at
     )
+
+
+class ArticleSubmissionRequest(BaseModel):
+    title: str
+    summary: str
+    location: Optional[str] = "ASSAM"
+    category: Optional[str] = "DISASTER"
+    severity: Optional[str] = "HIGH"
+    source: Optional[str] = "Field Reporter Command Desk"
+    source_url: Optional[str] = None
+    original_language: Optional[str] = "en"
+    image_url: Optional[str] = None
+
+
+@router.post("/api/v1/news/submit", status_code=status.HTTP_201_CREATED)
+@router.post("/api/v1/news/upload", status_code=status.HTTP_201_CREATED)
+@router.post("/api/news/submit", status_code=status.HTTP_201_CREATED)
+@router.post("/api/news/upload", status_code=status.HTTP_201_CREATED)
+@router.post("/news/submit", status_code=status.HTTP_201_CREATED)
+@router.post("/news/upload", status_code=status.HTTP_201_CREATED)
+async def submit_custom_news_article(payload: ArticleSubmissionRequest):
+    """
+    Allows commanders or field reporters to publish and upload news bulletins directly to the live intelligence feed.
+    """
+    manager = get_news_service_manager()
+    article = await manager.submit_news_article(
+        title=payload.title,
+        summary=payload.summary,
+        location=payload.location or "ASSAM",
+        category=payload.category or "DISASTER",
+        severity=payload.severity or "HIGH",
+        source=payload.source or "Field Reporter Command Desk",
+        source_url=payload.source_url,
+        original_language=payload.original_language or "en",
+        image_url=payload.image_url
+    )
+    return {
+        "status": "SUCCESS",
+        "message": "News article successfully published and uploaded to live feed.",
+        "article": article
+    }
+

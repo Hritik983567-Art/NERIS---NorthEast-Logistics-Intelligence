@@ -487,6 +487,53 @@ class NewsServiceManager:
 
         return None
 
+    async def submit_news_article(
+        self,
+        title: str,
+        summary: str,
+        location: str = "ASSAM",
+        category: str = "DISASTER",
+        severity: str = "HIGH",
+        source: str = "Field Reporter Command Desk",
+        source_url: Optional[str] = None,
+        original_language: str = "en",
+        image_url: Optional[str] = None
+    ) -> NERISNewsArticle:
+        retrieved_at_str = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        art = normalize_article_record(
+            title=title,
+            summary=summary,
+            source=source or "Field Reporter Command Desk",
+            source_url=source_url or "https://neris.gov.in/field-reports",
+            published_at="Just now",
+            retrieved_at=retrieved_at_str,
+            location=location or "ASSAM",
+            category=category or "DISASTER",
+            severity=severity or "HIGH",
+            image_url=image_url or "/images/news/landslide.jpg",
+            is_demo=False,
+            original_language=original_language or "en",
+            title_native=title,
+            summary_native=summary
+        )
+
+        if self._cached_articles:
+            self._cached_articles.insert(0, art)
+        else:
+            self._cached_articles = [art]
+
+        self._last_fetch_timestamp = time.time()
+
+        try:
+            from app.adapters.aws_dynamodb import get_dynamodb_adapter
+            get_dynamodb_adapter().save_news_article(art.dict())
+        except Exception as db_err:
+            logger.warning(f"Failed to persist submitted article '{art.id}' to DynamoDB: {db_err}")
+
+        return art
+
+
 
 _news_service_manager_instance: Optional[NewsServiceManager] = None
 

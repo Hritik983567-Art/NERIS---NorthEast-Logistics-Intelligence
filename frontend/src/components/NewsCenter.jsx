@@ -21,7 +21,10 @@ import {
   SlidersHorizontal,
   ShieldAlert,
   Layers,
-  ArrowUpDown
+  ArrowUpDown,
+  UploadCloud,
+  PlusCircle,
+  X
 } from 'lucide-react';
 
 const CATEGORIES_LIST = [
@@ -78,6 +81,48 @@ export const NewsCenter = () => {
   const [isGeneratingAi, setIsGeneratingAi] = useState(false);
   const [sharedNotice, setSharedNotice] = useState(false);
   const [leadNotice, setLeadNotice] = useState(null);
+
+  // Upload News Bulletin Modal State
+  const [showUploadModal, setShowUploadModal] = useState(false);
+  const [isSubmittingNews, setIsSubmittingNews] = useState(false);
+  const [uploadSuccessNotice, setUploadSuccessNotice] = useState(null);
+  const [uploadForm, setUploadForm] = useState({
+    title: '',
+    summary: '',
+    location: 'ASSAM',
+    category: 'DISASTER',
+    severity: 'HIGH',
+    source: 'BRO Project Command Desk',
+    original_language: 'en',
+    image_url: '/images/news/landslide.jpg'
+  });
+
+  const handleUploadNewsSubmit = async (e) => {
+    e.preventDefault();
+    if (!uploadForm.title.trim() || !uploadForm.summary.trim()) return;
+    setIsSubmittingNews(true);
+
+    const res = await api.uploadNewsArticle(uploadForm);
+    setIsSubmittingNews(false);
+
+    if (res && res.article) {
+      setArticlesList(prev => [res.article, ...prev]);
+      setUploadSuccessNotice("✅ Field News Bulletin Uploaded & Published Live to Regional Feed!");
+      setShowUploadModal(false);
+      setUploadForm({
+        title: '',
+        summary: '',
+        location: 'ASSAM',
+        category: 'DISASTER',
+        severity: 'HIGH',
+        source: 'BRO Project Command Desk',
+        original_language: 'en',
+        image_url: '/images/news/landslide.jpg'
+      });
+      setTimeout(() => setUploadSuccessNotice(null), 5000);
+    }
+  };
+
 
   // Synchronize global stateFilter with news location filter
   useEffect(() => {
@@ -324,6 +369,14 @@ export const NewsCenter = () => {
           {/* Action Toolbar */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
             <button
+              onClick={() => setShowUploadModal(true)}
+              className="btn-primary"
+              style={{ height: '32px', fontSize: '0.76rem', padding: '4px 14px', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 700 }}
+            >
+              <UploadCloud size={14} /> Upload News Bulletin
+            </button>
+
+            <button
               onClick={handleManualRefresh}
               className="btn-secondary"
               disabled={isLoading}
@@ -336,6 +389,13 @@ export const NewsCenter = () => {
         </div>
 
         {/* Notifications & System Alerts */}
+        {uploadSuccessNotice && (
+          <div style={{ marginTop: '10px', padding: '10px 14px', borderRadius: '6px', background: 'rgba(16, 185, 129, 0.18)', border: '1.5px solid #10B981', color: '#047857', fontSize: '0.82rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <CheckCircle2 size={18} color="#10B981" />
+            <span>{uploadSuccessNotice}</span>
+          </div>
+        )}
+
         {refreshNotice && (
           <div style={{ marginTop: '10px', padding: '8px 12px', borderRadius: '6px', background: 'rgba(16, 185, 129, 0.15)', border: '1px solid #10B981', color: '#059669', fontSize: '0.76rem', fontWeight: 700 }}>
             ✅ Feed Synchronized: Retransmitted queries across IMD, BRO Vartak/Swastik commands, and State Operations Centers.
@@ -950,6 +1010,190 @@ export const NewsCenter = () => {
           </div>
         </div>
       )}
+
+      {/* Upload & Publish Field News Bulletin Modal */}
+      {showUploadModal && (
+        <div className="modal-backdrop" onClick={() => setShowUploadModal(false)}>
+          <div className="modal-content glass-panel" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '640px', width: '92%', padding: '24px' }}>
+            
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid var(--color-border)', paddingBottom: '12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <UploadCloud size={24} color="#2563EB" />
+                <h3 style={{ margin: 0, fontSize: '1.15rem', fontWeight: 800 }}>
+                  Publish & Upload Field News Bulletin
+                </h3>
+              </div>
+              <button
+                onClick={() => setShowUploadModal(false)}
+                style={{ background: 'transparent', border: 'none', color: 'var(--color-muted)', cursor: 'pointer', padding: '4px' }}
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            <form onSubmit={handleUploadNewsSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <div>
+                <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 800, marginBottom: '4px' }}>
+                  Headline / Article Title <span style={{ color: '#E11D48' }}>*</span>
+                </label>
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g. Sela Pass Clearance Operations Accelerated by BRO Project Vartak"
+                  value={uploadForm.title}
+                  onChange={(e) => setUploadForm({ ...uploadForm, title: e.target.value })}
+                  style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.84rem' }}
+                />
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 800, marginBottom: '4px' }}>
+                  Article Summary / Field Assessment <span style={{ color: '#E11D48' }}>*</span>
+                </label>
+                <textarea
+                  required
+                  rows={4}
+                  placeholder="Provide detailed breakdown of road blockades, weather advisories, or transit status across the corridor..."
+                  value={uploadForm.summary}
+                  onChange={(e) => setUploadForm({ ...uploadForm, summary: e.target.value })}
+                  style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.84rem' }}
+                />
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '12px' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                    State / Region
+                  </label>
+                  <select
+                    value={uploadForm.location}
+                    onChange={(e) => setUploadForm({ ...uploadForm, location: e.target.value })}
+                    style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem', fontWeight: 700 }}
+                  >
+                    <option value="ASSAM">📍 ASSAM</option>
+                    <option value="ARUNACHAL PRADESH">📍 ARUNACHAL PRADESH</option>
+                    <option value="MEGHALAYA">📍 MEGHALAYA</option>
+                    <option value="MANIPUR">📍 MANIPUR</option>
+                    <option value="MIZORAM">📍 MIZORAM</option>
+                    <option value="NAGALAND">📍 NAGALAND</option>
+                    <option value="TRIPURA">📍 TRIPURA</option>
+                    <option value="SIKKIM">📍 SIKKIM</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                    Category
+                  </label>
+                  <select
+                    value={uploadForm.category}
+                    onChange={(e) => setUploadForm({ ...uploadForm, category: e.target.value })}
+                    style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem', fontWeight: 700 }}
+                  >
+                    <option value="DISASTER">🚨 Disaster</option>
+                    <option value="WEATHER">🌧️ Weather</option>
+                    <option value="ROAD & TRANSPORT">🚚 Road & Transport</option>
+                    <option value="FLOOD">🌊 Flood</option>
+                    <option value="LANDSLIDE">⛰️ Landslide</option>
+                    <option value="INFRASTRUCTURE">🏗️ Infrastructure</option>
+                    <option value="GOVERNMENT ADVISORY">🏛️ Govt Advisory</option>
+                    <option value="EMERGENCY RESPONSE">🚑 Emergency Response</option>
+                    <option value="LOGISTICS">📦 Logistics</option>
+                    <option value="GENERAL">📰 General</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                    Severity Level
+                  </label>
+                  <select
+                    value={uploadForm.severity}
+                    onChange={(e) => setUploadForm({ ...uploadForm, severity: e.target.value })}
+                    style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem', fontWeight: 700 }}
+                  >
+                    <option value="CRITICAL">🔴 CRITICAL</option>
+                    <option value="HIGH">🟠 HIGH</option>
+                    <option value="MODERATE">🟡 MODERATE</option>
+                    <option value="LOW">🔵 LOW</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '12px' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                    Publisher / Field Desk
+                  </label>
+                  <input
+                    type="text"
+                    value={uploadForm.source}
+                    onChange={(e) => setUploadForm({ ...uploadForm, source: e.target.value })}
+                    style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem' }}
+                  />
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                    Language
+                  </label>
+                  <select
+                    value={uploadForm.original_language}
+                    onChange={(e) => setUploadForm({ ...uploadForm, original_language: e.target.value })}
+                    style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem', fontWeight: 700 }}
+                  >
+                    <option value="en">🇬🇧 English</option>
+                    <option value="as">🇮🇳 Assamese (অসমীয়া)</option>
+                    <option value="bn">🇮🇳 Bengali (বাংলা)</option>
+                    <option value="hi">🇮🇳 Hindi (हिंदी)</option>
+                    <option value="mn">🇮🇳 Manipuri (ꯃꯩꯇꯩꯂꯣꯟ)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.76rem', fontWeight: 800, marginBottom: '4px' }}>
+                  Banner Photo Theme
+                </label>
+                <select
+                  value={uploadForm.image_url}
+                  onChange={(e) => setUploadForm({ ...uploadForm, image_url: e.target.value })}
+                  style={{ width: '100%', padding: '7px 10px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', fontSize: '0.8rem', fontWeight: 700 }}
+                >
+                  <option value="/images/news/landslide.jpg">⛰️ High Altitude Landslide / Rockfall</option>
+                  <option value="/images/news/flood.jpg">🌊 River Inundation & Flood</option>
+                  <option value="/images/news/road_clearing.jpg">🚜 BRO Heavy Machinery Road Clearance</option>
+                  <option value="/images/news/truck_convoy.jpg">🚚 Freight & Relief Truck Convoy</option>
+                  <option value="/images/news/bridge_damage.jpg">🏗️ Bridge & Infrastructure Damage</option>
+                  <option value="/images/news/heavy_rain.jpg">🌧️ Torrential Rain & Weather Warning</option>
+                </select>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px', marginTop: '10px', paddingTop: '12px', borderTop: '1px solid var(--color-border)' }}>
+                <button
+                  type="button"
+                  onClick={() => setShowUploadModal(false)}
+                  className="btn-secondary"
+                  style={{ padding: '8px 16px', fontSize: '0.8rem' }}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={isSubmittingNews}
+                  className="btn-primary"
+                  style={{ padding: '8px 20px', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '6px' }}
+                >
+                  <UploadCloud size={16} />
+                  {isSubmittingNews ? 'Publishing & Uploading...' : 'Upload & Publish News Bulletin'}
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };
