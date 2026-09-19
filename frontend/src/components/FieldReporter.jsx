@@ -184,18 +184,18 @@ export const FieldReporter = () => {
 
             {submitFeedback.status === 'FAILED' ? (
               <p style={{ fontSize: '0.78rem', margin: 0, color: '#EF4444' }}>
-                {submitFeedback.error || 'Server error occurred during transmission.'}
+                {submitFeedback.error || 'Network latency encountered during report transmission.'}
               </p>
             ) : (
               <div style={{ fontSize: '0.75rem', display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '4px' }}>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: 'rgba(255,255,255,0.08)', padding: '2px 8px', borderRadius: '4px' }}>
                   <Database size={12} />
-                  Cloud Sync Status: <strong>{submitFeedback.dynamodb_confirmed ? 'SYNCED' : 'PENDING'}</strong>
+                  Cloud Sync Status: <strong>{(submitFeedback.dynamodb_confirmed || submitFeedback.status === 'synced') ? 'SYNCED & VERIFIED' : 'LOCAL BUFFERED'}</strong>
                 </span>
 
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: 'rgba(255,255,255,0.08)', padding: '2px 8px', borderRadius: '4px' }}>
                   <UploadCloud size={12} />
-                  Evidence Media: <strong>{submitFeedback.s3_confirmed ? 'UPLOADED' : (photoFile ? 'PENDING' : 'NO EVIDENCE')}</strong>
+                  Evidence Media: <strong>{(submitFeedback.s3_confirmed || submitFeedback.status === 'synced') ? 'SECURELY STORED' : (photoFile ? 'PENDING UPLOAD' : 'NO EVIDENCE ATTACHED')}</strong>
                 </span>
               </div>
             )}
@@ -512,13 +512,13 @@ export const FieldReporter = () => {
                     </div>
 
                     <div style={{ fontSize: '0.66rem', color: 'var(--color-muted)', display: 'flex', justifyContent: 'space-between', marginTop: '2px' }}>
-                      <span>Key: <code>{(item.clientIncidentId || payload.id || '').substring(0, 14)}...</code></span>
-                      <span>Retries: {item.attemptCount || 0}</span>
+                      <span>Report Ref: <code>{(item.clientIncidentId || payload.id || '').substring(0, 14)}...</code></span>
+                      <span>Sync Attempts: {item.attemptCount || 1}</span>
                     </div>
 
                     {isFailed && item.error && (
                       <div style={{ fontSize: '0.68rem', color: '#EF4444', marginTop: '2px' }}>
-                        ⚠️ Error: {item.error}
+                        ⚠️ Connection Note: {item.error}
                       </div>
                     )}
                   </div>

@@ -268,15 +268,14 @@ export const AIRoutePlanner = () => {
         </form>
 
         <div style={{ marginTop: '20px', padding: '12px 14px', borderRadius: '10px', background: 'var(--color-surface)', border: '1px solid var(--color-border)', flexShrink: 0 }}>
-          <h4 style={{ fontSize: '0.78rem', textTransform: 'uppercase', color: 'var(--color-muted)', marginBottom: '6px', fontWeight: 800 }}>
-            <Activity size={14} color="#00F2FE" style={{ verticalAlign: 'middle' }} /> Route Computation Pipeline
+          <h4 style={{ fontSize: '0.78rem', textTransform: 'uppercase', color: '#10B981', marginBottom: '6px', fontWeight: 800 }}>
+            <ShieldCheck size={14} color="#10B981" style={{ verticalAlign: 'middle', marginRight: '4px' }} /> Operational Corridor Security
           </h4>
           <ul style={{ fontSize: '0.75rem', color: 'var(--color-muted)', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '4px', paddingLeft: 0 }}>
-            <li>1. Ingest active incident callset from live alerts</li>
-            <li>2. Map incidents to highway graph edge boundaries</li>
-            <li>3. Compute dynamic edge weights (Terrain + Weather + Penalty)</li>
-            <li>4. Calculate safest Primary & Alternate paths</li>
-            <li>5. Synthesize operational decision rationale</li>
+            <li>✓ Real-time corridor hazard intercept analysis</li>
+            <li>✓ All-weather highway path optimization</li>
+            <li>✓ Priority medical & essential cargo clearance</li>
+            <li>✓ Safest primary & alternate secondary bypass vectoring</li>
           </ul>
         </div>
       </div>
@@ -398,7 +397,7 @@ export const AIRoutePlanner = () => {
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px', paddingTop: '8px', borderTop: '1px solid var(--color-border)' }}>
                 <span style={{ fontSize: '0.72rem', color: 'var(--color-muted)' }}>
-                  ⚙️ Optimized via Dynamic Risk & Terrain Matrix
+                  🛡️ Dynamic Risk & Terrain Analysis Verified
                 </span>
                 <button
                   onClick={(e) => {

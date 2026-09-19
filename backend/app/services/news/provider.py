@@ -353,7 +353,7 @@ class NewsServiceManager:
         self._cached_articles: List[NERISNewsArticle] = []
         self._last_retrieved_at: Optional[str] = None
         self._last_fetch_timestamp: float = 0.0  # Force immediate live media sync on startup
-        self._cache_ttl_seconds: float = 300.0   # Auto-sync live media articles every 5 minutes
+        self._cache_ttl_seconds: float = 60.0    # Auto-sync live media articles every 60 seconds
         self._provider_status: str = "LIVE_EXTERNAL_FEED"
         self._is_live_available: bool = True
 
@@ -467,6 +467,9 @@ class NewsServiceManager:
         }
 
     async def get_article_by_id(self, article_id: str) -> Optional[NERISNewsArticle]:
+        if not self._cached_articles:
+            await self.fetch_news_feed(refresh=False)
+
         for art in self._cached_articles:
             if art.id == article_id:
                 return art
@@ -475,6 +478,11 @@ class NewsServiceManager:
         demo_articles = await self.demo_provider.fetch_articles()
         for art in demo_articles:
             if art.id == article_id:
+                return art
+
+        # Search partial matches if ID format differs
+        for art in self._cached_articles + demo_articles:
+            if article_id in art.id or art.id in article_id:
                 return art
 
         return None

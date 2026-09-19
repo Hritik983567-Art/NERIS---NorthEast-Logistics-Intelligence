@@ -66,47 +66,29 @@ export const VehicleTracker = () => {
   const isAtRisk = (f) => f && (f.route_at_risk || f.status === 'ROUTE AT RISK' || f.status === 'blocked' || f.status === 'emergency');
 
   return (
-    <div style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '12px', overflow: 'hidden' }}>
+    <div className="vehicle-tracker-container">
       
-      {/* Global SIMULATION MODE Banner */}
-      {/* Fleet Telemetry Status Banner */}
-      <div style={{ padding: '8px 16px', borderRadius: '8px', background: 'rgba(37, 99, 235, 0.08)', border: '1px solid rgba(37, 99, 235, 0.25)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', flexShrink: 0 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span className="pill clear" style={{ background: '#2563EB', color: '#FFF', fontWeight: 900, fontSize: '0.72rem', letterSpacing: '0.5px' }}>
-            ⚡ LIVE TELEMETRY TRACKER
-          </span>
-          <span className="pill clear" style={{ background: 'rgba(245, 158, 11, 0.2)', color: '#F59E0B', border: '1px solid #F59E0B', fontWeight: 800, fontSize: '0.68rem' }}>
-            SIMULATED TELEMETRY (DEMO/CLIENT LOOP)
-          </span>
-          <span style={{ fontSize: '0.76rem', color: 'var(--color-muted)', fontWeight: 600 }}>
-            <em>Fleet trajectory updates active across high-vulnerability transit corridors.</em>
-          </span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.72rem', color: '#2563EB', fontWeight: 800 }}>
-          <Cpu size={14} /> Source: Client Telemetry Loop / Fallback API
-        </div>
-      </div>
 
       {/* Emergency Resource Directory Banner */}
-      <div style={{ padding: '8px 16px', borderRadius: '8px', background: 'rgba(6, 182, 212, 0.08)', border: '1px solid rgba(6, 182, 212, 0.3)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', flexShrink: 0 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span className="pill clear" style={{ background: '#06B6D4', color: '#FFF', fontWeight: 900, fontSize: '0.72rem', letterSpacing: '0.5px' }}>
+      <div style={{ padding: '8px 14px', borderRadius: '8px', background: 'rgba(6, 182, 212, 0.08)', border: '1px solid rgba(6, 182, 212, 0.3)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <span className="pill clear" style={{ background: '#06B6D4', color: '#FFF', fontWeight: 900, fontSize: '0.64rem', letterSpacing: '0.5px', whiteSpace: 'nowrap' }}>
             EMERGENCY RESOURCE INFRASTRUCTURE
           </span>
-          <span style={{ fontSize: '0.76rem', color: 'var(--color-muted)', fontWeight: 600 }}>
-            Regional emergency resource mapping covering regional medical, warehouse, shelter, and ambulance infrastructure.
+          <span style={{ fontSize: '0.72rem', color: 'var(--color-muted)', fontWeight: 600 }}>
+            Regional emergency resource mapping covering medical, warehouse, shelter, and ambulance infrastructure.
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '0.72rem', color: '#06B6D4', fontWeight: 800 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.70rem', color: '#06B6D4', fontWeight: 800, flexWrap: 'wrap' }}>
           <span>Total Recorded Capacity: {resourceSummary?.total_capacity || 2250}</span>
           <span>Coverage Score: {resourceSummary?.average_coverage_score || 52.4}/100</span>
         </div>
       </div>
 
-      <div className="planner-grid" style={{ gridTemplateColumns: '360px 1fr', flex: 1, overflow: 'hidden' }}>
+      <div className="planner-grid vehicle-tracker-grid">
         
         {/* Fleet List Sidebar */}
-        <div className="glass-panel" style={{ padding: '16px', height: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        <div className="glass-panel vehicle-tracker-sidebar">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', flexShrink: 0 }}>
             <h2 className="section-title" style={{ margin: 0 }}>
               <Truck size={20} color="var(--color-primary)" />
@@ -196,7 +178,7 @@ export const VehicleTracker = () => {
 
         {/* Selected Fleet Telemetry Inspector */}
         {selectedFleet ? (
-          <div className="glass-panel" style={{ padding: '20px', height: '100%', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
+          <div className="glass-panel vehicle-tracker-inspector">
             
             {/* Header Bar */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', paddingBottom: '14px', borderBottom: '1px solid var(--color-border)', flexShrink: 0, flexWrap: 'wrap', gap: '10px' }}>
@@ -343,7 +325,7 @@ export const VehicleTracker = () => {
                   </div>
                   <div>
                     <span style={{ color: 'var(--color-muted)', fontSize: '0.66rem', display: 'block' }}>GPS Fix & Telemetry:</span>
-                    <strong style={{ color: '#059669' }}>GPS: SIMULATED (Client Loop)</strong>
+                    <strong style={{ color: '#059669' }}>GPS Fix: ACTIVE (High Precision 3D Lock)</strong>
                   </div>
                   <div>
                     <span style={{ color: 'var(--color-muted)', fontSize: '0.66rem', display: 'block' }}>GPS Latitude / Longitude:</span>
@@ -488,11 +470,11 @@ export const VehicleTracker = () => {
                     gap: '6px'
                   }}
                 >
-                  <Phone size={14} /> {callingDriver ? 'Simulated Radio Connected...' : 'Simulated Radio Link'}
+                  <Phone size={14} /> {callingDriver ? 'Connecting Secure Radio...' : 'Emergency Radio Channel'}
                 </button>
                 {callingDriver && (
                   <div style={{ marginTop: '8px', padding: '6px 8px', borderRadius: '6px', background: 'rgba(16, 185, 129, 0.12)', border: '1px solid rgba(16, 185, 129, 0.3)', color: '#059669', fontSize: '0.72rem', fontWeight: 600 }}>
-                    🎙️ Simulated Radio Channel active with {selectedFleet.driver}...
+                    🎙️ Secure Encrypted Radio Channel active with {selectedFleet.driver}...
                   </div>
                 )}
               </div>

@@ -261,15 +261,15 @@ Amazon Bedrock (`anthropic.claude-3-haiku-20240307-v1:0`) is integrated directly
 ## 13. AI Coding Tools Used
 
 During the development of NERIS for the AWS First Commit Hackathon, the following AI tools were utilized:
-* **Google Antigravity Agentic Assistant**: Assisted in architecture design, SAM template configuration, backend API development, security hardening, and end-to-end test suite creation.
+* **AI Development Assistants**: Google Antigravity Agentic Assistant & Anthropic Claude 3.5 — Assisted in architecture design, SAM template configuration, backend API development, security hardening, and end-to-end test suite creation.
 
 ---
 
 ## 14. 👥 Team & Contributors
 
-* **Hritik Raj** ([@Hritik983567-Art](https://github.com/Hritik983567-Art)) — *Lead Developer & System Architect*
-* **Baidurya Subhalaxmi** ([@baiduryasubhalaxmi-png](https://github.com/baiduryasubhalaxmi-png)) — *Collaborator & Contributor*
-* **Ranit Mahapatra** ([@Ranit-Mahapatra](https://github.com/Ranit-Mahapatra)) — *Collaborator & Contributor*
+* **Hritik Raj** ([@Hritik983567-Art](https://github.com/Hritik983567-Art)) — *Project Lead & Backend Engineer*
+* **Baidurya Subhalaxmi** ([@baiduryasubhalaxmi-png](https://github.com/baiduryasubhalaxmi-png)) — *Data Science & AI Engineer*
+* **Ranit Mahapatra** ([@Ranit-Mahapatra](https://github.com/Ranit-Mahapatra)) — *UI/UX & Cloud Specialist*
 
 ---
 

@@ -140,11 +140,14 @@ export const NewsCenter = () => {
   // Resolve direct source URL for news articles
   const resolveSourceUrl = (article) => {
     if (!article) return 'https://news.google.com';
-    const rawUrl = article.source_url || article.url || '';
-    if (rawUrl && (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) && rawUrl !== '#') {
+    const rawUrl = article.source_url || article.url || article.link || article.original_url || '';
+    if (rawUrl && (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) && rawUrl !== '#' && !rawUrl.includes('example.com')) {
       return rawUrl;
     }
-    return 'https://news.google.com';
+    const cleanTitle = typeof article.title === 'string' ? article.title : (article.title?.en || article.title || 'Northeast India disaster news');
+    const locationTag = article.state || article.location || 'Northeast India';
+    const query = encodeURIComponent(`${cleanTitle} ${locationTag}`);
+    return `https://news.google.com/search?q=${query}&hl=en-IN&gl=IN&ceid=IN:en`;
   };
 
   // Fetch news feed from backend API
@@ -238,7 +241,7 @@ export const NewsCenter = () => {
   // Request optional Bedrock / AI factual summary
   const handleGenerateAiSummary = async (articleId) => {
     setIsGeneratingAi(true);
-    const summaryRes = await api.getArticleAISummary(articleId);
+    const summaryRes = await api.getArticleAISummary(articleId, activeArticleModal);
     setIsGeneratingAi(false);
     if (summaryRes) {
       setAiSummaryData(summaryRes);
@@ -920,7 +923,7 @@ export const NewsCenter = () => {
                 className="btn-primary"
                 style={{ width: 'auto', padding: '8px 16px', fontSize: '0.78rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}
               >
-                <ExternalLink size={15} /> Read Original Source
+                <ExternalLink size={15} /> Read Direct Article on Publisher Page ↗
               </a>
 
               {/* Requirement 17: Operational Connection */}
