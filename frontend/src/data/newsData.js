@@ -1,267 +1,3577 @@
 export const regionalNewsArticles = [
   {
-    id: "news-01",
-    category: "alerts",
-    state: "arunachal",
-    language: "as",
-    title: {
-      en: "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
-      as: "চেলা পাছ ভূস্খলন: টাৱাং সংযোগস্থলৰ ওচৰত ১৩ নং ৰাষ্ট্ৰীয় ঘাইপথ অৱৰুদ্ধ",
-      bn: "সেলা পাস ভূমিধস: তাওয়াং জংশনের কাছে ১৩ নম্বর জাতীয় সড়ক অবরুদ্ধ",
-      hi: "सेला पास भूस्खलन: तवांग जंक्शन के पास राष्ट्रीय राजमार्ग 13 बाधित",
-      mn: "Sela Pass ꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯈ꯭ꯔꯦ: Tawang NH-13 ꯂꯝꯕꯤ ꯊꯤꯡꯖꯤꯟꯈ꯭ꯔꯦ"
+    "id": "neris-news-0d673fc04ade",
+    "category": "landslide",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Two killed in landslide in Mawkynrew Block",
+      "as": "Two killed in landslide in Mawkynrew Block",
+      "bn": "Two killed in landslide in Mawkynrew Block",
+      "hi": "Two killed in landslide in Mawkynrew Block",
+      "mn": "Two killed in landslide in Mawkynrew Block"
     },
-    summary: {
-      en: "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency convoys rerouted via Bhalukpong.",
-      as: "মধ্যনিশাৰ প্ৰবল শিল খহাৰ পিছত সীমান্ত পথ সংগঠনে (BRO) চেলা সুৰংগ পথত ডজাৰ মোতায়েন কৰিছে। জৰুৰী বাহনসমূহ ভালুকপুং হৈ প্ৰেৰণ কৰা হৈছে।",
-      bn: "প্রবল পাথর ধসের পর সীমান্ত সড়ক সংস্থা (BRO) সেলা টানেল সংযোগে ডোজার মোতায়েন করেছে। জরুরি যানবাহন ভলুকপং দিয়ে ঘুরিয়ে দেওয়া হচ্ছে।",
-      hi: "मध्यरात्रि को भारी चट्टान खिसकने के बाद बीआरओ ने सेला सुरंग मार्ग पर बुलडोजर तैनात किए हैं। आपातकालीन वाहनों को भालुकपोंग मार्ग से भेजा जा रहा है।",
-      mn: "BRO ꯅ ꯁꯦꯂꯥ ꯇꯅꯦꯜ ꯑꯃꯁꯨꯡ ꯇꯋꥥꯡ ꯂꯝꯕꯤ ꯁꯦꯝꯒꯠꯅꯕ dozer ꯊꯥꯈ꯭ꯔꯦ꯫ Emergency vehicles ꯁꯤꯡ Bhalukpong ꯗꯒꯤ route change ꯇ꧀ꯧꯔꯦ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by Meghalaya Monitor regarding Two killed in landslide in Mawkynrew Block.",
+      "as": "Regional disaster & logistics update published by Meghalaya Monitor regarding Two killed in landslide in Mawkynrew Block.",
+      "bn": "Regional disaster & logistics update published by Meghalaya Monitor regarding Two killed in landslide in Mawkynrew Block.",
+      "hi": "Regional disaster & logistics update published by Meghalaya Monitor regarding Two killed in landslide in Mawkynrew Block.",
+      "mn": "Regional disaster & logistics update published by Meghalaya Monitor regarding Two killed in landslide in Mawkynrew Block."
     },
-    fullContent: {
-      en: "Severe high-altitude precipitation near the 13,700-ft Sela Pass in West Kameng district triggered massive midnight rockfalls along NH-13. BRO Officers from 42 BRTF are clearing over 850 metric tonnes of debris. Convoys carrying cold-chain medical supplies for Tawang District Hospital have been temporarily rerouted via the Bhalukpong-Bomdila corridor. Single-lane emergency passage expected within 6 hours.",
-      as: "পশ্চিম কামেং জিলাৰ ১৩,৭০০ ফুট উচ্চতাৰ চেলা পাছত প্ৰবল বৰষুণৰ ফলত মধ্যনিশা ১৩ নং ৰাষ্ট্ৰীয় ঘাইপথত প্ৰবল শিল পৰে। বিআৰঅ'ৰ ৪২ বিআৰটিএফ দলে ৮৫০ মেট্ৰিক টন আৱৰ্জনা পৰিষ্কাৰ কৰি আছে। টাৱাং জিলা হাস্পতালৰ জৰুৰী চিকিৎসা সামগ্রী কঢ়িয়াই অনা বাহনসমূহ ভালুকপুং-বোমডিলা পথেৰে প্ৰেৰণ কৰা হৈছে।",
-      bn: "পশ্চিম কামেং জেলার ১৩,৭০০ ফুট উঁচু সেলা পাসের কাছে প্রচণ্ড বৃষ্টির কারণে ১৩ নম্বর জাতীয় সড়কে ভয়াবহ পাথর ধস নেমেছে। বিআরও-র ৪২ বিআরটিএফ টিম ৮৫০ মেট্রিক টন পাথর সরাতে কাজ করছে। তাওয়াং জেলা হাসপাতালের জন্য জরুরি ওষুধের গাড়ি ভলুকপং-বোমডিলা রুট দিয়ে পাঠানো হচ্ছে।",
-      hi: "पश्चिम कामेंग जिले में 13,700 फीट की ऊंचाई पर स्थित सेला पास के पास भारी वर्षा से चट्टानें खिसक गई हैं। बीआरओ 42 बीआरटीएफ की टीम 850 मीट्रिक टन मलबे को हटाने में जुटी है। तवांग जिला अस्पताल हेतु दवाइयों के काफिले को भालुकपोंग-बोमडिला मार्ग से मोड़ा गया है।",
-      mn: "West Kameng District ꯒꯤ 13,700 ft ꯑꯋꯥꯡꯕ Sela Pass ꯗ ꯅꯣꯡ ꯀꯟꯅ ꯆꯨꯕꯅ ꯂꯩꯃꯥꯏ ꯇꯥꯈ꯭ꯔꯦ, BRO ꯅ ꯂꯝꯕꯤ ꯁꯦꯝꯒꯠꯅꯕ 42 BRTF team ꯊꯥꯈ꯭ꯔꯦ, Emergency medicines ꯄꯨꯕ vehicles ꯁꯤꯡ Bhalukpong route ꯗ ꯆꯠꯍꯜꯂꯦ꯫"
-    },
-    source: "BRO Project Vartak Command",
-    source_url: "https://news.google.com/search?q=Sela+Pass+Landslide+Tawang+Arunachal&hl=en-IN&gl=IN&ceid=IN:en",
-    timestamp: "18 mins ago",
-    readTime: "2 min read",
-    urgency: "critical",
-    image: "/images/news/landslide.jpg",
-    corridorId: "corridor-tawang"
+    "source": "Meghalaya Monitor",
+    "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PY2xDSExNSG9xY29jMzdFaEFMM3ZpeW8zWnBmQWhPQ0VkemFUX2ZqaldsVHhnUFI2U2RiOUJDUVVqT2NmOVY5bVRnYjJCOGJkVG1vRWdLTnFwNWR2ZjZZMkpkc0NERmxBOG5BeGJNSm1lclBPd18yZ0tWYng?oc=5",
+    "timestamp": "Mon, 04 Apr 2022 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-02",
-    category: "travel",
-    state: "meghalaya",
-    language: "bn",
-    title: {
-      en: "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
-      as: "চেৰাপুঞ্জী আৰু দাওকী হাইৱে পৰ্যটক সজাগতা: প্ৰবল কুঁৱলী আৰু শূন্য দৃশ্যমানতাৰ সতৰ্কবাৰ্তা",
-      bn: "চেরাপুঞ্জি ও ডাওকি হাইওয়ে পর্যটক পরামর্শ: ভারী ঘন কুয়াশা ও কম দৃশ্যমানতার সতর্কতা",
-      hi: "चेरापूंजी एवं डाउकी हाईवे पर्यटक सलाह: भारी कोहरे एवं दृश्यता की चेतावनी",
-      mn: "Cherrapunji & Dawki Highway: Monsoon Fog & Zero Visibility Warning"
+    "id": "neris-news-5e97b95b6da6",
+    "category": "logistics",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "as": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "bn": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "hi": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "mn": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই"
     },
-    summary: {
-      en: "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra.",
-      as: "শ্বিলং বতৰ বিজ্ঞান কেন্দ্রে ইষ্ট খাছী পাহাৰৰ বাবে সতৰ্কতা জাৰি কৰিছে। পৰ্যটকসকলক বিয়েলি ৫ বজাৰ পিছত সোঁহৰা পথত ভ্ৰমণ নকৰিবলৈ পৰামৰ্শ দিয়া হৈছে।",
-      bn: "পূর্ব খাসি পাহাড়ের জন্য শূন্য দৃশ্যমানতার সতর্কতা জারি করল আবহাওয়া দপ্তর। বিকেল ৫টার পর শিলং-সোয়রা রুটে গাড়ি চালানো বন্ধের নির্দেশ।",
-      hi: "मौसम विभाग ने ईस्ट खासी हिल्स के लिए दृश्यता चेतावनी जारी की है। शाम 5 बजे के बाद शिलोंग-सोहरा मार्ग पर यात्रा टालने की सलाह।",
-      mn: "IMD ꯅ East Khasi Hills ꯒꯤ ꯅꯣꯡꯖꨨ-ꯅꨨꯡꯁꯤꯠ Alert ꯄꯤꯈ꯭ꯔꯦ꯫ Nuṃthi 5 PM ꯃꯇꨨꯡꯗ Shillong to Sohra road travel ꯇꯧꯗꯅꯕ ꯈꯉꯍꯅꯈ꯭ꯔꯦ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "as": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "bn": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "hi": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "mn": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই."
     },
-    fullContent: {
-      en: "Dense orographic clouds and persistent drizzle along NH-206 have reduced visibility below 5 meters across the Laitkor peak and Upper Shillong corridor. Meghalaya Transport Authority recommends all tourist buses and heavy transport goods vehicles operate under fog lamps with a speed cap of 25 km/h.",
-      as: "২৪ নং ৰাষ্ট্ৰীয় ঘাইপথত ঘন ডাৱৰ আৰু কুঁৱলীৰ বাবে দৃশ্যমানতা ৫ মিটাৰতকৈ হ্ৰাস পাইছে। মেঘালয় পৰিবহন কৰ্তৃপক্ষই সকলো পৰ্যটক বাছ আৰু গধুৰ বাহনসমূহক ফগ লেম্প ব্যৱহাৰ কৰি ২৫ কিমি/ঘণ্টা বেগত চলাবলৈ পৰামৰ্শ দিছে।",
-      bn: "২০৬ নম্বর জাতীয় সড়কে ঘন মেঘ ও কুয়াশার কারণে দৃশ্যমানতা ৫ মিটারের নিচে নেমে এসেছে। মেঘালয় পরিবহন দপ্তর সমস্ত পর্যটক বাস ও ভারী পণ্যবাহী গাড়িকে ফগ লাইট জ্বালিয়ে সর্বোচ্চ ২৫ কিমি/ঘণ্টা গতিতে চালানোর পরামর্শ দিয়েছে।",
-      hi: "एनएच-206 पर घने बादलों और कोहरे के कारण दृश्यता 5 मीटर से कम रह गई है। मेघालय परिवहन प्राधिकरण ने सभी पर्यटक बसों एवं वाहनों को फॉग लाइट का प्रयोग करते हुए 25 किमी/घंटा की गति से चलाने की सलाह दी है।",
-      mn: "NH-206 ꯂꯝꯕꯤꯗ ꯂꯩꯆꯤꯜ ꯑꯃꯁꯨꯡ ꯃꯩꯈꯨ ꯀꯟꯅ ꯊꯥꯕꯅ ꯃꯤꯠꯌꯦꯡ ꯃꯥꯡꯈ꯭ꯔꯦ꯫ Tourist vehicles ꯁꯤꯡ ꯅꯨꯃꯤꯗꯥꯡ ꯆꯠꯄꯗ Safe Driving Rule in 25 km/h Speed Limit ꯉꯥꯛꯅ ꯆꯠꯅꯕ ꯈꯉꯍꯜꯂꯤ꯫"
-    },
-    source: "Meghalaya Tourism & Disaster Cell",
-    timestamp: "42 mins ago",
-    readTime: "3 min read",
-    urgency: "warning",
-    image: "/images/news/heavy_rain.jpg",
-    corridorId: "corridor-shillong"
+    "source": "Anandabazar Patrika",
+    "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcV9kaG90bjVCMjZ6YUVBWGQwQzVTdE5QalRjaDhMN1hMeWJhZlloYnVsWkotd1FkUDRlNHZXU2tpbFhCRVhMYVB0TlFtQ3JlX1lZY1NvTUJHYjlIQmpyLTZ0b0pKVUJXTHZPSENkNU92WXh3TExOUTFtQl9zSTE3T29xUVprUU44LW0zajNTRWtEd2pSaTJsUV9mZ2h5dWExZFJKNHozekVSV285M05MOVp3YlNPRzdh?oc=5",
+    "timestamp": "Wed, 04 Jun 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-03",
-    category: "logistics",
-    state: "assam",
-    language: "hi",
-    title: {
-      en: "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Convoys to Remote NER Hubs",
-      as: "গুৱাহাটী এফচিআই ডিপোৰ পৰা ৪০ খন ৰেফ্ৰিজাৰেটেড কনভয় দুৰ্গম জিলালৈ প্ৰেৰণ",
-      bn: "গুয়াহাটি এফসিআই ডিপো থেকে ৪০টি কোল্ড-চেইন কনভয় দুর্গম জেলায় রওনা",
-      hi: "गुवाहाटी एफसीआई डिपो से 40 कोल्ड-चेन काफिले दूरस्थ जिलों हेतु रवाना",
-      mn: "Guwahati FCI Central Depot ꯗꯒꯤ 40 Cold-Chain Convoys ꯊꯥꯈ꯭ꯔꯦ"
+    "id": "neris-news-e6d16ab60932",
+    "category": "flood",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV",
+      "as": "శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV",
+      "bn": "శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV",
+      "hi": "శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV",
+      "mn": "శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV"
     },
-    summary: {
-      en: "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
-      as: "মিজোৰাম, ত্ৰিপুৰা আৰু মণিপুৰৰ বাবে প্ৰয়োজনীয় ভেকচিন আৰু খাদ্য সামগ্ৰীৰে ভৰপূৰ বাহনসমূহ উপগ্ৰহ নিৰীক্ষণৰ অধীনত ৰাওনা হৈছে।",
-      bn: "মিজোরাম, ত্রিপুরা ও মণিপুরের জন্য অত্যাবশ্যকীয় প্রতিষেধক ও খাদ্য সামগ্রীবাহী কনভয় স্যাটেলাইট নজরদারিতে রওনা হয়েছে।",
-      hi: "मिजोरम, त्रिपुरा एवं मणिपुर के लिए आवश्यक टीकों एवं खाद्यान्न सामग्री से लदे काफिले उपग्रह ट्रैकिंग के तहत रवाना किए गए।",
-      mn: "Mizoram, Tripura, ꯑꯃꯁꯨꯡ Manipur ꯒꯤ vaccine ꯑꯃꯁꯨꯡ Essential food supply ꯄꯨꯕ convoy ꯁꯤꯡ Satellite Tracking ꯒꯥꯎꯟ ꯆꯠꯈ꯭ꯔꯦ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by instagram.com regarding శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV.",
+      "as": "Regional disaster & logistics update published by instagram.com regarding శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV.",
+      "bn": "Regional disaster & logistics update published by instagram.com regarding శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV.",
+      "hi": "Regional disaster & logistics update published by instagram.com regarding శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV.",
+      "mn": "Regional disaster & logistics update published by instagram.com regarding శాంతినగర్ ఏరియాలో భీభత్సం.. రోడ్లపైనే చిక్కుకుపోయిన జనం! #DhakaFloods #BangladeshRain #DhakaWaterlogging #Shantinagar #WeatherUpdate #NaturalDisaster #RTV."
     },
-    fullContent: {
-      en: "Food Corporation of India (FCI) Zonal Command in Guwahati has mobilized 40 high-capacity GPS-tracked convoys. Carrying 620 metric tonnes of fortified grains and refrigerated insulin/vaccine stockpiles, the fleet will traverse NH-27 and NH-06 to reinforce supply buffers in Silchar, Aizawl, Agartala, and Imphal before impending heavy rains.",
-      as: "ভাৰতীয় খাদ্য নিগমে (FCI) গুৱাহাটীৰ পৰা ৪০ খন জিপিএছ সজ্জ্বিত কনভয় প্ৰেৰণ কৰিছে। মিজোৰাম, ত্ৰিপুৰা আৰু মণিপুৰৰ গুদামসমূহলৈ ৬২০ মেট্ৰিক টন খাদ্য সামগ্ৰী আৰু ভেকচিন কঢ়িয়াই নিয়া হৈছে।",
-      bn: "ভারতীয় খাদ্য নিগম (FCI) গুয়াহাটি থেকে ৪০টি জিপিএস-যুক্ত বড় কনভয় রওনা করিয়েছে। মিজোরাম, ত্রিপুরা ও মণিপুরের গুদামে ৬২০ মেট্রিক টন খাদ্য শস্য ও জীবনদায়ী ওষুধ পৌঁছে দেওয়া হচ্ছে।",
-      hi: "भारतीय खाद्य निगम (FCI) गुवाहाटी डिपो ने 40 जीपीएस-ट्रैक किए गए काफिलों को रवाना किया है। मिजोरम, त्रिपुरा और मणिपुर के बफर स्टॉक हेतु 620 मीट्रिक टन आवश्यक सामग्री भेजी जा रही है।",
-      mn: "Food Corporation of India (FCI) ꯅ Guwahati ꯗꯒꯤ GPS Tracking ꯌꯥꯑꯣꯕ 40 convoy ꯁꯤꯡ Mizoram, Tripura ꯑꯃꯁꯨꯡ Manipur ꯗ 620 Metric Tonnes essential items ꯄꯨꯅꯕ ꯊꯥꯈ꯭ꯔꯦ꯫"
-    },
-    source: "FCI North-East Zonal Directorate",
-    timestamp: "1 hour ago",
-    readTime: "4 min read",
-    urgency: "info",
-    image: "/images/news/truck_convoy.jpg",
-    corridorId: "corridor-silchar"
+    "source": "instagram.com",
+    "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uWEI4Y1c4ZTJVLXBjS0cxOENCWUpIakhraFFYWDJMLUlETHp0Q1pBaGhHc0VFcGNUb2xJRTZPekhud1NBcXhoVUI1ekN6bUJmbWZRbTVR?oc=5",
+    "timestamp": "Sun, 12 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-04",
-    category: "alerts",
-    state: "sikkim",
-    language: "mn",
-    title: {
-      en: "Sikkim Highway Landslides: Pakyong & Mangan Routes Affected by Heavy Downpour",
-      as: "সিকিম ঘাইপথত ধস: পাকয়ং আৰু মাংগান পথত যান-বাহন ব্যাহত",
-      bn: "সিকিম হাইওয়েতে ভূমিধস: পাকিয়ং ও মাঙ্গান রুটে যানবাহন ব্যাহত",
-      hi: "सिक्किम राजमार्गों पर भारी भूस्खलन: पाक्योंग और मंगन मार्ग बाधित",
-      mn: "Sikkim Highway ꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯕꯅ Pakyong ꯑꯃꯁꯨꯡ Mangan ꯂꯝꯕꯤ ꯁꯣꯛꯈ꯭ꯔꯦ"
+    "id": "neris-news-26e666d4f3d2",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "hi",
+    "title": {
+      "en": "नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in ...",
+      "as": "नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in ...",
+      "bn": "नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in ...",
+      "hi": "नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in ...",
+      "mn": "नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in ..."
     },
-    summary: {
-      en: "Teesta river water level rise and cloudburst debris hit Rangpo-Rorathang stretch. BRO Project Swastik excavators deployed for rapid mud clearance.",
-      as: "টিস্তা নদীৰ পানী বৃদ্ধি আৰু পাকয়ং-মাংগান পথত বোকা খহি পৰাত যাতায়াত ব্যাহত হৈছে। বিআৰঅ'ৰ স্বস্তিক দলে পথ মুকলিৰ কাম কৰি আছে।",
-      bn: "তিস্তা নদীর জলস্তর বৃদ্ধি ও পাকিয়ং-মাঙ্গান সড়কে পাহাড় ভেঙে পড়ার কারণে রংপো-রোরাথাং রুট বন্ধ। রাস্তা পরিষ্কারে কাজ করছে বিআরও।",
-      hi: "तीस्ता नदी का जलस्तर बढ़ने और मगन-पाक्योंग मार्ग पर चट्टान खिसकने से रंगपो-रोराथांग मार्ग बाधित हुआ है। बीआरओ रास्ता खोलने में जुटा है।",
-      mn: "Teesta River ꯗ ꯏꯁꯤꯡ ꯀꯥꯕꯅ Rangpo-Rorathang ꯂꯝꯕꯤ ꯁꯣꯛꯈ꯭ꯔꯦ, BRO Project Swastik ꯅ excavator ꯁꯤꯖꯤꯟꯅꯗꯨꯅ ꯂꯝꯕꯤ ꯁꯦꯝꯒꯠꯂꯤ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by jagran.com regarding नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in Manipur.",
+      "as": "Regional disaster & logistics update published by jagran.com regarding नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in Manipur.",
+      "bn": "Regional disaster & logistics update published by jagran.com regarding नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in Manipur.",
+      "hi": "Regional disaster & logistics update published by jagran.com regarding नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in Manipur.",
+      "mn": "Regional disaster & logistics update published by jagran.com regarding नॉर्थ-ईस्ट में बाढ़ और भूस्खलन ने मचाया कोहराम, सिक्किम में फंसे 1500 से अधिक पर्यटक; मणिपुर में 883 घर तबाह - Floods landslides North East 1500 tourists stranded in Sikkim 883 houses destroyed in Manipur."
     },
-    fullContent: {
-      en: "Continuous torrential cloudbursts in North Sikkim caused land slips across Pakyong and Pakyong-Mangan sectors along NH-10. BRO Project Swastik heavy earthmovers have restored light vehicle traffic, while heavy goods trucks are held at Rangpo checkpost awaiting soil stabilization.",
-      as: "উত্তৰ সিকিমত প্ৰবল বৰষুণৰ ফলত ১০ নং ৰাষ্ট্ৰীয় ঘাইপথৰ পাকয়ং আৰু মাংগান অংশত পথ ভাঙি পৰে। বিআৰঅ'ৰ স্বস্তিক দলে পাতল বাহনৰ বাবে পথ মুকলি কৰিছে, যদিও গধুৰ ট্ৰাকসমূহ ৰংপোত ৰখাই ৰখা হৈছে।",
-      bn: "উত্তর সিকিমে টানা বৃষ্টির কারণে ১০ নম্বর জাতীয় সড়কের পাকিয়ং ও মাঙ্গান অংশে পাহাড় ধসে পড়েছে। বিআরও হালকা গাড়ির জন্য পথ তৈরি করেছে, তবে ভারী ট্রাক রংপো চেকপোস্টে আটকে রয়েছে।",
-      hi: "उत्तर सिक्किम में मूसलाधार बारिश के चलते एनएच-10 के पाक्योंग-मंगन सेक्टर में जमीन खिसक गई है। बीआरओ ने हल्के वाहनों के लिए रास्ता बहाल कर दिया है, जबकि भारी ट्रक रंगपो पर रोके गए हैं।",
-      mn: "North Sikkim ꯗ ꯅꯣꯡ ꯀꯟꯅ ꯆꯨꯕꯅ NH-10 Pakyong-Mangan ꯂꯝꯕꯤ ꯁꯣꯛꯈ꯭ꯔꯦ, Light vehicles ꯁꯤꯡ ꯆꯠꯄ ꯌꯥꯔꯦ ꯑꯗꯨꯕꯨ Heavy trucks ꯁꯤꯡ Rangpo Checkpost ꯗ ꯊꯤꯡꯖꯤꯟꯈ꯭ꯔꯦ꯫"
-    },
-    source: "Sikkim State Disaster Authority & BRO Swastik",
-    timestamp: "2 hours ago",
-    readTime: "3 min read",
-    urgency: "critical",
-    image: "/images/news/flood.jpg",
-    corridorId: "corridor-sikkim"
+    "source": "jagran.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVzFudTFVem9YVHhGdlVpakpXQUptbzZFOWFmb2E3QmJ5bHNaTk5DYldaLTB5X05zUTRqR19oWk9QT2NxbEo0SXIweEZEZ2M0b3lQNHlSV1ZJX2VtUFJHZHc5M3kxbHphcmFTaFdybXJ5S3Y3VnNQXzQwQ21sSjdxVTNCZlNhNE5KamEzS0dSRmI3SV8zVWxyUzNLT192bmRVMG1OTThjeFVraGNzTjk3dnJONWhEelNoMjBnRElBNVVmVnI4aGFGdENWc2d2WUJmdjhNUWlxZmt5UzRZ?oc=5",
+    "timestamp": "Sun, 01 Jun 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-05",
-    category: "alerts",
-    state: "manipur",
-    language: "mn",
-    title: {
-      en: "Imphal-Dimapur Lifeline NH-2 Mudslide Alert: Single Lane Traffic Regulated",
-      as: "ইম্ফল-দিমাপুৰ ২ নং ৰাষ্ট্ৰীয় ঘাইপথত বোকা খহাৰ সতৰ্কতা: একমুখী যান-বাহন চালনা",
-      bn: "ইম্ফল-দিমাপুর ২ নম্বর জাতীয় সড়কে ধস: একমুখী যানবাহন চলাচল শুরু",
-      hi: "इम्फाल-दिमापुर राष्ट्रीय राजमार्ग 2 पर कीचड़ धंसने की चेतावनी: केवल एक लेन चालू",
-      mn: "Imphal-Dimapur NH-2 ꯂꯝꯕꯤꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯕꯅ single lane ꯈꯛꯇ ꯆꯠꯄ ꯌꯥꯔꯦ"
+    "id": "neris-news-d9c196c76433",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "bn",
+    "title": {
+      "en": "অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান",
+      "as": "অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান",
+      "bn": "অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান",
+      "hi": "অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান",
+      "mn": "অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান"
     },
-    summary: {
-      en: "Heavy downpour causes slope instability near Senapati district. PWD emergency graders stationed for clearing continuous sludge.",
-      as: "সেনাপতি জিলাৰ ওচৰত প্ৰবল বৰষুণৰ ফলত পথত বোকা খহি পৰাত যান-বাহন হ্ৰাস কৰা হৈছে। লোকনিৰ্মাণ বিভাগৰ ডজাৰ মোতায়েন।",
-      bn: "সেনাপতি জেলার কাছে ভারী বৃষ্টির কারণে পাহাড়ের মাটি ধসে পড়েছে। রাস্তা পরিষ্কারের জন্য পিডব্লিউডি কাজ করছে।",
-      hi: "सेनापति जिले के समीप भारी वर्षा से कीचड़ जमा हुआ है। लोक निर्माण विभाग (PWD) की मशीनें रास्ता साफ करने में जुटी हैं।",
-      mn: "Senapati District ꯃꯅꯥꯛꯇ ꯅꯣꯡ ꯀꯟꯅ ꯆꯨꯕꯅ ꯂꯝꯕꯤ ꯁꯣꯛꯈ꯭ꯔꯦ, PWD ꯅ emergency machinery ꯁꯤꯖꯤꯟꯅꯗꯨꯅ ꯂꯝꯕꯤ ꯁꯦꯝꯒꯠꯂꯤ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by TheWall regarding অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান.",
+      "as": "Regional disaster & logistics update published by TheWall regarding অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান.",
+      "bn": "Regional disaster & logistics update published by TheWall regarding অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান.",
+      "hi": "Regional disaster & logistics update published by TheWall regarding অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান.",
+      "mn": "Regional disaster & logistics update published by TheWall regarding অরুণাচলে ভয়াবহ প্রাকৃতিক তাণ্ডব! হরপা বান-ধসে মৃত চার, নিখোঁজ পাঁচ সেনাজওয়ান."
     },
-    fullContent: {
-      en: "Sustained monsoon rain along the Senapati-Mao Gate corridor on NH-2 has caused severe slope failure. Manipur Highway Police is regulating convoy movement on alternating 30-minute intervals. Priority clearance granted to medical Oxygen tankers moving to Imphal Regional Hospital.",
-      as: "এনএইচ-২ ৰ সেনাপতি-মাও গেইট অংশত প্ৰবল বৰষুণৰ বাবে মাটি খহি পৰিছে। মণিপুৰ ঘাইপথ আৰক্ষীয়ে প্ৰতি ৩০ মিনিটৰ অন্তৰালত অল্টাৰনেট কৰি বাহন চলাইছে। ইম্ফললৈ যোৱা অক্সিজেন টেংকাৰসমূহক প্ৰথম অগ্ৰাধিকাৰ দিয়া হৈছে।",
-      bn: "২ নম্বর জাতীয় সড়কের সেনাপতি-মাও গেট রুটে পাহাড়ের মাটি ধসে গেছে। মণিপুর পুলিশ প্রতি ৩০ মিনিট অন্তর একমুখী গাড়ি চালনা নিয়ন্ত্রণ করছে। ইম্ফলগামী অক্সিজেন ট্যাঙ্কারকে অগ্রাধিকার দিয়ে পথ ছেড়ে দেওয়া হচ্ছে।",
-      hi: "एनएच-2 के सेनापति-माओ गेट मार्ग पर पहाड़ी की मिट्टी खिसक गई है। मणिपुर हाईवे पुलिस हर 30 मिनट में एकतरफा यातायात नियंत्रित कर रही है। इम्फाल जाने वाले ऑक्सीजन टैंकरों को प्राथमिकता दी जा रही है।",
-      mn: "NH-2 Senapati-Mao Gate route ꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯕꯅ Manipur Highway Police ꯅ ꯃꯇꯝ minute 30 ꯒꯤ alternate route control ꯇꯧꯔꯤ꯫ Imphal ꯗ ꯆꯠꯀꯗꯕ Oxygen Tankers ꯁꯤꯡ Priority ꯄꯤꯔꯤ꯫"
-    },
-    source: "Manipur Highway Safety & Transport Authority",
-    timestamp: "3 hours ago",
-    readTime: "2 min read",
-    urgency: "warning",
-    image: "/images/news/road_clearing.jpg",
-    corridorId: "corridor-imphal"
+    "source": "TheWall",
+    "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNU3p1WkhiZE5iYUgxby1LMHZDamJpMW0ybVVtdEJVeHNLTnJ2dnRmR2h5anQtWFZfTjBIWE1qdFo3SHlQbUZ4dzVZUUJLbHVFUkdwclFTaUk1MmliNVRKOU8wSjhNN3B6Ri1EV1d6X1RXX1lNX3dFUlpSc0ZWTHpHQXpGNGoxZ0psbm1GTkhzRFJXcmxRU19OVnRuSXROd9IBowFBVV95cUxNUm9meXR2YW9lWUwwa0tJT0hWdDFSQk92eVVWSGx2SWNtLTVVb3E5SklhODBKRW1hbnJFYW5nQmtBWFItZmZncEs4eWhEeHRZT080YU1SQkU2TUhLTUZTc0djVXJaNy0xMks0WkFBekRkQnBpX2x5X28tVG5QMnl5V1NXRVg1bHVvS0lSRlMtOGtIaGhGMnVtTFVIS3cxczRSdGxZ?oc=5",
+    "timestamp": "Sat, 15 Aug 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-06",
-    category: "travel",
-    state: "assam",
-    language: "as",
-    title: {
-      en: "Kaziranga National Park NH-37 Corridor: Automated Speed Limit Radar Active",
-      as: "কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যান ৩৭ নং ঘাইপথ: বন্যপ্ৰাণী সুৰক্ষাৰ বাবে স্পীড ৰাডাৰ সক্ৰিয়",
-      bn: "কাজিরাঙ্গা জাতীয় উদ্যান ৩৭ নম্বর জাতীয় সড়ক: বন্যপ্রাণী সুরক্ষায় স্পিড রাডার চালু",
-      hi: "काजीरंगा राष्ट्रीय उद्यान एनएच-37 कॉरिडोर: वन्यजीव सुरक्षा हेतु स्पीड रडार सक्रिय",
-      mn: "Kaziranga National Park NH-37 Corridor: Wildlife Safety Speed Radar Active"
+    "id": "neris-news-d776c6091c28",
+    "category": "flood",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?",
+      "as": "मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?",
+      "bn": "मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?",
+      "hi": "मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?",
+      "mn": "मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?"
     },
-    summary: {
-      en: "Automated speed radar cameras operational between Jakhalabandha and Bokakhat. Strict 40 km/h speed cap during flood animal migration.",
-      as: "জখলাবান্ধা আৰু বোকাহাটৰ ৩৭ নং ৰাষ্ট্ৰীয় ঘাইপথত স্বয়ংক্ৰিয় গতি কেমেৰা স্থাপন কৰা হৈছে। সৰ্বোচ্চ গতি ৪০ কিমি/ঘণ্টা।",
-      bn: "জখলাবান্ধা ও বোকাখাটের ৩৭ নম্বর জাতীয় সড়কে গতিসীমা ক্যামেরা বসানো হয়েছে। সর্বোচ্চ ৪০ কিমি/ঘণ্টা গতিসীমা প্রযোজ্য।",
-      hi: "जखलाबंधा और बोकाखाट के बीच एनएच-37 पर ऑटोमेटेड स्पीड कैमरे लगाए गए हैं। अधिकतम गति सीमा 40 किमी/घंटा है।",
-      mn: "NH-37 Jakhalabandha & Bokakhat ꯂꯝꯕꯤꯗ Speed Radar Camera ꯊꯝꯈ꯭ꯔꯦ꯫ Wildlife safety ꯒꯤꯗꯃꯛ Max Speed 40 km/h ꯈꯛꯇ ꯌꯥꯒꯅꯤ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by amarujala.com regarding मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?.",
+      "as": "Regional disaster & logistics update published by amarujala.com regarding मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?.",
+      "bn": "Regional disaster & logistics update published by amarujala.com regarding मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?.",
+      "hi": "Regional disaster & logistics update published by amarujala.com regarding मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?.",
+      "mn": "Regional disaster & logistics update published by amarujala.com regarding मौसम: उत्तर और पूर्वोत्तर भारत में मानसून एक हफ्ते सक्रिय, अरुणाचल के 35 गांव में बाढ़; IMD के अलर्ट में क्या?."
     },
-    fullContent: {
-      en: "With Karbi Anglong hill migrations underway during high water levels in Kaziranga, Assam Forest Department and Highway Police have activated 6 solar-powered radar units along NH-37. Commercial freight trucks exceeding 40 km/h face instant automated digital e-challauns to ensure animal safety.",
-      as: "কাজিৰঙাত পানীৰ স্তৰ বৃদ্ধি পোৱাৰ সময়ত ৩৭ নং ৰাষ্ট্ৰীয় ঘাইপথত ৬ টা সৌৰশক্তিচালিত ৰাডাৰ সক্ৰিয় কৰা হৈছে। ৪০ কিমি/ঘণ্টাতকৈ অধিক বেগত চলা ট্ৰাকসমূহক স্বয়ংক্ৰিয় ই-চালান প্ৰদান কৰা হ'ব।",
-      bn: "কাজিরাঙ্গায় জলস্তর বৃদ্ধির সময় বন্যপ্রাণীর পাহাড়ে ওঠার সুবিধার্থে ৩৭ নম্বর জাতীয় সড়কে ৬টি সোলার স্পিড রাডার সক্রিয় করা হয়েছে। ৪০ কিমি/ঘণ্টার বেশি গতিতে চলা গাড়ির ই-চালান কাটা হবে।",
-      hi: "काजीरंगा में जलस्तर बढ़ने पर एनएच-37 पर 6 सोलर स्पीड रडार लगाए गए हैं। 40 किमी/घंटा से अधिक गति से चलने वाले वाणिज्यिक ट्रकों का ई-चालान काटा जाएगा।",
-      mn: "Kaziranga ꯗ ꯏꯁꯤꯡ ꯀꥥꯕ ꯃꯇꯝꯗ wildlife safety ꯒꯤ NH-37 ꯗ Solar Speed Radar 6 ꯊꯝꯈ꯭ꯔꯦ꯫ Speed 40 km/h ꯍꯦꯟꯅ ꯆꯠꯂꯕꯗꯤ Automatic e-Challan ꯄꯤꯒꯅꯤ꯫"
-    },
-    source: "Assam Forest & Highway Police Command",
-    timestamp: "4 hours ago",
-    readTime: "3 min read",
-    urgency: "info",
-    image: "/images/news/heavy_rain.jpg",
-    corridorId: "corridor-kaziranga"
+    "source": "amarujala.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPemZ5MS1POWJqcW1HOUpnSFFEMTU2OXNEQXlLOUVCM0N1aE12d1NLWXJlYU9DdWZXdkRQcGE3UGFGVEF4T0lkUzhMaG1aWXlDQkVxQWtlMFh6Q1h4eXJNeGtCUDMyVGFBYmZFTEFkbDFjRFg5eUljRnpQSE9aOVpUMXBjYkdIVVBGVUM4Rzl3VFozUXNuOGpncDBJVXZpM1VPNWtXUnlFYngwbmVudG9CMnVPU3k0TjJqaGFzUnViWXFncV9UcFd0UG5LSVMyeHhuTENCX3ZUSDVFd3hhZ2ctZGpubnFScENWR3fSAe8BQVVfeXFMT19UcXhLRnY0M21BTGJtTkJiWlJlRkdNcEpsa09sUVpfT214WmtnRFMtRnU2bUNWblFPOUxCMC1vVWhLWnUwX1VCYzMyTE1Wb09XeHduakJoMXFQQlJidzl1bl80MU01Yl9KX1BXb3QyeF9hbjhUaHQ4LTU2c2xGcVZzWlVUcXJtR0VHRDhKQl9wZ2JLU0QwX3dQbzduUThvMThvTldubVRYUmxTWjkyTWpzWmZmMGtQVDJJSHpONmJkYjd6dnNOeU11T09UblZaNmdLVG9CbEUxTUF2X1Z6eHY0b29FSjFwQUY4dFRfYTA?oc=5",
+    "timestamp": "Sun, 19 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-07",
-    category: "logistics",
-    state: "tripura",
-    language: "bn",
-    title: {
-      en: "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
-      as: "ধৰ্মনগৰ-আগৰতলা ৰেলৱে ফ্ৰেইট লজিষ্টিক প্ৰেৰণ মুকলি",
-      bn: "ধর্মনগর-আগরতলা রেলহেড ফ্রেইট লজিস্টিকস কনভয় চালু",
-      hi: "धर्मनगर-अगरतला रेलहेड फ्रेट लॉजिस्टिक्स कॉरिडोर्स चालू",
-      mn: "Dharmanagar-Agartala Railhead Freight Logistics Service Active"
+    "id": "neris-news-648f307d380e",
+    "category": "logistics",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Zeliang flags NHIDCL delays, safety lapses on NH-29",
+      "as": "Zeliang flags NHIDCL delays, safety lapses on NH-29",
+      "bn": "Zeliang flags NHIDCL delays, safety lapses on NH-29",
+      "hi": "Zeliang flags NHIDCL delays, safety lapses on NH-29",
+      "mn": "Zeliang flags NHIDCL delays, safety lapses on NH-29"
     },
-    summary: {
-      en: "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots.",
-      as: "ধৰ্মনগৰ মালগুদাম আৰু আগৰতলা ডিপোৰ মাজত খাদ্য সামগ্ৰী আৰু তেলৰ টেংকাৰ চলোৱা হৈছে।",
-      bn: "ধর্মনগর গুডস ইয়ার্ড ও আগরতলা ডিপোর মধ্যে প্রয়োজনীয় খাদ্য ও পেট্রোলিয়ামবাহী মালগাড়ি রওনা হয়েছে।",
-      hi: "धर्मनगर माल गोदाम और अगरतला डिपो के बीच खाद्यान्न एवं ईंधन टैंकरों की आपूर्ति सुचारू रूप से चालू है।",
-      mn: "Dharmanagar Goods Yard ꯑꯃꯁꯨꯡ Agartala Depot ꯃꯔꯛꯇ Fuel & Grains Supply Freight convoy ꯆꯠꯄ ꯍꯧꯈ꯭ꯔꯦ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by Nagaland Tribune regarding Zeliang flags NHIDCL delays, safety lapses on NH-29.",
+      "as": "Regional disaster & logistics update published by Nagaland Tribune regarding Zeliang flags NHIDCL delays, safety lapses on NH-29.",
+      "bn": "Regional disaster & logistics update published by Nagaland Tribune regarding Zeliang flags NHIDCL delays, safety lapses on NH-29.",
+      "hi": "Regional disaster & logistics update published by Nagaland Tribune regarding Zeliang flags NHIDCL delays, safety lapses on NH-29.",
+      "mn": "Regional disaster & logistics update published by Nagaland Tribune regarding Zeliang flags NHIDCL delays, safety lapses on NH-29."
     },
-    fullContent: {
-      en: "Northeast Frontier Railway (NFR) and Tripura Logistics Cell have synchronized goods train unloading at Dharmanagar railhead with heavy truck convoys along NH-08. Petroleum fuel tankers and wheat supplies are moving smoothly into Agartala Central Depot.",
-      as: "উত্তৰ-পূব সীমান্ত ৰেলৱে আৰু ত্ৰিপুৰা লজিষ্টিক চেলে ধৰ্মনগৰ ৰেলৱে ষ্টেচনত ৮ নং ৰাষ্ট্ৰীয় ঘাইপথৰ জৰিয়তে পেট্ৰ'লিয়াম আৰু খাদ্য সামগ্ৰী সৰবৰাহ সুচল কৰি তুলিছে।",
-      bn: "উত্তর-পূর্ব সীমান্ত রেলওয়ে এবং ত্রিপুরা লজিস্টিকস সেল ধর্মনগর রেলওয়ে স্টেশনে ৮ নম্বর জাতীয় সড়ক দিয়ে প্রয়োজনীয় পেট্রোলিয়াম ও খাদ্য সামগ্রী সরবরাহ স্বাভাবিক রেখেছে।",
-      hi: "पूर्वोत्तर सीमांत रेलवे और त्रिपुरा लॉजिस्टिक्स सेल ने धर्मनगर रेलवे स्टेशन से एनएच-08 के जरिए अगरतला के लिए खाद्यान्न और ईंधन आपूर्ति सुगम बना दी है।",
-      mn: "Northeast Frontier Railway ꯑꯃꯁꯨꯡ Tripura Logistics Cell ꯅ Dharmanagar ꯗꯒꯤ Agartala ꯗ NH-08 ꯂꯝꯕꯤꯗꯒꯤ Fuel ꯑꯃꯁꯨꯡ Grains ꯄꯨꯕ conveyor ꯁꯤꯡ Smooth ꯑꯣꯏꯅ ꯆꯠꯍꯜꯂꯦ꯫"
-    },
-    source: "NFR & Tripura Logistics Directorate",
-    timestamp: "5 hours ago",
-    readTime: "2 min read",
-    urgency: "info",
-    image: "/images/news/truck_convoy.jpg",
-    corridorId: "corridor-agartala"
+    "source": "Nagaland Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPX3ZzM3RYV28xYzcxSXBEZDd6WEY0a01pVVNFVUFEVnZldjN5Y20xRGVRbGlTaUtaSFh4bVJQOWhGQXpUR09PM1ZxNGdnOFZUZWE3ZHJBWk5qNVp2VDYzX3BFTkpFdXZYdXhPeXhWaERsNHJEa1Y5SW54YjRYbzFseUg2Mno?oc=5",
+    "timestamp": "Wed, 16 Sep 2026 16:13:50 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
   },
   {
-    id: "news-08",
-    category: "govt",
-    state: "nagaland",
-    language: "en",
-    title: {
-      en: "Dimapur-Kohima NH-29 Ridge Pass Stabilization Project Clears Single Track",
-      as: "দিমাপুৰ-কোহিমা ২৯ নং ৰাষ্ট্ৰীয় ঘাইপথ ৰিজ পাছ মেৰামতি কাৰ্যসূচী সম্পন্ন",
-      bn: "দিমাপুর-কোহিমা ২৯ নম্বর জাতীয় সড়ক রিজ পাস মেরামত সম্পন্ন",
-      hi: "दिमापुर-कोहिमा एनएच-29 रिज पास मरम्मत कार्य पूरा",
-      mn: "Dimapur-Kohima NH-29 Ridge Pass Repair Project Completed"
+    "id": "neris-news-0b7865a8c5f3",
+    "category": "logistics",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "as": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "bn": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "hi": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই",
+      "mn": "টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই"
     },
-    summary: {
-      en: "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access.",
-      as: "এনএইচআইডিচিএল কৰ্তৃপক্ষই চুমুকেডিমা অংশৰ মাটি খহা ৰোধ কৰিবলৈ মেৰামতি কাম সম্পূৰ্ণ কৰিছে। গধুৰ ট্ৰাকৰ যাতায়াত মুকলি।",
-      bn: "এনএইচআইডিসিএল কর্তৃপক্ষ চুমুকেডিমা অংশে পাহাড় ধস রুখতে মেরামতের কাজ শেষ করেছে। ভারী ট্রাক চলাচল আবার শুরু।",
-      hi: "एनएचआईडीसीएल की टीम ने चुमुकेदिमा भूस्खलन क्षेत्र में मरम्मत का कार्य पूरा कर लिया है। भारी ट्रकों की आवाजाही पुनः शुरू।",
-      mn: "NHIDCL Engineering team ꯅ Chumukedima stretch ꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯕ ꯊꯤꯡꯅꯕ ꯁꯦꯝꯒꯠꯄ ꯂꯣꯏꯁꯤꯅꯈ꯭ꯔꯦ, Heavy Trucks ꯆꯠꯄ ꯌꥥꯔꯦ꯫"
+    "summary": {
+      "en": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "as": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "bn": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "hi": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই.",
+      "mn": "Regional disaster & logistics update published by Anandabazar Patrika regarding টানা বর্ষণে বিপর্যস্ত উত্তর-পূর্ব ভারত! মৃতের সংখ্যা বেড়ে ৪৪, তবে বৃষ্টি থেকে এখনই রেহাই নেই."
     },
-    fullContent: {
-      en: "National Highways and Infrastructure Development Corporation Limited (NHIDCL) has placed pre-cast gabion wire mesh walls along the vulnerable 4-km Chumukedima ghat section on NH-29. This critical infrastructure work ensures uninterrupted movement of essential goods trucks between Dimapur railhead and Kohima buffer depots.",
-      as: "এনএইচআইডিচিএলৰ বিষয়া সকলে ২৯ নং ৰাষ্ট্ৰীয় ঘাইপথৰ ৪ কিমি দৈৰ্ঘ্যৰ চুমুকেডিমা অংশত বৰফ আৰু মাটি খহা ৰোধৰ কাৰণে দেৱাল নিৰ্মাণ কৰে। ইয়াৰ ফলত দিমাপুৰৰ পৰা কোহিমালৈ সামগ্ৰী সৰবৰাহ সুচল হৈ পৰিছে।",
-      bn: "এনএইচআইডিসিএল ২৯ নম্বর জাতীয় সড়কের ৪ কিমি দীর্ঘ চুমুকেডিমা অংশে মাটি ধস রুখতে বিশেষ নিরাপত্তা দেয়াল তৈরি করেছে। ফলে দিমাপুর থেকে কোহিমায় পণ্য সরবরাহ সচল রয়েছে।",
-      hi: "एनएचआईडीसीएल ने एनएच-29 के 4 किमी लंबे चुमुकेदिमा घाट खंड पर सुरक्षा दीवारें खड़ी कर दी हैं। इससे दिमापुर से कोहिमा के बीच आवश्यक वस्तुओं की आपूर्ति सुचारू रहेगी।",
-      mn: "NHIDCL ꯅ NH-29 ꯒꯤ 4 km ꯁꯥꯡꯕ Chumukedima ghat section ꯗ ꯂꯩꯃꯥꯏ ꯇꯥꯕ ꯊꯤꯡꯅꯕ Safety Wall ꯁꯦꯝꯈ꯭ꯔꯦ꯫ Dimapur to Kohima Supply trucks ꯁꯤꯡ Smooth ꯑꯣꏏꯅ ꯆꯠꯄ ꯌꯥꯔꯦ꯫"
+    "source": "Anandabazar Patrika",
+    "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcV9kaG90bjVCMjZ6YUVBWGQwQzVTdE5QalRjaDhMN1hMeWJhZlloYnVsWkotd1FkUDRlNHZXU2tpbFhCRVhMYVB0TlFtQ3JlX1lZY1NvTUJHYjlIQmpyLTZ0b0pKVUJXTHZPSENkNU92WXh3TExOUTFtQl9zSTE3T29xUVprUU44LW0zajNTRWtEd2pSaTJsUV9mZ2h5dWExZFJKNHozekVSV285M05MOVp3YlNPRzdh0gG-AUFVX3lxTFBkM1NvSjEwSTMzRVVCYzE5czdRZjhvNzhmcVJzYXFybFhCNGV1TnM5VU1RaFc3ckJrc3VuY0VCZnlpVUVaVm56dU9fckNUbUk0clEyRnRGN3BFY3pta2l2RVZLQ2lkUlFLQ1duejVTSnIxckI2aG04UnRscWRyWjNvbmlpZTRfb084RHN1VThCWnptaG8xTm9MSUhtcm5sNDVmRmN1WTJHUVdtWGhORExJT0hfZUFNS0JrNk1iSlE?oc=5",
+    "timestamp": "Wed, 04 Jun 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8eed39e5af59",
+    "category": "landslide",
+    "state": "sikkim",
+    "language": "hi",
+    "title": {
+      "en": "सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा",
+      "as": "सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा",
+      "bn": "सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा",
+      "hi": "सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा",
+      "mn": "सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा"
     },
-    source: "NHIDCL Nagaland Command",
-    timestamp: "6 hours ago",
-    readTime: "3 min read",
-    urgency: "info",
-    image: "/images/news/road_clearing.jpg",
-    corridorId: "corridor-kohima"
+    "summary": {
+      "en": "Regional disaster & logistics update published by etvbharat.com regarding सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा.",
+      "as": "Regional disaster & logistics update published by etvbharat.com regarding सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा.",
+      "bn": "Regional disaster & logistics update published by etvbharat.com regarding सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा.",
+      "hi": "Regional disaster & logistics update published by etvbharat.com regarding सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा.",
+      "mn": "Regional disaster & logistics update published by etvbharat.com regarding सिक्किम में पिछले 10 दिनों से भारी भूस्खलन: 65 परिवार हुए बेघर, बॉर्डर कनेक्टिविटी को खतरा."
+    },
+    "source": "etvbharat.com",
+    "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNENTelJIM0NKT2dfSWUzX1E5NEhtMkdPYWFKdnU0dnRHSVB4SU5hX0dHbjFkaW93RUVqdGV5RXRkVDFoRm00dVI1d3ljTHZnUzFHbWFrYzZyZ1BuT0FncWlHeGwwcW8zUGM2Tl9LUGw5QmZYcFY4UzEydUo2MGZsaDhSTXRWUWZ4SHMtNFpOcWRZTEFfT1lHcHZPaTBNVHBIOW1WMmZFTDN5cmdoblZGZXdMdVBJb19La2dJWUZNQ09zUDFmcElsNlJB0gHPAUFVX3lxTE43QVFKRmhzSWViMVlNNnFfZ3VQd3oxdmlXU0c2X2pzZ0hibVFOSy16NzJLaF9FbzU3bXkteGFqTThQbUFYWTBCWENTT3p6Unljb1ZZWXlQR1I5NEJHYlR4RnBodWIxakdMU1JfeUNsdUtwa25WUmhNSVhsX3g4Rk9UQzRtOTEyQVJrX0JsckY3YlhVbW16ek02dTJOZHYycjhISVhMNExjdEdwNWFnZDZUNTRWNU5WSmtHNDYwclhlN3h1M2RrZWZGXzZsNzhQVQ?oc=5",
+    "timestamp": "Fri, 17 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-de5ab55e153b",
+    "category": "flood",
+    "state": "manipur",
+    "language": "bn",
+    "title": {
+      "en": "Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা",
+      "as": "Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা",
+      "bn": "Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা",
+      "hi": "Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা",
+      "mn": "Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ABP Ananda regarding Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা.",
+      "as": "Regional disaster & logistics update published by ABP Ananda regarding Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা.",
+      "bn": "Regional disaster & logistics update published by ABP Ananda regarding Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা.",
+      "hi": "Regional disaster & logistics update published by ABP Ananda regarding Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা.",
+      "mn": "Regional disaster & logistics update published by ABP Ananda regarding Manipur Floods: দু’দিনে মৃত কমপক্ষে ৩০, বন্যায় বিপর্যস্ত উত্তর-পূর্ব ভারত, উদ্ধারকার্যে সেনা."
+    },
+    "source": "ABP Ananda",
+    "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNUndCTGpBZkRGdFpSRDZ3MVVSc2hja3lIZ1ZKbVQxdnZZU0g3aENxS0hqY2tDVkJOTzBUdV9JRHlGU3FIX2g2SW5OaUhFcldKU2JBVmcyOEVMcnNnWVh5T2RhN0htdmdnR3Y4ZzRFU1ZCTjlwVHBXVllyQ29PRVR1dF93bERfcEdBRFp0SUFVZ2hveER3YUNnOUJuZDBoTkhBbHNXaW85dDUzaC1CZkJqRXNlTUJzVGdQX1lQeFY3SVVXSFo5VF8tbXN2Nzd6bTNUckZGVXBxbWU3R1YzTWIxM19FSFdtLTREOXfSAe8BQVVfeXFMTy04dFlyRjBwWm82cTdWakdJd2JvVVdYa3hJQTU1cW1YbTctNkNBOTdaUnFpaFlCa0F3M01Ec3p4VnVycUNpQ0llenpjc2FxdWNqTUFVcjZBTUpLTEh1cWtUUE1JV2hVQ2ZMOFM3dExfVGlRLXJJcmxGRzlKcVlqMGd2c2NjVnhkaUI2YVdvaFdhakl4SmZISjRDTjgtbDBVRkRnc2s1eDVia21laS1pUnVaSnJ3VkNvTk9GRTM2d3o3VWF5NWVTWUlnaXFCdm5nYXZlVFBLU3BCSGdTaXZlWkZ6REZKTGEzbHFaQXlSRkU?oc=5",
+    "timestamp": "Sun, 01 Jun 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-aaceefa93e6a",
+    "category": "weather",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?",
+      "as": "North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?",
+      "bn": "North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?",
+      "hi": "North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?",
+      "mn": "North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by AajTak Bangla regarding North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?.",
+      "as": "Regional disaster & logistics update published by AajTak Bangla regarding North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?.",
+      "bn": "Regional disaster & logistics update published by AajTak Bangla regarding North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?.",
+      "hi": "Regional disaster & logistics update published by AajTak Bangla regarding North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?.",
+      "mn": "Regional disaster & logistics update published by AajTak Bangla regarding North Bengal And Sikkim Weather Update: টানা বৃষ্টিতে উত্তরবঙ্গের সঙ্গে সিকিমের পরিস্থিতিও খারাপ, রেড অ্যালার্ট কোন কোন জায়গায়?."
+    },
+    "source": "AajTak Bangla",
+    "source_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOSVNVOHVjWlZDYkpWdWdGR2tENjhsNkxrYTVld1hDOFVjakJVelBHNmtXUkZZdjR3Ynl0Z0o4WHhCUFNqRHBrY1NiRUZERjJzOC1YRzNiTlFqQ2hRamhnMHM0d2J6a19qZ0lQakdDbXFrVENva292cVpGR1FtRVUtbEFhQ3hXRkhXWHdkeFRDZWFEdy1PVm04czU5RDBWVG1uYl9DMDdCNlB0ZU55UDRsTjE1ZE5aYzFOd3JtcVZ4eV8tVFR0OVQ2NWl0Rk02bXlleUJhTlJhQVc1Q2pFOVV4MTNPb095cHVueE5CblhyMng5Z9IB9wFBVV95cUxQR1ZoaUtWZ2dubTB2T1J0b0xoVmZydXVmUnJseE5IUi1MVElRX2g5UTVQMXNFSm1RalR2YXI3RlAwZllKaHVhdXh4UW50bXpuRmszZGRjbWhQcExuTnF4RVEtc2VVZ0NPQXRJRHp3SlNkZjRLNHNWVXowOTdwME5EWU1aR296VHBXNlg3X0FobmlPN2RiX1RidmdMLTNibkJLRWRna01CQ1lwMWZ0aGw1ZGtsVS11MHpvNzBHWDlWVmp2M3NWWlcxQXVBZlRudTJiTE82NXh6MUFwWHd4VVMwOGpXYzhLcnY1emlkcTdSYWVkbWNSeHdj?oc=5",
+    "timestamp": "Mon, 29 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-aca8ff0e2804",
+    "category": "logistics",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ",
+      "as": "ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ",
+      "bn": "ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ",
+      "hi": "ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ",
+      "mn": "ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Sangbad Pratidin regarding ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ.",
+      "as": "Regional disaster & logistics update published by Sangbad Pratidin regarding ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ.",
+      "bn": "Regional disaster & logistics update published by Sangbad Pratidin regarding ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ.",
+      "hi": "Regional disaster & logistics update published by Sangbad Pratidin regarding ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ.",
+      "mn": "Regional disaster & logistics update published by Sangbad Pratidin regarding ভূমিধসে অবরুদ্ধ একাধিক রাস্তা, বৃষ্টি বিপর্যয়ে যোগাযোগ বিচ্ছিন্ন সিকিমের একাংশ."
+    },
+    "source": "Sangbad Pratidin",
+    "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQM2hra0ZDM3huc3pIelJZb0xxQ1dSN2RYRHo3VG53X1VPQ2VXaGZNa3ZYZ01uRTFsR0haa3RVd1JBM2F6WEZ1YldsRExHLXd2ci1iVUUtaHNsSUh3UlJjYlZ5cDQ2QWFoWVpHZE8xZERyMktmTFZPUkJVbnlfV2t5QldWaVdMVDBKLUZSbkVka0NJZm9tSm5hT0RqNTg1OFl2NzZuRmZSSlhPU0t4bzl2bXhBR1Z0T0EyUV9Rb3ZKUGxEWUowNjRvT21WRWppdnVFejBldS12WdIB2AFBVV95cUxPTmRtWWFmREtpZHRTYm5CTWhvQ0RlR1dYaVV1LWU4Mm1ZX3czTXBkMEd5c21fcUxMWjJVRl9ET2JnYmY5SzNhRWhoQkpCT2txTnhPR2VOYjEySE9ReGdVOGl4OWdnSmN2TW5IaDI4dWtKdGtMRGRsM3VRMnJ6SVplb0pSaFlYM25jWHdqeVlwdkFnMVZpbi00TWxMWFNab2lMbDVVRGFKRGhoVUVTc09EVXJKS3pYUHRJbjFjNG5jR0VCam1yQ2ZGVG5PcmxURW1UM05xZ1o2b0Q?oc=5",
+    "timestamp": "Wed, 24 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-457470d5f1d2",
+    "category": "landslide",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim]",
+      "as": "পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim]",
+      "bn": "পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim]",
+      "hi": "পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim]",
+      "mn": "পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim]"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by facebook.com regarding পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim].",
+      "as": "Regional disaster & logistics update published by facebook.com regarding পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim].",
+      "bn": "Regional disaster & logistics update published by facebook.com regarding পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim].",
+      "hi": "Regional disaster & logistics update published by facebook.com regarding পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim].",
+      "mn": "Regional disaster & logistics update published by facebook.com regarding পাহাড় ধসে বন্ধ রংপোর রোরাথাং রোড #Sikkim #Landslide #Heavyrain #SikkimRains [Sikkim land slide, Rain in Sikkim]."
+    },
+    "source": "facebook.com",
+    "source_url": "https://news.google.com/rss/articles/CBMijARBVV95cUxOTHJLLU5UVE9ybTVaSEt4ZVZSMEtoQk13cmEwbV9LV0JrcEVDZTFoaVdzc0NrSmRBTTBQVUliY216V1hSR1NyN2xlSFhZZGUyWXNOdklqenJhSUw1MWRZQlczWWNSdFIteldES0c1VEJwMXQ3NnZyWjN1eUJIX05vLURFM0hWSW5JUDY0MEhub1ZpTGF4NWY0UXU0UnljdGEwdzgteWhyMmxaNEgteXNBOXNQQ0pSNzlSQ2c3bEd6Nl9vVGFpZEpyQlg4ZkJYX3lOVmJWeHNqdkJpZkRFLVVIeWpBcUNkd1ZaN0ZDaVNVRnBPaVVydDNnTlJzSUFqM0oxNHUydXRpT0ZNZW9seEtrbVEwRTItZnY3cmxDdkpoOXRXRFhvbmgyUjlocnZUS241UnVhOGt3OXJ6bUtUaUlXbnZqZ0U4UDB5Q0RNc1hMamVjanhJODdTZFdYeVNzSEdibE56VEs5UkU5aHNWNkttTlZyYzk5ZTBkQlZmcEFMdkpKRTQ3ZXpTbFgwLUNyUkoxZnJ3WWtaVjRILWU5UHFKT0E0c21rSzQ0TXRBWTczREpRbHRpOFpKd205UVotM2Q3M3c4S0Z5bkxEWVFqb3RMNTdremExSjRLVFBFWjc5MU9FWGhmRnpuRngwWFUzNkp5Z2pkem8yTzM1MXBJSmZHOHI1V25hQU8yWXkwaQ?oc=5",
+    "timestamp": "Tue, 23 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-efadbed1a471",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर",
+      "as": "Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर",
+      "bn": "Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर",
+      "hi": "Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर",
+      "mn": "Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by jagran.com regarding Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर.",
+      "as": "Regional disaster & logistics update published by jagran.com regarding Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर.",
+      "bn": "Regional disaster & logistics update published by jagran.com regarding Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर.",
+      "hi": "Regional disaster & logistics update published by jagran.com regarding Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर.",
+      "mn": "Regional disaster & logistics update published by jagran.com regarding Video: हट जाओ भाई... अरुणाचल में भूस्खलन का दिखा खौफनाक मंजर, अचानक पहाड़ से गिरने लगे बड़े-बड़े पत्थर."
+    },
+    "source": "jagran.com",
+    "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVkpfYU1vbWFtdmM3U242OFZLRGI2MTM2dlEzeDlndXplWXdBTHpPM1AxVnMxdW5nd1FZakN3RnBVM2JTcWVBaF9Ec2MwT1BsY0JLaVlxdEd1QkgzdXJlNWVkLTNwYUhnWUY3bURWdk53Y3VjbENfMnZhLXJQRFJCOFZMVUlWeG0yR19HQnNQZ0pqODZQRDIxM2FfaFV0SUdJZzJ0YUVyUGxJTzcyNTVsMldQMUwyX01obGl2eDNCNA?oc=5",
+    "timestamp": "Tue, 26 Aug 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-02bc8fefc1f4",
+    "category": "landslide",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा",
+      "as": "पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा",
+      "bn": "पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा",
+      "hi": "पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा",
+      "mn": "पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Amar Ujala regarding पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा.",
+      "as": "Regional disaster & logistics update published by Amar Ujala regarding पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा.",
+      "bn": "Regional disaster & logistics update published by Amar Ujala regarding पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा.",
+      "hi": "Regional disaster & logistics update published by Amar Ujala regarding पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा.",
+      "mn": "Regional disaster & logistics update published by Amar Ujala regarding पूर्वोत्तर में बारिश बनी आफत: असम में पुल बहा, अरुणाचल में भूस्खलन से हालात बिगड़े; कई इलाकों का संपर्क टूटा."
+    },
+    "source": "Amar Ujala",
+    "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeTV1VXdYVXRQVGtkT1ByMFA4RW9xNVVhQ1ZfWnp6dXJuMnY4dWFncHBPNlhuS2ZuQlZBbk1uLU1nS3dGMFRaZDZrZTBzOGRHQkFOalFGcEtyLW10WGdrYjJEVUdXTzM2RUZ3b0NKb0YtSHZvZkszTFdDdUtBYlozb2l0VnNVeGZqdDFFNkJsY1UzWER3UmdjX0RMS2d0b1BsSEJMSjc5T2RWbUhYMHV1S0wxRWMxUlJHcUU4eXEtRUExbmY2YVBVQ1ZtZnMxNHJzNlRPTXV1REZfWHV1WU9oWNIB5gFBVV95cUxPV2ZCb1VOSmM3M09WbWpxTEJsMjhWNV81a29MTlhTRDAtVlFlRU9IMjN1WFhuUkxvc0tBVnhtZTRsc08zcUNIcG80d3JkZWtSLW5yVmIzOFhtMWphWmhMUC0ydHlNczBNS3Rrb08xRGE3VzYwQUIxQzAyQjItckI3ZG16dU5TYW55OGVKaEVwbzBPaENBN3NFdWY4eGtyaHNIWGpkZXBQV3hrTWJWMndtM1p4blF3SzNPWlZhRzJDSkN4NFAwalUySDBfRXdHQTY3MUhXemJ0MzU5WXl6N25SNUw4S2lMUQ?oc=5",
+    "timestamp": "Sun, 28 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-409df839dfb2",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border",
+      "as": "A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border",
+      "bn": "A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border",
+      "hi": "A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border",
+      "mn": "A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ETV Bharat regarding A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border.",
+      "as": "Regional disaster & logistics update published by ETV Bharat regarding A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border.",
+      "bn": "Regional disaster & logistics update published by ETV Bharat regarding A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border.",
+      "hi": "Regional disaster & logistics update published by ETV Bharat regarding A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border.",
+      "mn": "Regional disaster & logistics update published by ETV Bharat regarding A Year After Opening, Sela Tunnel Strengthens India's Strategic Reach Near China Border."
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWWJSQkhNY1JZVFR4Tmdha3dwYnRoX2gzd0lFeVl5d2I4aUxMT3dlRU81WkpBWngwRWc1cUk4MG1nbmdYNGw0MDFicjRLcFFCSFhvTjNldHBMX3hRdE9YWDNjaWVzNE5Ta255SHFvcjdDeEcwMHdaZTlmZmtvblVremZBQktEVXUwN0RNS2ZHMWNmbXNDNWJETm16eWQwa0NvR1VWMnhrRWVheFFTemc5MU03dzdTSzd0ZGdLR1M1NDUtZWtTeDZ4R2o5dFhfWTdBR1duLdIB2gFBVV95cUxQRWhYZmhQaDFyMzFZTlVFQkNHUDI4VTJZLTJHMVJROTlnRlRkRWFLNTUyNmF2Rmk0ZWZXTzVWNkF4dEEzemdwcmQwTkNDNzlLODdoU0pUcGEyb3VBNEVMUE9XTU1pMHRsYnlUcHZ6UmE3elVLajFrNW5ucEl6M3JObW9tb2NvM3BUc0NHdHhPeFJPUld1Rl9Iem1vWnBVWnFfeGx4dGFTOGFEaFh2WUkwaTgyUUxCWkVDY0FYQkZEQ2gxUjJpTnV5SThxUl9FbklnTVhhd3o0ajR6QQ?oc=5",
+    "timestamp": "Sat, 08 Mar 2025 08:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-36e6e4e2b299",
+    "category": "weather",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage",
+      "as": "Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage",
+      "bn": "Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage",
+      "hi": "Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage",
+      "mn": "Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by News18 regarding Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage.",
+      "as": "Regional disaster & logistics update published by News18 regarding Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage.",
+      "bn": "Regional disaster & logistics update published by News18 regarding Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage.",
+      "hi": "Regional disaster & logistics update published by News18 regarding Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage.",
+      "mn": "Regional disaster & logistics update published by News18 regarding Mizoram Travel Advisory: Postpone Traveling To Northeast State Due To Rainfall Damage."
+    },
+    "source": "News18",
+    "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORU5zS3VWbUZFSG9rRkk0eFhUblZSbE5fdV9xbDRZOU1ONmxQRy1vSElpeGFJS0J0UnUtcmlUQlliVUtzTWpYNG9vUFBMVVlVQUpsc192dUNFSHlLNTFfb2lxUUFqSHZwNkdpbGl5TFQ1bGViLW9jaXRMWE10LVZIOC14US1WVkc4NlJhNGU0Rk5RaERuWVNPdWp3aTU0ZGp1cWpRODE2NHZyVU8yMFhwdUdmMnZCVW5heUhoMkx4dEpnNmlyWms4aGRKb2huVk9iSGljdtIB2gFBVV95cUxPX0ZRZVVkZmJNei1Rb0MzbVdVbUszVlprWnNmYlNLNUVZVU9ZQTJaS1c1SXlzc2ttVFU1R0VQOEVyM3RDYnl4UEZvNEZCemxTN0ZOeEVmdUxyLU1aYkhGYlppd3c2Y1BybHcySVhVbmFRTmVQSGJtN2RmOTlNUHVkOWxLWXREajBtWWw5NHlsal9EdG42bEQzeFVSNVMwQkZsekRCZlhsSFpMdjNidV9PUmNsU2ZLWnYxSFRuSzN3Z0Z5cEIycGs1V2FSNm44bi1aXzdUQWRZWmZfUQ?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-e17fc8fef723",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link",
+      "as": "NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link",
+      "bn": "NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link",
+      "hi": "NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link",
+      "mn": "NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Ukhrul Times regarding NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link.",
+      "as": "Regional disaster & logistics update published by Ukhrul Times regarding NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link.",
+      "bn": "Regional disaster & logistics update published by Ukhrul Times regarding NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link.",
+      "hi": "Regional disaster & logistics update published by Ukhrul Times regarding NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link.",
+      "mn": "Regional disaster & logistics update published by Ukhrul Times regarding NH-2 Cut Off as Landslide disrupts Imphal-Dimapur Road Link."
+    },
+    "source": "Ukhrul Times",
+    "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1tTmxnaXZNOXhRWHd2WU4yZERTbDhMbVpwTV9iZjZvbmZFT0xzYi1OeEFwQzdVYXJQSkNiU1NpYzNGWFdwNk9mOVp4ZjVRUQ?oc=5",
+    "timestamp": "Wed, 04 Jun 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-f78419cb1587",
+    "category": "logistics",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Manipur: Mayai Lambi residents block national highway as road crisis deepens",
+      "as": "Manipur: Mayai Lambi residents block national highway as road crisis deepens",
+      "bn": "Manipur: Mayai Lambi residents block national highway as road crisis deepens",
+      "hi": "Manipur: Mayai Lambi residents block national highway as road crisis deepens",
+      "mn": "Manipur: Mayai Lambi residents block national highway as road crisis deepens"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by India Today NE regarding Manipur: Mayai Lambi residents block national highway as road crisis deepens.",
+      "as": "Regional disaster & logistics update published by India Today NE regarding Manipur: Mayai Lambi residents block national highway as road crisis deepens.",
+      "bn": "Regional disaster & logistics update published by India Today NE regarding Manipur: Mayai Lambi residents block national highway as road crisis deepens.",
+      "hi": "Regional disaster & logistics update published by India Today NE regarding Manipur: Mayai Lambi residents block national highway as road crisis deepens.",
+      "mn": "Regional disaster & logistics update published by India Today NE regarding Manipur: Mayai Lambi residents block national highway as road crisis deepens."
+    },
+    "source": "India Today NE",
+    "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTy1zeWtuLUlaT25PTzZ2dzdxVHNlZmVQUXh5TU43Ml9wNXlGV2hsU0tJLUt6VHYwZmRiSGowWFZ3Uk1jVmFYUzd0WDlFNDYySDlnWXRRLWVUenBHNHc1bEcxa2RWMnpIZmhhMkI2OHJ1YXo0REIwdk1JbmNBVjJtY3RfWmlUbkFJUGtFZzJ1aF9vSU03MzJmZ1dhd2hTTzVpWm43OXBxZ19pdklHRGJMWEVnYTBSTHpoVVloVkF1dkswYlFDaFFRV0Q1ekZ3TU5hcnfSAdcBQVVfeXFMUC1LWkFacDBnS0lGZGtlcjBvVmluQzdybHlod2ZZU1JRSEwwM3pzR25QaGNMNDV1MFFJRVBMR3VvelItczJ3eVBVODB1bDNnM0x6U1ZabXoyN0RteWkxYy1ZM2g5VjNHTVlQRHJESUtZUFd1YVFlcHlUY1poanNxdDNnclN6VTFkSE1abl8zaWh0bXBWckRpaDFGMDlCc1AxVVozY2kyZHRVUnAtRW9RSllxYXgweXozRFBYZVBQZm84djlLZzNDa0E5TWZVRzR5bzJmLV92TjA?oc=5",
+    "timestamp": "Mon, 06 Oct 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-4e341d4fa0aa",
+    "category": "emergency response",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "Tripura Freight Logistics Update: Goods Train Railway Services Restored",
+      "as": "Tripura Freight Logistics Update: Goods Train Railway Services Restored",
+      "bn": "Tripura Freight Logistics Update: Goods Train Railway Services Restored",
+      "hi": "Tripura Freight Logistics Update: Goods Train Railway Services Restored",
+      "mn": "Tripura Freight Logistics Update: Goods Train Railway Services Restored"
+    },
+    "summary": {
+      "en": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NFR railway network.",
+      "as": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NFR railway network.",
+      "bn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NFR railway network.",
+      "hi": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NFR railway network.",
+      "mn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NFR railway network."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/tripura/goods-train-services-restored-in-tripura/",
+    "timestamp": "7 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-6325144dcb1e",
+    "category": "logistics",
+    "state": "assam",
+    "language": "bn",
+    "title": {
+      "en": "Silchar & Cachar District Administration Reviews Traffic Management and Supply Logistics",
+      "as": "Silchar & Cachar District Administration Reviews Traffic Management and Supply Logistics",
+      "bn": "Silchar & Cachar District Administration Reviews Traffic Management and Supply Logistics",
+      "hi": "Silchar & Cachar District Administration Reviews Traffic Management and Supply Logistics",
+      "mn": "Silchar & Cachar District Administration Reviews Traffic Management and Supply Logistics"
+    },
+    "summary": {
+      "en": "District authorities enforce smooth traffic management and essential commodity transit security across key Barak Valley logistics hubs.",
+      "as": "District authorities enforce smooth traffic management and essential commodity transit security across key Barak Valley logistics hubs.",
+      "bn": "District authorities enforce smooth traffic management and essential commodity transit security across key Barak Valley logistics hubs.",
+      "hi": "District authorities enforce smooth traffic management and essential commodity transit security across key Barak Valley logistics hubs.",
+      "mn": "District authorities enforce smooth traffic management and essential commodity transit security across key Barak Valley logistics hubs."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/assam/assam-around-ne/silchar-civic-poll-18-withdraw-nominations-131-candidates-remain-in-fray/",
+    "timestamp": "6 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-d4da696c8218",
+    "category": "government advisory",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Nagaland Delegation Holds Key Regional & Highway Transit Talks with Assam and Meghalaya Chief Ministers",
+      "as": "Nagaland Delegation Holds Key Regional & Highway Transit Talks with Assam and Meghalaya Chief Ministers",
+      "bn": "Nagaland Delegation Holds Key Regional & Highway Transit Talks with Assam and Meghalaya Chief Ministers",
+      "hi": "Nagaland Delegation Holds Key Regional & Highway Transit Talks with Assam and Meghalaya Chief Ministers",
+      "mn": "Nagaland Delegation Holds Key Regional & Highway Transit Talks with Assam and Meghalaya Chief Ministers"
+    },
+    "summary": {
+      "en": "High-level inter-state discussions focus on border tranquility, inter-state freight transit, and regional infrastructure cooperation across Nagaland corridors.",
+      "as": "High-level inter-state discussions focus on border tranquility, inter-state freight transit, and regional infrastructure cooperation across Nagaland corridors.",
+      "bn": "High-level inter-state discussions focus on border tranquility, inter-state freight transit, and regional infrastructure cooperation across Nagaland corridors.",
+      "hi": "High-level inter-state discussions focus on border tranquility, inter-state freight transit, and regional infrastructure cooperation across Nagaland corridors.",
+      "mn": "High-level inter-state discussions focus on border tranquility, inter-state freight transit, and regional infrastructure cooperation across Nagaland corridors."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/nagaland/gnf-delegation-holds-key-talks-with-assam-meghalaya-chief-ministers-amid-naga-peace-process-stalemate/",
+    "timestamp": "5 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-02a65a47c1c5",
+    "category": "road & transport",
+    "state": "manipur",
+    "language": "mn",
+    "title": {
+      "en": "Manipur CM Khemchand Singh Chairs High-Level Law & Order Review Meet, Assures Security for Highway Projects",
+      "as": "Manipur CM Khemchand Singh Chairs High-Level Law & Order Review Meet, Assures Security for Highway Projects",
+      "bn": "Manipur CM Khemchand Singh Chairs High-Level Law & Order Review Meet, Assures Security for Highway Projects",
+      "hi": "Manipur CM Khemchand Singh Chairs High-Level Law & Order Review Meet, Assures Security for Highway Projects",
+      "mn": "Manipur CM Khemchand Singh Chairs High-Level Law & Order Review Meet, Assures Security for Highway Projects"
+    },
+    "summary": {
+      "en": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors, transit security for goods convoys, and infrastructure project deployment.",
+      "as": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors, transit security for goods convoys, and infrastructure project deployment.",
+      "bn": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors, transit security for goods convoys, and infrastructure project deployment.",
+      "hi": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors, transit security for goods convoys, and infrastructure project deployment.",
+      "mn": "High-level security review meeting convened in Imphal to discuss safety along national highway corridors, transit security for goods convoys, and infrastructure project deployment."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/manipur/manipur-cm-khemchand-singh-chairs-high-level-law-order-review-meet-assures-security-for-highway-projects/",
+    "timestamp": "4 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-2230bfe94fb2",
+    "category": "weather",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "Guwahati Heavy Rainfall Triggers Waterlogging and Traffic Snarls Across City",
+      "as": "Guwahati Heavy Rainfall Triggers Waterlogging and Traffic Snarls Across City",
+      "bn": "Guwahati Heavy Rainfall Triggers Waterlogging and Traffic Snarls Across City",
+      "hi": "Guwahati Heavy Rainfall Triggers Waterlogging and Traffic Snarls Across City",
+      "mn": "Guwahati Heavy Rainfall Triggers Waterlogging and Traffic Snarls Across City"
+    },
+    "summary": {
+      "en": "Incessant monsoon downpours in Kamrup Metropolitan district lead to severe urban waterlogging, slow freight movement, and emergency traffic diversions along major arterial roads.",
+      "as": "Incessant monsoon downpours in Kamrup Metropolitan district lead to severe urban waterlogging, slow freight movement, and emergency traffic diversions along major arterial roads.",
+      "bn": "Incessant monsoon downpours in Kamrup Metropolitan district lead to severe urban waterlogging, slow freight movement, and emergency traffic diversions along major arterial roads.",
+      "hi": "Incessant monsoon downpours in Kamrup Metropolitan district lead to severe urban waterlogging, slow freight movement, and emergency traffic diversions along major arterial roads.",
+      "mn": "Incessant monsoon downpours in Kamrup Metropolitan district lead to severe urban waterlogging, slow freight movement, and emergency traffic diversions along major arterial roads."
+    },
+    "source": "India Today NE",
+    "source_url": "https://www.indiatodayne.in/assam/story/guwahati-heavy-rainfall-triggers-waterlogging-and-traffic-snarls-1045231-2024-07-05",
+    "timestamp": "3 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-7082b9f91356",
+    "category": "government advisory",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Shillong Security Patrol Advisory Issued Following Incidents Across East Khasi Hills",
+      "as": "Shillong Security Patrol Advisory Issued Following Incidents Across East Khasi Hills",
+      "bn": "Shillong Security Patrol Advisory Issued Following Incidents Across East Khasi Hills",
+      "hi": "Shillong Security Patrol Advisory Issued Following Incidents Across East Khasi Hills",
+      "mn": "Shillong Security Patrol Advisory Issued Following Incidents Across East Khasi Hills"
+    },
+    "summary": {
+      "en": "Meghalaya Police and district administration intensify night security patrols and highway monitoring along Shillong transit corridors following recent incidents.",
+      "as": "Meghalaya Police and district administration intensify night security patrols and highway monitoring along Shillong transit corridors following recent incidents.",
+      "bn": "Meghalaya Police and district administration intensify night security patrols and highway monitoring along Shillong transit corridors following recent incidents.",
+      "hi": "Meghalaya Police and district administration intensify night security patrols and highway monitoring along Shillong transit corridors following recent incidents.",
+      "mn": "Meghalaya Police and district administration intensify night security patrols and highway monitoring along Shillong transit corridors following recent incidents."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/meghalaya/shillong-arson-spree-four-targets-in-24-hours-police-yet-to-identify-miscreants/",
+    "timestamp": "2 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/heavy_rain.jpg"
+  },
+  {
+    "id": "neris-news-930f2759da2f",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising; Residents Warned of Flood Risks",
+      "as": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising; Residents Warned of Flood Risks",
+      "bn": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising; Residents Warned of Flood Risks",
+      "hi": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising; Residents Warned of Flood Risks",
+      "mn": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising; Residents Warned of Flood Risks"
+    },
+    "summary": {
+      "en": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. Those living near riverbanks advised to take precautionary measures as situation escalates.",
+      "as": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. Those living near riverbanks advised to take precautionary measures as situation escalates.",
+      "bn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. Those living near riverbanks advised to take precautionary measures as situation escalates.",
+      "hi": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. Those living near riverbanks advised to take precautionary measures as situation escalates.",
+      "mn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. Those living near riverbanks advised to take precautionary measures as situation escalates."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/sikkim/sikkim-red-alert-nh-10-closed-teesta-and-lachen-chu-rivers-rising-residents-warned-of-flood-risks/",
+    "timestamp": "1 hour ago",
+    "urgency": "critical",
+    "image": "/images/news/flood.jpg"
+  },
+  {
+    "id": "neris-news-4a1ab94d8aa6",
+    "category": "infrastructure",
+    "state": "arunachal pradesh",
+    "language": "as",
+    "title": {
+      "en": "Arunachal Pradesh Border Road Infrastructure Assessment Progresses",
+      "as": "Arunachal Pradesh Border Road Infrastructure Assessment Progresses",
+      "bn": "Arunachal Pradesh Border Road Infrastructure Assessment Progresses",
+      "hi": "Arunachal Pradesh Border Road Infrastructure Assessment Progresses",
+      "mn": "Arunachal Pradesh Border Road Infrastructure Assessment Progresses"
+    },
+    "summary": {
+      "en": "State administration and Border Roads Organisation (BRO) assess road construction, slope stabilization, and high-altitude corridor security across western Arunachal Pradesh.",
+      "as": "State administration and Border Roads Organisation (BRO) assess road construction, slope stabilization, and high-altitude corridor security across western Arunachal Pradesh.",
+      "bn": "State administration and Border Roads Organisation (BRO) assess road construction, slope stabilization, and high-altitude corridor security across western Arunachal Pradesh.",
+      "hi": "State administration and Border Roads Organisation (BRO) assess road construction, slope stabilization, and high-altitude corridor security across western Arunachal Pradesh.",
+      "mn": "State administration and Border Roads Organisation (BRO) assess road construction, slope stabilization, and high-altitude corridor security across western Arunachal Pradesh."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/around-ne/arunachalpradesh/no-force-against-people-over-sump-surveys-says-cm-pema-khandu/",
+    "timestamp": "24 mins ago",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-49fc6f54489d",
+    "category": "government advisory",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "as": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "bn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "hi": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "mn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets"
+    },
+    "summary": {
+      "en": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "as": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "bn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "hi": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "mn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/mizoram/mizoram-traffic-advisory-issued-for-nh-54/",
+    "timestamp": "7 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-260a34f69069",
+    "category": "emergency response",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "as": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "bn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "hi": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "mn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational"
+    },
+    "summary": {
+      "en": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "as": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "bn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "hi": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "mn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/tripura/goods-train-services-restored-in-tripura/",
+    "timestamp": "6 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-878dd465a305",
+    "category": "infrastructure",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "as": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "bn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "hi": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "mn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight"
+    },
+    "summary": {
+      "en": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "as": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "bn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "hi": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "mn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/nagaland/landslide-cleared-on-nh-29-in-nagaland/",
+    "timestamp": "5 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-94744cecd2bc",
+    "category": "logistics",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "as": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "bn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "hi": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "mn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys"
+    },
+    "summary": {
+      "en": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "as": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "bn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "hi": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "mn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/assam/guwahati-fci-dispatches-essential-commodities-across-northeast/",
+    "timestamp": "3 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-2cd64834de3b",
+    "category": "road & transport",
+    "state": "manipur",
+    "language": "mn",
+    "title": {
+      "en": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "as": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "bn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "hi": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "mn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated"
+    },
+    "summary": {
+      "en": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "as": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "bn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "hi": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "mn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/manipur/landslide-blocks-imphal-dimapur-national-highway-2/",
+    "timestamp": "4 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-853b71e17efb",
+    "category": "weather",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "as": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "bn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "hi": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "mn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert"
+    },
+    "summary": {
+      "en": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "as": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "bn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "hi": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "mn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/meghalaya/heavy-rain-and-fog-advisory-issued-for-shillong-sohra-corridor/",
+    "timestamp": "2 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/heavy_rain.jpg"
+  },
+  {
+    "id": "neris-news-5227e87d63ef",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "as": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "bn": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "hi": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "mn": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising"
+    },
+    "summary": {
+      "en": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "as": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "bn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "hi": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "mn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/sikkim/sikkim-red-alert-nh-10-closed-teesta-and-lachen-chu-rivers-rising-residents-warned-of-flood-risks/",
+    "timestamp": "1 hour ago",
+    "urgency": "critical",
+    "image": "/images/news/flood.jpg"
+  },
+  {
+    "id": "neris-news-c478f32aadea",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "as",
+    "title": {
+      "en": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "as": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "bn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "hi": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "mn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction"
+    },
+    "summary": {
+      "en": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "as": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "bn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "hi": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "mn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://northeastlivetv.com/northeast/arunachal-pradesh/sela-pass-landslide-disrupts-tawang-highway-traffic/",
+    "timestamp": "24 mins ago",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-71ba5a693c99",
+    "category": "government advisory",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "as": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "bn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "hi": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "mn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets"
+    },
+    "summary": {
+      "en": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "as": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "bn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "hi": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "mn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips."
+    },
+    "source": "Sentinel Assam Mizoram Bureau",
+    "source_url": "https://www.sentinelassam.com/north-east-india-news/mizoram-news/transit-advisory-issued-for-nh-54-in-mizoram",
+    "timestamp": "7 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-7e8e0c39c344",
+    "category": "emergency response",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "as": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "bn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "hi": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "mn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational"
+    },
+    "summary": {
+      "en": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "as": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "bn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "hi": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "mn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor."
+    },
+    "source": "Sentinel Assam Tripura Bureau",
+    "source_url": "https://www.sentinelassam.com/north-east-india-news/tripura-news/goods-train-freight-services-active-between-dharmanagar-and-agartala",
+    "timestamp": "6 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-55ec64d509cc",
+    "category": "infrastructure",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "as": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "bn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "hi": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "mn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight"
+    },
+    "summary": {
+      "en": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "as": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "bn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "hi": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "mn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima."
+    },
+    "source": "Sentinel Assam Nagaland Bureau",
+    "source_url": "https://www.sentinelassam.com/north-east-india-news/nagaland-news/chumukedima-landslide-cleared-on-nh-29-in-nagaland",
+    "timestamp": "5 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-9fb7cae29c10",
+    "category": "road & transport",
+    "state": "manipur",
+    "language": "mn",
+    "title": {
+      "en": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "as": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "bn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "hi": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "mn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated"
+    },
+    "summary": {
+      "en": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "as": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "bn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "hi": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "mn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://tvnortheast.com/northeast/manipur/landslide-blocks-imphal-dimapur-national-highway-2/",
+    "timestamp": "4 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-3ffcbbc67402",
+    "category": "logistics",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "as": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "bn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "hi": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "mn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys"
+    },
+    "summary": {
+      "en": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "as": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "bn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "hi": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "mn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks."
+    },
+    "source": "Sentinel Assam Bureau",
+    "source_url": "https://www.sentinelassam.com/guwahati-city/fci-dispatches-essential-commodities-across-northeast",
+    "timestamp": "3 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-ff3173e458d2",
+    "category": "weather",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "as": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "bn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "hi": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "mn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert"
+    },
+    "summary": {
+      "en": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "as": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "bn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "hi": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "mn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://tvnortheast.com/northeast/meghalaya/heavy-rain-and-fog-advisory-issued-for-shillong-sohra-corridor/",
+    "timestamp": "2 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/heavy_rain.jpg"
+  },
+  {
+    "id": "neris-news-5566a370df69",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "as": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "bn": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "hi": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising",
+      "mn": "Sikkim Red Alert: NH-10 Closed, Teesta and Lachen Chu Rivers Rising"
+    },
+    "summary": {
+      "en": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "as": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "bn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "hi": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "mn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://tvnortheast.com/northeast/sikkim/sikkim-red-alert-nh-10-closed-teesta-and-lachen-chu-rivers-rising-residents-warned-of-flood-risks/",
+    "timestamp": "1 hour ago",
+    "urgency": "critical",
+    "image": "/images/news/flood.jpg"
+  },
+  {
+    "id": "neris-news-aa81a89e4f6b",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "as",
+    "title": {
+      "en": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "as": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "bn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "hi": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "mn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction"
+    },
+    "summary": {
+      "en": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "as": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "bn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "hi": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "mn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor."
+    },
+    "source": "NorthEast Live Digital Desk",
+    "source_url": "https://tvnortheast.com/northeast/arunachal-pradesh/sela-pass-landslide-disrupts-tawang-highway-traffic/",
+    "timestamp": "24 mins ago",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-51e87990fe5a",
+    "category": "government advisory",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "as": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "bn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "hi": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "mn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets"
+    },
+    "summary": {
+      "en": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "as": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "bn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "hi": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "mn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips."
+    },
+    "source": "Mizoram PWD Disaster Response Cell",
+    "source_url": "https://news.google.com/search?q=Aizawl+NH54+landslide+Mizoram&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "7 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-f4f3db93b08d",
+    "category": "emergency response",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "as": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "bn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "hi": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "mn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational"
+    },
+    "summary": {
+      "en": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "as": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "bn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "hi": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "mn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor."
+    },
+    "source": "Northeast Frontier Railway Logistics Cell",
+    "source_url": "https://news.google.com/search?q=Dharmanagar+Agartala+freight+Tripura&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "6 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-8e7bba86c80a",
+    "category": "infrastructure",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "as": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "bn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "hi": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "mn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight"
+    },
+    "summary": {
+      "en": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "as": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "bn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "hi": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "mn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima."
+    },
+    "source": "NHIDCL Nagaland Command Office",
+    "source_url": "https://news.google.com/search?q=Dimapur+Kohima+NH29+landslide+Nagaland&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "5 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-1fcdbbd6de0b",
+    "category": "road & transport",
+    "state": "manipur",
+    "language": "mn",
+    "title": {
+      "en": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "as": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "bn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "hi": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "mn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated"
+    },
+    "summary": {
+      "en": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "as": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "bn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "hi": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "mn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals."
+    },
+    "source": "Manipur Highway Safety & Transport Cell",
+    "source_url": "https://news.google.com/search?q=Imphal+Dimapur+NH2+mudslide+Manipur&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "4 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-0517601d582c",
+    "category": "logistics",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "as": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "bn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "hi": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "mn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys"
+    },
+    "summary": {
+      "en": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "as": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "bn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "hi": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "mn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks."
+    },
+    "source": "Food Corporation of India Zonal Directorate",
+    "source_url": "https://news.google.com/search?q=Guwahati+FCI+depot+vaccine+Assam&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "3 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-2d6e3dc851cd",
+    "category": "weather",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "as": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "bn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "hi": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "mn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert"
+    },
+    "summary": {
+      "en": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "as": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "bn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "hi": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "mn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor."
+    },
+    "source": "IMD Regional Met Centre Shillong",
+    "source_url": "https://news.google.com/search?q=Cherrapunji+Dawki+heavy+rain+Meghalaya&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "2 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/heavy_rain.jpg"
+  },
+  {
+    "id": "neris-news-36685db4e496",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "as": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "bn": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "hi": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "mn": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged"
+    },
+    "summary": {
+      "en": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "as": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "bn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "hi": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "mn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance."
+    },
+    "source": "Sikkim State Disaster Management Authority",
+    "source_url": "https://news.google.com/search?q=Teesta+River+flood+Sikkim+NH10&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "1 hour ago",
+    "urgency": "critical",
+    "image": "/images/news/flood.jpg"
+  },
+  {
+    "id": "neris-news-1f9b4ec1acf0",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "as",
+    "title": {
+      "en": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "as": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "bn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "hi": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "mn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction"
+    },
+    "summary": {
+      "en": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "as": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "bn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "hi": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "mn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor."
+    },
+    "source": "BRO Project Vartak Command Bulletin",
+    "source_url": "https://news.google.com/search?q=Sela+Pass+landslide+Tawang&hl=en-IN&gl=IN&ceid=IN:en",
+    "timestamp": "24 mins ago",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-aa5654a5d1aa",
+    "category": "landslide",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch",
+      "as": "Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch",
+      "bn": "Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch",
+      "hi": "Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch",
+      "mn": "Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Prop News Time regarding Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch.",
+      "as": "Regional disaster & logistics update published by Prop News Time regarding Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch.",
+      "bn": "Regional disaster & logistics update published by Prop News Time regarding Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch.",
+      "hi": "Regional disaster & logistics update published by Prop News Time regarding Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch.",
+      "mn": "Regional disaster & logistics update published by Prop News Time regarding Sikkim MP urges Centre to expedite permanent solution for landslide-prone NH-10 stretch."
+    },
+    "source": "Prop News Time",
+    "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbUI3c1VzR3hFTHFnWHQ0ZVg5a25BT1BSZ1ZzN2MxeHc4bUltV19EbUZOOGhfWktSY0hWODltYV9QRThMN2hyb1g1eWVjWjVUTTVLLXRjeGpkM180UUtNeFE0YU45dDc2bG1YdXdsWURaLXo0ME1KWk9lNG1BNW1XUEVDM3FhM21pRjZmdTdGbHgzUDQybkh4c0QyYnpDT3hTNUFmeHM1SVl3Q2hSNEMwSzAwbVJFTi1HWjRWaGdKX3RZR1pHZzlyLUNFRmdtN2hFbW56UmZn?oc=5",
+    "timestamp": "Fri, 31 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-0f40150bf358",
+    "category": "landslide",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Over 300 landslide-prone spots identified in Guwahati ahead of heavy rainfall",
+      "as": "Over 300 landslide-prone spots identified in Guwahati ahead of heavy rainfall",
+      "bn": "Over 300 landslide-prone spots identified in Guwahati ahead of heavy rainfall",
+      "hi": "Over 300 landslide-prone spots identified in Guwahati ahead of heavy rainfall",
+      "mn": "Over 300 landslide-prone spots identified in Guwahati ahead of heavy rainfall"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "India Today NE",
+    "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTlBIaGlCMG1haEhseGl5Skk4SF9kSnZITHdmM1JWVTZfM181Tm5fel9SZ21qMEVKNVlZRUxtSjRXOXVxWm83T3hONXhkSlhXYnpZbTEwaklweHpyazd0aVlyZXVHVGh5Q0ZmMmhGWF9tZkxGMVR5QTVtSVBCemNIZ3hfUGhhd3phd1dDVHBfQk1UQm1tUzFhWVBtcjlSeXB0YUFCM2k0Y25SU2RtYnFuN1dqTFJ4ZjktVGhRRzdKZVJSUmdGM3lqcGk4cEJfTXFRb0HSAdcBQVVfeXFMUGhWVkZTb2ZpLWY1V2dzanh2RFh6OXc0eFk2VFVOdkNSUUpXM2liQzE0X3VJQk5fbEVjS3VTb2lDWl9yLUtvVkNPTG80NG1TcEEtelFyZUNEVkgwLURiTEN1b09nRW9rMlBCakVEVlp0UHFfZ0daUGN6b2V6NExWUnFfVHJYeUExNW43bGlLYVhhTXlOQVhYZ0x1UFdGODFQR1BzYklZYU5lMGwxZnFucFZ2RTRzSVhmSTdORDR3cl9hYm45UUtlY3pZaFJRd1F5cWhZSDZaU0U?oc=5",
+    "timestamp": "Sat, 25 Apr 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-b8b873035435",
+    "category": "logistics",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "as": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "bn": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "hi": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "mn": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Assam Tribune regarding Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes.",
+      "as": "Regional disaster & logistics update published by The Assam Tribune regarding Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes.",
+      "bn": "Regional disaster & logistics update published by The Assam Tribune regarding Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes.",
+      "hi": "Regional disaster & logistics update published by The Assam Tribune regarding Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes.",
+      "mn": "Regional disaster & logistics update published by The Assam Tribune regarding Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes."
+    },
+    "source": "The Assam Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcVdFdDYtb3BYa2pRQk0tR0Rkd0l4emdFcnozRFJGLS1XRjNjSkk1eHF0czZXUi1CWnNyM3VuR2dLM3ExbWhkSHJUYzdMNWxxa1VEYWhaM1lZOVN2NTdrTXFMVTh0aGFsdUFPb3BjbXlVWF9zLVdEbDYtMXNmbnM3VTd3N1RuNXNWWjYzbHlxZ0FxeGlGNWZhck8wbndFYmIxS0FKc21kcm9RVzlTUFRzRlR5RFlIZ9IBuwFBVV95cUxNOF9td25uR0dYNV9wV3NoSWQ3cVBQRVVLNENHZnZuNjZJa3pyYmRDaGpQdnl4TTdvTnhVSU9uNkJPOVhpQzExd1Zkal9xNUhLMmhpU3pfU1Z2emlYQlBDcnV6cVB3SnBybUd2NVNacF9vZkNiZl9ocDlmRVZkMFF2TXJlazVrVThhdFBJQUlmU05BR08yYVRSdzlCdmdIbTJqSHNoaDJwU21aMXVKU0g0YWgxWi1lRzJpWDVv?oc=5",
+    "timestamp": "Tue, 15 Sep 2026 06:00:41 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-d530a27764a7",
+    "category": "road & transport",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Assam govt to plant Ezar trees along NH-37 bypass under Guwahati purple city plan",
+      "as": "Assam govt to plant Ezar trees along NH-37 bypass under Guwahati purple city plan",
+      "bn": "Assam govt to plant Ezar trees along NH-37 bypass under Guwahati purple city plan",
+      "hi": "Assam govt to plant Ezar trees along NH-37 bypass under Guwahati purple city plan",
+      "mn": "Assam govt to plant Ezar trees along NH-37 bypass under Guwahati purple city plan"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "The Assam Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWHRRY3hEM09ULTh6enJMYVNqUWRhZ0J4cHlJTmNYRUtiT1ZvdFNUbW5uQXVyR1FlQ3RTZHhvTkgxRW9qM05wSzBYOFV4alN5MlZjM2ZFVm5OSnMtaDBvTTU3blJCR3UzdGtpUTNLNmdhZ1d0UDRBemVqMEFGUVpkVU5XeGF0M0JtMXdSemFkb28zSmJ4Qk5rZk0ya0tLOWRQNlZUcE5mV24tSWNKaHF1Y0J1NjhrM243ZkZSMUFPd1nSAcYBQVVfeXFMTkZsdmRnbDZNVWJQTTlQZHRXWXgtU2FCYkhHRTA0d19rUjd1TmpUV05BcFBfbGU5S2J3MldqYWQ2V0hubElXWGhvWnNrMWtiUnItZHp4MkJ2YVR6RnFyRi00Z01LcnVtOVRmdVc3NlNrR0N0NDlxTFdRY1FpT3NrN3RnUUJQWXpDZjQ5OFg5NzdJam1rOW1EMlhDanNMOWlzU0h1M3FEWUNZbVc0SnJBWWk1akozXy0tVGFKNm80bjFNUEFJd0lB?oc=5",
+    "timestamp": "Wed, 15 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-3273df8b2dfd",
+    "category": "infrastructure",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "as": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "bn": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "hi": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes",
+      "mn": "Naga student body seeks NHIDCL removal over Dimapur-Kohima highway woes"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "The Assam Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOF9td25uR0dYNV9wV3NoSWQ3cVBQRVVLNENHZnZuNjZJa3pyYmRDaGpQdnl4TTdvTnhVSU9uNkJPOVhpQzExd1Zkal9xNUhLMmhpU3pfU1Z2emlYQlBDcnV6cVB3SnBybUd2NVNacF9vZkNiZl9ocDlmRVZkMFF2TXJlazVrVThhdFBJQUlmU05BR08yYVRSdzlCdmdIbTJqSHNoaDJwU21aMXVKU0g0YWgxWi1lRzJpWDVv0gG7AUFVX3lxTE04X213bm5HR1g1X3BXc2hJZDdxUFBFVUs0Q0dmdm42NklrenJiZENoalB2eXhNN29OeFVJT242Qk85WGlDMTF3VmRqX3E1SEsyaGlTel9TVnZ6aVhCUENydXpxUHdKcHJtR3Y1U1pwX29mQ2JmX2hwOWZFVmQwUXZNcmVrNWtVOGF0UElBSWZTTkFHTzJhVFJ3OUJ2Z0htMmpIc2hoMnBTbVoxdUpTSDRhaDFaLWVHMmlYNW8?oc=5",
+    "timestamp": "Tue, 15 Sep 2026 06:00:41 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-23a57e38c57e",
+    "category": "weather",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News",
+      "as": "Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News",
+      "bn": "Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News",
+      "hi": "Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News",
+      "mn": "Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Hindustan Times regarding Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News.",
+      "as": "Regional disaster & logistics update published by Hindustan Times regarding Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News.",
+      "bn": "Regional disaster & logistics update published by Hindustan Times regarding Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News.",
+      "hi": "Regional disaster & logistics update published by Hindustan Times regarding Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News.",
+      "mn": "Regional disaster & logistics update published by Hindustan Times regarding Sela Pass tunnel in Arunachal's Tawang to provide all-weather connectivity to China border | India News."
+    },
+    "source": "Hindustan Times",
+    "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWTZZZ1NyTXVVUW9fX3VBcFJuTHRLVFpUUHpNeFZKNkU5Ym94WWdrdnRyOEd1WUJOZTJkaWxBckxHSGw1cU1BQUh6d3Z2RjdyZWhrSjBxVTN5LXl3M0ZDT1J6VS1OSl9uSVR1c29vVmQwaXFVb09aX2NhcmIzcFNxTTB6N0FIMzVyVlE4OGxrSEFUOFhJUDZwaExVXzNrdHJkUjBZWFZVa3J1VURWanFZRXBYZGxiMGdUcEZpSmZTR2hpRlk4ZW1SbTBmZ08zcjBla3dsVXBLZG4zaFY1VGxvaUNORUVPYTZD0gHuAUFVX3lxTE1XMG42Z3YxQzlxbGFVZ21YeHQyQjdGN0ZTckZ4bWlta1dnNWxITlBqemZTbUtiOW5NQ3YySEtXYm1sbmZtdHZ0bFdpNTFTYmlFMVRqcTNtMmNreDhaU0JVMmdKZ3RlWm5DYzlPUHZNeE9WZWRNbG5uTWlYZEtFX1hHcnlscDhwMGRTNEZjU1MtNGNRSk1GYndzMEhnUFRRZnRHel96U3IweVVxTWRXeEpYVXF1aFhlcmdrQ0NOSnBveEt2dVI2Q0NQNXBQSEU2dERDNzdTNFFHSWpqa2ZBcDZDeHpqUTdVSjlvMHpQWWc?oc=5",
+    "timestamp": "Sun, 18 Dec 2022 08:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-9a8cca162fc2",
+    "category": "logistics",
+    "state": "tripura",
+    "language": "en",
+    "title": {
+      "en": "Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved",
+      "as": "Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved",
+      "bn": "Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved",
+      "hi": "Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved",
+      "mn": "Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Northeast Today regarding Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved.",
+      "as": "Regional disaster & logistics update published by Northeast Today regarding Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved.",
+      "bn": "Regional disaster & logistics update published by Northeast Today regarding Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved.",
+      "hi": "Regional disaster & logistics update published by Northeast Today regarding Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved.",
+      "mn": "Regional disaster & logistics update published by Northeast Today regarding Tripura CM Dr Manik Saha, Union Minister Nitin Gadkari Review National Highway Projects; Churaibari–Champaknagar Four-Laning Alignment Approved."
+    },
+    "source": "Northeast Today",
+    "source_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQbzh1V1JteE5kTF9oVTFjZy03SEZoVVBBWXAxQloydWphQkYtYmF6Q2trTHNjWEdVOThaUnpvQVBLR1ZLeS1TZkE5TDRSQkF1M283VnBfREtUSF9ualY4Vkp0RWhOSzhuN1NGQTJlY29mdnhLd3NqNzhVbG5YeUIzU0cwcjVYVGNuQ2E3N2Y4Vl9RM1M1Vlk3YjY4NUhrOHZCdEczVWNZbUJ3REgybERBQlhBMmx5MHl3alBvMmRUUTBYVE5FSGgtaUdGVkVWeENCM2YyYVQ5b3dxdEFwT3RycVdUZ0hEYmFJaloyOFI2YndYTzdWbFNSY01TR1dEblIzS3kxTWNkSzhpQQ?oc=5",
+    "timestamp": "Thu, 02 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-70b32516e630",
+    "category": "landslide",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram",
+      "as": "23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram",
+      "bn": "23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram",
+      "hi": "23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram",
+      "mn": "23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Kashmir Observer regarding 23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram.",
+      "as": "Regional disaster & logistics update published by Kashmir Observer regarding 23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram.",
+      "bn": "Regional disaster & logistics update published by Kashmir Observer regarding 23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram.",
+      "hi": "Regional disaster & logistics update published by Kashmir Observer regarding 23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram.",
+      "mn": "Regional disaster & logistics update published by Kashmir Observer regarding 23 Dead, Several Missing As Rain, Landslides Wreak Havoc In Mizoram."
+    },
+    "source": "Kashmir Observer",
+    "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONlVfaEpiSUxHaXBHY3FKcjhJbzl3UU9sZUtBX0JFOG1lT1dUcVRGVmJIVGZiRmM3aEdDTGRhN0tpdnRvTU9ObTJCa0ZVRUg1TlQzZ2hqanotY2J0QmlwWUpVbVZVWDJqRWFYUHVoTlMyWmg2MC1Pc0lubUQ3X2NiMnpnVW9ZNnpaZlh1WFhJYXNOT2NOSEdRMTBPRDUxYzZ6LWdBeWs2dnM?oc=5",
+    "timestamp": "Tue, 28 May 2024 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-17921fb8bb89",
+    "category": "flood",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Search for four missing in Arunachal flood suspended, to resume on June 26",
+      "as": "Search for four missing in Arunachal flood suspended, to resume on June 26",
+      "bn": "Search for four missing in Arunachal flood suspended, to resume on June 26",
+      "hi": "Search for four missing in Arunachal flood suspended, to resume on June 26",
+      "mn": "Search for four missing in Arunachal flood suspended, to resume on June 26"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by India Today NE regarding Search for four missing in Arunachal flood suspended, to resume on June 26.",
+      "as": "Regional disaster & logistics update published by India Today NE regarding Search for four missing in Arunachal flood suspended, to resume on June 26.",
+      "bn": "Regional disaster & logistics update published by India Today NE regarding Search for four missing in Arunachal flood suspended, to resume on June 26.",
+      "hi": "Regional disaster & logistics update published by India Today NE regarding Search for four missing in Arunachal flood suspended, to resume on June 26.",
+      "mn": "Regional disaster & logistics update published by India Today NE regarding Search for four missing in Arunachal flood suspended, to resume on June 26."
+    },
+    "source": "India Today NE",
+    "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNTRMenJJcExUQ0d1NEJjczRtcUgtbkNrNmZ6LV9kaU5PRnh3MzNMaVZSTDlWLVdPaGwyXzg4RDY1czJUUllGVkI0bXhpUnZuSTZpbFZsWTBlLUo1NGRVdHQzUndoRFMxbWs3ZzVjaUdCWkVyRW1mZ3pDODBsZ3czbUtmbW1VVUVwVVZJbVdnN1VNNHVuLXAwY3YxeVRPR1dDNUtvNmtoNGtrNEx4M1ZaaWRCSlBtSnZ2ejV5OFJtMDV4SjY3elJHZVRmNFA4SW5LWGpLR1Y0U0NQNDNi0gHiAUFVX3lxTE1DLVRabzlIcncwSWg5YkFFTEhraDZqNTdNWU9Da2FWWElTZGVIOG9YNWZmUjRBMlR4U1FNanJHSUVUTHZ4anB6ams5S082eEdTZjdYS1N4dG0tbnd2aGhVLTVjZ2tFZ2hVOFUwbjNPcFpXTE4wSXhqNFRaWG1WeVF1MXcxZk5WWlpxRkNBNFYzZzBINFdxampPNjRZUnlmdEZzV0RMOF9TTUhGQVN3Y1kzLWJMZm9MQ2JtblM0b3lMUDE2UW9GY2xyZkF2N3FCQVA2WmVaS0ZkVlV1bzJmRWJ3cFE?oc=5",
+    "timestamp": "Thu, 25 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-94f827dd2f45",
+    "category": "weather",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Situation, weather improve in state",
+      "as": "Situation, weather improve in state",
+      "bn": "Situation, weather improve in state",
+      "hi": "Situation, weather improve in state",
+      "mn": "Situation, weather improve in state"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Shillong Times regarding Situation, weather improve in state.",
+      "as": "Regional disaster & logistics update published by The Shillong Times regarding Situation, weather improve in state.",
+      "bn": "Regional disaster & logistics update published by The Shillong Times regarding Situation, weather improve in state.",
+      "hi": "Regional disaster & logistics update published by The Shillong Times regarding Situation, weather improve in state.",
+      "mn": "Regional disaster & logistics update published by The Shillong Times regarding Situation, weather improve in state."
+    },
+    "source": "The Shillong Times",
+    "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ1poMy1kQzA3STJBZFZGWmM2Mm1hSldHT1laNzZRbVlSLTVUYTVBc3E4MVFYR09jSmZ3VEpEY3ROT0Iwc3BzN2xZTEFqZUhubllubUROcmZJM0hOQjQ0c1lqblVoa0tSaTUxd3pKcU5sZXJfbmxWOUtGNVdNRzNxUg?oc=5",
+    "timestamp": "Tue, 21 Jun 2022 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8aa230629e0b",
+    "category": "landslide",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides",
+      "as": "Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides",
+      "bn": "Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides",
+      "hi": "Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides",
+      "mn": "Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by India Today NE regarding Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides.",
+      "as": "Regional disaster & logistics update published by India Today NE regarding Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides.",
+      "bn": "Regional disaster & logistics update published by India Today NE regarding Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides.",
+      "hi": "Regional disaster & logistics update published by India Today NE regarding Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides.",
+      "mn": "Regional disaster & logistics update published by India Today NE regarding Multiple roads blocked across Sikkim after heavy rains; NH-10 hit by fresh landslides."
+    },
+    "source": "India Today NE",
+    "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNW1TWjdfZnhBMUVaRGp3YzZwRlNUUU5wck9OazdndTdRcWNySk5mNUtCc29ZNldZeG1FTEdQRnNoRVFJY3VzcFdSamhnR1Y4OUsyc3N5U3JHT2Z1S3VVZzNGbzduVTlQc2c5Wk5LblRIVGVwZWhESmZ5aFhJUE1BV2JwdTZ6TElRcHRtUm85VkZraDBmaFVfRVlyYkxGeUc0YTNPMkFYNkh0ZzVYbUlPSHRTbHZnUmhxbXdsdWVpNnA5bEhhWTZpQXF4bjJDUUUwRUsxTkFyOHJPQ3lQ0gHiAUFVX3lxTE8zcVAwWDZnWk9oallnaEFKQmkyU0JHUWlZTUxFYUkxOHMwNFJ1eEFoRjNBZ3ZCNjB0Mlh2djNxaDY2RGlWYW1jTDlITmJLWjZDSHNVaC0xNnlBUDlUQzNiRnl3Z0tFNW9fdzJJZzVHbndjTGxKb1N3aWdNcVpvUmhGVk5SUEpzWDJ3d3pvTnFQdkRFVUlKMUFvTkpnOTA5NkVEMXRsQWFpNHJPalV4enJqX3cyWkJISjNOeFUyMFM4X0c4UkJlTUQ5bmtCUjRjUjMxS2FNcnY1VEtQSkRPMjR6YUE?oc=5",
+    "timestamp": "Thu, 09 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-e456f2e505f4",
+    "category": "road & transport",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "NH 10 Sliguri-Sikkim Road Closed: ফের বন্ধ শিলিগুড়ি-সিকিম জাতীয় সড়ক, খুলল লাচেন রোড",
+      "as": "NH 10 Sliguri-Sikkim Road Closed: ফের বন্ধ শিলিগুড়ি-সিকিম জাতীয় সড়ক, খুলল লাচেন রোড",
+      "bn": "NH 10 Sliguri-Sikkim Road Closed: ফের বন্ধ শিলিগুড়ি-সিকিম জাতীয় সড়ক, খুলল লাচেন রোড",
+      "hi": "NH 10 Sliguri-Sikkim Road Closed: ফের বন্ধ শিলিগুড়ি-সিকিম জাতীয় সড়ক, খুলল লাচেন রোড",
+      "mn": "NH 10 Sliguri-Sikkim Road Closed: ফের বন্ধ শিলিগুড়ি-সিকিম জাতীয় সড়ক, খুলল লাচেন রোড"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "AajTak Bangla",
+    "source_url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxPRTNEWklVdUR6QldEZ2NKbjFWUnloR0ViY2VkaWlTUlpSR3BUcVpZbGU3a0lwTEZlT182RklrLVBsWV9sd3hYWnJvTVMzay1rX0pMcFVXeW5hWm84aldqOU5qVGRoTFpLU1pSVzZ0aEdZT0Z1M3F3cGpldEZhdmc3UnVNUk9zQkdsN3dKeDJ1c0hUOHRGWlhldFpqU2hIZjgyQTNZelRXSGkxXy1wNGRqUkZYcXM5Q0QyRXB5b0o0ZGZBQ0RMX0xZZkdJVmRhN2pRY3JJM2xJUnNmWlJDOVRObTE3UHhGQ3M5QnNpak1HRy1NbklMMktTWEEtWmUxSWRMZ1c0cktpTktjOHp1Yno0N0ZhWDk2U0V4MTZxV255UjdqdmNOOFVIemhPQkNwNF9UcDM5NjM1N2RZODE0SmVHbFJXcTVlbWRrdUZfUGdiLVRLb0V3enVvZXV1cEFBY2ozNEJZOFlJbU5yWnVIb0QyMkllTVRFeGo5VnpNaEhjRzE0ejhhbGfSAYsDQVVfeXFMTXljZmNmeHJrMG9OOGt6X3UxV2ZDa2lRX3JOMFR5TjhLSG5OdVRlTlVMUmFTNGI0YVp0dkxxVThVbHJEWmh0TGY0SGxhc1drN3lsVF9IbTl1cGlsdnRvU2JNSXBJdzVnM0oxWUtwRE9KWXQzSXRjNFpNOWtzZEJsRzhlYUlPQ0pJbjVvdkdvM1lyMDhTdXFvM1o5eHViaUNzbWNXX1NBQXVURmtVYjdPUjVXaGJzUnBfUWpZTk03SDFCblVjcTBGTG9QREstNi1xVjJIckdTWksyZXZma2N5UHpJbzhONk9CSzZ5NFNOcW1zVUh1ai02Z3NYSU9EWTVtUi15VHIzazFhVVd6TkRMYVRhcWoxNzN2TkJmZ0gxbWE1aEZGbkdnb2stMzZZSlMyY1FTRm1ValpCSDFJNmxHc2YtSC1DUWZ5MU5mVnU5Z2FGbXQtdnhuRHh0U29zRTZ0dHZjV2FpZ21Ua2EyTU5wM1QtN2hRTTc1TnBfV0V1b0Mtd0w3V2t3Wlp0eTQ?oc=5",
+    "timestamp": "Fri, 12 Apr 2024 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-4df36df436cb",
+    "category": "landslide",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Landslide on NH-6 hits connectivity to Barak Valley",
+      "as": "Landslide on NH-6 hits connectivity to Barak Valley",
+      "bn": "Landslide on NH-6 hits connectivity to Barak Valley",
+      "hi": "Landslide on NH-6 hits connectivity to Barak Valley",
+      "mn": "Landslide on NH-6 hits connectivity to Barak Valley"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Times of India regarding Landslide on NH-6 hits connectivity to Barak Valley.",
+      "as": "Regional disaster & logistics update published by The Times of India regarding Landslide on NH-6 hits connectivity to Barak Valley.",
+      "bn": "Regional disaster & logistics update published by The Times of India regarding Landslide on NH-6 hits connectivity to Barak Valley.",
+      "hi": "Regional disaster & logistics update published by The Times of India regarding Landslide on NH-6 hits connectivity to Barak Valley.",
+      "mn": "Regional disaster & logistics update published by The Times of India regarding Landslide on NH-6 hits connectivity to Barak Valley."
+    },
+    "source": "The Times of India",
+    "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOME1tX3VnaHlUbGVNYlh1ZU1zNXRBTlpjcllCNWlMMXh0dE9UVGJ3aFRueGlpcG5HRlhpT1JfRTJMS2xFal8zTE9nMVFGQWxVN0g2cEJfdHYwaDJxYnhXTnhpcl9HMnlXd05KSm1DTTdqMG91aEtnOWxHWmVsQkotYlhuTjR6aXJtN1Y0M1F5LW9YU3ZUaHktU0ZTTXNsWnhKUVZpYkE5QWtkWXRMUVcyem9SM1VKX29tVHIxMkVWc2phUXVTdWfSAcsBQVVfeXFMTmRWZ1JNdjNWSEVoYlh0ZDdla3J4VzdyOFlUOGU0SEhiWndwTU5pOTl0dm9JR2owVWIyNkI1MkpVb2c5M2l0TEFqbTVqY0NONmFHSjR1YmN6eVZGcW5rU1hRZ1N3eHphZDhBeklrQ0NJY1p0SldhMFY0X09ZOEF6SEJIV1Vfd1QwNXlkYktLMF9KYV9lTGpzcHo5MW5YZWFLcmVlMHEzMDJNN0QtZFAtRTUzZXVZTzJtd20zZG5DMkJpZmF3NnFBS1B5c3c?oc=5",
+    "timestamp": "Tue, 20 May 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-39a841d69603",
+    "category": "general",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "4 দিনের জন্য বন্ধ হচ্ছে 'মরণ ফাঁদ' 10 নম্বর জাতীয় সড়ক",
+      "as": "4 দিনের জন্য বন্ধ হচ্ছে 'মরণ ফাঁদ' 10 নম্বর জাতীয় সড়ক",
+      "bn": "4 দিনের জন্য বন্ধ হচ্ছে 'মরণ ফাঁদ' 10 নম্বর জাতীয় সড়ক",
+      "hi": "4 দিনের জন্য বন্ধ হচ্ছে 'মরণ ফাঁদ' 10 নম্বর জাতীয় সড়ক",
+      "mn": "4 দিনের জন্য বন্ধ হচ্ছে 'মরণ ফাঁদ' 10 নম্বর জাতীয় সড়ক"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZnVPQnVnUlZfNkc2eDU0NW80bzlLZDlVVndhRHZ0YV9jdGM2U0l5dGZwTU53ZG9CSzVaM1FTRFA4elVTaE1INXY5aGxCOVV0eVVpclFtVUp1c3ZtV1RNRGxxaWJYWjVjQjhvTjFmNHhXQk1VZkw0VTdXU3R5QnBid2t6R3ZvTlVTc0NxdHFuX1Q3MDFkMWs4YnJTVDJoeEZwbHRfTzA2cWtDNXVsZTdZZkF3V3VNQkQ0Ym9yT0c3aVNnQXNNSjFPSmlteWFfNlZoUHpOV19zajdfUdIB3wFBVV95cUxPaTluSmFHRXFWTGg1MW52Z3ZzbnltVGF0OG5Qby1pTEM3clBEUUhWakxaX3oyU096cURvQW9Kbm9xaFdtTlY5YjBUS1ZIeTNibm4wM1VmRm5MTW05U01oYnFCRGhvNVNHSVRIUW5wN01uMzlPblNuWUg2aUVia2h3aHlQWi16MUliZjJ0N3FhWDEtZGowSTM1dW1kREp2SHpfd0pLM2VibGVxQXdGN19jemhHR0NEb181cno1SWJCemp3Y2N1b0loTkl2eUxsUWR1UGExcDRpcThRWFhVajM4?oc=5",
+    "timestamp": "Mon, 13 Oct 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-test-sha256-dedup",
+    "category": "general",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Idempotent EventBridge Ingestion Test Article",
+      "as": "Idempotent EventBridge Ingestion Test Article",
+      "bn": "Idempotent EventBridge Ingestion Test Article",
+      "hi": "Idempotent EventBridge Ingestion Test Article",
+      "mn": "Idempotent EventBridge Ingestion Test Article"
+    },
+    "summary": {
+      "en": "Testing duplicate prevention during automated EventBridge runs.",
+      "as": "Testing duplicate prevention during automated EventBridge runs.",
+      "bn": "Testing duplicate prevention during automated EventBridge runs.",
+      "hi": "Testing duplicate prevention during automated EventBridge runs.",
+      "mn": "Testing duplicate prevention during automated EventBridge runs."
+    },
+    "source": "BRO Regional Command",
+    "source_url": "https://bro.gov.in/test-dedup-article",
+    "timestamp": "2026-09-12T23:00:00Z",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-5950b0a2afa1",
+    "category": "general",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "একটানা বৃষ্টির জেরে ধস, ভাঙল দুধিয়া ও হলং ব্রিজ, রইল উত্তরবঙ্গের ভয়াবহ অবস্থার ছবি",
+      "as": "একটানা বৃষ্টির জেরে ধস, ভাঙল দুধিয়া ও হলং ব্রিজ, রইল উত্তরবঙ্গের ভয়াবহ অবস্থার ছবি",
+      "bn": "একটানা বৃষ্টির জেরে ধস, ভাঙল দুধিয়া ও হলং ব্রিজ, রইল উত্তরবঙ্গের ভয়াবহ অবস্থার ছবি",
+      "hi": "একটানা বৃষ্টির জেরে ধস, ভাঙল দুধিয়া ও হলং ব্রিজ, রইল উত্তরবঙ্গের ভয়াবহ অবস্থার ছবি",
+      "mn": "একটানা বৃষ্টির জেরে ধস, ভাঙল দুধিয়া ও হলং ব্রিজ, রইল উত্তরবঙ্গের ভয়াবহ অবস্থার ছবি"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Ei Samay",
+    "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNeW1DUnB5NmszUzdJUGJXVUdpa3lLQUhsU21TYV9NSGtnMFpacW83NUMyN1FYbmRyLW01TXViejJUNzNqajVlM21nQWl4VEdqUEZZeWJGLTFfM2xjRlVMeDVid05LUGxhLXgwTU4zWVl2VzV6YlRLSEpyVkp3Z3g1Y2lnS1hHQTQyM3VYdUxTeG1oQm0tWlFHZjNab19zQ0RoR1EwREVwYUxVa2RUME1wSExhdV9KX1UzZVE1bGFUaWhUTV9PMHNUNWtCWUxGTHRidzFpRkdzVDlTSnFoRFctcW5VMVVwOG_SAfQBQVVfeXFMUHVidm5FMmxhLWlKNlZ0SnJsTFI0WlBTTWlDQ2tHVkFCTU1fWWFScGxuQUVjcExzcXV0VGo5VGhXOVFEU2NIRWQzQnprM2NxdVRTTVZOZENYTWQ3QVo1SDJ0SmFfQ0VuVjFNZVFhb3cxOFItY2tQaGh0M2dfMjl1OVgwMzJpQWJrdWZkSFRrUFZaVDJ6OWczRTNNN1BNTW10NHlkWTA0RDA0OV91ZXdKMFU1RHB1VlQtaklUejdJZ1hjTkU2YWNvUGs3aUlkZXlNbThXd1I5UXJWSWtKN2xaajNUVFdQZmwzcW5xekZ3Y1hWcU5Kaw?oc=5",
+    "timestamp": "Sun, 05 Oct 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-2a54c4cd2988",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "উত্তরবঙ্গে বন্যা পরিস্থিতি, লোকালয়ে ঢুকছে বন্যপ্রাণীরা, বাতিল একাধিক ট্রেন",
+      "as": "উত্তরবঙ্গে বন্যা পরিস্থিতি, লোকালয়ে ঢুকছে বন্যপ্রাণীরা, বাতিল একাধিক ট্রেন",
+      "bn": "উত্তরবঙ্গে বন্যা পরিস্থিতি, লোকালয়ে ঢুকছে বন্যপ্রাণীরা, বাতিল একাধিক ট্রেন",
+      "hi": "উত্তরবঙ্গে বন্যা পরিস্থিতি, লোকালয়ে ঢুকছে বন্যপ্রাণীরা, বাতিল একাধিক ট্রেন",
+      "mn": "উত্তরবঙ্গে বন্যা পরিস্থিতি, লোকালয়ে ঢুকছে বন্যপ্রাণীরা, বাতিল একাধিক ট্রেন"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObUE5bDVtTkk1RnF0YlRmNW92RTNSNnZXcUkxMFRLMWRORWxlSGhtWE8yYnpXd0pkSlZIQ2wxT3FxMjVfY2oyUk1FTy1LTko4YTA2eTZ6Z2Nla0p1VGVGQVFLRktsS25IYkRmRnNQc0tzV3BZbTNzc2J3amVZMVdRVEFWWnFuTHpKd3dfOXdIalB3RFpTcTJyWXlFRllMT3BXd3prTk1zN0k4VnNSc2pIRTBTUnVBTXdiZDE3Mkp4bVB2czQxdDA5StIBzgFBVV95cUxPbGdFejROV2dMUFlhZXN3eWt6WkNhOUhSTmp6Vm9jQW8xX29Ea3B5VnFCRXd5N0xjVDVpRGN5aEhBZjN1cnlnVV80LXc4QUU3Q1JWTHlGWl9obWtiTzBveVNDbVZsNm5xTVpJNjVkaVBUM1Y1cE5jbE0xdS1kcF9QeGtKbXd0YS1XN1VnWl9uVUE0VWxBTE1saXFySXdoU2wydFZIMktSUVg2V2FMSzgwb0ZnQWVNM0x6bFlYSVRYU1BDMWhtQ3FmSHNFRkQ4dw?oc=5",
+    "timestamp": "Sun, 05 Oct 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-f32bd06715ac",
+    "category": "flood",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "मणिपुर लगातार अचानक बाढ़ आने के प्रभाव में है",
+      "as": "मणिपुर लगातार अचानक बाढ़ आने के प्रभाव में है",
+      "bn": "मणिपुर लगातार अचानक बाढ़ आने के प्रभाव में है",
+      "hi": "मणिपुर लगातार अचानक बाढ़ आने के प्रभाव में है",
+      "mn": "मणिपुर लगातार अचानक बाढ़ आने के प्रभाव में है"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "News On AIR",
+    "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWkhJRnliUDhxUXA5UTVzOXdUVGhtczJWeEZpWWswbVI4QmhTVVgtNU8yNXhPTkVyVkZsTmlsRjRodDBobHVmUUdORWNxQzB6MW9PSEhDSGxKRjNSTU5iLWpHYWl2d3F6NzUwcGJrckctWjJUNnZ2dXZ1eHZEaE0yMk1uLXlacDRXeUNSX09tbi1ZUFNQ?oc=5",
+    "timestamp": "Mon, 08 Jun 2026 08:26:23 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-bb99f1a1fc75",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "अरुणाचल में भारी बारिश से भूस्खलन और अचानक आई बाढ़, छह जिलों का संपर्क टूटा, 5 लोग लापता",
+      "as": "अरुणाचल में भारी बारिश से भूस्खलन और अचानक आई बाढ़, छह जिलों का संपर्क टूटा, 5 लोग लापता",
+      "bn": "अरुणाचल में भारी बारिश से भूस्खलन और अचानक आई बाढ़, छह जिलों का संपर्क टूटा, 5 लोग लापता",
+      "hi": "अरुणाचल में भारी बारिश से भूस्खलन और अचानक आई बाढ़, छह जिलों का संपर्क टूटा, 5 लोग लापता",
+      "mn": "अरुणाचल में भारी बारिश से भूस्खलन और अचानक आई बाढ़, छह जिलों का संपर्क टूटा, 5 लोग लापता"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdUlnSzNJdWVBS2VyNE44N1VVNV9DdU5MdF9VY1Q3azBEREpRRlNkZjRzMDlVQnRCd1g0Mi15Y2ViaW10alcwYy1PYl9JNVF0MllNeUFhLTI2VGFrY2tzRW5NTGt3RVBZTWxfOEtZYUVVQUdKMU82bXV0akh3S0ZZeVo4UnZBTGdBNFVCR1JPaFlLV2dPa3BBdW45WnRCLVktUU83VlpOTXRHazlBTkxQOTktem5Fcm1hT0lXcGtjcUx3ZlXSAcgBQVVfeXFMTlVRNUR3VUdBcmtETUE2RnVQWmU3RE1RaDhkcnZYYThENGhIWW9ObTZ4b3RpUGk1eFM2QzlJY2VJMi05N1dzMkJQbWJ6eHNPWHF3SFNGaGg0QjZJLUFDUHZKWFZES3h2WVF2TEFQZzhVdEo3ZFp2T0JTWTRfbVNrZDg1MTd0YUxNU0ItSDJjV2V4WmxWMU80QjMtZHhDc0IzOUh3N2h2SmQza2dhMTdOMTdJdjNOUmVtV1d5TnhpdUpzbXBiVHZRN1Y?oc=5",
+    "timestamp": "Wed, 24 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-35dd0f857743",
+    "category": "flood",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations",
+      "as": "Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations",
+      "bn": "Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations",
+      "hi": "Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations",
+      "mn": "Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by northeastindia24.com regarding Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations.",
+      "as": "Regional disaster & logistics update published by northeastindia24.com regarding Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations.",
+      "bn": "Regional disaster & logistics update published by northeastindia24.com regarding Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations.",
+      "hi": "Regional disaster & logistics update published by northeastindia24.com regarding Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations.",
+      "mn": "Regional disaster & logistics update published by northeastindia24.com regarding Flash Floods Devastate Arunachal Pradesh; One Killed, IAF Joins Rescue Operations."
+    },
+    "source": "northeastindia24.com",
+    "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPei0wa3JWRjFaUllwLVVCNENVQURyTlpXMHdQeWNEcnhnRk5OUUFhY2wwN2ZHdVFsa2hEbVJJdC05anZ6dlhSNWZubzRlUENjZ3NjeDlnQlpUSFdsOXhzTWpHRVY2anl5Y1h1eUc3VmctZG1vQnNJMGRDLXZZQWY1Yk5iYk53LTZhbDJYMmRCUWR4aVNlYkFXMkNpRnZTVUdNaDRheU9fajVGTFZCa1E?oc=5",
+    "timestamp": "Thu, 25 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-bc3f3a89eb53",
+    "category": "government advisory",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "as": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "bn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "hi": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets",
+      "mn": "Aizawl NH-54 Slope Security Advisory Issued for Heavy Commercial Fleets"
+    },
+    "summary": {
+      "en": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "as": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "bn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "hi": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips.",
+      "mn": "Mizoram Public Works Department releases transit advisory for Kolasib-Aizawl stretch following torrential downpour and active mud slips."
+    },
+    "source": "Mizoram PWD Disaster Response Cell",
+    "source_url": "https://pwd.mizoram.gov.in/notices/nh54-aizawl-transit-advisory",
+    "timestamp": "7 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-7ec764a68d42",
+    "category": "emergency response",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "as": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "bn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "hi": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational",
+      "mn": "Dharmanagar-Agartala Railhead Freight Logistics Dispatch Operational"
+    },
+    "summary": {
+      "en": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "as": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "bn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "hi": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor.",
+      "mn": "Multimodal petroleum and essential grains dispatch operational between Dharmanagar goods yard and Agartala central buffer depots via NH-08 corridor."
+    },
+    "source": "Northeast Frontier Railway Logistics Cell",
+    "source_url": "https://nfr.indianrailways.gov.in/freight/agartala-dispatch-update",
+    "timestamp": "6 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-55062837f2fd",
+    "category": "infrastructure",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "as": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "bn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "hi": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight",
+      "mn": "Dimapur-Kohima NH-29 Ridge Pass Stabilization Clears Heavy Freight"
+    },
+    "summary": {
+      "en": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "as": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "bn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "hi": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima.",
+      "mn": "NHIDCL emergency engineering crew completes gabion wall reinforcement at Chumukedima landslide stretch, restoring heavy truck access between Dimapur railhead and Kohima."
+    },
+    "source": "NHIDCL Nagaland Command Office",
+    "source_url": "https://nhidcl.com/updates/nh29-chumukedima-stabilization",
+    "timestamp": "5 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-a5ea3cdbf190",
+    "category": "road & transport",
+    "state": "manipur",
+    "language": "mn",
+    "title": {
+      "en": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "as": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "bn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "hi": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated",
+      "mn": "Imphal-Dimapur Lifeline NH-2 Mudslide: Single Lane Traffic Regulated"
+    },
+    "summary": {
+      "en": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "as": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "bn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "hi": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals.",
+      "mn": "Sustained monsoon rain along Senapati district corridor causes slope failure. Manipur Highway Police regulating convoy transit on alternating 30-minute intervals."
+    },
+    "source": "Manipur Highway Safety & Transport Cell",
+    "source_url": "https://manipur.gov.in/transport/nh2-senapati-traffic-advisory",
+    "timestamp": "4 hours ago",
+    "urgency": "info",
+    "image": "/images/news/road_clearing.jpg"
+  },
+  {
+    "id": "neris-news-a9625c863f30",
+    "category": "logistics",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "as": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "bn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "hi": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys",
+      "mn": "Guwahati FCI Central Depot Dispatches 40 Cold-Chain Vaccine & Grain Convoys"
+    },
+    "summary": {
+      "en": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "as": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "bn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "hi": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks.",
+      "mn": "Essential cold-chain vaccines and fortified grains moving under satellite tracking via Silchar and Tezpur entry corridors for Mizoram, Tripura, and Manipur buffer stocks."
+    },
+    "source": "Food Corporation of India Zonal Directorate",
+    "source_url": "https://fci.gov.in/press/ner-coldchain-dispatch-2026",
+    "timestamp": "3 hours ago",
+    "urgency": "info",
+    "image": "/images/news/truck_convoy.jpg"
+  },
+  {
+    "id": "neris-news-3872d38b7804",
+    "category": "weather",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "as": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "bn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "hi": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert",
+      "mn": "Cherrapunji & Dawki Highway Tourist Advisory: Heavy Monsoon Fog & Visiblity Alert"
+    },
+    "summary": {
+      "en": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "as": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "bn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "hi": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor.",
+      "mn": "IMD Shillong issues Class-A visibility alert for East Khasi Hills. Drivers advised to avoid post-17:00 hrs transit between Shillong and Sohra corridor."
+    },
+    "source": "IMD Regional Met Centre Shillong",
+    "source_url": "https://mausam.imd.gov.in/shillong/fog-advisory-khasi",
+    "timestamp": "2 hours ago",
+    "urgency": "warning",
+    "image": "/images/news/heavy_rain.jpg"
+  },
+  {
+    "id": "neris-news-9da07fb739dd",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "as": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "bn": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "hi": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged",
+      "mn": "Teesta River Flood Advisory: NH-10 Rangpo-Rorathang Stretch Damaged"
+    },
+    "summary": {
+      "en": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "as": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "bn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "hi": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance.",
+      "mn": "Continuous torrential cloudbursts in North Sikkim caused water level rise along Teesta river basin. BRO Project Swastik excavators deployed for rapid mud and boulder clearance."
+    },
+    "source": "Sikkim State Disaster Management Authority",
+    "source_url": "https://sdsma.sikkim.gov.in/alerts/teesta-flood-nh10",
+    "timestamp": "1 hour ago",
+    "urgency": "critical",
+    "image": "/images/news/flood.jpg"
+  },
+  {
+    "id": "neris-news-019cd381bca0",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "as",
+    "title": {
+      "en": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "as": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "bn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "hi": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction",
+      "mn": "Sela Pass High-Altitude Landslide: NH-13 Blocked Near Tawang Junction"
+    },
+    "summary": {
+      "en": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "as": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "bn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "hi": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor.",
+      "mn": "Border Roads Organisation (BRO) Project Vartak dozers deployed at Sela Tunnel approach following heavy midnight rockfalls. Emergency medical convoys rerouted via Bhalukpong corridor."
+    },
+    "source": "BRO Project Vartak Command Bulletin",
+    "source_url": "https://bro.gov.in/advisories/sela-pass-nh13-landslide",
+    "timestamp": "24 mins ago",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-9def5f4ad590",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल",
+      "as": "पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल",
+      "bn": "पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल",
+      "hi": "पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल",
+      "mn": "पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ABP News regarding पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल.",
+      "as": "Regional disaster & logistics update published by ABP News regarding पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल.",
+      "bn": "Regional disaster & logistics update published by ABP News regarding पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल.",
+      "hi": "Regional disaster & logistics update published by ABP News regarding पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल.",
+      "mn": "Regional disaster & logistics update published by ABP News regarding पहाड़ों से अचानक बरसने लगे पत्थर, बैक होकर कार सवारों ने बचाई जान, वीडियो वायरल."
+    },
+    "source": "ABP News",
+    "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaUM2MWk3SXNuUmJDYmxwN3hMQ1NJbXlqLWlnNThGSW1CREh5N1NFclVZdTVZTExnVzgzazlkUEl5Z0ZaMFA0SWZIMXZFMFpMVjl3UmVRdE5rSEFKX1dFWDRwSnppMzU3TXZ6NnNvc2JGQ1BNQmNfMjBKdEZocXh6R2VJRWo1bF9rcFk1X2VXajE5VjVRZlEwVkVsS1NUMUdwUWVjOTdRWHVneXZJNS1XakdFQjNSdWhxMmM4QXZIb0ZtUGs0VnotRzgxM0UzWXPSAdQBQVVfeXFMTTRzNHFHekNucHZVWWJIVmVtbjBVSTh0OFVUazNvc2NONF9tQXJCei1TNjJsYUY4QkJrbEN3MVRIbnFEMVZ5NjRmNTNOWHNxdEtpSFBBTm5FMktMdUlSUHNNdks4dTk2eDFkNWdUZFFHT1lhaHlZeUozOS03SjhTaEZremFzeGZldzA1a1RsSkFIeWs5ZUdPbG9LakVMZ1E4eE0ybm1NbjZvZmY4aFhzR0RUQVZQRE9sd2xQa0FHNG9wcG0wVHdQZjQxQ0JFRmNaQlpOS2k?oc=5",
+    "timestamp": "Tue, 26 Aug 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-6020f7c21c93",
+    "category": "logistics",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "NSF flags poor quality of work, delays in NHIDCL projects across Nagaland",
+      "as": "NSF flags poor quality of work, delays in NHIDCL projects across Nagaland",
+      "bn": "NSF flags poor quality of work, delays in NHIDCL projects across Nagaland",
+      "hi": "NSF flags poor quality of work, delays in NHIDCL projects across Nagaland",
+      "mn": "NSF flags poor quality of work, delays in NHIDCL projects across Nagaland"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Times of India regarding NSF flags poor quality of work, delays in NHIDCL projects across Nagaland.",
+      "as": "Regional disaster & logistics update published by The Times of India regarding NSF flags poor quality of work, delays in NHIDCL projects across Nagaland.",
+      "bn": "Regional disaster & logistics update published by The Times of India regarding NSF flags poor quality of work, delays in NHIDCL projects across Nagaland.",
+      "hi": "Regional disaster & logistics update published by The Times of India regarding NSF flags poor quality of work, delays in NHIDCL projects across Nagaland.",
+      "mn": "Regional disaster & logistics update published by The Times of India regarding NSF flags poor quality of work, delays in NHIDCL projects across Nagaland."
+    },
+    "source": "The Times of India",
+    "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV0ZCemFMeDk3cVJWZjJfZkRiSXMxdGxtMThvSFZDQWdEZ3YxMWVTMmJJTWtTS2JBTU1Zb0ZyajNpT1JXQks1NXFfNnExQ2VueGxnbHhOMElGODY0MVFyUHMzd1VyXzhYRlRfU3FmUEhLd3RtZDRId2tXeG9vTHdET3hxN0R6ZEVkUkR5RHBxVGpyZUJCRDdDdG0tLTNKSUJkQnJIb0owNWtDUW9yaUpsZDd1TU9zcWsxUUJsMUNLUy1Qb0RpTndPSVlra3c2TFFRaFE4RnAzVElPWktjVGFPcVdB0gHnAUFVX3lxTE9TRmtGem1wVmpXc21rUjVGZ3lLNWNicFlWbHJPanp2SDJRWlR6UXRTWmNadS0tTGtFMkJIcGNKNmc1c00wMHg3Q2E1UFQ5MERjU3B6dU1WUFhCT2JKVVlOd3NSUjVXbEEtQUk1VE4yejZ0eVFhb0V6b3dDSXdjS1Q4c25menowLVNTRjNDWlBERmlfRldxMGl5MDNnVzBEaVJkbENueWNKZnN6RXl1NmRUM3RFLU03SzI3UUxSR1BZZnh4Y0NWT0JGNkNTM3ZjZWpLd2hIdXlaZ3R1S1BMbXZXel9TY2Vhaw?oc=5",
+    "timestamp": "Wed, 19 Aug 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-68d17a687317",
+    "category": "landslide",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Fresh landslides block NH-06 in East Jaintia Hills",
+      "as": "Fresh landslides block NH-06 in East Jaintia Hills",
+      "bn": "Fresh landslides block NH-06 in East Jaintia Hills",
+      "hi": "Fresh landslides block NH-06 in East Jaintia Hills",
+      "mn": "Fresh landslides block NH-06 in East Jaintia Hills"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Syllad regarding Fresh landslides block NH-06 in East Jaintia Hills.",
+      "as": "Regional disaster & logistics update published by Syllad regarding Fresh landslides block NH-06 in East Jaintia Hills.",
+      "bn": "Regional disaster & logistics update published by Syllad regarding Fresh landslides block NH-06 in East Jaintia Hills.",
+      "hi": "Regional disaster & logistics update published by Syllad regarding Fresh landslides block NH-06 in East Jaintia Hills.",
+      "mn": "Regional disaster & logistics update published by Syllad regarding Fresh landslides block NH-06 in East Jaintia Hills."
+    },
+    "source": "Syllad",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iTWxqaHJBYkI5aTJ5bFo4YVk1VG1HVTdxOGtjVXRkdmh3aFpoYzZfbzduT0xOWTVtR0xLVHlMLTBiWmVsa2p4Zmxrb0N2ZXBySlI2WC00RlBObC1JVVZLN2ZKQU1uZThuTGlhMVR3VlRUc18xTnlQSWZtQzdnclE?oc=5",
+    "timestamp": "Tue, 20 May 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-474e5240401c",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Manipur landslides halt NH-37 traffic, 644 trucks stuck in J",
+      "as": "Manipur landslides halt NH-37 traffic, 644 trucks stuck in J",
+      "bn": "Manipur landslides halt NH-37 traffic, 644 trucks stuck in J",
+      "hi": "Manipur landslides halt NH-37 traffic, 644 trucks stuck in J",
+      "mn": "Manipur landslides halt NH-37 traffic, 644 trucks stuck in J"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Eastern Mirror",
+    "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcUtRRFpwUEo0RGJUeUk0T0tNOG9lZnA4UDJJNWFURDUxdGhhbV85SWt6VndTT2tFOTFTalVIZzZyMnh2a0JSS3pWcllubXhQOTBWRDhCb2NOb3g1WVoyZU5MMmhBbXUwMkNzcS1mZGlmNXJ0cWtPMWwtYW5ZU2F1MXh2ZTR3T1ppSG1LWE8wTjhFM3lta1YzR3VFMjQ1U0M3WE5TZmlR?oc=5",
+    "timestamp": "Thu, 23 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-3aaedda7c5b4",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam",
+      "as": "Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam",
+      "bn": "Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam",
+      "hi": "Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam",
+      "mn": "Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by northeastlivetv.com regarding Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam.",
+      "as": "Regional disaster & logistics update published by northeastlivetv.com regarding Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam.",
+      "bn": "Regional disaster & logistics update published by northeastlivetv.com regarding Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam.",
+      "hi": "Regional disaster & logistics update published by northeastlivetv.com regarding Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam.",
+      "mn": "Regional disaster & logistics update published by northeastlivetv.com regarding Manipur: Torrential Rains Trigger Massive Landslide on NH-37, Disrupting Traffic Between Imphal and Jiribam."
+    },
+    "source": "northeastlivetv.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTm51MVc3QmFpQ0Q2dGtOSW0ta1hMemFTVTgyaXdoQnVJalRUdmFZOERMWDFNS3EtQjhpQ2NsM0k0dFRHV2N6T0l6NjZXdkE4eFhDckgwNTRBZm8zbFRxR2h3TnFMSmhsTWVIdGwyZGItTVNQY0V1NnZ2WWlNaXlobmdlOXAtTkxxSURaS2o4Z3E3VlZuenh4Ylp0X2JfYUUtME1uYzhRMzlHR3ZCUGV4Y3pVVWhaSFJrVkIzY2R5MFJvbXV3ZzdlNld0ckpXRV9QYi1maF9BRDI3dw?oc=5",
+    "timestamp": "Mon, 20 Jul 2026 07:00:00 GMT",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-d89db8f8fb0b",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Manipur: Landslides cut off vehicular movements on Imphal-Jiribam Road",
+      "as": "Manipur: Landslides cut off vehicular movements on Imphal-Jiribam Road",
+      "bn": "Manipur: Landslides cut off vehicular movements on Imphal-Jiribam Road",
+      "hi": "Manipur: Landslides cut off vehicular movements on Imphal-Jiribam Road",
+      "mn": "Manipur: Landslides cut off vehicular movements on Imphal-Jiribam Road"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "News On AIR",
+    "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUTkteWl1ZWgtMW55V3dGMTZzTVd1TEF6eERfX0VPRTd0aWdCc0hyUGFucDQ2U2JaM1lNaktaYjFFVXQtSWJOVG9MemotajlyZlgtRUpyNWx3SjdJcTl1a0hmYnF6QXdKcUhhX3c1bGxVcTVlQkRPUHdGblNRaU9fUzc5Z0VCMEpaS2FvcHA0NTh4VDR6S1FXWU1QWQ?oc=5",
+    "timestamp": "Wed, 24 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-51ec027aadcd",
+    "category": "landslide",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Rain triggers floods, landslides across Mizoram; 46 families evacuated in Tlabung",
+      "as": "Rain triggers floods, landslides across Mizoram; 46 families evacuated in Tlabung",
+      "bn": "Rain triggers floods, landslides across Mizoram; 46 families evacuated in Tlabung",
+      "hi": "Rain triggers floods, landslides across Mizoram; 46 families evacuated in Tlabung",
+      "mn": "Rain triggers floods, landslides across Mizoram; 46 families evacuated in Tlabung"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "The Times of India",
+    "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdFF3VDFLNWNVeFQyUHBZN3Z1SldaXzAyMGhqUGRSaExJY2tPTzlHNEZoY3o0N3lCaC0xLVBNY3paakcwNnhaZHNveVl1a21QbkNRWkJyQmZwcjRxZVhQY3k0S19sdk1BZE1aMXBYWGhHbHg3UnNSNXB4WHUxRHdWS1VrQWdDLXd1VmFRbXNwaHM4MENHbm1PVUxxeGpMT0szRmN0ZVV5U3RqVl9oeDZIQkllamk1d1c3WUwwNzdOVDdSTVBoczFjZE4wS2hQOWtqalJjSi1yVXFQNnRZQ1ZnODJYZXl1MndkcmNv0gHwAUFVX3lxTE93N3RHUWprMElZTW5NRnJPcElDYmRyYXVrbFZ6UTIzUUthTWpVXzZmUjY4SlQ5ektRNnJJWUlnNldaVFI1NmZlaHd0VzhnQ0QyNldCMy1BT2JJRWlzSTU4Y1ZtX0FubFpMMU42cFlIQkhWS016Nk5Qb3VXX0tnOFZnYVVZRi1rSDdsSVp5Z2RJMTFBaEphWllCSEp4V0cwbzA4RUZma2xubTVES1Q4UjlFYlF1RS1Wc2RpZGNxMnlKNVVxT19McjFITlFpcDY1eUIwTUxRdFhTSndTek5Zd0VnUE5zREc4S3R1ZjRCV01zdA?oc=5",
+    "timestamp": "Thu, 09 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-576f27ec1cf2",
+    "category": "landslide",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Assam CM to Speak with Meghalaya CM to Address Guwahati Flood, Landslide Crisis",
+      "as": "Assam CM to Speak with Meghalaya CM to Address Guwahati Flood, Landslide Crisis",
+      "bn": "Assam CM to Speak with Meghalaya CM to Address Guwahati Flood, Landslide Crisis",
+      "hi": "Assam CM to Speak with Meghalaya CM to Address Guwahati Flood, Landslide Crisis",
+      "mn": "Assam CM to Speak with Meghalaya CM to Address Guwahati Flood, Landslide Crisis"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Northeast Live",
+    "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxON3pBVW9Hcl8wdnpmMmFkVUVaeDRrY0kzZnRXOFVtWDdmOFREMzNibXVXU2RzRHF5b3Q1c0dLdTd3Mjl3UFoyNFNGcnpQaDluYVY2OVY0N09LZVdjU3RSdW5xZHotenk4ZWcwdGhwM3U3NUxkeGRyRVJXcnFjUlU4Tk5DbXo5NlZDZHVVemRiLUdTN2hrU0k1cXpzYXZyRGRETkdubTE5ZDljYm9FdjVwaEx0Y3ZnZw?oc=5",
+    "timestamp": "Fri, 24 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-974bd11037b5",
+    "category": "landslide",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Guwahati on alert as rain cripples city; landslide injures four in Maligaon",
+      "as": "Guwahati on alert as rain cripples city; landslide injures four in Maligaon",
+      "bn": "Guwahati on alert as rain cripples city; landslide injures four in Maligaon",
+      "hi": "Guwahati on alert as rain cripples city; landslide injures four in Maligaon",
+      "mn": "Guwahati on alert as rain cripples city; landslide injures four in Maligaon"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "The Assam Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdXYybWdYbVVqRjBMbkJJZDljUDMtdUpXc0ZEaEtzVndFNzI4ZUFZdVR6b1hZXzVjVEVuWVZfcHI1Z0M5MEczdWx4R1ZGNlhBa2NzUXk3V0lTYXBzdmc0SmFDT01WakhxWmk2N3hiU202d2VOcC1Vb2huSnd2dWJ4cUd5R3o3bktDV0tnNmxjTTNrOUVENlhKX2xTZ3htQzd4WVVYYjFrazhwNF92REdCb0EyMU1WOUXSAbwBQVVfeXFMUEw0UlhiTmNZYldsaWZma2lqWFY4ZTNfVnJKWW9jZFYxT3RVYlpqU2ZYVXZlNWlYaGxRRzI4WXc5M1dQakxmbmtEM2VZamY2TVVKVWt4YktmTTJfWkluY01BTUM2a1plQzJ1dTdJNU8taTJLZ0h0VFp5eGF4dFd5b0ctRktpWUJOcUxUQkhNeE5mZlJCNjBjZFF4b2x4MTRoSnZQM09HZGpoM1QzM1hLY180a0xMLTlyY19IQ24?oc=5",
+    "timestamp": "Mon, 20 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-23243677ba84",
+    "category": "flood",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Guwahati Submerged After Heavy Rain, Thousands Left Stranded In Traffic Jams",
+      "as": "Guwahati Submerged After Heavy Rain, Thousands Left Stranded In Traffic Jams",
+      "bn": "Guwahati Submerged After Heavy Rain, Thousands Left Stranded In Traffic Jams",
+      "hi": "Guwahati Submerged After Heavy Rain, Thousands Left Stranded In Traffic Jams",
+      "mn": "Guwahati Submerged After Heavy Rain, Thousands Left Stranded In Traffic Jams"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "NDTV",
+    "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZjhYWEx0V3l1UjNYSkg1eGsxbDJvdXB5bm5xUThlN3F1eVpVdjdYRXdXa2h4TkNweFFGb0tNLVIxMFV3WF9LY2prZldyRTZJVXNGdHBCN1hydnVKUVFMbDNDcjNYdUIxTlJ1ckdZZlEyanNNbFZkbmJUMXhpemg1VmF5RDRmVDQ2cE5LczVkUXFPNE1oaGZYYm5kcnVjcElSUF9tUDh6OHdXOVVfaV9uQ0t3VW9SMjDSAb8BQVVfeXFMTXBKblhpUldzSWk5OXlKRm9FOUlVcmU3alBsMHdPQUc4S1hxY0xtS2FLNHdIZG4zenhCWVJQNzNwLU5ZdHBzZ0xINWJrRWVsNEU5alNvZU1rV0JIaFN4Q1VhRUVQZmQwcWlxWlVxcFA3MHpUTkZKeXdsNUNPZE9WcE1HNzR0cGJaa3dZNEw2NlZjeF84dHVsQnlWZkVSWEdxeFdaLXJWN0VWeXZQUmdFRW94ejhXNkd2dmRUZERhelE?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-303641f7958d",
+    "category": "weather",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "North Bengal Weather: তিস্তার জল উঠে এল রাস্তায়, ভাঙল সেতু, ধসে চাপা পড়ে মৃত ২, বেড়াতে গিয়ে",
+      "as": "North Bengal Weather: তিস্তার জল উঠে এল রাস্তায়, ভাঙল সেতু, ধসে চাপা পড়ে মৃত ২, বেড়াতে গিয়ে",
+      "bn": "North Bengal Weather: তিস্তার জল উঠে এল রাস্তায়, ভাঙল সেতু, ধসে চাপা পড়ে মৃত ২, বেড়াতে গিয়ে",
+      "hi": "North Bengal Weather: তিস্তার জল উঠে এল রাস্তায়, ভাঙল সেতু, ধসে চাপা পড়ে মৃত ২, বেড়াতে গিয়ে",
+      "mn": "North Bengal Weather: তিস্তার জল উঠে এল রাস্তায়, ভাঙল সেতু, ধসে চাপা পড়ে মৃত ২, বেড়াতে গিয়ে"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "ABP Ananda",
+    "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOOWdMd2JsQVBoMThRSHZxNUl4NlQybGk4NEM4Z29WQjNHMFFuOXpIdU04WlM3QVpZQ1djRUQ1SGItVjBLTWJGRFFIQ1JXa2NPVkdvNmlBT3BIbnVpTjZ3VXpHYmxILUNLU09xUVdrQVpFdmZ1RFlhNTNtbTMzU0cyVWFzT2JhSWFmZ25ZSTZBamZjaENycEk2STVHRlF6dUx4X3RjOGdUODRSQVhnYWw4MzJrODZQUmlGVDRrUFN4NGQxT0dydE54c1J6RElaU1ZzSEJlMTdYMmpOOXRQcm14X0xBYkcyajMxMExheTY4cnhESk52b1FocGg2X2HSAYICQVVfeXFMTkNKMXIzdllyZmtRS3FkQS1EdmRDNE9kSGJELVc0Rm53ZTJYUjk2VnBIdWx6U0tkcVo3Tl9hOFRDYVpCRlZNY1hWTVFOUE9hdTY0MWRpcElzbzk4SFlSN0o4eF9QOTRBeE1RaFFudG9oWEw0SkF0U3kzWW1OZko1eW1XWHk2REp4b19fbm9tWjR2eFNuclNhUmxJRm5vWXlZaFhoTmtZS184aHJRa25NMFNBMnZYb3FQRFRlbjFPaGpfWkRock1Db1VOMjNXVGNPcDM5LXNGTkJjQ0x5U0tpVllGVm1JYUY0bVd4NEtLODd1NGphWEI0V2d1RUhQRE13OVB3?oc=5",
+    "timestamp": "Sun, 05 Oct 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-79a86f5ef951",
+    "category": "general",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "সিকিম থেকে শিলিগুড়ি আসার পথে দুর্ঘটনা, তিস্তা থেকে মিলল নিখোঁজ পরিবারের 4 সদ্যসের দেহ",
+      "as": "সিকিম থেকে শিলিগুড়ি আসার পথে দুর্ঘটনা, তিস্তা থেকে মিলল নিখোঁজ পরিবারের 4 সদ্যসের দেহ",
+      "bn": "সিকিম থেকে শিলিগুড়ি আসার পথে দুর্ঘটনা, তিস্তা থেকে মিলল নিখোঁজ পরিবারের 4 সদ্যসের দেহ",
+      "hi": "সিকিম থেকে শিলিগুড়ি আসার পথে দুর্ঘটনা, তিস্তা থেকে মিলল নিখোঁজ পরিবারের 4 সদ্যসের দেহ",
+      "mn": "সিকিম থেকে শিলিগুড়ি আসার পথে দুর্ঘটনা, তিস্তা থেকে মিলল নিখোঁজ পরিবারের 4 সদ্যসের দেহ"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "etvbharat.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMGtIQVUzN2R3bmhmUHJRY1phSUNTaEQ5dGxuejdGalJMbjg0SDNBRk9kZEZscU02NWt1S1FKbGE3aDEwUEk3V0MyaXoyR1NZUkdQUGFBUW85blJHT0luTTQ1VnFsMktTYWMwWk1pUkhUaGU4RmE4cnBWNFJJaGtFSmtZY3BEVUt6UHVaZFliZUd6MjJQaFJIRE1SY0NOMjdNSnJURE92bU1tMUZhWWZTQUpjb25CZUk4cko2WktIY3pveEFsNEgxVm1McTNsRDlXaGhBdU1Bb1lrUGY1aUtpQkVB0gHnAUFVX3lxTFBrRTVOY1M0U2pJd2RyWWNoUURYdUpQLVd1bGE3Wjd4LUlGd2VkTmh1cUZLU3FZbHZzZElFZUtzLUNvamxmZlRZQmF2VFlvWmFLWDJ3cXBlWF9iQ0wwdlotN1hXbFpnVHk1TU93eC0zYUxBNDhlX1gwbFVDWnB3b1dzR0dyTHBla0VqaTNwZGlUcWh6bXhDcnp4bHAxVFBpSEk4VzBaM3dJVVI2eWRMczFMdVJXUEU1QVhaNHotZ1R3T0Vld29ERjN1UkF4OHF1VC0yS1ZTeXFad1dNMGRFTUJTSDFtUXhsdw?oc=5",
+    "timestamp": "Sun, 07 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-b4bc5cbf3367",
+    "category": "general",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "২০২৩-এর পুনরাবৃত্তি এড়াতে সতর্ক সিকিম! ৭ হিমবাহ হ্রদ অতি ঝুঁকিপূর্ণ, চলছে নজরদারি",
+      "as": "২০২৩-এর পুনরাবৃত্তি এড়াতে সতর্ক সিকিম! ৭ হিমবাহ হ্রদ অতি ঝুঁকিপূর্ণ, চলছে নজরদারি",
+      "bn": "২০২৩-এর পুনরাবৃত্তি এড়াতে সতর্ক সিকিম! ৭ হিমবাহ হ্রদ অতি ঝুঁকিপূর্ণ, চলছে নজরদারি",
+      "hi": "২০২৩-এর পুনরাবৃত্তি এড়াতে সতর্ক সিকিম! ৭ হিমবাহ হ্রদ অতি ঝুঁকিপূর্ণ, চলছে নজরদারি",
+      "mn": "২০২৩-এর পুনরাবৃত্তি এড়াতে সতর্ক সিকিম! ৭ হিমবাহ হ্রদ অতি ঝুঁকিপূর্ণ, চলছে নজরদারি"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "TheWall",
+    "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcUpOUmJCbzZhamtyaW9nSUMwYm5MbzZZdlNSWUdUSTdLLVliM1dRQTFpc3hMNGtoTmQ2WTc4dzZQZG9rOG13aFdYY0VScVJRSVRtZ0xuSWU2LU1pZ1U5ZXo1NjJsS1lUUUFpNXF4aW90eE5XbV80YXQtb3dJWGVhc3gyZFNUOWNiVWJtVEpGdTJxSnNqT1VWZWktaEl0YzFSVEhxY1R3RnE1bVV3OWhJ0gG0AUFVX3lxTE9oV3liYkV0NkE1aXVMQ3hIOHdxVGcyb3pTQmdweU4zdEFrMl9jTnhRdkdSMU1BOXBNTWozaHJYV3B2VURBSVFTV3R0WlhCcnFFYV9MRWlWb3QteDFFbDBnTUJYVTNiQUhDOFhCN2djeE5SSTF4ekJCd2Y3Zm9aVFpqQnlZN2hIS3g1SXRLMEtZX3E0VHFSZjFlZnhvSFdrek1ZeU02ZjVkQmRZMGR1Q2RZb0c2Nw?oc=5",
+    "timestamp": "Fri, 04 Sep 2026 12:36:12 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-2c0ef8f7ead2",
+    "category": "general",
+    "state": "sikkim",
+    "language": "bn",
+    "title": {
+      "en": "সিকিমে ভূমিধসের ফলে আংশিকভাবে অবরুদ্ধ তিস্তা নদী - এখন পরিস্থিতি কেমন?",
+      "as": "সিকিমে ভূমিধসের ফলে আংশিকভাবে অবরুদ্ধ তিস্তা নদী - এখন পরিস্থিতি কেমন?",
+      "bn": "সিকিমে ভূমিধসের ফলে আংশিকভাবে অবরুদ্ধ তিস্তা নদী - এখন পরিস্থিতি কেমন?",
+      "hi": "সিকিমে ভূমিধসের ফলে আংশিকভাবে অবরুদ্ধ তিস্তা নদী - এখন পরিস্থিতি কেমন?",
+      "mn": "সিকিমে ভূমিধসের ফলে আংশিকভাবে অবরুদ্ধ তিস্তা নদী - এখন পরিস্থিতি কেমন?"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "BBC",
+    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtR1JVZFlUaWw1ZGcyZEZ5WGw2NEc1T3htMjZlOVZReDFUSGFEVWZEYUk0RnRqLWtJWnJTci14UGl6dUNZYm9yWTVucmR3dEl5WFJIR09hOC1ma0lyeFHSAWNBVV95cUxQSGlnSlNTYm9BWXJZWC1RdHptYWh6S0tnV0pEelVPNmNzTndvX003NHFmN3NOR0FnQ3hQM2otQ1ZBa1ZEQlB4clE2VDN0VHdvcUxDUFQwLUtrUmtCVlNFZnlqb2s?oc=5",
+    "timestamp": "Mon, 07 Sep 2026 15:33:55 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-369b20714893",
+    "category": "flood",
+    "state": "tripura",
+    "language": "bn",
+    "title": {
+      "en": "ভারতে ভয়াবহ বন্যায় ৩০ জনের মৃত্যু, রেড অ্যালার্ট জারি",
+      "as": "ভারতে ভয়াবহ বন্যায় ৩০ জনের মৃত্যু, রেড অ্যালার্ট জারি",
+      "bn": "ভারতে ভয়াবহ বন্যায় ৩০ জনের মৃত্যু, রেড অ্যালার্ট জারি",
+      "hi": "ভারতে ভয়াবহ বন্যায় ৩০ জনের মৃত্যু, রেড অ্যালার্ট জারি",
+      "mn": "ভারতে ভয়াবহ বন্যায় ৩০ জনের মৃত্যু, রেড অ্যালার্ট জারি"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "shomoyeralo.com",
+    "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE83SDdUakhYc2dLb1kzcmRVdWMtTHJxVUljUldZUkQycjhacFMtWGt5TEVEcmJCOUdRajQ0U2lQLXBIS1hlWmoyd3NpUDA0MFpn?oc=5",
+    "timestamp": "Sun, 01 Jun 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-4f2cce428905",
+    "category": "flood",
+    "state": "tripura",
+    "language": "en",
+    "title": {
+      "en": "টিআরপি না থাকলে বন্যাও খবর নয়",
+      "as": "টিআরপি না থাকলে বন্যাও খবর নয়",
+      "bn": "টিআরপি না থাকলে বন্যাও খবর নয়",
+      "hi": "টিআরপি না থাকলে বন্যাও খবর নয়",
+      "mn": "টিআরপি না থাকলে বন্যাও খবর নয়"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "dw.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxNTGJhZVNCV3Rnam1yTEt2dWlXb0tCNHk1d3l3MjdRUmRtY0Y0LVVzLWZyMEdmODV1dlREeG5nOGFRQmhXWWN2WGlBWTlPaWw4RmI3djlqdGFnTWNUZVpsbTRTd3hGd1RtRFRRX0hvQ0d1TW91bFZNT1BhUmU1UTFTRVUySFk2ay02a1l2VmdvTVk3UFRsRGFwUHZ6Yk44bi1QUml6RDVsRnpwd2xwOVZSMEJETjUzQUI4Z09iTUE2QVZTSDdCLWlpNmdqM3EzdWNlSWZMMVFIT3Z1RlNSUnVPYUFvU1AyYjZGejM1TjZBdDFlUV9wR0lkN2g0c3ZGVHZHbktmNnRXMkhZYzNjclczcUVGcnVxSXg0Qk9CQ2NTM1c0cW9mOVJIU3R3cU43QXNLREY3WlEwTklSd1hjRHVia2puQ21yb0p2c2tvVk04OWtqb2lmQnQ3OTZrSDRkNU1zeVlRVE5haEhHWXdvdkNv0gHvAkFVX3lxTFA4Rm5pMkR1TzZrMktCVjFsdjVLOTVzVGN5U0lfWDk4eVBQajBZNVktWEtzZ2ZGX1VPSGV0YkhsRHNYLVJ3MElDRmhkT3dwaE1XOEFPSkIzRmpyRGQ4Wm9hMjQ4VGg2c19BTzV6Z0tuaXRYYUwyejlRVUYwNGFVcjQ3WnNHcXhOd0hibURsWFVNN216SGZ0UHBNY1h3aVNYLWg3Y2FoMkI3by00RndyN2l3RGoxVXdyR3pHVjBQYU81WkZzQjVRd3NVVm9pTnJaN2J3NEJZc2dGVVN3ZHQtSjdOM3ZtZUFscG5DUFprMTVYOWlsOERlcUk5WkRSTlA4dlI3QjhFWkNXVzk1cjBpazZXV0hmNXhBMDRmZjlDUzJKczBXV204dUl4X3NOT2k0QWVIcVUtUDJOeUZtcG5Xb05fTHFQVTNjT0FGckdhSGtmQWdWSVVuME1UV0RnaWs3VVBZa3BRN0FPNTU4VVRhYjA?oc=5",
+    "timestamp": "Fri, 24 Jun 2022 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-98866762be95",
+    "category": "flood",
+    "state": "arunachal pradesh",
+    "language": "bn",
+    "title": {
+      "en": "হিমাচলে বন্যা, ধস কাশ্মীরে, অরুণাচল ভাসছে প্রবল বৃষ্টিতে, বর্ষায় বিপর্যস্ত উত্তর ও উত্তর-পূর্ব ভারত",
+      "as": "হিমাচলে বন্যা, ধস কাশ্মীরে, অরুণাচল ভাসছে প্রবল বৃষ্টিতে, বর্ষায় বিপর্যস্ত উত্তর ও উত্তর-পূর্ব ভারত",
+      "bn": "হিমাচলে বন্যা, ধস কাশ্মীরে, অরুণাচল ভাসছে প্রবল বৃষ্টিতে, বর্ষায় বিপর্যস্ত উত্তর ও উত্তর-পূর্ব ভারত",
+      "hi": "হিমাচলে বন্যা, ধস কাশ্মীরে, অরুণাচল ভাসছে প্রবল বৃষ্টিতে, বর্ষায় বিপর্যস্ত উত্তর ও উত্তর-পূর্ব ভারত",
+      "mn": "হিমাচলে বন্যা, ধস কাশ্মীরে, অরুণাচল ভাসছে প্রবল বৃষ্টিতে, বর্ষায় বিপর্যস্ত উত্তর ও উত্তর-পূর্ব ভারত"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Oneindia Bengali",
+    "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMk12bVZkMFlVWGpCTnYwMzdvdGd4c1ZzWnFuZ3ByMVY1eFJEQ1Bqa1Y1a1QwQURjTXNHTlpYcF9naXVLNW5OVkFnVlRMQ0RIeElfNjdJQzg2SnJxc3VNS0tkUU1XN1dyT1JwWlptc3RENE1Cc2pQN2FxcmV3OWFRbmt2d0tLT0xiUlhtRHVqWEtsd2FaZ2FHc2hlSWZoNXZ1QWJQcmw5LXkyMmFKamhpUVBVVTJXSHNO?oc=5",
+    "timestamp": "Tue, 26 Aug 2025 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-2de895b51d46",
+    "category": "general",
+    "state": "out_of_region",
+    "language": "bn",
+    "title": {
+      "en": "পাহাড়ি ধসে বিপর্যস্ত উপত্যকা: বন্ধ জম্মু-শ্রীনগর জাতীয় সড়ক",
+      "as": "পাহাড়ি ধসে বিপর্যস্ত উপত্যকা: বন্ধ জম্মু-শ্রীনগর জাতীয় সড়ক",
+      "bn": "পাহাড়ি ধসে বিপর্যস্ত উপত্যকা: বন্ধ জম্মু-শ্রীনগর জাতীয় সড়ক",
+      "hi": "পাহাড়ি ধসে বিপর্যস্ত উপত্যকা: বন্ধ জম্মু-শ্রীনগর জাতীয় সড়ক",
+      "mn": "পাহাড়ি ধসে বিপর্যস্ত উপত্যকা: বন্ধ জম্মু-শ্রীনগর জাতীয় সড়ক"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Puber Kalom",
+    "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb1ZiZnh3V0VOYXNDNURtRnlHZC1wdWM4QWJiTUpnaEJrMkZyR1dyMmtEVkRRcXl2UmZHSnhfQ3BNbmJveW1KSURtdTI3SVo5NDM5OWNUUW8xZE1TcDNyQVlBeUo3Vy11NHZPUDhwWWRNUmdLU2tFWEVsUlVDV3FyQ1dn?oc=5",
+    "timestamp": "Mon, 06 Apr 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-a8d51e5c6daa",
+    "category": "flood",
+    "state": "arunachal pradesh",
+    "language": "bn",
+    "title": {
+      "en": "অরুণাচলে বন্যা-ধসে বন্ধ রাস্তা, ক্ষতিগ্রস্ত হাসপাতাল, চাষের জমি! বিপর্যস্ত ১ লক্ষ মানুষ",
+      "as": "অরুণাচলে বন্যা-ধসে বন্ধ রাস্তা, ক্ষতিগ্রস্ত হাসপাতাল, চাষের জমি! বিপর্যস্ত ১ লক্ষ মানুষ",
+      "bn": "অরুণাচলে বন্যা-ধসে বন্ধ রাস্তা, ক্ষতিগ্রস্ত হাসপাতাল, চাষের জমি! বিপর্যস্ত ১ লক্ষ মানুষ",
+      "hi": "অরুণাচলে বন্যা-ধসে বন্ধ রাস্তা, ক্ষতিগ্রস্ত হাসপাতাল, চাষের জমি! বিপর্যস্ত ১ লক্ষ মানুষ",
+      "mn": "অরুণাচলে বন্যা-ধসে বন্ধ রাস্তা, ক্ষতিগ্রস্ত হাসপাতাল, চাষের জমি! বিপর্যস্ত ১ লক্ষ মানুষ"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "TheWall",
+    "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdVBKTlhPekpGbDlqOVBldjNMQ25UdGZiZWY2UWpVa3N2MW5jeldZWEFyUGpQeUdqUG5rSHRFX0tJYkhtTHJkS3NCa0JBT0JCbGRRbjQzMF9YQnZVMXlUTFZMU3hnQndMZ0ZTczRUNkFoemdzcy1EaWRzbUNabG1ITjFLTl9aVjVUVmJOQlZrTWdhUk1EQTcydDg5Y2hreUxGblV2SUlya2Y2eWtCZVMtRjQ4V0RicUhNaGlVdlBJc2kwc1p2M2VoaC1tNHFyRDR1M0w3TjlaSdIB3AFBVV95cUxPeTR1N3RuWmNqdG5TMzRsTTNPcmJZVVc1NDIyTHRjdGVrMW1KSGNhdkRMX2lUWHlPQ3BOc0dhOUNYMGlZeXlRTEZaRU81aXVQeW5IRFVaNWpwQzV5cHVZT3FRS01SNTliZkxGWnc3YkVaVm01UEQ0TTRoRDVpSFN5bnJuTEhySGZwT29QWUhQaHhCRF82S2RpdTU5QS1XV1d4blN1ZU5MWjUybXk5MFNrWU9zYko3SnllQlNLekZfQlgtRy14TkdhTmE0N0NIaW9nNkVPUW9KTzF3YzBH?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-74a2fa3d5382",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "hi",
+    "title": {
+      "en": "मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of aff...",
+      "as": "मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of aff...",
+      "bn": "मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of aff...",
+      "hi": "मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of aff...",
+      "mn": "मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of aff..."
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by jagran.com regarding मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of affecting the supply of.",
+      "as": "Regional disaster & logistics update published by jagran.com regarding मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of affecting the supply of.",
+      "bn": "Regional disaster & logistics update published by jagran.com regarding मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of affecting the supply of.",
+      "hi": "Regional disaster & logistics update published by jagran.com regarding मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of affecting the supply of.",
+      "mn": "Regional disaster & logistics update published by jagran.com regarding मणिपुर में भूस्खलन से राजमार्ग बंद, 500 ट्रक फंसे; राज्य में आवश्यक वस्तुओं की आपूर्ति प्रभावित होने की आशंका - Landslide blocks highway in Manipur 500 trucks stranded There is a possibility of affecting the supply of."
+    },
+    "source": "jagran.com",
+    "source_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNVWxvVlJlVjFRYzNWaXhydVREeE1lMl8tMjAyYWl4NGVUNEQxOWxUX25WbXhSbzk3MUNrNUgxUzVIc2RaMzU4WTZaMkVfYXk2akxyWkhwTlRUMXVxZFlFN29wWUFSZ05KVUlNdU9RRHhRRDVxc1dOSWR5d3N1UmhzSkpqenBSeDNCbFQtd0lWb1g2VUJKUVRnVWlKTFg4VUVSTEVNeVh5ZndTdjl2bVFVanh4T2NqemlLUjR6bnZhaXJFNlA5d2pNdklBTW43V21mMkJlTkg1azBZaUh4Sm5keVdiSmV5T185Z3h5NkJrNWh6T1RYLXo3dUFqM25GeGdsMTR0WUxqUUo1TGRJd0U5S0dmZ014Nk5qVlpj?oc=5",
+    "timestamp": "Thu, 17 Aug 2023 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-cd9bad7d290c",
+    "category": "weather",
+    "state": "nagaland",
+    "language": "hi",
+    "title": {
+      "en": "नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़",
+      "as": "नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़",
+      "bn": "नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़",
+      "hi": "नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़",
+      "mn": "नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by News On AIR regarding नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़.",
+      "as": "Regional disaster & logistics update published by News On AIR regarding नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़.",
+      "bn": "Regional disaster & logistics update published by News On AIR regarding नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़.",
+      "hi": "Regional disaster & logistics update published by News On AIR regarding नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़.",
+      "mn": "Regional disaster & logistics update published by News On AIR regarding नागालैंड में लगातार बारिश के बाद कोहिमा जिले में किसामा के पास राष्ट्रीय राजमार्ग | आकाशवाणी न्यूज़."
+    },
+    "source": "News On AIR",
+    "source_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPblUyWndMdDZDazdkeDBoWVNzcWFsbHVpSFJmbWNRcFVhbENFVG9KYU5SU0FDQzNBQkhKR3piYXpLbXZmM3UyNmo2eTB4RTVyWGFsbUVPU2dhSnc2MFJ2bThsdDc4RXlpbzRmOXpBUlJzTFRiVUppOGpPQ1FRaEQyRG5tUlUyeG02MDFkWGlFV3MyeFBPZ3NrdERjZmVzclBBcE9YSkIzNXMwTDdUZlY5SU9FQXFiX3c3QzMzbHhSY3lmbXZ1SFg4S1p6czhjaUw0UFlwR2tMYUk2enkyNDNqWFQ2aUt4MWRmNmRWSmN0UE5ISnl4blVraEE3SnFTbzFlQlV3cUdFSEt5NlNnUGF6UzAwQUVEWTg?oc=5",
+    "timestamp": "Sat, 06 Jun 2026 21:46:23 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-0ae211a97953",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी",
+      "as": "सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी",
+      "bn": "सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी",
+      "hi": "सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी",
+      "mn": "सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ThePrint Hindi regarding सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी.",
+      "as": "Regional disaster & logistics update published by ThePrint Hindi regarding सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी.",
+      "bn": "Regional disaster & logistics update published by ThePrint Hindi regarding सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी.",
+      "hi": "Regional disaster & logistics update published by ThePrint Hindi regarding सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी.",
+      "mn": "Regional disaster & logistics update published by ThePrint Hindi regarding सेला सुरंग का 96 प्रतिशत काम पूरा, इस साल के अंत में खोले जाने की उम्मीद : बीआरओ अधिकारी."
+    },
+    "source": "ThePrint Hindi",
+    "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS1BQc0gzUDV1akllaHJRWWEtQ2E3S3pjMGU2STVLa2JaYTBiN3h3RWpCWVdqd0hlc044WHRWenJEN25lRnRlZTlQcGdPZ2EtalF2aXU3dVUzOUw3RHhDTmR6MlNxWlZMak5tZFMxejFLRXRONlBIVUxOZzZmWm11aHA2bWo4XzI3OTRIWEE3LUxqbW9GaVhXQ19XWHRVYXFiSl93SjVobjB4MVNocFF2TFQtZ1cySXdQM0YtTjZIZDludUZWUkx1OXJRbW9DOWMtUklvajlR0gHbAUFVX3lxTE1TSjFrLUg5UHBFbTlpSFNUTWEtWnZ0VkM3dkdRT0lrajRxRnpiQmx0eDBQNlEwdFItcDhqVUdObmo2ZHBTSFpsQjhsX3h0U3gzNmREdkUtRFRmUmFXbkdMRDRkVk85QUpHMHROTG1rV3RfU1JWc2lTcnQteFlJYlNMY0o0UWtPOE4xam95OURjMFNxbmptNkFfSHdTR3ZHN1l0Q0hYLUo4VTVNWmVwbnRveFJOWF9uZ0NRMEhyZ3VxeGhzcWwtYlphY1JLX1M1cWxuVXFncWlFYUlqOA?oc=5",
+    "timestamp": "Sat, 30 Sep 2023 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-bb6b982ede08",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें",
+      "as": "Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें",
+      "bn": "Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें",
+      "hi": "Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें",
+      "mn": "Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by jagran.com regarding Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें.",
+      "as": "Regional disaster & logistics update published by jagran.com regarding Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें.",
+      "bn": "Regional disaster & logistics update published by jagran.com regarding Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें.",
+      "hi": "Regional disaster & logistics update published by jagran.com regarding Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें.",
+      "mn": "Regional disaster & logistics update published by jagran.com regarding Sela Tunnel: आंधी-तूफान में भी LAC पर होगी फास्ट आर्मी मूवमेंट, टेंशन में चीन; सेला सुरंग की खास बातें."
+    },
+    "source": "jagran.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbnhZYUpVdlVrci1CZXdRZFlua2xkYW5vYjNjU2Qyd0tLV1NOUjlVWUpVdHU1bzFhYnU4X0VOTkUtU2Y0RWZLd2Y5S1V5eENvV2dUSVJhdHRuSHNTWFJvR3dCOXhvTjcwX3pMbnNsR0ZDYk44NG5MYkNEQ3pFQjNWY3pOVVJIV05WNVRfcHFGTmhLYzF3Q0NSLS03S3NWVmhhQ01laEN3ZE9NcGxhTFVYZGRvNnE3WjJqM01VY254Z21ROVVzOVhrU0RjZ21MajFJU3c?oc=5",
+    "timestamp": "Sat, 09 Mar 2024 08:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-15c3f72a8a53",
+    "category": "general",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "PM मोदी आज करेंगे सेला सुरंग का उद्घाटन, 10 KM कम होगी तवांग से चीन सीमा तक की दूरी",
+      "as": "PM मोदी आज करेंगे सेला सुरंग का उद्घाटन, 10 KM कम होगी तवांग से चीन सीमा तक की दूरी",
+      "bn": "PM मोदी आज करेंगे सेला सुरंग का उद्घाटन, 10 KM कम होगी तवांग से चीन सीमा तक की दूरी",
+      "hi": "PM मोदी आज करेंगे सेला सुरंग का उद्घाटन, 10 KM कम होगी तवांग से चीन सीमा तक की दूरी",
+      "mn": "PM मोदी आज करेंगे सेला सुरंग का उद्घाटन, 10 KM कम होगी तवांग से चीन सीमा तक की दूरी"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "AajTak",
+    "source_url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOYlBuNU5ZdmtTRE1OeFBJczVFZno0T0I3bjlsNGY3Z3IzYk1TbzZVaTBLc2dCYUI3WWZiUWR1T2E0SUpUV3dxbThSdTlpWml2eld2UXFGU1dObVNQMzVEZEFSS0IwbEhpMWNOVk9fUUJQRUE5ZzE3VkhKaGwtWkQwS1UtMDltVjlkTUJVWjAzSDNOLWZFa1BKM29ZNEwwejN5NXZEY0JvZThwclpBcjljdTlYdkV0N0p6SFJXa2NDZm1iVTBEWUFILXJpS2RiRzU1Yi1YSkF3OURha1QtMWR4Ry1RUEY1U2JybWVYUkZLYk9Dckc1UGNEaU8yYXIzMmh2UXJFOGVjTmxxYUVY?oc=5",
+    "timestamp": "Fri, 08 Mar 2024 08:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8ab4b73909ce",
+    "category": "landslide",
+    "state": "arunachal pradesh",
+    "language": "hi",
+    "title": {
+      "en": "अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील",
+      "as": "अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील",
+      "bn": "अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील",
+      "hi": "अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील",
+      "mn": "अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by etvbharat.com regarding अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील.",
+      "as": "Regional disaster & logistics update published by etvbharat.com regarding अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील.",
+      "bn": "Regional disaster & logistics update published by etvbharat.com regarding अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील.",
+      "hi": "Regional disaster & logistics update published by etvbharat.com regarding अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील.",
+      "mn": "Regional disaster & logistics update published by etvbharat.com regarding अरुणाचल में भारी भूस्खलन, तवांग-थिंगबू रोड बाधित, लोगों से यात्रा न करने की अपील."
+    },
+    "source": "etvbharat.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ2lIZmRYeUhnczMxMUN1QXE3MWpXY0Z5UmZid19Lcl81dFdnSW40M2NOOGp5T0ZLdm9BVzVXN0xDMzF1R0VVVTVHVExDQ3p2SGZLRTI4WWpiTGtrNWRVZWJnR3V4RjZNWndjMHJBR0lkX1pFR0JOX0VydHFyaVBBR0JpWEdBX256eDYySjg4VENFZk1QSl8zS1ZUWHdMd1B3V09IR1cwZGJ1bWh2VXNqSU9oZWNwUk5xNU51elRMRVNEVnBtZnVSQllMNkhJSHlXeGxwRG5sWG5MTi1OYmZRaWxlY0lMRUHSAewBQVVfeXFMUHY1NllkOE1BemhCeDAzUnFZTkVqc21STm5rUFl4bFJEVUtiRllBOXFhbE5tTFRuX3d2bHJLUlNZekFhSFY2czE3UTVtckx6Q1BWQUxWRERiVWRQS2ZLMjIycDItRWNCMG42VmpGYW5WM2VpTG1TUVRpN0lKM0pUZWowNnpycG5sN3JhR2RSQ2VySUFzRVhTR205c2tEUkI3RTF4SElGUTFkSFJpcXNWeUdCWFdyOFhTamFadzNsOUJ6SXV3Zm85NU5UUHNXTVoyVW9jUnA2ZEh1WTVxcU1fX01zSmlmV1ZkWXMtbmo?oc=5",
+    "timestamp": "Thu, 16 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-1fa091fb265a",
+    "category": "weather",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह",
+      "as": "Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह",
+      "bn": "Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह",
+      "hi": "Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह",
+      "mn": "Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Gaon Connection regarding Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह.",
+      "as": "Regional disaster & logistics update published by Gaon Connection regarding Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह.",
+      "bn": "Regional disaster & logistics update published by Gaon Connection regarding Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह.",
+      "hi": "Regional disaster & logistics update published by Gaon Connection regarding Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह.",
+      "mn": "Regional disaster & logistics update published by Gaon Connection regarding Guwahati Weather Alert: अगले 3-4 दिनों तक भारी से बहुत भारी बारिश की चेतावनी, लोगों को सतर्क रहने की सलाह."
+    },
+    "source": "Gaon Connection",
+    "source_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQNlg0bFpIZklFZE1OdURKbWVUbkEyaERhTE1uMlhHaXlZQW9HRnVEY2xRTXk5a0Vva3JXSzJQdjFfbUZVcFlzTVJwc3dhMU1ScnF6Z3JBTG1kR0xkeDFLaGZibVgzdmdCdTcxX2tqdlpSSzd1UjVWb05zR28wNkM4bWxzbHNNOXM0eWpDSm1RVTd1eFA3bG1kTldSUS0zejVWa2pVOHdIa3ByLVBRVE5fRHdwdFh2MVB6VXk4MVkzUUtZQ2R5dnQzbHlzWjZyX2kyWlZFZFNVMHZjb2kxLWlQQnpTclV6OFI2bzdpcVpDcXNJVEoxQzItdjRMQTJVRVJGYjFDRmdaUTlKOTjSAZACQVVfeXFMTTQ4WGZPeTg5ODRhbmpkcmhHYUp5ZWQ1WmR3QmFlX25EczZIRW90aDQ4ZW5KM0dqeVA1QWdlYlYyckw5b2RXOWFLRldPc0FqNFJOckNyNEVtRUJuVVJTbU5LXy0wVlY1RTJKbWFDVGQ3R05tU3BnR09NRWdtZDYwdGlwdzBrUXBiZFU2TS1CYUM2RG5ySVBnaDJWM21URnV5WHFKZmt0cHBRMjVEdGNJTzZqZlRQMVJjekRsekhuWXFYakpRckx6TGNCdkVSTkRSdXBMWU93eXJTRlgxQ05uX3FYRnBMMHVPU3c1dEl0eWl6c2prSXdJTmJtRkh0akNwaVpLY1luTFhLZ0lUMXdDc1c?oc=5",
+    "timestamp": "Sat, 25 Apr 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-3e20d1c793fc",
+    "category": "flood",
+    "state": "out_of_region",
+    "language": "hi",
+    "title": {
+      "en": "आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी",
+      "as": "आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी",
+      "bn": "आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी",
+      "hi": "आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी",
+      "mn": "आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by AajTak regarding आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी.",
+      "as": "Regional disaster & logistics update published by AajTak regarding आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी.",
+      "bn": "Regional disaster & logistics update published by AajTak regarding आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी.",
+      "hi": "Regional disaster & logistics update published by AajTak regarding आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी.",
+      "mn": "Regional disaster & logistics update published by AajTak regarding आफत बना मॉनसून... पूर्वोत्तर में बाढ़ से बिगड़े हालात, उत्तराखंड समेत कई राज्यों में 4 दिन भारी बारिश की चेतावनी."
+    },
+    "source": "AajTak",
+    "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeEp5cTFWOElkb0hCQ0xzaklIVm1aNVBoZ2VZX3BoeTNHMWYwN0xfeHJ3VWRIVGVFX0VkdEJPWFdleHd6NTdnUmJkZlRvR2kxZWpQRGY1cGlPRjFaal9zWDFGalh5a0IwOVRQVW5La3o4eGh4ZkRlRWVjTzc1STFQN0Q1ZGhfLUh3TTJPd3lET3JrLXYyNmtaYVNXOUJaYml2VVhqVm56RXRLb2ROUUkzcFI2WnlicWh2NVRyV3dDQmZ4T0ZmUkgtQkVfSkRmdw?oc=5",
+    "timestamp": "Thu, 30 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-b59d3e3a5037",
+    "category": "landslide",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत",
+      "as": "असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत",
+      "bn": "असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत",
+      "hi": "असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत",
+      "mn": "असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ETV Bharat regarding असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत.",
+      "as": "Regional disaster & logistics update published by ETV Bharat regarding असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत.",
+      "bn": "Regional disaster & logistics update published by ETV Bharat regarding असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत.",
+      "hi": "Regional disaster & logistics update published by ETV Bharat regarding असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत.",
+      "mn": "Regional disaster & logistics update published by ETV Bharat regarding असम के गुवाहाटी में भारी बारिश के बीच भूस्खलन से 4 लोगों की मौत."
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTFV4dmx3TVM3Q0xTRnJZSWpyczU1U3dGbGpMX3Zod1FNdHhWM2RQelhhQk9CemJ0d1ZsaFViVWo1aC1ZaHVEZDVDR1piNzN5WE9mbHNtWlJSWjlrS1Q3SGE0THhtRTlNNGdDdHVtQU9ucHhxZTl5NWJwQ0hUQ1FSNmVrY2pNWXpyb3FZVHBnOUptQXVkbm83WEJIZWppOS15Ulg0Ty16QlAxZF8yeUpqWVRhU3YyZlp1WmpNRkNzV3rSAcYBQVVfeXFMT01KOUZIRXBheW0zRmVSYXhSSUNGYmY2X3BFM3BMUUMxNTJjTjVRdklQeFR0VHpiSXh2YURYNndHcnRSblJTM05VNHg2czQ0cHlpeHp3WVI5bC1qdmJBeUJhSDRYV2N4MmZpV1RiWG9ncTUtMkFDMHpBMHREcWluTllrSzZBaFdKOUlNN3lQN1FXR1I3Y3oyYnJiWjdlSDZFdDZIUmswUjliRzlBRWZLZ041LWRnSjdyeG8wTHlDZXBvUThhaGJR?oc=5",
+    "timestamp": "Tue, 01 Sep 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-5af15551bbfd",
+    "category": "weather",
+    "state": "out_of_region",
+    "language": "hi",
+    "title": {
+      "en": "उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट",
+      "as": "उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट",
+      "bn": "उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट",
+      "hi": "उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट",
+      "mn": "उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Down to Earth- Hindi regarding उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट.",
+      "as": "Regional disaster & logistics update published by Down to Earth- Hindi regarding उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट.",
+      "bn": "Regional disaster & logistics update published by Down to Earth- Hindi regarding उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट.",
+      "hi": "Regional disaster & logistics update published by Down to Earth- Hindi regarding उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट.",
+      "mn": "Regional disaster & logistics update published by Down to Earth- Hindi regarding उत्तर में कमजोर पड़ा मानसून, दिल्ली में गर्मी से राहत नहीं, पूर्वी-पूर्वोत्तर में बारिश का ऑरेंज अलर्ट."
+    },
+    "source": "Down to Earth- Hindi",
+    "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcjJZaHYzN0ZFR2pHVWFxZ2I0YzY2MDRKMHNuM2RrX1VnSFdnZnBkUHNGNC1HZDlLQUd4ZDhYYklnM3ZFazdIZnExejFsUnlkdWpvMHZLVzBvYWxDX1IwUEpsRmQ4aXdYaWdXOWVlbmtFNFJsclNuWFByT01PamdKWUFSUTF0Z0pUT056QjEyS1hPTERIWWVQaWJ2Mk95TWw4NGtnTDAxRGx0ZThmYjZraUdZaGlzcWFWR1B5bGlrQXNOejZMdS0xVWIxM0NYMVVyNWRoRjNKTnk5TGlyVzRV0gHsAUFVX3lxTE9wNmNlM2RFQXN6QU9NREMybUZxd2FQUzdTZ0YtdjVlRDN3Z0hUMzVlbFNlTUUzRElqWlExakRfSktMQXFEOTJLWGtQTkJlVEQxcVZxcy1JaHJlTjVMSVZkOVpGN3N6QkNYS2tXa256RmN6MTNXbnNZS2ExSTYtaW40a0gxQzRKcGFMaVM3dlNOQXdyQUtJbEotWU8wMnlna3ppLXI5bUxkaUlKbGtHVzRWZzBOOFlqOVR6dTcyUlNNQk1rM0lrSE9SWXl3SEJGaF9BSkxnUVd6bzJRdVZQSTY2Q3BQYW1nUDhmZlky?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-a73ab0348717",
+    "category": "landslide",
+    "state": "out_of_region",
+    "language": "hi",
+    "title": {
+      "en": "पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत",
+      "as": "पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत",
+      "bn": "पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत",
+      "hi": "पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत",
+      "mn": "पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Amar Ujala regarding पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत.",
+      "as": "Regional disaster & logistics update published by Amar Ujala regarding पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत.",
+      "bn": "Regional disaster & logistics update published by Amar Ujala regarding पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत.",
+      "hi": "Regional disaster & logistics update published by Amar Ujala regarding पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत.",
+      "mn": "Regional disaster & logistics update published by Amar Ujala regarding पहाड़ी राज्यों में मानसून का कहर: घाटी से पूर्वोत्तर तक भूस्खलन-बाढ़ ने मचाई तबाही, जम्मू-कश्मीर में 23 की मौत."
+    },
+    "source": "Amar Ujala",
+    "source_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNbHdHVTFiOUoxekdQYXRMcGNBa1A0bkJOLW9EQm9meF9XUkM0QzBMeW1RdXNDRHVlSXAyWEdHbHZTUGc4clZpOGtyNG83V3ZzY0tPMHEtc2o2eUdUejhadWxlaU5ITkhWYkJRQXJCVl8zWVEyVGd3TE5TY000VVR3RzJ0c3ZRWVMxTnk4bkFEM2dMSkphOHlTMS1udmQtTFQ2cDhuODc4NnphQTRCYU1YZ1dlSm5BNkJnaUtkalVMaE1EWXlrSHN1ZVVkdDVTbTRVa3RTb0NSS3Btc1h4MVZSdzZMUDlTNDRkMXV5U9IB8gFBVV95cUxPUGtKVlhLSVRyZjdfeE5DdXY2UjdLMXNTcmxQaEJxOVpNUjVNRDdsdWE3dnJDNkx5TlZ0cHZwMjdGeHdlcGFkcDBOaXowRVkyY0ZsVk10TmxpSlhxVENRODJvZklxOTM2MnM5Q3RBNk9ZNnprN2wwSEdMRkk1Qkk1LXFqZkMtOVpYMkk5WlRWR3BHOGFkVDZkcVY5aUVINWhzblFka2hMTmota3M1blZCU0YxSUQwZ0hDVFk5aG5yQjVxc0FJYmhZR1JhdVNBY3BFUmdHQUlBenl4MGdZeE5Vb2JHd1kxNXZ6RjhQOS1aeXYzUQ?oc=5",
+    "timestamp": "Mon, 20 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-20a77dc37d46",
+    "category": "flood",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर",
+      "as": "सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर",
+      "bn": "सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर",
+      "hi": "सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर",
+      "mn": "सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by AajTak regarding सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर.",
+      "as": "Regional disaster & logistics update published by AajTak regarding सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर.",
+      "bn": "Regional disaster & logistics update published by AajTak regarding सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर.",
+      "hi": "Regional disaster & logistics update published by AajTak regarding सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर.",
+      "mn": "Regional disaster & logistics update published by AajTak regarding सड़कें धंसी, लोहे का पुल बहा... असम और अरुणाचल में बाढ़-बारिश से हाहाकार, देखें डरावना मंजर."
+    },
+    "source": "AajTak",
+    "source_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOamFFbHB0cHo1aUh3YjhyQnhkMGZqaVNJOWxucFhiQ0tSNFZHTGpBNGtWUVJhdkwzU3F5OXp0WGVFdnAwVlplQzdORmRHT1BzQjkxSjBVNFZWN0NqUk84LUZMMjB5UktwM1p4ZXNSLV9RdS1wbnktSWxDQnpXTVFKS3RwMlVBY2ZQd0NQbm1VUDd3LTlyeHdLaDUyZ1BZYXliY2xtS0Y3ZE5ySlpNZ0ZidnVTb042eU5kS1NYVlJ1aVA2ZkpMV2xPWkNFOWxsQnhNdTNOS1pINWZiN1lvZUZlbld6cVVHYTZfb0hNekYwa3AwU2c5VFN0RHVCdEtEZ3ZRQVhJZTV30gGLAkFVX3lxTE94aE5qWUJIMlZCRElWMjFBVGtFMGdnaGxubFJLbU9fc3hHVzhkSHdteVQxemlXYmVsbW9pUTR4N2hiZnJaUTV1YWZmX240enFlY1RxdWdXYkoydExHVS1YeHZZU2t0U0xQdWRtb3lldXRtY29SNFo0Rm5Rb1FmQmVOT3dPaUZudFRvNk8zcloyUV8zS0x4VDBjek1NeTZKWWRtQjZCUFJVZUd6SWNNZ1R2aVEwcXFJczUwaVoyS3VKUVNCMDhTS1NQQmg0ZVlUYmJjdkxMWDE1RGZxSmIyTGtqSzVfbmhfbW8wYWJJQnNPeVlQdzV3djkyYmprc0tqSUxhdnRTeVBlVnotOA?oc=5",
+    "timestamp": "Mon, 29 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-322f9e692962",
+    "category": "landslide",
+    "state": "assam",
+    "language": "hi",
+    "title": {
+      "en": "इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम",
+      "as": "इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम",
+      "bn": "इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम",
+      "hi": "इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम",
+      "mn": "इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by etvbharat.com regarding इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम.",
+      "as": "Regional disaster & logistics update published by etvbharat.com regarding इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम.",
+      "bn": "Regional disaster & logistics update published by etvbharat.com regarding इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम.",
+      "hi": "Regional disaster & logistics update published by etvbharat.com regarding इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम.",
+      "mn": "Regional disaster & logistics update published by etvbharat.com regarding इन राज्यों में भारी बारिश और भूस्खलन को लेकर अलर्ट, जानें आज का मौसम."
+    },
+    "source": "etvbharat.com",
+    "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNFItTGNYZ1VpQl9qejhmUklTRktzTE1lcVFPS2pJRGg0ZUVZZElUUHBybnV3WFd3YmF3c2M5OW92NUw2aVo1VmU0T0U4aU5RaXhVQTRrUGVjRmtMTnVtLUV3dW9pTDVUMzd6X1BpUmRZdDZwazEtcW1NOXBJQlFpZGhYZTFSb2FCbFFnRHI2Mmp0U2J2Zi1fLUVUdGpVQUVkS2ZmTnlpS0J5SVF3M0VFclZ2aEtFU1hROXfSAb8BQVVfeXFMTnhHdzJVQktOMDFjYXJRU1VEOWhNUlZLbVVsaHp1eDRWb2RETlZDY0plb3RfemJFc1J2OGNEa1luXzdXUjRMaXNUb0JJamNocTBsWk84eWlkREcyd0FvVVFzY0g1MkZoZzBmNkxwTndVbU5uVTlMWXFuOVB3THZTakl3ei1jS2NRWTdXM3pqRm41cE42UDRDOHoxeFBVb3g2Vk05YVlHVlF5YWlOOEdkaVhJdGZ4YXhHV003Yy05SkU?oc=5",
+    "timestamp": "Mon, 31 Aug 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-1932194e322f",
+    "category": "logistics",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Now NHIDCL says plans afoot for complete slope protection of NH-29",
+      "as": "Now NHIDCL says plans afoot for complete slope protection of NH-29",
+      "bn": "Now NHIDCL says plans afoot for complete slope protection of NH-29",
+      "hi": "Now NHIDCL says plans afoot for complete slope protection of NH-29",
+      "mn": "Now NHIDCL says plans afoot for complete slope protection of NH-29"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by MorungExpress regarding Now NHIDCL says plans afoot for complete slope protection of NH-29.",
+      "as": "Regional disaster & logistics update published by MorungExpress regarding Now NHIDCL says plans afoot for complete slope protection of NH-29.",
+      "bn": "Regional disaster & logistics update published by MorungExpress regarding Now NHIDCL says plans afoot for complete slope protection of NH-29.",
+      "hi": "Regional disaster & logistics update published by MorungExpress regarding Now NHIDCL says plans afoot for complete slope protection of NH-29.",
+      "mn": "Regional disaster & logistics update published by MorungExpress regarding Now NHIDCL says plans afoot for complete slope protection of NH-29."
+    },
+    "source": "MorungExpress",
+    "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT21zaThzaVFfMVpoQ3JFRnk5alBfaUhTcDhqQmdWakEyMTdtM1hRVFVuM1NHaGh0S0w0T1pnZXNpeEVDVTBSWTVjUGlqNTRYeTRVVGVSTnJMeDE5OHVMRVQ3VTAtQ2pkSjlsUXFDME50dUFvRHpUTVZjb3Z3ZGJVdDVZSzdSaDM5RUV1b1NfN0JOeXF6SDQw?oc=5",
+    "timestamp": "Wed, 22 Apr 2026 17:50:23 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-debffaaf7901",
+    "category": "road & transport",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "HC demands faster repairs on troubled Dimapur-Kohima highway",
+      "as": "HC demands faster repairs on troubled Dimapur-Kohima highway",
+      "bn": "HC demands faster repairs on troubled Dimapur-Kohima highway",
+      "hi": "HC demands faster repairs on troubled Dimapur-Kohima highway",
+      "mn": "HC demands faster repairs on troubled Dimapur-Kohima highway"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Eastern Mirror",
+    "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVDMtaTZYTERwNWxRZjFVUVlzZlpGMllZYWxPc1pDVy13YjVnZFZ2NlVCb25iM3g3Q1NqTG9pX0JjMC04NWlGNWpTWkVDNEZ1VnVSV0Y4bl92Y0hxQTBycU1uR0dGc05nbVZHU2s2OXdmNkRKZmtZbk5vWGJvdzNhSVJ1V3M5TlhCUlBUbnZVclo1aUswZWNaazJVV25GMTg?oc=5",
+    "timestamp": "Thu, 10 Sep 2026 12:42:39 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-52a786be8610",
+    "category": "landslide",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Nagaland: Heavy Rain Triggers Landslide On Kohima-Dimapur Highway, Vehicles Stranded",
+      "as": "Nagaland: Heavy Rain Triggers Landslide On Kohima-Dimapur Highway, Vehicles Stranded",
+      "bn": "Nagaland: Heavy Rain Triggers Landslide On Kohima-Dimapur Highway, Vehicles Stranded",
+      "hi": "Nagaland: Heavy Rain Triggers Landslide On Kohima-Dimapur Highway, Vehicles Stranded",
+      "mn": "Nagaland: Heavy Rain Triggers Landslide On Kohima-Dimapur Highway, Vehicles Stranded"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "Northeast Today",
+    "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbWJha3pxTVo1OEVmYUlGQk4zSVFHWmtEb1Y5b2pjaGRGa19NWVVxczJOajU5dUpLMWVMbWpscFFZQU5CRG1NNjNsc0tsQm5iYmp4bEFIdmxiZU9xbl93NWFaRURYYUpWcHh3eDJJcUVKN2dFczdsQ1pyeDAzVUY2UTE3SzBBX0kxNndGd2pBNEp3Zw?oc=5",
+    "timestamp": "Wed, 05 Aug 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-c407ffcd118f",
+    "category": "logistics",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "NH-29 open but vulnerable: Round-the-clock patrols active",
+      "as": "NH-29 open but vulnerable: Round-the-clock patrols active",
+      "bn": "NH-29 open but vulnerable: Round-the-clock patrols active",
+      "hi": "NH-29 open but vulnerable: Round-the-clock patrols active",
+      "mn": "NH-29 open but vulnerable: Round-the-clock patrols active"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Eastern Mirror regarding NH-29 open but vulnerable: Round-the-clock patrols active.",
+      "as": "Regional disaster & logistics update published by Eastern Mirror regarding NH-29 open but vulnerable: Round-the-clock patrols active.",
+      "bn": "Regional disaster & logistics update published by Eastern Mirror regarding NH-29 open but vulnerable: Round-the-clock patrols active.",
+      "hi": "Regional disaster & logistics update published by Eastern Mirror regarding NH-29 open but vulnerable: Round-the-clock patrols active.",
+      "mn": "Regional disaster & logistics update published by Eastern Mirror regarding NH-29 open but vulnerable: Round-the-clock patrols active."
+    },
+    "source": "Eastern Mirror",
+    "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZElYbGRFdTBieElPVGFpVnQ5QkdMbXppc3pnUXNhdFFKTktMaDdZSmdLa01mdDU4MVEtT21CM1B1UjUzVl9sTmY2Zzd5QUpOTDZYbloweEROdEdocDRZaUNOOUdCYUF5TDhlRVlLNFJuZjlDVDlhVjhteVp6YVdhM2VkYWZhNy1kUHZEZTJWNlZWRjVXWVNVZl93?oc=5",
+    "timestamp": "Tue, 07 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-f6bd84890606",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation",
+      "as": "Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation",
+      "bn": "Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation",
+      "hi": "Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation",
+      "mn": "Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by MyGov Blogs regarding Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation.",
+      "as": "Regional disaster & logistics update published by MyGov Blogs regarding Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation.",
+      "bn": "Regional disaster & logistics update published by MyGov Blogs regarding Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation.",
+      "hi": "Regional disaster & logistics update published by MyGov Blogs regarding Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation.",
+      "mn": "Regional disaster & logistics update published by MyGov Blogs regarding Border Roads are Empowering Arunachal Pradesh, Strengthening the Nation."
+    },
+    "source": "MyGov Blogs",
+    "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeTFWQXZEbmd2cmxCYTc5N3pZSDZ4UkFSczNGTTE3TWdjczFpTVVfZXJzSlhnX2M0VjUtVjZ1cTNuTDh6c1k0aHZ2T2o1OEx3bW1qUy1NTE1mSDFKS1JOSFMtQzlpdG5YTzlnbjVpVkRnblBWc3pKYW1KamZGQ1c5Q1JINlhFaHFOVS15a3l5Z3VjaFNMRHlsWA?oc=5",
+    "timestamp": "Fri, 16 May 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-37d5b9ca51dd",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Arunachal CM Hails BRO for Completing High-Altitude Road",
+      "as": "Arunachal CM Hails BRO for Completing High-Altitude Road",
+      "bn": "Arunachal CM Hails BRO for Completing High-Altitude Road",
+      "hi": "Arunachal CM Hails BRO for Completing High-Altitude Road",
+      "mn": "Arunachal CM Hails BRO for Completing High-Altitude Road"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Arunachal24 regarding Arunachal CM Hails BRO for Completing High-Altitude Road.",
+      "as": "Regional disaster & logistics update published by Arunachal24 regarding Arunachal CM Hails BRO for Completing High-Altitude Road.",
+      "bn": "Regional disaster & logistics update published by Arunachal24 regarding Arunachal CM Hails BRO for Completing High-Altitude Road.",
+      "hi": "Regional disaster & logistics update published by Arunachal24 regarding Arunachal CM Hails BRO for Completing High-Altitude Road.",
+      "mn": "Regional disaster & logistics update published by Arunachal24 regarding Arunachal CM Hails BRO for Completing High-Altitude Road."
+    },
+    "source": "Arunachal24",
+    "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMWRSYmREWjNyT2ZFUVZZQWlGaXRFWmp5OTlxZ2xQQ3IyN3lPYWtBNmIzS2xERi04MlB2MVNRLUMyUFVBRFRUUlF2NHdZQVVjaUhRYUkzUXlRMTRPblkxTW9VUFV6bktZZWVQLTN4LVBWTXNPRHdOQkcwa0c5QXFhRmVXMm51UHc?oc=5",
+    "timestamp": "Sun, 23 Nov 2025 08:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-83ecff5ee8c8",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline",
+      "as": "Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline",
+      "bn": "Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline",
+      "hi": "Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline",
+      "mn": "Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ETV Bharat regarding Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline.",
+      "as": "Regional disaster & logistics update published by ETV Bharat regarding Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline.",
+      "bn": "Regional disaster & logistics update published by ETV Bharat regarding Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline.",
+      "hi": "Regional disaster & logistics update published by ETV Bharat regarding Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline.",
+      "mn": "Regional disaster & logistics update published by ETV Bharat regarding Forgotten Memorial At Old Sela Pass Restored To Honour BRO Personnel Who Built India’s Himalayan Lifeline."
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMVoyRng2LWQtTmhDcnhkcEFRa2xwZHkzM1JHeWM3LWVFOFA4ZkVNYVlSZmpocnV2NW1tLS1mUG1rV2wyZmkxZ2t1dzFZNlF3eV9lcHdGRFhNdG80UW1DYU5TenFZYXJ6eGRrVUVrRVZrcEo5V0VZRlV1YldzNWhOUEViUTN3bFJTcUd3cjhBcnZnSU53d2tLTlF6UWQxMDh5RGFpSDdXRF92QkZmaXR5aTBocE5QOWlfdFc5NGQ2YzR2Zl9YWEhKWFVZUE5naVV6LU5wQUtJVWRubE1MUXVrUkZ0ZnpscnZjakHSAe8BQVVfeXFMUE9VQkpWbElIMlh6c040R1ozRjdFbGxhaUNObmpzQUliYm91UDhwb2lFUkVkS0NRM3FWajFyOS04TzVCMTVZQ1BheElJX0Zwb2tWcDQ1ajIzZjNKZEh4aUNTanVsNXVJd3RNZFFsMWJGcHdaZHZTYW81UnNFQ05wRXZYeFN5bDBydnlxejdUejJKTDZGZUhpcXNXVjViWWZMLXVmMlFmaDF1N3lCckkwZXVTZDI4XzdDcHdJa0lFeExLMnhRN0QtM1VGcHBGNUVkMEF5azJHMnpvUk5kZ0R5Vk5MVG9jVG9tREtlX0M4bWs?oc=5",
+    "timestamp": "Wed, 01 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-82f98c115147",
+    "category": "logistics",
+    "state": "arunachal pradesh",
+    "language": "en",
+    "title": {
+      "en": "Arunachal Seeks BRO To Execute Strategic Border Road Project",
+      "as": "Arunachal Seeks BRO To Execute Strategic Border Road Project",
+      "bn": "Arunachal Seeks BRO To Execute Strategic Border Road Project",
+      "hi": "Arunachal Seeks BRO To Execute Strategic Border Road Project",
+      "mn": "Arunachal Seeks BRO To Execute Strategic Border Road Project"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Construction World regarding Arunachal Seeks BRO To Execute Strategic Border Road Project.",
+      "as": "Regional disaster & logistics update published by Construction World regarding Arunachal Seeks BRO To Execute Strategic Border Road Project.",
+      "bn": "Regional disaster & logistics update published by Construction World regarding Arunachal Seeks BRO To Execute Strategic Border Road Project.",
+      "hi": "Regional disaster & logistics update published by Construction World regarding Arunachal Seeks BRO To Execute Strategic Border Road Project.",
+      "mn": "Regional disaster & logistics update published by Construction World regarding Arunachal Seeks BRO To Execute Strategic Border Road Project."
+    },
+    "source": "Construction World",
+    "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQnE3ekdNeklfamdsZFFTRW11dGRjSWxfcXlqeTRFdWZTZmE4eGY5bmtKQTFYLXpHNjJmSTZweDNtZ21KX2J5SGZEVy12a18xck5jUUQ2SnJvNXM3VlBiOWRiR0gtZjRmV2lvUWNSdlRlNTN0ZTBpekttenc0cWdxNzVibmVLVlhmMk1Mc2xIakhHRnZMaDg5MEE1UXhXTWpKTU9zc3IzU2ZwVTdvaWV2b3l4SWhaMld4MTBJalhRWEpfYjRVcEZLZm5YbFc2bEE0V2p4SXZJM083TTVNWlhrQUtvSFlFdks1bzBOTk1UTQ?oc=5",
+    "timestamp": "Tue, 07 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-15ab579a1eba",
+    "category": "flood",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Four family members found dead after car plunges into Teesta River in Sikkim",
+      "as": "Four family members found dead after car plunges into Teesta River in Sikkim",
+      "bn": "Four family members found dead after car plunges into Teesta River in Sikkim",
+      "hi": "Four family members found dead after car plunges into Teesta River in Sikkim",
+      "mn": "Four family members found dead after car plunges into Teesta River in Sikkim"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by India Today NE regarding Four family members found dead after car plunges into Teesta River in Sikkim.",
+      "as": "Regional disaster & logistics update published by India Today NE regarding Four family members found dead after car plunges into Teesta River in Sikkim.",
+      "bn": "Regional disaster & logistics update published by India Today NE regarding Four family members found dead after car plunges into Teesta River in Sikkim.",
+      "hi": "Regional disaster & logistics update published by India Today NE regarding Four family members found dead after car plunges into Teesta River in Sikkim.",
+      "mn": "Regional disaster & logistics update published by India Today NE regarding Four family members found dead after car plunges into Teesta River in Sikkim."
+    },
+    "source": "India Today NE",
+    "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUG10VTBOQmY4ZFMxdDh6M0hTVEx4Rl9yQVQ5NjdlYkE3VzFKOFA3eDh0Q3NjQ0NjbVNzNGhGRlFIcjgwUjdWMVRnaS1xdjFsbG9CaHlpZFpJTlR0WkFBYkY5M3plUnVlQkgxTTJwb0hsZWxyWWFQYmJjT3MwNkxfNk5ia1Vod1p2VnN3U3hwQnRjRnJweDJZdjlCTFZDVWxmVk5HUXdsd2FyN3g3UkdBanpXOUNSVXJKM0UteHpFTVdwemtmSW00MTg3VzY5ZHZJVlHSAdcBQVVfeXFMTko0RUptbHdzallWdEZBZENsMncyenk2VUxMdWxsMy1yV2s5clM4UkFvWjVOVnNiWVlTdWZBQUpQck1WSkpwTmtXTFdhcmlZVzVMVDZjS2pQNXpqR0tnM3VpeGZ3QnZNUVJRM21JX3NWVGZGeGVaNEtoOFBFWFM1Z2dHVjgxWUhRRkt0NlZ2X2dDaG0wVzVpZlJUSGJsRVBpcGt3TEhGWEpiaDNOM2JGTHMtTWNvZ0FnckZDYUtoTGlqUm9tSjNWcXpTTFBKbzNpaDV2TXI0dkU?oc=5",
+    "timestamp": "Sun, 07 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-47bbcc95d5e7",
+    "category": "logistics",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins",
+      "as": "Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins",
+      "bn": "Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins",
+      "hi": "Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins",
+      "mn": "Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by northeastlivetv.com regarding Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins.",
+      "as": "Regional disaster & logistics update published by northeastlivetv.com regarding Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins.",
+      "bn": "Regional disaster & logistics update published by northeastlivetv.com regarding Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins.",
+      "hi": "Regional disaster & logistics update published by northeastlivetv.com regarding Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins.",
+      "mn": "Regional disaster & logistics update published by northeastlivetv.com regarding Vital Siliguri–Gangtok Lifeline NH-10 Closed for Three Days as Emergency Repair Work Begins."
+    },
+    "source": "northeastlivetv.com",
+    "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMlJsU1NPbGFnR3hTTzhweWpCVzRJbkVuWnFDLUFsZFJCNF85QkJuLTloX3lBSnpiQkdZQW1SbG42WHVFOVZydXBiUHpXa0ZSanNJMlg3bFBTLVZoY0sxNjBCM05CUllqbkhmM0djUVRVQ2s4Q21EbzdyV183QmVjS2V4MVk0cks4Zy15d1JiZnYyZFptQmlqek5mSUxIZnhOSEJIbGdvTWx1TldSVlI3aXowWGhOWHQ5Z1l1LVBtN2lzRlM1djZqZUxDbUotdkhQSXU0?oc=5",
+    "timestamp": "Sat, 18 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-c0a2cebfabce",
+    "category": "landslide",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link",
+      "as": "Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link",
+      "bn": "Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link",
+      "hi": "Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link",
+      "mn": "Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ETV Bharat regarding Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link.",
+      "as": "Regional disaster & logistics update published by ETV Bharat regarding Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link.",
+      "bn": "Regional disaster & logistics update published by ETV Bharat regarding Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link.",
+      "hi": "Regional disaster & logistics update published by ETV Bharat regarding Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link.",
+      "mn": "Regional disaster & logistics update published by ETV Bharat regarding Massive Landslide On NH 10 In Siliguri Cuts Sikkim-Kalimpong Link."
+    },
+    "source": "ETV Bharat",
+    "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQS3diSFNiR3pJNWFuT2R2NTM2MjVkY2F6NTJCMzRwQXdpVlFWb3hDR05VWlhKWDRfVW1RUXZFTk9fUzZlYmlXeWl0dTlPSFUzeUJTYzRXOUlZaW9haEExd0kxVDZ3aDJxcTRTdXJOYnVGUU1LVEx2NFBpZkVyelZMeEgzZmJkU2RCVi1nSVI2YVozeXBMcEpWWWFEcWRyRzkxaW5mUThGeUM4cUhoMzY4MWpzYkFMZ9IBuwFBVV95cUxObVN3NHB2ZjJUWkd2S2d0VnpzMnhaOVZBME4wVXA0d290ZjEwOUxiU1BLU3dXVmwzcEtwRDkxWDFTdmc0cFFIdzJNcFJDWVZIekdyOUZWR3pFLTk0c0o5Y1JNMFVUeEMwZ1J4WnM4dHVJb2ZodTN4Qk9YdFZ6d1RLeE1HNjJFdUozTzRHSVVRWVFGeTkydjhWczBtcGk0Rk9OYTA4M1JxUk1aazk4ZVI3ZlUwUkJibkVvNWRN?oc=5",
+    "timestamp": "Thu, 25 Jun 2026 07:00:00 GMT",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-9a22c267c0b1",
+    "category": "landslide",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong",
+      "as": "NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong",
+      "bn": "NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong",
+      "hi": "NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong",
+      "mn": "NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by News On AIR regarding NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong.",
+      "as": "Regional disaster & logistics update published by News On AIR regarding NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong.",
+      "bn": "Regional disaster & logistics update published by News On AIR regarding NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong.",
+      "hi": "Regional disaster & logistics update published by News On AIR regarding NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong.",
+      "mn": "Regional disaster & logistics update published by News On AIR regarding NH-10 Reopens After Six Days of Landslide Disruption in Sikkim and Kalimpong."
+    },
+    "source": "News On AIR",
+    "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRXhGMl92YkFXcEFsQ3ZqWjlQWk5Cc1JnRDlkN1pSZjZsV0hwdDl5MGx2MENrdEpMRWdpVmp3ZnF5Zm5FOE9jNHd5RV9QOXc4UFFrbHBXc092akQxSFh2cVB5M2RleDlOcHdWdUU2Xy1qYWJUdVNhQ1NJVVVCYS1EZXI0MEZLSm83aVBxUkh6cWVIYkdlTUc2Y0V4U1dtdHhjWW93Qw?oc=5",
+    "timestamp": "Thu, 28 May 2026 15:42:36 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-acae042a2e8d",
+    "category": "logistics",
+    "state": "tripura",
+    "language": "en",
+    "title": {
+      "en": "Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands",
+      "as": "Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands",
+      "bn": "Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands",
+      "hi": "Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands",
+      "mn": "Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Tripuratimes regarding Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands.",
+      "as": "Regional disaster & logistics update published by Tripuratimes regarding Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands.",
+      "bn": "Regional disaster & logistics update published by Tripuratimes regarding Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands.",
+      "hi": "Regional disaster & logistics update published by Tripuratimes regarding Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands.",
+      "mn": "Regional disaster & logistics update published by Tripuratimes regarding Tripura Returnees threaten indefinite blockade from June 5 over rehabilitation demands."
+    },
+    "source": "Tripuratimes",
+    "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWnlQbzJ1TUlNQXNQLXQwblY5dHV1LWljOVQyeUdqeWJHajVnUW83UV9QRnNhMHNMZGNCT1ozeGhpVUNHcHU4ODRCT2xrVHdmd1REbm9TUUtMQ01sLS1wUVI3dGVEeGg2Ql80QkFxYkgycDhWbWxVeXJxYlhiZ2czNXBQUUtFajFOaUNwUDI3SEw5dmo3ck5rTnFzMm9nX2E4anhlMV9aekgtOG5jenJhRTRIN0NkWU04cDQ0aERYSEhjcEdoVUZGSmNn?oc=5",
+    "timestamp": "Sat, 30 May 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8926db7d9883",
+    "category": "logistics",
+    "state": "tripura",
+    "language": "en",
+    "title": {
+      "en": "Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight",
+      "as": "Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight",
+      "bn": "Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight",
+      "hi": "Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight",
+      "mn": "Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Times of India regarding Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight.",
+      "as": "Regional disaster & logistics update published by The Times of India regarding Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight.",
+      "bn": "Regional disaster & logistics update published by The Times of India regarding Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight.",
+      "hi": "Regional disaster & logistics update published by The Times of India regarding Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight.",
+      "mn": "Regional disaster & logistics update published by The Times of India regarding Tripura CM applauds Centre for devpt, demands Agartala-Chittagong flight."
+    },
+    "source": "The Times of India",
+    "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZmNuaERRbnp0WXNURmFGdHFNM1N1aVltNE1hcU5KbTkteDFka21NSU5EVDhYWnF4eFp4V1BRUk51MGhXSnoxZmNnSUo2ODhjQjIwaEJUZWlta01xMnhrRlhlZVhqbUdCQUozdzRFc29tbS1SbVhmSVRmTnN3d0Ywb1VKMTVUaVpOUnV1MHRRMmFtdXlqYjkyUVl0YUpUc3ZpYzFIdUZIcGpSLWQwMm1neU81RHk4ZUhNcU9XVUlvNHZHS29Qbjd5WGM2dWlIS1J3ZVhHTTBtb3o0dTgtajFSatIB5gFBVV95cUxPcl9UTmk3dUwzdzFKamdEOHVYOUJTckpOUEJYd3R1TTFtb2ktSVJHZEk0ZEMzZ05IUXpGYVZIMUxXWktuZk9mSzRXNW8yVFJMLWxCWW9aVU9Pd1NQTkRHSmpsdHN1QkpPdWVrMU9LQ1MzOHZBSi1HcXR5VHZQczdlXzBmQ3JTUEltaXEwXy1MUlUzVzBLSmFsSWFuZmxGOHUzemRVamR3Zi12U0Q3eFh0LWdEVE9kT3ZHMzJVN3lWcW1XbU5UdC11WmljLUxvb1NZOUhjT1QyN1gtOUJwSEZiLW1yMy1JZw?oc=5",
+    "timestamp": "Fri, 05 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-208ce67a41c4",
+    "category": "weather",
+    "state": "tripura",
+    "language": "en",
+    "title": {
+      "en": "Agartala-Karimganj MEMU train service launched in Tripura",
+      "as": "Agartala-Karimganj MEMU train service launched in Tripura",
+      "bn": "Agartala-Karimganj MEMU train service launched in Tripura",
+      "hi": "Agartala-Karimganj MEMU train service launched in Tripura",
+      "mn": "Agartala-Karimganj MEMU train service launched in Tripura"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The News Mill regarding Agartala-Karimganj MEMU train service launched in Tripura.",
+      "as": "Regional disaster & logistics update published by The News Mill regarding Agartala-Karimganj MEMU train service launched in Tripura.",
+      "bn": "Regional disaster & logistics update published by The News Mill regarding Agartala-Karimganj MEMU train service launched in Tripura.",
+      "hi": "Regional disaster & logistics update published by The News Mill regarding Agartala-Karimganj MEMU train service launched in Tripura.",
+      "mn": "Regional disaster & logistics update published by The News Mill regarding Agartala-Karimganj MEMU train service launched in Tripura."
+    },
+    "source": "The News Mill",
+    "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUE5YcmFkdXlwWjMyZ1UxMVAxVXJKNTNyWEhZQXNVME85alJOc05STmxObzNlZVhCZWpkbjlrSlh3R2ROc1QyNzk2QnNmU1EzLTd4MlJTNmZkRkxVNkVQclV5VVE2NXhEODUyd240U0ktT1luU2Z5cmpvcjVBZnNGaGJ0VVVMR0xSQkNuSHR4UlppZVBXNVpQV0NqN1VlYjJQUG1z?oc=5",
+    "timestamp": "Sat, 04 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-74ff99aa9c2e",
+    "category": "logistics",
+    "state": "tripura",
+    "language": "en",
+    "title": {
+      "en": "Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary",
+      "as": "Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary",
+      "bn": "Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary",
+      "hi": "Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary",
+      "mn": "Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by ANI News regarding Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary.",
+      "as": "Regional disaster & logistics update published by ANI News regarding Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary.",
+      "bn": "Regional disaster & logistics update published by ANI News regarding Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary.",
+      "hi": "Regional disaster & logistics update published by ANI News regarding Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary.",
+      "mn": "Regional disaster & logistics update published by ANI News regarding Tripura CM seeks Agartala-Chittagong flights, rail expansion and enhanced central support during NEC plenary."
+    },
+    "source": "ANI News",
+    "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPdjV3LTkzRk1jd2NJSllfYUN0eGFnQ3NwN2JwSUZHUFhhMkNZaEUxbHc1VDdZUUpYOUJ6bE1KeF93aVU3WHJsRkpKYm5aZTFmTjhwOTIyTEo4U0ZwM0xtQlRnX2RPMlRwOGtieXlDWHppYlRjeDBSdUxjQ01nelVOM2w3LVpaSHNvcFVOUkx1LUFVZ0U3WEFpbnZJQ1hIUU5UUVpOOTg2dzA3ejROelBlSGFkT0JuRlhFLTFxUTB1d1dGam5mdjBSeXQ5Y0prMmdnRkdXSG5VYVZMQXdUb2dicGdPMVp1ajBoWURYSURZVnRzMC0wcTZ5UHZ6VTlRRVZq?oc=5",
+    "timestamp": "Fri, 05 Jun 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-eef038033b80",
+    "category": "flood",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Mizoram Officials Tell Tourists to Stay Away as Floods Hit",
+      "as": "Mizoram Officials Tell Tourists to Stay Away as Floods Hit",
+      "bn": "Mizoram Officials Tell Tourists to Stay Away as Floods Hit",
+      "hi": "Mizoram Officials Tell Tourists to Stay Away as Floods Hit",
+      "mn": "Mizoram Officials Tell Tourists to Stay Away as Floods Hit"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by newire.in regarding Mizoram Officials Tell Tourists to Stay Away as Floods Hit.",
+      "as": "Regional disaster & logistics update published by newire.in regarding Mizoram Officials Tell Tourists to Stay Away as Floods Hit.",
+      "bn": "Regional disaster & logistics update published by newire.in regarding Mizoram Officials Tell Tourists to Stay Away as Floods Hit.",
+      "hi": "Regional disaster & logistics update published by newire.in regarding Mizoram Officials Tell Tourists to Stay Away as Floods Hit.",
+      "mn": "Regional disaster & logistics update published by newire.in regarding Mizoram Officials Tell Tourists to Stay Away as Floods Hit."
+    },
+    "source": "newire.in",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcGE0Q0Z4a2dtdDY0ZnV1b1RWUndZZHRGbGJBWGl5amhCTGs0WGtJbGItRHRyeUhyR0FqcWRuZjlZbmI4MHJnV0xDdUVqMHFuSUUxZ3AwajBYV2xlWUlkbTNHX2FTdkVvc3llWTdfQ1haNWt3NEdBOGVwajc0SlFEQ0lpdjVkWVZxN2I1X3p3?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8571b296bdc2",
+    "category": "landslide",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Mizoram urges tourists to postpone travel as heavy rain triggers floods, landslides",
+      "as": "Mizoram urges tourists to postpone travel as heavy rain triggers floods, landslides",
+      "bn": "Mizoram urges tourists to postpone travel as heavy rain triggers floods, landslides",
+      "hi": "Mizoram urges tourists to postpone travel as heavy rain triggers floods, landslides",
+      "mn": "Mizoram urges tourists to postpone travel as heavy rain triggers floods, landslides"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "indiatodayne.in",
+    "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQ2x2cDV2ZlQ3d3hPYkZCcndWSFNEYzZKQ284Wi1aNzZOSFlWd2NzN2VFV3pLM1oyN0hlWm1yVkhuTHZEY1preVVGOTg2Q3FiQUtTeVdVNGNkci1qYTg3NDZWcWZsSjltU25sS0lIQmpwVUpHbUlvWHAxYU42X0NhWUV2SHZxQ2lvTGZqVi13YmptNVBsVFdJZ1Z0NkhiQ2MzQjhtNERlSmxOUWJGc2hpZkNEbGtjWGhQbklEdVhRLWgzOEc5X0FBenhBa2tmYURnejR3cF96WGpJMGfSAeABQVVfeXFMT3hYSGkwWXNsLU43cDJIcGpfZTN6YjZRQTQ5ZUotM2VwOWJ3SzM3YTZTNWczbUNZZFNVTFhHRzRLMld2OWJVdWRiSTVaRkkwQmRQWU94ZUdKME5WOWo0RzVROWZTZ1JTRkt2VDY4cEVYZEQyRzI4ckxKQ3JWQ2xIQnhhb0g1XzVobGh2a2NnSUtacHNrVnhwNml2QVlNWlJ6Y2FPdXQydzdiU0FZV1JUaEtkc3NaYUd3a1U2YzVmWDRDX0FXQ2FKXzRkQkZnak03Q053aWpFMXZUNFlJMDFIQ2M?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-4bf4902247bb",
+    "category": "landslide",
+    "state": "mizoram",
+    "language": "en",
+    "title": {
+      "en": "Heavy rain triggers landslides, disrupts roads in Mizoram",
+      "as": "Heavy rain triggers landslides, disrupts roads in Mizoram",
+      "bn": "Heavy rain triggers landslides, disrupts roads in Mizoram",
+      "hi": "Heavy rain triggers landslides, disrupts roads in Mizoram",
+      "mn": "Heavy rain triggers landslides, disrupts roads in Mizoram"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Times of India regarding Heavy rain triggers landslides, disrupts roads in Mizoram.",
+      "as": "Regional disaster & logistics update published by The Times of India regarding Heavy rain triggers landslides, disrupts roads in Mizoram.",
+      "bn": "Regional disaster & logistics update published by The Times of India regarding Heavy rain triggers landslides, disrupts roads in Mizoram.",
+      "hi": "Regional disaster & logistics update published by The Times of India regarding Heavy rain triggers landslides, disrupts roads in Mizoram.",
+      "mn": "Regional disaster & logistics update published by The Times of India regarding Heavy rain triggers landslides, disrupts roads in Mizoram."
+    },
+    "source": "The Times of India",
+    "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0hEUlA0Uk9rckpPd2pKVEU1RXptdDhGTkNmZ3V2NWVKanZjRFlkeXF1ZXpJckpmYU40NEFmSkxiZ2hPTkIxV1hqT01Rd0V0SXJoTVpWS29kQzRqYUx5eDhBSW1LVVp3X3RKTlg3UGdRUno3Rl9OSHFacmtDQTM2bHJJSThYYnlmX1hSbGxtLTdDU1BZYndseTNxZU1wS0tlNTV1Y0N1U2RfTG1kd0daektTT2Z3VVhVeGpDTEFMQmN2TURHUmlSLWQ4OXnSAdIBQVVfeXFMTUNMenFxSUVuZ0tZU1lsSlVkMk5NTkt3TnlXSDgtNkdHQ2YtQWNidzZORDlscWVQd05BVjhFS0FiTGVDZmt6VlVneG55Si1aOExIRHdweTdrRFlQaTctWTVMUlhSOWhlNnMtX1dtYXdEcWplYTQwenJSTERxT1pSMWZGc2c0Ul9UcGo2SHhjNlhoc2MxYVRTcm96Szg5MUlSNmNrME1saXp2WnJQR05wYVlSUUU4MmtlSlpDc2tXaDlVMDNMb09vNUFHaVRtWENWd0dB?oc=5",
+    "timestamp": "Wed, 08 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-696da5c4b412",
+    "category": "weather",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Mizoram urges tourists to defer visits as incessant rain wreaks havoc",
+      "as": "Mizoram urges tourists to defer visits as incessant rain wreaks havoc",
+      "bn": "Mizoram urges tourists to defer visits as incessant rain wreaks havoc",
+      "hi": "Mizoram urges tourists to defer visits as incessant rain wreaks havoc",
+      "mn": "Mizoram urges tourists to defer visits as incessant rain wreaks havoc"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Assam Tribune regarding Mizoram urges tourists to defer visits as incessant rain wreaks havoc.",
+      "as": "Regional disaster & logistics update published by The Assam Tribune regarding Mizoram urges tourists to defer visits as incessant rain wreaks havoc.",
+      "bn": "Regional disaster & logistics update published by The Assam Tribune regarding Mizoram urges tourists to defer visits as incessant rain wreaks havoc.",
+      "hi": "Regional disaster & logistics update published by The Assam Tribune regarding Mizoram urges tourists to defer visits as incessant rain wreaks havoc.",
+      "mn": "Regional disaster & logistics update published by The Assam Tribune regarding Mizoram urges tourists to defer visits as incessant rain wreaks havoc."
+    },
+    "source": "The Assam Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeXZKT3V0dmVTaHFqYTQxeVo4TXBjMnhENno3djhLX0RxcE1HaE5VcTk3eUNsV05GNGdxbm9Va2FEZFBoblFJQzlrdnU2TjF6Zy1Sc1BZZkFmMGZfYTlKTDhVczNhVTZfb3RtcWtQS21jQTlnU2liUmRQMW13bmVIWVIwdUVhU3BCYy1vemRRWDFwQmQ3M3RXSmR0Mm9WMXJHTGJXMWx6YmtEMG9mWDB3LTJGd9IBuAFBVV95cUxOVEFtS3pyM0NZY1hab192SklSU1hTVW5yY042SlBWR2pyeVdkeVJKeGlvMmVkNWV6N0U5T2R4LUxYekVsZjFEb2FQZkJLNkVhSEE2ZDJfSG9Vb1ZsVVBlWUM5WThLZFVUM3lpMm9DQXF0THhlbU8wMDlDUUVKbjlPZWpNQ0hlOVJlWC1EaUxwUzk4QU02Y2o4Q1EwZng3T05CSDBTb09WMmR4RHpLY2pfcDlGRm5UX2Vu?oc=5",
+    "timestamp": "Mon, 13 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-cb34163e3833",
+    "category": "logistics",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t",
+      "as": "Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t",
+      "bn": "Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t",
+      "hi": "Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t",
+      "mn": "Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Times of India regarding Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t.",
+      "as": "Regional disaster & logistics update published by The Times of India regarding Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t.",
+      "bn": "Regional disaster & logistics update published by The Times of India regarding Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t.",
+      "hi": "Regional disaster & logistics update published by The Times of India regarding Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t.",
+      "mn": "Regional disaster & logistics update published by The Times of India regarding Key route cut off: Bailey bridge collapse on NH-102B disrupts supply to Churachandpur; Authorities rush t."
+    },
+    "source": "The Times of India",
+    "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSmV0N2d2WkFRSW5aQ0NZblJZSEZfWkY5aG5ndkZ6SjNfUGxNQmU2NzlsRmhFNV91V1oyam9pZlFOUnZ6STVNZU8wQ1JneE4zUFduQU5ZWEVlYUNWOEpLR0tBdldzd0YtQ0JQZ3QyTVRkMUI1YkFJYzZrNy0zN1M4MU13dk9LRGdEVkVsa2FBSTYwak5OaXUyaTBEc2VXWldCWlZoelU4VElmcmtWdUNQbVZWdml2QndYRnJKZ1p3REpVempOWVo0WHBnclhmYmwxVk5RVm9VRTNxa0ZTWDk4anVxNm9IUdIB6wFBVV95cUxOaXB6Z0ZPdUFoUE1oR0hWcG80eXZpYUJPdS0yeWMwa0RBeHpHdDJPZTAzZG5QUDhSTWs0ODY1SkR6eWRFQ0h1SzB6bTd1SzhDWnc0QUZaTkMxeFY4ZEkwUWhMR2pJckNXLThUbkExU1lCbl8wTGVkRlJNeDlYOEVfTTFtZHVTOHowRHlnM3dQa0x1WTRqR2JGaHoyWFhpX25nc2FVcGt3OWFneThFSjNEZC15MUVuTmxjVXlROGFmV3VldmtGa0NSWnZLenZoNFdTWmNsRkNqLW42VmhoQ2tJM0pmelZJUmt2TFNv?oc=5",
+    "timestamp": "Fri, 01 May 2026 07:00:00 GMT",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-e7cfb409285d",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days",
+      "as": "Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days",
+      "bn": "Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days",
+      "hi": "Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days",
+      "mn": "Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Northeast Today regarding Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days.",
+      "as": "Regional disaster & logistics update published by Northeast Today regarding Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days.",
+      "bn": "Regional disaster & logistics update published by Northeast Today regarding Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days.",
+      "hi": "Regional disaster & logistics update published by Northeast Today regarding Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days.",
+      "mn": "Regional disaster & logistics update published by Northeast Today regarding Manipur: NH-37 Traffic Cut Off After Landslides Triggered By Heavy Rain; Restoration May Take 2–3 Days."
+    },
+    "source": "Northeast Today",
+    "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWGFmZG1kcnlUR0g0cDdrbnZpbWhIeDhaRVY3Mkd6al9MVFRhbWxiREpCSEl1ejM4MUZTcnBVOVFBUHl4T2dvbVptSlg4ZlF4cTFEc3ZGVk5LZzRZbnpoa213akl0cVJZcVNmUU9OQmRkOEhZXzZ0Mk05ZnZwVDBtaldMM0xZdVFCVFU5Y21mSEQxakZ3QU9xejJhYVZnQ1RQUks5THF0dnRKRE9XQjItdU9IRTBJSzhMZlU3ZV9ZS3dLQXB6Ym5aT3ZUdEpPMl9wOGc4?oc=5",
+    "timestamp": "Wed, 24 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-679e162bf150",
+    "category": "logistics",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Manipur explores alternate road links to Dimapur NH-2 remains cut off",
+      "as": "Manipur explores alternate road links to Dimapur NH-2 remains cut off",
+      "bn": "Manipur explores alternate road links to Dimapur NH-2 remains cut off",
+      "hi": "Manipur explores alternate road links to Dimapur NH-2 remains cut off",
+      "mn": "Manipur explores alternate road links to Dimapur NH-2 remains cut off"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Eastern Mirror regarding Manipur explores alternate road links to Dimapur NH-2 remains cut off.",
+      "as": "Regional disaster & logistics update published by Eastern Mirror regarding Manipur explores alternate road links to Dimapur NH-2 remains cut off.",
+      "bn": "Regional disaster & logistics update published by Eastern Mirror regarding Manipur explores alternate road links to Dimapur NH-2 remains cut off.",
+      "hi": "Regional disaster & logistics update published by Eastern Mirror regarding Manipur explores alternate road links to Dimapur NH-2 remains cut off.",
+      "mn": "Regional disaster & logistics update published by Eastern Mirror regarding Manipur explores alternate road links to Dimapur NH-2 remains cut off."
+    },
+    "source": "Eastern Mirror",
+    "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcF9Vb242LWtRdGZISzNzNlRZUmcwcXV2QzFoWjk4M1BBa04xR1JXRTc0TmJoVF90dTRBeG9FdW5La1ZuRFp3ck9tSjdFZWJvY1RfS19xa2RMR2YtNkYwOEprQTZMVU5QS2cxYkdXZDlUWHNKOHlGRVdmVF9zUk9FdkpFUjVhYzNxTm5pQjBJcV83ZEhjampPVzlQUFVaVHhtTm1YcWhDZlp3U3c?oc=5",
+    "timestamp": "Thu, 23 Jul 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-f2e16afdef4b",
+    "category": "landslide",
+    "state": "manipur",
+    "language": "en",
+    "title": {
+      "en": "Landslides cut off Imphal-Jiri Road : 21st jul26",
+      "as": "Landslides cut off Imphal-Jiri Road : 21st jul26",
+      "bn": "Landslides cut off Imphal-Jiri Road : 21st jul26",
+      "hi": "Landslides cut off Imphal-Jiri Road : 21st jul26",
+      "mn": "Landslides cut off Imphal-Jiri Road : 21st jul26"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by e-pao.net regarding Landslides cut off Imphal-Jiri Road : 21st jul26.",
+      "as": "Regional disaster & logistics update published by e-pao.net regarding Landslides cut off Imphal-Jiri Road : 21st jul26.",
+      "bn": "Regional disaster & logistics update published by e-pao.net regarding Landslides cut off Imphal-Jiri Road : 21st jul26.",
+      "hi": "Regional disaster & logistics update published by e-pao.net regarding Landslides cut off Imphal-Jiri Road : 21st jul26.",
+      "mn": "Regional disaster & logistics update published by e-pao.net regarding Landslides cut off Imphal-Jiri Road : 21st jul26."
+    },
+    "source": "e-pao.net",
+    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5KSU1CaGJWM0lEQURPMEJpVDlhcDRMSUxvLWllWGs0blpiSHprMXZJMEh4c1JqT2t5U2ZVeWhPWDBkdGw3LVRjMUstcFc5d3hlTDhUUXdpaUtDUldQcFE?oc=5",
+    "timestamp": "Mon, 20 Jul 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-17545a7ee4ae",
+    "category": "landslide",
+    "state": "meghalaya",
+    "language": "en",
+    "title": {
+      "en": "Weather havoc: Five killed by mudslides, NH-6 caves in",
+      "as": "Weather havoc: Five killed by mudslides, NH-6 caves in",
+      "bn": "Weather havoc: Five killed by mudslides, NH-6 caves in",
+      "hi": "Weather havoc: Five killed by mudslides, NH-6 caves in",
+      "mn": "Weather havoc: Five killed by mudslides, NH-6 caves in"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Highland Post regarding Weather havoc: Five killed by mudslides, NH-6 caves in.",
+      "as": "Regional disaster & logistics update published by Highland Post regarding Weather havoc: Five killed by mudslides, NH-6 caves in.",
+      "bn": "Regional disaster & logistics update published by Highland Post regarding Weather havoc: Five killed by mudslides, NH-6 caves in.",
+      "hi": "Regional disaster & logistics update published by Highland Post regarding Weather havoc: Five killed by mudslides, NH-6 caves in.",
+      "mn": "Regional disaster & logistics update published by Highland Post regarding Weather havoc: Five killed by mudslides, NH-6 caves in."
+    },
+    "source": "Highland Post",
+    "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaW1tOVVzVkhubjhNb3BQMkFIaG9CaTg3QTFtT2VnSGhKaXg3OFkwbU9QcXVCa3F3UklmdUVvSGx6akxSNVdUX1FOVG53T21ubXZGWFJyS2Y1OUR1Uno1cFE0TGwxSEpNbDg2U0VxMHFpcFdSZE0wTHl6dkxMZDZydHRYY2Y?oc=5",
+    "timestamp": "Fri, 17 Jun 2022 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-374447a653aa",
+    "category": "weather",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury",
+      "as": "Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury",
+      "bn": "Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury",
+      "hi": "Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury",
+      "mn": "Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by NDTV regarding Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury.",
+      "as": "Regional disaster & logistics update published by NDTV regarding Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury.",
+      "bn": "Regional disaster & logistics update published by NDTV regarding Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury.",
+      "hi": "Regional disaster & logistics update published by NDTV regarding Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury.",
+      "mn": "Regional disaster & logistics update published by NDTV regarding Key Road Linking Assam And Meghalaya Washed Away In Northeast Rain Fury."
+    },
+    "source": "NDTV",
+    "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzMzVlJDdVVrd1BORzR4LW1qRXRMVlBQS3otREVicFJGQmRjN1JmX0dSVmRPVHl2aVdQQTV6Mi1KSmlEajVUT1FaYnZ2MEJaS2VXdnphODd4V0pkXzNBc01VM1l3ZzFtTzdtQlo4OTJ5U3lwZkdyZVV6bzZ4VWVQTUFpQTV4Y2gtN0J3OVVQYmtVZUFYYWVFbnhWb2Q3QTFYNFc4c0haOFN3ZWdnUmY0YdIBuAFBVV95cUxNOVU5RlV5c1VyaUtndmNCY2xDMnBobWhTV3I5N0dDeVR3OE9ERVl5RlIteFhQZXdIaWQ5RzJuMzZ0UFh1WEZNWnF4TlBfalhzNkZUTEdXM2hlcUpNNEpPbUJjRlZBeHlkbnlGTWtvOFQ3aEkxcGhFZHpLUlBldW9KY29vTmxXS1ZKazhEYzFwSWI1VTVua0RicVNjcDd4Z2gtTGJpTFgyY0lGZ094ZVZJZXRrdlA1VGVP?oc=5",
+    "timestamp": "Sun, 01 Jun 2025 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-a446e5fd50b6",
+    "category": "weather",
+    "state": "sikkim",
+    "language": "en",
+    "title": {
+      "en": "Storm, Rainfall, Hailstorm Disrupt Life in Parts of Sikkim; One Dead, Three Injured",
+      "as": "Storm, Rainfall, Hailstorm Disrupt Life in Parts of Sikkim; One Dead, Three Injured",
+      "bn": "Storm, Rainfall, Hailstorm Disrupt Life in Parts of Sikkim; One Dead, Three Injured",
+      "hi": "Storm, Rainfall, Hailstorm Disrupt Life in Parts of Sikkim; One Dead, Three Injured",
+      "mn": "Storm, Rainfall, Hailstorm Disrupt Life in Parts of Sikkim; One Dead, Three Injured"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "NorthEast India24",
+    "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVGhmbWlDNklGMHlReGRUblVLQU5ReFBneXJWSjBzYi1iWThyVWtfcGljUk1XOXQ2TDRUdnNhT0NXLUcyT2Z1T3o5b1BTdEtZZGw3QnZ2MzZja1lhM09OVl9QZjR1MG1IZUprZmNNWEZ2aC1lb21sRTJ2UER3ZGZDVGgxUFdmQTh0ZVQ2U2lESE5XTVMxcDJsdUQ1RHlHWnhVMkFmWGlxdGJrakdyRXc?oc=5",
+    "timestamp": "Sun, 15 Mar 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-057db5239247",
+    "category": "road & transport",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Jorhat–Dibrugarh NH-37 to be restored in 6 months: Gadkari tells Lok Sabha",
+      "as": "Jorhat–Dibrugarh NH-37 to be restored in 6 months: Gadkari tells Lok Sabha",
+      "bn": "Jorhat–Dibrugarh NH-37 to be restored in 6 months: Gadkari tells Lok Sabha",
+      "hi": "Jorhat–Dibrugarh NH-37 to be restored in 6 months: Gadkari tells Lok Sabha",
+      "mn": "Jorhat–Dibrugarh NH-37 to be restored in 6 months: Gadkari tells Lok Sabha"
+    },
+    "summary": {
+      "en": "",
+      "as": "",
+      "bn": "",
+      "hi": "",
+      "mn": ""
+    },
+    "source": "The Assam Tribune",
+    "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXRFQ1RyNllyZndkUDJfSGwtcGE3OEFxSEREY2R1VWczQjhuaUF1QkZKRXBDTkYxWWNqUm53OS1fa3huVDlSUGktSGFHWVlHd2V6ekJpQWZoMXZSRHN3cTRyRkdZVlVCRGJGWUFlazdfSi1lVlRIbHBzTmJfVlUya1hnRC1lWG15VXFGYUg5VHpfOFh2ZjBPU0Z5YzJpOE5fUWxXRHZuSUNyWGxHNkRHM9IBtgFBVV95cUxQbjZyVEg3ZENQdnhEQUJ1RjVVZTRKSjVGMDc0WEttcEk3a0ZtcVZZSlIzQ0RHd2pBbjVDNXlTbkxXeUhzX0JsTHNIOV9INjB3YmQ4UFB6dGhpdDZ2dUVaQkl1MDJTSThhRlMtbG1VdWEyT3U2VVNzeU9RUWhEa19RRDNZY3I0SDR5Q1hTdE9NNzB4ZUs2WXA3R0M0X19aTWlaWDlGVkcwRm9hN1NhbUlqdFBxdzVDQQ?oc=5",
+    "timestamp": "Thu, 04 Dec 2025 08:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8094f5158ad4",
+    "category": "weather",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km",
+      "as": "8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km",
+      "bn": "8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km",
+      "hi": "8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km",
+      "mn": "8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by G Plus News regarding 8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km.",
+      "as": "Regional disaster & logistics update published by G Plus News regarding 8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km.",
+      "bn": "Regional disaster & logistics update published by G Plus News regarding 8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km.",
+      "hi": "Regional disaster & logistics update published by G Plus News regarding 8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km.",
+      "mn": "Regional disaster & logistics update published by G Plus News regarding 8.3 Km of National Highways Damaged in Assam This Monsoon, Northeast Total at 40.36 Km."
+    },
+    "source": "G Plus News",
+    "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ1NvOWZsMDdrLTAtaXEzWU9rX1h2S0RjWVlvamNZNUQzcXFHTVRtUTJsY3pYMDd5bU01MU9ndlg2cTQxaXJqbVB6b0JmU3pDSk96cEpRZjdheW9wbnk2RHpIdjRDRDlqcWtZUk5lbGVGMGJIMldaT2FWeElxMGR4LVM3c0d4S1B1WkdicE1DanpNWUExWWdzeUhJYVJpc2hCVGdVREx5cHpKYThE?oc=5",
+    "timestamp": "Thu, 13 Aug 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8ea957ec911f",
+    "category": "flood",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh",
+      "as": "Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh",
+      "bn": "Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh",
+      "hi": "Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh",
+      "mn": "Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by The Indian Express regarding Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh.",
+      "as": "Regional disaster & logistics update published by The Indian Express regarding Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh.",
+      "bn": "Regional disaster & logistics update published by The Indian Express regarding Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh.",
+      "hi": "Regional disaster & logistics update published by The Indian Express regarding Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh.",
+      "mn": "Regional disaster & logistics update published by The Indian Express regarding Northeast floods: Railway services hit, 16,000 affected in Assam; red alert in Arunachal Pradesh."
+    },
+    "source": "The Indian Express",
+    "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPVGV6NzYzYjhFbU1oRlR4dTEzektHVjNGTEw5NXJWaFhPOGtaV1IyTUpPeFJzdjE3S19CTTR4QV9MMzRlQklqM1JBVnREM2g0Q1k3QzdYTGg3TmttdmRyN1V6dDkwUEhPaTROTlVJdEFXS0VqcVl2eDFUOGxJOEt6UGFLSmhUdzJkOXB4VnhoRDgzMW1sT1AxX0VGSWZBWlVVcEQ0UDdmQWlXNWF5c25NbjBpUHlndUM1NzhxVl9VX1g5REp5N09KSnFwYmFGUzhYckZBYlVoV19LRmZvMmR5N9IB5wFBVV95cUxOM2RBSW9iSHAxd2lwUU5sQmNObjU5YW5LZTk2V1daYUZ2Tzdub0wyeDBTZGFCUHQ4dnhyOXp3WGJWSGo4R2dPWEpTMU5LYWh2MXhoZUE0Mk56VmI2VURid2s3c3JZNlU2XzJNTUs3ODVOc3JFMjBaWnh0NmthdjNuUk9xZXo0X0wtbGEyR2VGbG5Uck9YN2Zfd1ZWU2xJd2FnbUhaa1JoWmN5SWFldTg4SU0tZUhjVnNKTGw2b3gzR1hFOEw0ME5xaUhUcUpRYkNZaGRGQVZONEhLS3NGSWR5emphaDVQWG8?oc=5",
+    "timestamp": "Mon, 29 Jun 2026 07:00:00 GMT",
+    "urgency": "critical",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-8c2f8e8191ab",
+    "category": "weather",
+    "state": "assam",
+    "language": "en",
+    "title": {
+      "en": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "as": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "bn": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "hi": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "mn": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography"
+    },
+    "summary": {
+      "en": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "as": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "bn": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "hi": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography",
+      "mn": "Not the rain, but the rage: How extreme rainfall is redrawing North-East India's geography"
+    },
+    "source": "India Water Portal",
+    "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPbXhTUHdmVkdQdGxsbHFsbW9mSWozYzJUN3FCT2JQTHpEMVpjWE5adG9zOUt5cE1kbXNvNHRQSTBkSXFmOHZONDBURXRoZmluQWJkWU1yd3IwSmo2b080T3l3clNtWi1JLWV6cGpzSWRJWm9CdzFkcXU2Rzd1ekt4WG1GRlhrbnh1UnVXSTRuRlU5d19PSVBSWWZ3VmVoaVkwZVViSkZtRGdWSDlBM1pnbVFreS1OZGtyRlZBY0l2YmVGS0V2eWxMVlR5QXVFLUZNYU93elBYREdiM2h50gHqAUFVX3lxTE4zeDd5VHZSaWh0bGN4UWJvMXd1OFgxRUJiOVNFVUY5Rkh5aFNjcTFDRUNSbUVHbmxFM254VG50NlE3cTJ3ZlBIaFB5SzVNd0JVV1dIN2dyN2pmRHNlU1lRc19md0NVWTloYjZHSE8zSHhTNmFJeXp4WFd2YVJEZEdUUHlsUVJwTzNCWEVXaTBwWnFHMzNUcmtBN1pJT2VzaHJFWnU4MmYwOUl0bEZwRnRHZ1pFNE13TDMyMndGS1lIQ3p0RF8zWktKWFZ2ZlR0QmRxeWdKQ2lTQThPMW5COXk1ODJKdFJHcUhzdw?oc=5",
+    "timestamp": "Sun, 02 Aug 2026 07:00:00 GMT",
+    "urgency": "info",
+    "image": "/images/news/landslide.jpg"
+  },
+  {
+    "id": "neris-news-bdc703a6539f",
+    "category": "landslide",
+    "state": "nagaland",
+    "language": "en",
+    "title": {
+      "en": "Floods and landslides batter northeast India",
+      "as": "Floods and landslides batter northeast India",
+      "bn": "Floods and landslides batter northeast India",
+      "hi": "Floods and landslides batter northeast India",
+      "mn": "Floods and landslides batter northeast India"
+    },
+    "summary": {
+      "en": "Regional disaster & logistics update published by Mongabay India regarding Floods and landslides batter northeast India.",
+      "as": "Regional disaster & logistics update published by Mongabay India regarding Floods and landslides batter northeast India.",
+      "bn": "Regional disaster & logistics update published by Mongabay India regarding Floods and landslides batter northeast India.",
+      "hi": "Regional disaster & logistics update published by Mongabay India regarding Floods and landslides batter northeast India.",
+      "mn": "Regional disaster & logistics update published by Mongabay India regarding Floods and landslides batter northeast India."
+    },
+    "source": "Mongabay India",
+    "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOckRaVmV5NUlGSXFhQnpHWUtCOFlXd1YwMzhMT0M0RXk1RU5LRUUwcVdGRy02NWRnbGV4UE5RbWJnM0g0T2ZnZzU2YVpvb3lVNzlJUXJGVmZkU3ExeWZMTHhmMWNkU2phUTM3Nmlkb1NPWFpDeHdSWVBwemFGQTV1SGF1NFVwWWdmRmx5RDU1OA?oc=5",
+    "timestamp": "Tue, 30 Jun 2026 07:00:00 GMT",
+    "urgency": "warning",
+    "image": "/images/news/landslide.jpg"
   }
 ];
