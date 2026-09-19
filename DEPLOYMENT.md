@@ -2,6 +2,7 @@
 
 **Project**: NERIS — North-East Regional Emergency Transit System  
 **Hackathon Track**: AWS / WeMakeDevs First Commit — **Ship It Track**  
+**Live AWS Amplify Web App**: [https://main.dr3gvcv6yb38.amplifyapp.com/](https://main.dr3gvcv6yb38.amplifyapp.com/)  
 **Region**: `ap-south-1` (Asia Pacific - Mumbai)  
 *Disclaimer: NERIS is an independent student project and is not affiliated with the U.S. NERIS framework.*
 

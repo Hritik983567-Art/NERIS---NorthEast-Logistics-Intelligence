@@ -1,6 +1,7 @@
 # 🚛 NERIS — North-East Regional Emergency Transit System
 > **AI-Powered Smart Logistics & Accessibility Intelligence Platform for North Eastern India**  
 > *Built for AWS / WeMakeDevs First Commit Hackathon — Ship It Track*  
+> 🚀 **Live AWS Amplify Web App:** [https://main.dr3gvcv6yb38.amplifyapp.com/](https://main.dr3gvcv6yb38.amplifyapp.com/)  
 > *Disclaimer: NERIS is an independent student project and is not affiliated with the U.S. NERIS framework.*
 
 ---
